@@ -16,6 +16,17 @@
 		08EFE3D71341A4FB00231C8A /* VyanaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3D61341A4FB00231C8A /* VyanaTests.m */; };
 		08EFE3E61341A87300231C8A /* NSString+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3E41341A87300231C8A /* NSString+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08EFE3E71341A87300231C8A /* NSString+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3E51341A87300231C8A /* NSString+AMExtensions.m */; };
+		08EFE3EA1341A90F00231C8A /* Vyana.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3E91341A90F00231C8A /* Vyana.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08EFE3EF1341AA0A00231C8A /* NSArray+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3EB1341AA0A00231C8A /* NSArray+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08EFE3F01341AA0A00231C8A /* NSArray+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3EC1341AA0A00231C8A /* NSArray+AMExtensions.m */; };
+		08EFE3F11341AA0B00231C8A /* NSNumber+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3ED1341AA0A00231C8A /* NSNumber+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08EFE3F21341AA0B00231C8A /* NSNumber+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3EE1341AA0A00231C8A /* NSNumber+AMExtensions.m */; };
+		08EFE3F41341AA6F00231C8A /* Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3F31341AA6F00231C8A /* Notes.rtf */; };
+		08EFE3F61341AD4E00231C8A /* AMStandardMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */; };
+		08EFE3FA1341AD5800231C8A /* AMLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3F81341AD5800231C8A /* AMLogger.h */; };
+		08EFE3FB1341AD5800231C8A /* AMLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3F91341AD5800231C8A /* AMLogger.m */; };
+		08EFE4091341B4C000231C8A /* Log4Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE4081341B4C000231C8A /* Log4Cocoa.framework */; };
+		08EFE40A1341B4C000231C8A /* Log4Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE4081341B4C000231C8A /* Log4Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +56,18 @@
 		08EFE3D61341A4FB00231C8A /* VyanaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VyanaTests.m; sourceTree = "<group>"; };
 		08EFE3E41341A87300231C8A /* NSString+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AMExtensions.h"; sourceTree = "<group>"; };
 		08EFE3E51341A87300231C8A /* NSString+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AMExtensions.m"; sourceTree = "<group>"; };
+		08EFE3E91341A90F00231C8A /* Vyana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vyana.h; sourceTree = "<group>"; };
+		08EFE3EB1341AA0A00231C8A /* NSArray+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+AMExtensions.h"; sourceTree = "<group>"; };
+		08EFE3EC1341AA0A00231C8A /* NSArray+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+AMExtensions.m"; sourceTree = "<group>"; };
+		08EFE3ED1341AA0A00231C8A /* NSNumber+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+AMExtensions.h"; sourceTree = "<group>"; };
+		08EFE3EE1341AA0A00231C8A /* NSNumber+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+AMExtensions.m"; sourceTree = "<group>"; };
+		08EFE3F31341AA6F00231C8A /* Notes.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
+		08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStandardMacros.h; sourceTree = SOURCE_ROOT; };
+		08EFE3F81341AD5800231C8A /* AMLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMLogger.h; sourceTree = "<group>"; };
+		08EFE3F91341AD5800231C8A /* AMLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMLogger.m; sourceTree = "<group>"; };
+		08EFE3FE1341ADA000231C8A /* Todo.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Todo.rtf; sourceTree = "<group>"; };
+		08EFE4081341B4C000231C8A /* Log4Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Log4Cocoa.framework; path = 3rdParty/Log4Cocoa.framework; sourceTree = "<group>"; };
+		08EFE40B1341B96A00231C8A /* CodingConventions.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = CodingConventions.rtfd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08EFE3B71341A4FB00231C8A /* Cocoa.framework in Frameworks */,
+				08EFE4091341B4C000231C8A /* Log4Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +86,7 @@
 			files = (
 				08EFE3C91341A4FB00231C8A /* Cocoa.framework in Frameworks */,
 				08EFE3CC1341A4FB00231C8A /* Vyana.framework in Frameworks */,
+				08EFE40A1341B4C000231C8A /* Log4Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +96,9 @@
 		08EFE3A71341A4FB00231C8A = {
 			isa = PBXGroup;
 			children = (
+				08EFE3F31341AA6F00231C8A /* Notes.rtf */,
+				08EFE3FE1341ADA000231C8A /* Todo.rtf */,
+				08EFE40B1341B96A00231C8A /* CodingConventions.rtfd */,
 				08EFE3BC1341A4FB00231C8A /* Vyana */,
 				08EFE3CD1341A4FB00231C8A /* VyanaTests */,
 				08EFE3B51341A4FB00231C8A /* Frameworks */,
@@ -90,6 +118,7 @@
 		08EFE3B51341A4FB00231C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				08EFE4081341B4C000231C8A /* Log4Cocoa.framework */,
 				08EFE3B61341A4FB00231C8A /* Cocoa.framework */,
 				08EFE3B81341A4FB00231C8A /* Other Frameworks */,
 			);
@@ -109,8 +138,11 @@
 		08EFE3BC1341A4FB00231C8A /* Vyana */ = {
 			isa = PBXGroup;
 			children = (
+				08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */,
+				08EFE3F71341AD5800231C8A /* AMFoundation */,
 				08EFE3E31341A87300231C8A /* Foundation */,
 				08EFE3BD1341A4FB00231C8A /* Supporting Files */,
+				08EFE3E91341A90F00231C8A /* Vyana.h */,
 			);
 			path = Vyana;
 			sourceTree = "<group>";
@@ -148,10 +180,23 @@
 		08EFE3E31341A87300231C8A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				08EFE3EB1341AA0A00231C8A /* NSArray+AMExtensions.h */,
+				08EFE3EC1341AA0A00231C8A /* NSArray+AMExtensions.m */,
+				08EFE3ED1341AA0A00231C8A /* NSNumber+AMExtensions.h */,
+				08EFE3EE1341AA0A00231C8A /* NSNumber+AMExtensions.m */,
 				08EFE3E41341A87300231C8A /* NSString+AMExtensions.h */,
 				08EFE3E51341A87300231C8A /* NSString+AMExtensions.m */,
 			);
 			path = Foundation;
+			sourceTree = SOURCE_ROOT;
+		};
+		08EFE3F71341AD5800231C8A /* AMFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				08EFE3F81341AD5800231C8A /* AMLogger.h */,
+				08EFE3F91341AD5800231C8A /* AMLogger.m */,
+			);
+			path = AMFoundation;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -161,7 +206,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08EFE3EA1341A90F00231C8A /* Vyana.h in Headers */,
+				08EFE3EF1341AA0A00231C8A /* NSArray+AMExtensions.h in Headers */,
+				08EFE3F11341AA0B00231C8A /* NSNumber+AMExtensions.h in Headers */,
 				08EFE3E61341A87300231C8A /* NSString+AMExtensions.h in Headers */,
+				08EFE3F61341AD4E00231C8A /* AMStandardMacros.h in Headers */,
+				08EFE3FA1341AD5800231C8A /* AMLogger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08EFE3C11341A4FB00231C8A /* InfoPlist.strings in Resources */,
+				08EFE3F41341AA6F00231C8A /* Notes.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				08EFE3E71341A87300231C8A /* NSString+AMExtensions.m in Sources */,
+				08EFE3F01341AA0A00231C8A /* NSArray+AMExtensions.m in Sources */,
+				08EFE3F21341AA0B00231C8A /* NSNumber+AMExtensions.m in Sources */,
+				08EFE3FB1341AD5800231C8A /* AMLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +409,10 @@
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -374,6 +432,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -390,7 +452,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -411,7 +476,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VyanaTests/VyanaTests-Prefix.pch";
