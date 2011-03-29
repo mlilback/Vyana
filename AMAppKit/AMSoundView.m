@@ -11,8 +11,6 @@
 #import "NSArray+AMExtensions.h"
 
 @interface AMSoundView()
--(BOOL)isAifFile;
--(BOOL)isWavFile;
 -(void)setupSubviews;
 -(void)adjustFileImage;
 @property (nonatomic, retain) NSSound *currentSound;
@@ -88,7 +86,7 @@
 	}
 	[__bevelButton setEnabled:YES];
 	NSString *ftype = @"aif";
-	if ([self isWavFile])
+	if ([self isWAVFile])
 		ftype = @"wav";
 	NSImage *img = [[NSWorkspace sharedWorkspace] iconForFileType:ftype];
 	[__bevelButton setImage:img];
@@ -124,7 +122,7 @@
 
 #pragma mark - meat & potatoes
 
--(BOOL)isAifFile
+-(BOOL)isAIFFFile
 {
 	char buff[5];
 	bzero(buff, 5);
@@ -133,7 +131,7 @@
 		buff[4] == 0x00;
 }
 
--(BOOL)isWavFile
+-(BOOL)isWAVFile
 {
 	if(nil == self.soundData)
 		return NO;

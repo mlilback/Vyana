@@ -28,6 +28,9 @@
 
 -(IBAction)selectSoundFile:(id)sender;
 -(IBAction)playSound:(id)sender;
+
+-(BOOL)isAIFFFile;
+-(BOOL)isWAVFile;
 @end
 
 //the delegate is only notified when the file is changed via a user in the open panel, or by drag & drop
