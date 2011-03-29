@@ -30,3 +30,7 @@
 #import <Vyana/AMLogger.h>
 #import <Vyana/AMSoundView.h>
 
+#import <Vyana/AMSourceListCell.h>
+#import <Vyana/AMSourceListColumn.h>
+#import <Vyana/AMSourceListView.h>
+
