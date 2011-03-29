@@ -16,6 +16,7 @@
 -(void)setupSubviews;
 -(void)adjustFileImage;
 @property (nonatomic, retain) NSSound *currentSound;
+@property (nonatomic, retain) NSImage *noSoundImage;
 @end
 
 @implementation AMSoundView
@@ -35,6 +36,7 @@
 
 - (void)dealloc
 {
+	self.noSoundImage = nil;
 	self.currentSound=nil;
 	[__bevelButton release];
 	[__setButton release];
@@ -69,17 +71,26 @@
 	[__setButton setTitle:@"set"];
 	[__setButton setTarget:self];
 	[__setButton setAction:@selector(selectSoundFile:)];
+	NSURL *url = [[NSBundle bundleForClass:[self class]] URLForResource:@"nosound" withExtension:@"icns"];
+	NSImage *img = [[NSImage alloc] initByReferencingURL:url];
+	[img setSize:NSMakeSize(32, 32)];
+	self.noSoundImage = img;
+	[img release];
 	[self adjustFileImage];
 }
 
 -(void)adjustFileImage
 {
+	if (nil == self.soundData) {
+		[__bevelButton setImage:self.noSoundImage];
+		[__bevelButton setEnabled:NO];
+		return;
+	}
+	[__bevelButton setEnabled:YES];
 	NSString *ftype = @"aif";
 	if ([self isWavFile])
 		ftype = @"wav";
 	NSImage *img = [[NSWorkspace sharedWorkspace] iconForFileType:ftype];
-	if (nil == img)
-		img = [[NSWorkspace sharedWorkspace] iconForFileType:@"wav"];
 	[__bevelButton setImage:img];
 }
 
@@ -91,10 +102,12 @@
 	if ([ftypes count] < 1)
 		ftypes = [NSSound soundUnfilteredTypes];
 	[openPanel setAllowedFileTypes:ftypes];
+	[openPanel setDelegate: self.panelDelegate];
 	[openPanel beginSheetModalForWindow:self.window completionHandler:^(NSInteger results) {
 		if (NSFileHandlingPanelOKButton == results) {
 			NSURL *selUrl = [[openPanel URLs] firstObject];
 			self.fileURL = selUrl;
+			[self.delegate soundView:self userSelectedSound:selUrl];
 		}
 	}];
 }
@@ -172,11 +185,14 @@
 }
 -(void)setEnabled:(BOOL)enabled
 {
-	[__bevelButton setEnabled:enabled];
+	[__bevelButton setEnabled:enabled && nil != self.soundData];
 	[__setButton setEnabled:enabled];
 }
 
 @synthesize currentSound;
 @synthesize canChangeSound;
 @synthesize acceptableUTIs;
+@synthesize panelDelegate;
+@synthesize delegate;
+@synthesize noSoundImage;
 @end
