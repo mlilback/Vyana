@@ -4,6 +4,8 @@
 //  Created by Mark Lilback on Tue Oct 28 2003.
 //  Copyright (c) 2003-2011 Agile Monks, LLC. All rights reserved.
 //
+//	Compatibility: Mac OS X: 10.6, iPhone: 4.1
+//
 
 #import <Foundation/Foundation.h>
 

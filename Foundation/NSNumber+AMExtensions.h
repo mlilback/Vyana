@@ -4,6 +4,8 @@
 //  Created by Mark Lilback on 2/10/11.
 //  Copyright 2011 Agile Monks, LLC. All rights reserved.
 //
+//	Compatibility: Mac OS X: 10.6, iPhone: 4.1
+//
 
 
 @interface NSNumber (AMExtensions)

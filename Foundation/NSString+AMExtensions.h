@@ -4,6 +4,8 @@
 //  Created by Mark Lilback on Sun Jul 20 2003.
 //  Copyright 2003-2011 Agile Monks, LLC. All rights reserved.
 //
+//	Compatibility: Mac OS X: 10.6, iPhone: 4.1
+//
 
 
 @interface NSString(AMExtensions)
