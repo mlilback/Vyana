@@ -1,12 +1,13 @@
 //
-//  NSAttributedString-AMExtensions.m
-//  Data Generator
+//  NSAttributedString+AMExtensions.m
 //
 //  Created by Mark Lilback on 8/14/2010.
-//  Copyright 2010 Agile Monks, LLC. All rights reserved.
+//  Copyright 2010-11 Agile Monks, LLC. All rights reserved.
+//
+//	Compatibility: Mac OS X: 10.6, iPhone: 4.3
 //
 
-#import "NSAttributedString-AMExtensions.h"
+#import "NSAttributedString+AMExtensions.h"
 
 @implementation NSAttributedString (AMExtensions)
 
@@ -14,6 +15,9 @@
 {
 	return [[[[self class] alloc] initWithString:str attributes:attrs] autorelease];
 }
+
+#if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
+
 +(NSAttributedString*)hyperlinkFromString:(NSString*)str toURL:(NSURL*)url
 {
 	NSMutableAttributedString* attrString = [[NSMutableAttributedString alloc] initWithString: str];
@@ -32,6 +36,8 @@
 	[attrString endEditing];
 	return [attrString autorelease];
 }
+#endif
+
 @end
 
 @implementation NSMutableAttributedString (AMExtensions)
