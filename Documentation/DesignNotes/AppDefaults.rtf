@@ -16,35 +16,44 @@ Then based on rules in those files, it creates an array of AMPropertySet objects
 The application merely has to call:\
 \pard\tx3200\tx6420\tx8020\pardeftab720\li360\ql\qnatural
 
-\f1\fs24 \cf0 \cb2 [[AMAppDefaults sharedInstance] objectForKey:@"propertyName"]\
+\f1\fs24 \cf0 \cb2 [[[AMAppDefaults sharedInstance] defaultsSetNamed:@"logging"] objectForKey:@"propertyName"]\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
 
 \f0\fs28 \cf0 \cb1 to use load the correct properties.\
 \
 At the bottom is a sample VyanaConfig.plist that gives a basic idea of how things work. I'll fill in more details as time progresses.\
 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
 
-\b\fs36 Loading Precedence\
+\b\fs36 \cf0 Loading Precedence\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
 
-\b0\fs28 \
+\b0\fs28 \cf0 \
 The main bundle config file has priority. If there isn't one, then the order of loading is based on whatever method Apple choose to return open bundles in. Each loaded bundle/framework's file is similarily used to configure the tree underneath them.\
 \
 If the property LoadsChildrenFirst is true, then all chid bundle properties override the application's properties. This is false by default.\
 \
 The Children array lists bundle identifiers in the order they should be given precedence. Two special values are allowed. The value of "self" is where the bundle's own values are inserted so some children can load first, and others after. The value of "dynamic" is a placeholder for the precedence of bundles dynamically loaded after the AMAppDefaults singleton has been instantiated.\
 \
+NOTE: this is not implemented this way right now. \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
 
-\b\fs36 Property Sets\
+\b\fs36 \cf0 Property Sets\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
 
-\b0\fs28 \
+\b0\fs28 \cf0 \
 Each property set is a dictionary with a name and a set of values. The values can be loaded from within the config file, or a separate plist file can be specified. If UserDefaultsCanOverride is true (the default is false), then NSUserDefaults will be consulted for that property under the key "PropertySetName.Property". Once it is set to true for a property set, no sets further down the hierarchy can change it.\
 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
 
-\b\fs36 Sample VyanaConfig.plist\
+\b\fs36 \cf0 Sample VyanaConfig.plist\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
 
-\b0\fs28 \
+\b0\fs28 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
 
-\f1\fs24 <dict>\
+\f1\fs24 \cf0 <dict>\
 	<key>LoadChildrenFirst</key>\
 	<false/>\
 	<key>Children</key>\

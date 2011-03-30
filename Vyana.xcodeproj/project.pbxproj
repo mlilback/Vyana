@@ -78,6 +78,13 @@
 		08EFE4BC13421CE100231C8A /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4B413421CE100231C8A /* DDTTYLogger.m */; };
 		08EFE4C01342288200231C8A /* VyanaLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4BF1342287D00231C8A /* VyanaLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08EFE4DD1342637600231C8A /* nosound.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4DC1342637600231C8A /* nosound.icns */; };
+		08EFE4E21342977A00231C8A /* AMAppDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4E01342977A00231C8A /* AMAppDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08EFE4E31342977A00231C8A /* AMAppDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4E11342977A00231C8A /* AMAppDefaults.m */; };
+		08EFE4E6134297CC00231C8A /* AMDefaultsConfigFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4E4134297CC00231C8A /* AMDefaultsConfigFile.h */; };
+		08EFE4E7134297CC00231C8A /* AMDefaultsConfigFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4E5134297CC00231C8A /* AMDefaultsConfigFile.m */; };
+		08EFE4EA134297ED00231C8A /* AMDefaultsSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4E8134297ED00231C8A /* AMDefaultsSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08EFE4EB134297ED00231C8A /* AMDefaultsSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4E9134297ED00231C8A /* AMDefaultsSet.m */; };
+		08EFE4ED13429E4F00231C8A /* VyanaPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4EC13429E4600231C8A /* VyanaPrivate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,12 +119,12 @@
 		08EFE3EC1341AA0A00231C8A /* NSArray+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+AMExtensions.m"; sourceTree = "<group>"; };
 		08EFE3ED1341AA0A00231C8A /* NSNumber+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+AMExtensions.h"; sourceTree = "<group>"; };
 		08EFE3EE1341AA0A00231C8A /* NSNumber+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+AMExtensions.m"; sourceTree = "<group>"; };
-		08EFE3F31341AA6F00231C8A /* Notes.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
+		08EFE3F31341AA6F00231C8A /* Notes.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Notes.rtf; path = Documentation/Notes.rtf; sourceTree = "<group>"; };
 		08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStandardMacros.h; sourceTree = SOURCE_ROOT; };
 		08EFE3F81341AD5800231C8A /* AMLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMLogger.h; sourceTree = "<group>"; };
 		08EFE3F91341AD5800231C8A /* AMLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMLogger.m; sourceTree = "<group>"; };
-		08EFE3FE1341ADA000231C8A /* Todo.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Todo.rtf; sourceTree = "<group>"; };
-		08EFE40B1341B96A00231C8A /* CodingConventions.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = CodingConventions.rtfd; sourceTree = "<group>"; };
+		08EFE3FE1341ADA000231C8A /* Todo.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Todo.rtf; path = Documentation/Todo.rtf; sourceTree = "<group>"; };
+		08EFE40B1341B96A00231C8A /* CodingConventions.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = CodingConventions.rtfd; path = Documentation/DesignNotes/CodingConventions.rtfd; sourceTree = "<group>"; };
 		08EFE4321341CA0000231C8A /* NSIndexPath+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+AMExtensions.h"; sourceTree = "<group>"; };
 		08EFE4331341CA0000231C8A /* NSIndexPath+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+AMExtensions.m"; sourceTree = "<group>"; };
 		08EFE4371341CAA000231C8A /* NSDictionary+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+AMExtensions.h"; sourceTree = "<group>"; };
@@ -172,6 +179,14 @@
 		08EFE4B413421CE100231C8A /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
 		08EFE4BF1342287D00231C8A /* VyanaLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VyanaLog.h; sourceTree = "<group>"; };
 		08EFE4DC1342637600231C8A /* nosound.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = nosound.icns; sourceTree = "<group>"; };
+		08EFE4DE1342923C00231C8A /* AppDefaults.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = AppDefaults.rtf; path = Documentation/DesignNotes/AppDefaults.rtf; sourceTree = "<group>"; };
+		08EFE4E01342977A00231C8A /* AMAppDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAppDefaults.h; sourceTree = "<group>"; };
+		08EFE4E11342977A00231C8A /* AMAppDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAppDefaults.m; sourceTree = "<group>"; };
+		08EFE4E4134297CC00231C8A /* AMDefaultsConfigFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDefaultsConfigFile.h; sourceTree = "<group>"; };
+		08EFE4E5134297CC00231C8A /* AMDefaultsConfigFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDefaultsConfigFile.m; sourceTree = "<group>"; };
+		08EFE4E8134297ED00231C8A /* AMDefaultsSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDefaultsSet.h; sourceTree = "<group>"; };
+		08EFE4E9134297ED00231C8A /* AMDefaultsSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDefaultsSet.m; sourceTree = "<group>"; };
+		08EFE4EC13429E4600231C8A /* VyanaPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VyanaPrivate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,8 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				08EFE3F31341AA6F00231C8A /* Notes.rtf */,
-				08EFE3FE1341ADA000231C8A /* Todo.rtf */,
-				08EFE40B1341B96A00231C8A /* CodingConventions.rtfd */,
+				08EFE4DF1342924D00231C8A /* Documentation */,
 				08EFE3BC1341A4FB00231C8A /* Vyana */,
 				08EFE3CD1341A4FB00231C8A /* VyanaTests */,
 				08EFE3B51341A4FB00231C8A /* Frameworks */,
@@ -245,6 +259,7 @@
 			children = (
 				08EFE3E91341A90F00231C8A /* Vyana.h */,
 				08EFE4BF1342287D00231C8A /* VyanaLog.h */,
+				08EFE4EC13429E4600231C8A /* VyanaPrivate.h */,
 				08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */,
 				08EFE4511341D02C00231C8A /* AMAppKit */,
 				08EFE3F71341AD5800231C8A /* AMFoundation */,
@@ -313,6 +328,12 @@
 			children = (
 				08EFE3F81341AD5800231C8A /* AMLogger.h */,
 				08EFE3F91341AD5800231C8A /* AMLogger.m */,
+				08EFE4E01342977A00231C8A /* AMAppDefaults.h */,
+				08EFE4E11342977A00231C8A /* AMAppDefaults.m */,
+				08EFE4E4134297CC00231C8A /* AMDefaultsConfigFile.h */,
+				08EFE4E5134297CC00231C8A /* AMDefaultsConfigFile.m */,
+				08EFE4E8134297ED00231C8A /* AMDefaultsSet.h */,
+				08EFE4E9134297ED00231C8A /* AMDefaultsSet.m */,
 			);
 			path = AMFoundation;
 			sourceTree = SOURCE_ROOT;
@@ -389,6 +410,16 @@
 			path = 3rdParty/cocoalumberjack/Lumberjack;
 			sourceTree = SOURCE_ROOT;
 		};
+		08EFE4DF1342924D00231C8A /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				08EFE3FE1341ADA000231C8A /* Todo.rtf */,
+				08EFE40B1341B96A00231C8A /* CodingConventions.rtfd */,
+				08EFE4DE1342923C00231C8A /* AppDefaults.rtf */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -427,6 +458,10 @@
 				08EFE4B913421CE100231C8A /* DDLog.h in Headers */,
 				08EFE4C01342288200231C8A /* VyanaLog.h in Headers */,
 				08EFE3E61341A87300231C8A /* NSString+AMExtensions.h in Headers */,
+				08EFE4E21342977A00231C8A /* AMAppDefaults.h in Headers */,
+				08EFE4EA134297ED00231C8A /* AMDefaultsSet.h in Headers */,
+				08EFE4E6134297CC00231C8A /* AMDefaultsConfigFile.h in Headers */,
+				08EFE4ED13429E4F00231C8A /* VyanaPrivate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +603,9 @@
 				08EFE4B813421CE100231C8A /* DDFileLogger.m in Sources */,
 				08EFE4BA13421CE100231C8A /* DDLog.m in Sources */,
 				08EFE4BC13421CE100231C8A /* DDTTYLogger.m in Sources */,
+				08EFE4E31342977A00231C8A /* AMAppDefaults.m in Sources */,
+				08EFE4E7134297CC00231C8A /* AMDefaultsConfigFile.m in Sources */,
+				08EFE4EB134297ED00231C8A /* AMDefaultsSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
