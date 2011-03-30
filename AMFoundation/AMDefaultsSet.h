@@ -14,6 +14,8 @@
 //NOTE: this is not to be in the final public API. it is just a hack to get this working for me now
 -(void)takePropertiesFromDict:(NSDictionary*)dict;
 
+-(NSArray*)allPropertyKeys;
+
 -(id)objectForKey:(NSString*)key;
 -(NSInteger)integerForKey:(NSString*)key;
 -(CGFloat)cgFloatForKey:(NSString*)key;

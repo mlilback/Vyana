@@ -11,7 +11,7 @@
 #import "AMDefaultsSet.h"
 #import "VyanaPrivate.h"
 
-static int ddLogLevel = LOG_LEVEL_WARN;
+static int ddLogLevel = LOG_LEVEL_INFO;
 
 @interface AMAppDefaults()
 -(id)initPrivate;
@@ -77,7 +77,7 @@ static int ddLogLevel = LOG_LEVEL_WARN;
 			id valObj = [aDict objectForKey:@"Values"];
 			if ([valObj isKindOfClass:[NSDictionary class]]) {
 				DDLogInfo(@"loading dict values for set %@ from %@", setName, [cfile.bundle bundleIdentifier]);
-				[aSet takePropertiesFromDict:aDict];
+				[aSet takePropertiesFromDict:valObj];
 			} else if ([valObj isKindOfClass:[NSString class]]) {
 				DDLogInfo(@"loading plist values for set %@ from %@", setName, [cfile.bundle bundleIdentifier]);
 				NSURL *url = [cfile.bundle URLForResource:[valObj stringByDeletingPathExtension] 

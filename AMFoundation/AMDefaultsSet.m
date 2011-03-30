@@ -34,6 +34,11 @@
 	[self.values addEntriesFromDictionary:dict];
 }
 
+-(NSArray*)allPropertyKeys
+{
+	return [self.values allKeys];
+}
+
 -(id)objectForKey:(NSString*)key
 {
 	return [self.values objectForKey:key];
