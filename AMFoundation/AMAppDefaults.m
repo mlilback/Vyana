@@ -11,7 +11,7 @@
 #import "AMDefaultsSet.h"
 #import "VyanaPrivate.h"
 
-static int ddLogLevel = LOG_LEVEL_INFO;
+static int ddLogLevel = LOG_LEVEL_WARN;
 
 @interface AMAppDefaults()
 -(id)initPrivate;
