@@ -14,6 +14,8 @@
 #import <Vyana/NSNumber+AMExtensions.h>
 #import <Vyana/NSString+AMExtensions.h>
 
+#import <Vyana/AMZeroingWeakRef.h>
+
 #import <Vyana/NSAnimation+AMExtensions.h>
 #import <Vyana/NSAppleScript+AMExtensions.h>
 #import <Vyana/NSApplication+AMExtensions.h>
