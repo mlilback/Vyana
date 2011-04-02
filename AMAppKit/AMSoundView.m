@@ -10,14 +10,22 @@
 #import "AMSoundView.h"
 #import "NSArray+AMExtensions.h"
 
+#define ENABLED_BINDNAME @"enabled"
+
 @interface AMSoundView()
 -(void)setupSubviews;
 -(void)adjustFileImage;
 @property (nonatomic, retain) NSSound *currentSound;
 @property (nonatomic, retain) NSImage *noSoundImage;
+@property (nonatomic, assign) id observedObjectForEnabled;
+@property (nonatomic, copy) NSString *observedKeyPathForEnabled;
 @end
 
 @implementation AMSoundView
++(void)initialize
+{
+	[self exposeBinding:ENABLED_BINDNAME];
+}
 
 //our frame must be 48x70 or 96x48
 - (id)initWithFrame:(NSRect)frame
@@ -34,6 +42,11 @@
 
 - (void)dealloc
 {
+	if (self.observedObjectForEnabled) {
+		[self.observedObjectForEnabled removeObserver:self forKeyPath:self.observedKeyPathForEnabled];
+		self.observedObjectForEnabled=nil;
+		self.observedKeyPathForEnabled=nil;
+	}
 	self.noSoundImage = nil;
 	self.currentSound=nil;
 	[__bevelButton release];
@@ -90,6 +103,45 @@
 		ftype = @"wav";
 	NSImage *img = [[NSWorkspace sharedWorkspace] iconForFileType:ftype];
 	[__bevelButton setImage:img];
+}
+
+#pragma mark - bindings
+
+-(void)bind:(NSString *)binding 
+   toObject:(id)observable 
+withKeyPath:(NSString *)keyPath 
+	options:(NSDictionary *)options
+{
+	if ([binding isEqualToString:ENABLED_BINDNAME]) {
+		self.observedObjectForEnabled = observable;
+		self.observedKeyPathForEnabled = keyPath;
+		[self.observedObjectForEnabled addObserver:self 
+										forKeyPath:self.observedKeyPathForEnabled 
+										   options:0 
+										   context:nil];
+	}
+}
+
+-(void)unbind:(NSString *)binding
+{
+	if ([binding isEqualToString:ENABLED_BINDNAME]) {
+		[self.observedObjectForEnabled removeObserver:self 
+										 forKeyPath:self.observedKeyPathForEnabled];
+		self.observedObjectForEnabled = nil;
+		self.observedKeyPathForEnabled = nil;
+	}
+}
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object 
+					   change:(NSDictionary *)change context:(void *)contex
+{
+	if ([keyPath isEqualToString:self.observedKeyPathForEnabled] && object == self.observedObjectForEnabled) 
+	{
+		BOOL shouldEnable = [[self.observedObjectForEnabled valueForKey:self.observedKeyPathForEnabled] boolValue];
+		[self setEnabled:shouldEnable];
+	} else {
+		[super observeValueForKeyPath:keyPath ofObject:object change:change context:contex];
+	}
 }
 
 #pragma mark - actions
@@ -193,4 +245,6 @@
 @synthesize panelDelegate;
 @synthesize delegate;
 @synthesize noSoundImage;
+@synthesize observedObjectForEnabled;
+@synthesize observedKeyPathForEnabled;
 @end

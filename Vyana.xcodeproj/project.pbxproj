@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		08435A2F134508C30044089C /* AMZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A2D134508C30044089C /* AMZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08435A30134508C30044089C /* AMZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A2E134508C30044089C /* AMZeroingWeakRef.m */; };
+		08435A3B1347614C0044089C /* AMProgressWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A391347614C0044089C /* AMProgressWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08435A3C1347614C0044089C /* AMProgressWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3A1347614C0044089C /* AMProgressWindowController.m */; };
+		08435A3F134768C40044089C /* AMControlledView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A3D134768C40044089C /* AMControlledView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08435A40134768C40044089C /* AMControlledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3E134768C40044089C /* AMControlledView.m */; };
 		08EFE3B71341A4FB00231C8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE3B61341A4FB00231C8A /* Cocoa.framework */; };
 		08EFE3C11341A4FB00231C8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3BF1341A4FB00231C8A /* InfoPlist.strings */; };
 		08EFE3C91341A4FB00231C8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE3B61341A4FB00231C8A /* Cocoa.framework */; };
@@ -106,6 +110,10 @@
 /* Begin PBXFileReference section */
 		08435A2D134508C30044089C /* AMZeroingWeakRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMZeroingWeakRef.h; sourceTree = "<group>"; };
 		08435A2E134508C30044089C /* AMZeroingWeakRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMZeroingWeakRef.m; sourceTree = "<group>"; };
+		08435A391347614C0044089C /* AMProgressWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProgressWindowController.h; sourceTree = "<group>"; };
+		08435A3A1347614C0044089C /* AMProgressWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMProgressWindowController.m; sourceTree = "<group>"; };
+		08435A3D134768C40044089C /* AMControlledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMControlledView.h; sourceTree = "<group>"; };
+		08435A3E134768C40044089C /* AMControlledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMControlledView.m; sourceTree = "<group>"; };
 		08EFE3B31341A4FB00231C8A /* Vyana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08EFE3B61341A4FB00231C8A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		08EFE3B91341A4FB00231C8A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -381,10 +389,14 @@
 				08EFE45F1341D4BA00231C8A /* AMApplication.m */,
 				08EFE4521341D02C00231C8A /* AMBaseTreeNode.h */,
 				08EFE4531341D02C00231C8A /* AMBaseTreeNode.m */,
+				08435A3D134768C40044089C /* AMControlledView.h */,
+				08435A3E134768C40044089C /* AMControlledView.m */,
 				08EFE4601341D4BA00231C8A /* AMKeychainItem.h */,
 				08EFE4611341D4BA00231C8A /* AMKeychainItem.m */,
 				08EFE4621341D4BA00231C8A /* AMKeychainManager.h */,
 				08EFE4631341D4BA00231C8A /* AMKeychainManager.m */,
+				08435A391347614C0044089C /* AMProgressWindowController.h */,
+				08435A3A1347614C0044089C /* AMProgressWindowController.m */,
 				08EFE4641341D4BB00231C8A /* AMSoundView.h */,
 				08EFE4651341D4BB00231C8A /* AMSoundView.m */,
 				08EFE4861341DAA300231C8A /* AMSourceListView */,
@@ -475,9 +487,11 @@
 				08EFE4BB13421CE100231C8A /* DDTTYLogger.h in Headers */,
 				08EFE4B913421CE100231C8A /* DDLog.h in Headers */,
 				08EFE4C01342288200231C8A /* VyanaLog.h in Headers */,
+				08435A3B1347614C0044089C /* AMProgressWindowController.h in Headers */,
 				08EFE3E61341A87300231C8A /* NSString+AMExtensions.h in Headers */,
 				08EFE4E21342977A00231C8A /* AMAppDefaults.h in Headers */,
 				08EFE4EA134297ED00231C8A /* AMDefaultsSet.h in Headers */,
+				08435A3F134768C40044089C /* AMControlledView.h in Headers */,
 				08435A2F134508C30044089C /* AMZeroingWeakRef.h in Headers */,
 				08EFE4FD1342B35800231C8A /* AMAppDefaultsWindowController.h in Headers */,
 				08EFE4E6134297CC00231C8A /* AMDefaultsConfigFile.h in Headers */,
@@ -630,6 +644,8 @@
 				08EFE4EB134297ED00231C8A /* AMDefaultsSet.m in Sources */,
 				08EFE4FE1342B35800231C8A /* AMAppDefaultsWindowController.m in Sources */,
 				08435A30134508C30044089C /* AMZeroingWeakRef.m in Sources */,
+				08435A3C1347614C0044089C /* AMProgressWindowController.m in Sources */,
+				08435A40134768C40044089C /* AMControlledView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,9 @@
 
 #import <Foundation/Foundation.h>
 
+/** exposes binding "enabled". This does not work like NSControl's version that allows
+ 	multiple bindings that are AND'd together. Only one property can be bound. */
+
 @protocol AMSoundViewDelegate;
 
 @interface AMSoundView : NSView {

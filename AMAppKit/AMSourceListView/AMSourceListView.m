@@ -9,11 +9,31 @@
 #import "AMSourceListCell.h"
 #import <objc/runtime.h>
 
+@interface AMSourceListView()
+@property (nonatomic, retain) NSImage *blueHighlight;
+@property (nonatomic, retain) NSImage *greyHighlight;
+@end
+
 @implementation AMSourceListView
 @synthesize subDelegate=myDelegate;
+@synthesize blueHighlight;
+@synthesize greyHighlight;
+
+-(void)dealloc
+{
+	self.blueHighlight=nil;
+	self.greyHighlight=nil;
+	[super dealloc];
+}
+
 - (void) awakeFromNib
 {
 	[super setDelegate:(id)self];
+	NSBundle *myBundle = [NSBundle bundleForClass:[self class]];
+	NSURL *url = [myBundle URLForResource:@"highlight_blue" withExtension:@"tiff"];
+	self.blueHighlight = [[[NSImage alloc] initByReferencingURL:url] autorelease];
+	url = [myBundle URLForResource:@"highlight_grey" withExtension:@"tiff"];
+	self.greyHighlight = [[[NSImage alloc] initByReferencingURL:url] autorelease];
 }
 
 -(void)setSubDelegate:(id <NSOutlineViewDelegate>)del
@@ -136,11 +156,12 @@
 			if (([[self window] firstResponder] == self) && 
 					[[self window] isMainWindow] &&
 					[[self window] isKeyWindow]) {
-				gradient = [NSImage imageNamed:@"highlight_blue.tiff"];
+				gradient = self.blueHighlight;
 			} else {
-				gradient = [NSImage imageNamed:@"highlight_grey.tiff"];
+				gradient = self.greyHighlight;
 			}
-			
+			NSAssert(gradient, @"failed to load gradient image");
+
 			/* Make sure we draw the gradient the correct way up. */
 			[gradient setFlipped:YES];
 			

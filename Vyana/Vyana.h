@@ -27,9 +27,11 @@
 
 #import <Vyana/AMApplication.h>
 #import <Vyana/AMBaseTreeNode.h>
+#import <Vyana/AMControlledView.h>
 #import <Vyana/AMKeychainItem.h>
 #import <Vyana/AMKeychainManager.h>
 #import <Vyana/AMLogger.h>
+#import <Vyana/AMProgressWindowController.h>
 #import <Vyana/AMSoundView.h>
 
 #import <Vyana/AMSourceListCell.h>
