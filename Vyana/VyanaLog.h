@@ -7,6 +7,7 @@
 
 
 //This defines log levels used in Vyana and other Agile Monks frameworks.
+#import <Vyana/DDLog.h>
 
 //used for logigng enter/exit of methods
 #define LOG_FLAG_TRACE	(1 << 4)
