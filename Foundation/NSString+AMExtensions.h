@@ -10,6 +10,8 @@
 
 @interface NSString(AMExtensions)
 +(NSString*)stringWithUTF8Data:(NSData*)data;
+///generates a UUID and returns it as a string
++(NSString*)stringWithUUID;
 ///find the first index matching the specified character, or NSNotFound if not found
 -(NSUInteger)indexOfChar:(unichar)aChar;
 ///find the first index matching the specified string, or NSNotFound if not found

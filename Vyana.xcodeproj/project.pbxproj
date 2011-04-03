@@ -13,6 +13,8 @@
 		08435A3C1347614C0044089C /* AMProgressWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3A1347614C0044089C /* AMProgressWindowController.m */; };
 		08435A3F134768C40044089C /* AMControlledView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A3D134768C40044089C /* AMControlledView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08435A40134768C40044089C /* AMControlledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3E134768C40044089C /* AMControlledView.m */; };
+		08435A561347E5460044089C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A551347E5460044089C /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		08435A631347EC700044089C /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A621347EC6F0044089C /* QTKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		08EFE3B71341A4FB00231C8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE3B61341A4FB00231C8A /* Cocoa.framework */; };
 		08EFE3C11341A4FB00231C8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3BF1341A4FB00231C8A /* InfoPlist.strings */; };
 		08EFE3C91341A4FB00231C8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE3B61341A4FB00231C8A /* Cocoa.framework */; };
@@ -114,6 +116,8 @@
 		08435A3A1347614C0044089C /* AMProgressWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMProgressWindowController.m; sourceTree = "<group>"; };
 		08435A3D134768C40044089C /* AMControlledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMControlledView.h; sourceTree = "<group>"; };
 		08435A3E134768C40044089C /* AMControlledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMControlledView.m; sourceTree = "<group>"; };
+		08435A551347E5460044089C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		08435A621347EC6F0044089C /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
 		08EFE3B31341A4FB00231C8A /* Vyana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08EFE3B61341A4FB00231C8A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		08EFE3B91341A4FB00231C8A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -214,6 +218,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08435A631347EC700044089C /* QTKit.framework in Frameworks */,
+				08435A561347E5460044089C /* AudioToolbox.framework in Frameworks */,
 				08EFE4851341D9F600231C8A /* QuartzCore.framework in Frameworks */,
 				08EFE46F1341D57300231C8A /* Security.framework in Frameworks */,
 				08EFE3B71341A4FB00231C8A /* Cocoa.framework in Frameworks */,
@@ -235,6 +241,8 @@
 		08EFE3A71341A4FB00231C8A = {
 			isa = PBXGroup;
 			children = (
+				08435A621347EC6F0044089C /* QTKit.framework */,
+				08435A551347E5460044089C /* AudioToolbox.framework */,
 				08EFE3F31341AA6F00231C8A /* Notes.rtf */,
 				08EFE4DF1342924D00231C8A /* Documentation */,
 				08EFE3BC1341A4FB00231C8A /* Vyana */,

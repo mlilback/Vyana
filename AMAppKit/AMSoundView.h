@@ -7,7 +7,8 @@
 //	Compatibility: Mac OS X: 10.6, iPhone: NA
 //
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 /** exposes binding "enabled". This does not work like NSControl's version that allows
  	multiple bindings that are AND'd together. Only one property can be bound. */
@@ -34,6 +35,10 @@
 
 -(BOOL)isAIFFFile;
 -(BOOL)isWAVFile;
+-(BOOL)isCafFile;
+
+-(BOOL)saveSoundDataAsCAFF:(NSURL*)destUrl;
+-(NSData*)soundDataAsCAFF;
 @end
 
 //the delegate is only notified when the file is changed via a user in the open panel, or by drag & drop

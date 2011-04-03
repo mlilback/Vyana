@@ -15,6 +15,15 @@
 {
 	return [[[self alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
 }
+///generates a UUID and returns it as a string
++(NSString*)stringWithUUID
+{
+	CFUUIDRef uuid = CFUUIDCreate(kCFAllocatorDefault);
+	NSString *uuidStr = (NSString*)CFUUIDCreateString(kCFAllocatorDefault, uuid);
+	CFRelease(uuid);
+	return [uuidStr autorelease];
+}
+
 //find the first index matching the specified character, or NSNotFound if not found
 -(NSUInteger)indexOfChar:(unichar)aChar
 {

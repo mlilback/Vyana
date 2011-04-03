@@ -9,16 +9,20 @@
 
 #import "AMSoundView.h"
 #import "NSArray+AMExtensions.h"
+#import "NSFileHandle+AMExtensions.h"
+#import "NSString+AMExtensions.h"
+#import <QTKit/QTKit.h>
 
 #define ENABLED_BINDNAME @"enabled"
+
 
 @interface AMSoundView()
 -(void)setupSubviews;
 -(void)adjustFileImage;
-@property (nonatomic, retain) NSSound *currentSound;
 @property (nonatomic, retain) NSImage *noSoundImage;
 @property (nonatomic, assign) id observedObjectForEnabled;
 @property (nonatomic, copy) NSString *observedKeyPathForEnabled;
+@property (nonatomic, retain) QTMovie *movie;
 @end
 
 @implementation AMSoundView
@@ -48,7 +52,7 @@
 		self.observedKeyPathForEnabled=nil;
 	}
 	self.noSoundImage = nil;
-	self.currentSound=nil;
+	self.movie=nil;
 	[__bevelButton release];
 	[__setButton release];
 	[super dealloc];
@@ -101,6 +105,8 @@
 	NSString *ftype = @"aif";
 	if ([self isWAVFile])
 		ftype = @"wav";
+	else if ([self isCafFile])
+		ftype = @"caf";
 	NSImage *img = [[NSWorkspace sharedWorkspace] iconForFileType:ftype];
 	[__bevelButton setImage:img];
 }
@@ -164,12 +170,19 @@ withKeyPath:(NSString *)keyPath
 
 -(IBAction)playSound:(id)sender
 {
-	if (nil == self.currentSound) {
-		NSSound *snd = [[NSSound alloc] initWithData:self.soundData];
-		self.currentSound = snd;
-		[snd release];
+	if (nil == self.movie) {
+		if (self.fileURL) {
+			self.movie = [QTMovie movieWithURL:self.fileURL error:nil];
+		} else if (self.soundData) {
+			NSError *err=nil;
+			QTDataReference *dataRef = [QTDataReference dataReferenceWithReferenceToData:self.soundData name:@"foo.caf" MIMEType:@"audio/caf"];
+			self.movie = [QTMovie movieWithDataReference:dataRef error:&err];
+			if (err) {
+				NSLog(@"error initing sound movie:%@", err);
+			}
+		}
 	}
-	[self.currentSound play];
+	[self.movie play];
 }
 
 #pragma mark - meat & potatoes
@@ -195,6 +208,51 @@ withKeyPath:(NSString *)keyPath
 		buff[12] == 0x66 && buff[13] == 0x6D&& buff[14] == 0x74 && buff[15] == 0x20;
 }
 
+-(BOOL)isCafFile
+{
+	if(nil == self.soundData)
+		return NO;
+	CAFFileHeader head;
+	bzero(&head, sizeof(head));
+	[self.soundData getBytes:&head length:sizeof(head)];
+	return (head.mFileType == 'caff') && (head.mFileVersion == 1) && (head.mFileFlags == 0);
+}
+
+-(NSData*)soundDataAsCAFF
+{
+	if ([self isCafFile])
+		return self.soundData;
+	NSData *data=nil;
+	//figure out a tmp location to store at it
+	NSString *tmpFileName = [NSString stringWithUUID];
+	NSURL *tmpUrl = [[NSURL fileURLWithPath:NSTemporaryDirectory()] URLByAppendingPathComponent:tmpFileName];
+	if ([self saveSoundDataAsCAFF:tmpUrl]) {
+		data = [NSData dataWithContentsOfURL:tmpUrl];
+		[[NSFileManager defaultManager] removeItemAtURL:tmpUrl error:nil];
+	}
+	return data;
+}
+
+-(BOOL)saveSoundDataAsCAFF:(NSURL*)destUrl
+{
+	if (nil == self.soundData)
+		return NO;
+	NSString *tmpPath=nil;
+	NSFileHandle *tmpFH = [NSFileHandle fileHandleForWritingTemporaryFileWithPrefix:@"amsnd"
+																			filePath:&tmpPath];
+	if (nil == tmpFH)
+		return NO;
+	[tmpFH writeData:self.soundData];
+	[tmpFH closeFile];
+	NSTask *convertTask = [[[NSTask alloc] init] autorelease];
+	[convertTask setLaunchPath:@"/usr/bin/afconvert"];
+	[convertTask setArguments:[NSArray arrayWithObjects:@"-f", @"caff", @"-d", @"LEI16", tmpPath, [destUrl path], nil]];
+	[convertTask launch];
+	[convertTask waitUntilExit];
+	[[NSFileManager defaultManager] removeItemAtPath:tmpPath error:nil];
+	return [convertTask terminationStatus] == 0;
+}
+
 #pragma mark- accessors
 
 -(NSData*)soundData { return __data; }
@@ -210,7 +268,7 @@ withKeyPath:(NSString *)keyPath
 	__fileUrl = nil;
 	[self didChangeValueForKey:@"fileURL"];
 	[self adjustFileImage];
-	self.currentSound=nil;
+	self.movie=nil;
 }
 
 -(NSURL*)fileURL { return __fileUrl; }
@@ -226,7 +284,7 @@ withKeyPath:(NSString *)keyPath
 	__data = [[NSData alloc] initWithContentsOfURL:fileURL];
 	[self didChangeValueForKey:@"soundData"];
 	[self adjustFileImage];
-	self.currentSound=nil;
+	self.movie=nil;
 }
 
 -(BOOL)isEnabled
@@ -239,7 +297,6 @@ withKeyPath:(NSString *)keyPath
 	[__setButton setEnabled:enabled];
 }
 
-@synthesize currentSound;
 @synthesize canChangeSound;
 @synthesize acceptableUTIs;
 @synthesize panelDelegate;
@@ -247,4 +304,5 @@ withKeyPath:(NSString *)keyPath
 @synthesize noSoundImage;
 @synthesize observedObjectForEnabled;
 @synthesize observedKeyPathForEnabled;
+@synthesize movie;
 @end
