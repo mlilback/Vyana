@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files of the 'Vyana' target in the 'Vyana' project
+//
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+	#import <CoreFoundation/CoreFoundation.h>
+	#import "AMStandardMacros.h"
+	#import "DDLog.h"
+	#import "VyanaLog.h"
+#endif
+
+#define COREFOUNDATION_HACK_LEVEL 1

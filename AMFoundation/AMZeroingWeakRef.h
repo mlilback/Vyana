@@ -5,7 +5,7 @@
 //	overridden by mlilback to add support for dynamic properties on ref'd class
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 
 @interface AMZeroingWeakRef : NSObject

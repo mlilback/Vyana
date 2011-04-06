@@ -7,6 +7,7 @@
 //	Compatibility: Mac OS X: 10.6, iPhone: 4.1
 //
 
+#import <Foundation/Foundation.h>
 
 @interface NSString(AMExtensions)
 +(NSString*)stringWithUTF8Data:(NSData*)data;
@@ -37,10 +38,15 @@
 -(NSUInteger)countOfSubstring:(NSString*)str;
 
 -(NSString*)stringByTrimmingWhitespace;
+
+#if (__MAC_OS_X_VERSION_MIN_REQUIRED >= 1060)
 -(NSString*)stringByEscapingXMLEntities;
 -(NSString*)stringByUnescapingXMLEntities;
+#endif
 @end
 
 @interface NSMutableString (AMExtensions)
+#if (__MAC_OS_X_VERSION_MIN_REQUIRED >= 1060)
 -(void)appendStringEscapingHTMLEntities:(NSString*)str;
+#endif
 @end

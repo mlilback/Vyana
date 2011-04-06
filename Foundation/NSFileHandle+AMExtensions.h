@@ -7,6 +7,7 @@
 //	Compatibility: Mac OS X: 10.6, iPhone: 4.1
 //
 
+#import <Foundation/Foundation.h>
 
 @interface NSFileHandle (AMExtensions)
 +(id)fileHandleForWritingTemporaryFileWithPrefix:(NSString*)baseFileName filePath:(NSString**)outFilePath;

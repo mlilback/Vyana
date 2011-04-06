@@ -33,7 +33,9 @@
  0 - No hackery, checks for an "NSCF" prefix in the class name to identify CF
  objects and will assert if trying to make a ZWR to one
  */
+#ifndef COREFOUNDATION_HACK_LEVEL
 #define COREFOUNDATION_HACK_LEVEL 1
+#endif
 
 @interface NSObject (KVOPrivateMethod)
 
@@ -380,6 +382,7 @@ static Class CreatePlainCustomSubclass(Class class)
     return subclass;
 }
 
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 static Class CreateCustomSubclass(Class class, id obj)
 {
     if(IsTollFreeBridged(class, obj))
@@ -417,7 +420,6 @@ static Class CreateCustomSubclass(Class class, id obj)
         {
             newClass = CreatePlainCustomSubclass(classToSubclass);
             if(isKVO)
-#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
                 class_setSuperclass(class, newClass); // EVIL EVIL EVIL
         }
         

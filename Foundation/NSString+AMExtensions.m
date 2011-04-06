@@ -161,6 +161,7 @@
 	return self;
 }
 
+#if (__MAC_OS_X_VERSION_MIN_REQUIRED >= 1060)
 -(NSString*)stringByEscapingXMLEntities
 {
 	CFStringRef cfstr = CFXMLCreateStringByEscapingEntities(NULL, (CFStringRef)self, NULL);
@@ -172,14 +173,16 @@
 	CFStringRef cfstr = CFXMLCreateStringByUnescapingEntities(NULL, (CFStringRef)self, NULL);
 	return [(id)cfstr autorelease];
 }
-
+#endif
 @end
 
 @implementation NSMutableString (AMExtensions)
+#if (__MAC_OS_X_VERSION_MIN_REQUIRED >= 1060)
 -(void)appendStringEscapingHTMLEntities:(NSString*)str
 {
 	CFStringRef cfstr = CFXMLCreateStringByEscapingEntities(NULL, (CFStringRef)self, NULL);
 	[self appendString:(NSString*)cfstr];
 	CFRelease(cfstr);
 }
+#endif
 @end

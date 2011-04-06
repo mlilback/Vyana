@@ -7,6 +7,7 @@
 //	Compatibility: Mac OS X: 10.6, iPhone: 4.1
 //
 
+#import <Foundation/Foundation.h>
 
 @interface NSIndexPath (AMExtensions)
 +(NSIndexPath*)indexPathWithIndex:(NSUInteger)index index2:(NSUInteger)index2;

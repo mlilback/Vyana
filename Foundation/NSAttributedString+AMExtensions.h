@@ -7,7 +7,7 @@
 //	Compatibility: Mac OS X: 10.6, iPhone: 4.3
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 @interface NSAttributedString (AMExtensions)
 +(id)attributedStringWithString:(NSString*)str attributes:(NSDictionary*)attrs;
