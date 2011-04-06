@@ -50,10 +50,12 @@
 		08B6526A134BF139001C6159 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4B213421CE100231C8A /* DDLog.m */; };
 		08B6526B134BF13F001C6159 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4B313421CE100231C8A /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08B6526C134BF14A001C6159 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4B413421CE100231C8A /* DDTTYLogger.m */; };
-		08B6528D134BF1D0001C6159 /* UIColor+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B6527D134BF1D0001C6159 /* UIColor+AMExtensions.h */; };
+		08B6528D134BF1D0001C6159 /* UIColor+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B6527D134BF1D0001C6159 /* UIColor+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08B6528E134BF1D0001C6159 /* UIColor+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B6527E134BF1D0001C6159 /* UIColor+AMExtensions.m */; };
 		08B65292134BF1F2001C6159 /* iAMApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B65290134BF1F2001C6159 /* iAMApplication.h */; };
 		08B65293134BF1F2001C6159 /* iAMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65291134BF1F2001C6159 /* iAMApplication.m */; };
+		08B65298134BF8EA001C6159 /* UIAlertView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B65294134BF6A9001C6159 /* UIAlertView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08B65299134BF8EF001C6159 /* UIAlertView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */; };
 		08EFE3B71341A4FB00231C8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE3B61341A4FB00231C8A /* Cocoa.framework */; };
 		08EFE3C11341A4FB00231C8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3BF1341A4FB00231C8A /* InfoPlist.strings */; };
 		08EFE3C91341A4FB00231C8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE3B61341A4FB00231C8A /* Cocoa.framework */; };
@@ -181,6 +183,8 @@
 		08B6527E134BF1D0001C6159 /* UIColor+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AMExtensions.m"; sourceTree = "<group>"; };
 		08B65290134BF1F2001C6159 /* iAMApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAMApplication.h; sourceTree = "<group>"; };
 		08B65291134BF1F2001C6159 /* iAMApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iAMApplication.m; sourceTree = "<group>"; };
+		08B65294134BF6A9001C6159 /* UIAlertView+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AMExtensions.h"; sourceTree = "<group>"; };
+		08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AMExtensions.m"; sourceTree = "<group>"; };
 		08EFE3B31341A4FB00231C8A /* Vyana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08EFE3B61341A4FB00231C8A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		08EFE3B91341A4FB00231C8A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -353,6 +357,8 @@
 		08B6527C134BF1CF001C6159 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				08B65294134BF6A9001C6159 /* UIAlertView+AMExtensions.h */,
+				08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */,
 				08B6527D134BF1D0001C6159 /* UIColor+AMExtensions.h */,
 				08B6527E134BF1D0001C6159 /* UIColor+AMExtensions.m */,
 			);
@@ -621,6 +627,7 @@
 				08B6526B134BF13F001C6159 /* DDTTYLogger.h in Headers */,
 				08B6528D134BF1D0001C6159 /* UIColor+AMExtensions.h in Headers */,
 				08B65292134BF1F2001C6159 /* iAMApplication.h in Headers */,
+				08B65298134BF8EA001C6159 /* UIAlertView+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,6 +863,7 @@
 				08B6526C134BF14A001C6159 /* DDTTYLogger.m in Sources */,
 				08B6528E134BF1D0001C6159 /* UIColor+AMExtensions.m in Sources */,
 				08B65293134BF1F2001C6159 /* iAMApplication.m in Sources */,
+				08B65299134BF8EF001C6159 /* UIAlertView+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

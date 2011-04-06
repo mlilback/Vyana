@@ -17,4 +17,5 @@
 #import <Vyana-ios/AMZeroingWeakRef.h>
 
 #import <Vyana-ios/iAMApplication.h>
+#import <Vyana-ios/UIAlertView+AMExtensions.h>
 #import <Vyana-ios/UIColor+AMExtensions.h>
