@@ -15,6 +15,7 @@
 		08435A40134768C40044089C /* AMControlledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3E134768C40044089C /* AMControlledView.m */; };
 		08435A561347E5460044089C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A551347E5460044089C /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		08435A631347EC700044089C /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A621347EC6F0044089C /* QTKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		08507A43134DE9EB00705079 /* AMStandardMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08B6522C134BE1BC001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
 		08B65237134BE1BD001C6159 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B65236134BE1BD001C6159 /* UIKit.framework */; };
 		08B65238134BE1BD001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
@@ -52,7 +53,7 @@
 		08B6526C134BF14A001C6159 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4B413421CE100231C8A /* DDTTYLogger.m */; };
 		08B6528D134BF1D0001C6159 /* UIColor+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B6527D134BF1D0001C6159 /* UIColor+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08B6528E134BF1D0001C6159 /* UIColor+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B6527E134BF1D0001C6159 /* UIColor+AMExtensions.m */; };
-		08B65292134BF1F2001C6159 /* iAMApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B65290134BF1F2001C6159 /* iAMApplication.h */; };
+		08B65292134BF1F2001C6159 /* iAMApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B65290134BF1F2001C6159 /* iAMApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08B65293134BF1F2001C6159 /* iAMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65291134BF1F2001C6159 /* iAMApplication.m */; };
 		08B65298134BF8EA001C6159 /* UIAlertView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B65294134BF6A9001C6159 /* UIAlertView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08B65299134BF8EF001C6159 /* UIAlertView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */; };
@@ -628,6 +629,7 @@
 				08B6528D134BF1D0001C6159 /* UIColor+AMExtensions.h in Headers */,
 				08B65292134BF1F2001C6159 /* iAMApplication.h in Headers */,
 				08B65298134BF8EA001C6159 /* UIAlertView+AMExtensions.h in Headers */,
+				08507A43134DE9EB00705079 /* AMStandardMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1113,8 +1115,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
 				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-ios";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -1136,9 +1140,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
 				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-ios";
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -1199,6 +1205,7 @@
 				08B6524B134BE1BD001C6159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08B6524C134BE1BD001C6159 /* Build configuration list for PBXNativeTarget "Vyana-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -1207,6 +1214,7 @@
 				08B6524E134BE1BD001C6159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08EFE3AC1341A4FB00231C8A /* Build configuration list for PBXProject "Vyana" */ = {
 			isa = XCConfigurationList;
