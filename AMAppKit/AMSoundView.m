@@ -14,7 +14,7 @@
 #import <QTKit/QTKit.h>
 
 #define ENABLED_BINDNAME @"enabled"
-
+#define DRAG_FILE_TYPES [NSArray arrayWithObjects:NSFilenamesPboardType,NSURLPboardType,nil]
 
 @interface AMSoundView()
 -(void)setupSubviews;
@@ -23,6 +23,7 @@
 @property (nonatomic, assign) id observedObjectForEnabled;
 @property (nonatomic, copy) NSString *observedKeyPathForEnabled;
 @property (nonatomic, retain) QTMovie *movie;
+@property (assign) BOOL shouldDrawFocusRing;
 @end
 
 @implementation AMSoundView
@@ -40,6 +41,7 @@
 		frame.size = NSMakeSize(48, 70);
 	if ((self = [super initWithFrame:frame])) {
 		[self setupSubviews];
+		[self registerForDraggedTypes:DRAG_FILE_TYPES];
 	}
 	return self;
 }
@@ -55,11 +57,13 @@
 	self.movie=nil;
 	[__bevelButton release];
 	[__setButton release];
+	[__deleteButton release];
 	[super dealloc];
 }
 
 -(void)awakeFromNib
 {
+	[self registerForDraggedTypes:DRAG_FILE_TYPES];
 	if (nil == __bevelButton)
 		[self setupSubviews];
 }
@@ -68,9 +72,11 @@
 {
 	NSRect bevelFrame = NSMakeRect(0, 22, 48, 48);
 	NSRect setFrame = NSMakeRect(1, 2, 46, 16);
+	NSRect delFrame = NSZeroRect;
 	if (self.frame.size.width > self.frame.size.height) {
 		bevelFrame = NSMakeRect(0, 0, 48, 48);
-		setFrame = NSMakeRect(49, 16, 46, 16);
+		setFrame = NSMakeRect(52, 30, 46, 16);
+		delFrame = NSMakeRect(61, 2, 28, 28);
 	}
 	__bevelButton = [[NSButton alloc] initWithFrame:bevelFrame];
 	[self addSubview:__bevelButton];
@@ -83,9 +89,28 @@
 	[self addSubview:__setButton];
 	[__setButton setBezelStyle:NSRegularSquareBezelStyle];
 	[__setButton setButtonType:NSMomentaryPushInButton];
+	id theCell = [__setButton cell];
+	[theCell setControlSize:NSMiniControlSize];
+	CGFloat fntSize = [NSFont systemFontSizeForControlSize:NSMiniControlSize];
+	[[__setButton cell] setFont:[NSFont systemFontOfSize:fntSize]];
 	[__setButton setTitle:@"set"];
 	[__setButton setTarget:self];
 	[__setButton setAction:@selector(selectSoundFile:)];
+
+	if (delFrame.size.width > 0) {
+		__deleteButton = [[NSButton alloc] initWithFrame:delFrame];
+		[self addSubview:__deleteButton];
+		[__deleteButton setBezelStyle:NSRegularSquareBezelStyle];
+		[__deleteButton setButtonType:NSMomentaryPushInButton];
+		[__deleteButton setTarget: self];
+		[__deleteButton setAction:@selector(deleteSound:)];
+		NSURL *delUrl =  [[NSBundle bundleForClass:[self class]] URLForResource:@"VyanaDelete" withExtension:@"icns"];
+		NSImage *delImg = [[NSImage alloc] initByReferencingURL:delUrl];
+		[delImg setSize:NSMakeSize(16, 16)];
+		[__deleteButton setImage:delImg];
+		[delImg release];
+	}
+	
 	NSURL *url = [[NSBundle bundleForClass:[self class]] URLForResource:@"nosound" withExtension:@"icns"];
 	NSImage *img = [[NSImage alloc] initByReferencingURL:url];
 	[img setSize:NSMakeSize(32, 32)];
@@ -99,6 +124,7 @@
 	if (nil == self.soundData) {
 		[__bevelButton setImage:self.noSoundImage];
 		[__bevelButton setEnabled:NO];
+		[__deleteButton setEnabled:NO];
 		return;
 	}
 	[__bevelButton setEnabled:YES];
@@ -150,6 +176,73 @@ withKeyPath:(NSString *)keyPath
 	}
 }
 
+#pragma mark - drag & drop
+
+-(BOOL)pasteboardHasAcceptableFile:(NSPasteboard*)pboard
+{
+	static NSArray *acceptableFileTypes=nil;
+	static dispatch_once_t pred;
+	
+	dispatch_once(&pred, ^{ acceptableFileTypes = [[NSArray alloc] initWithObjects:@"wav",@"aif",@"caf",nil]; });
+	
+	
+	NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
+							 [NSNumber numberWithBool:YES], NSPasteboardURLReadingFileURLsOnlyKey, nil];
+	if ([pboard canReadObjectForClasses:[NSArray arrayWithObject:[NSURL class]] options:options]) {
+		//FIXME -- this code is buggy
+		NSArray *objects = [pboard readObjectsForClasses:[NSArray arrayWithObject:[NSURL class]] options:nil];
+		NSURL *aUrl = [objects objectAtIndex:0];
+		//it is a file and files are acceptable. check the acceptable file types
+		return ([acceptableFileTypes containsObject:[aUrl pathExtension]]);
+	}
+	return NO;
+}
+
+- (NSDragOperation)draggingEntered:(id <NSDraggingInfo>)sender
+{
+	if (!self.isEnabled || ![self pasteboardHasAcceptableFile:[sender draggingPasteboard]])
+		return NSDragOperationNone;
+	self.shouldDrawFocusRing = YES;
+	return NSDragOperationLink;
+}
+
+-(void)draggingExited:(id <NSDraggingInfo>)sender
+{
+	self.shouldDrawFocusRing = NO;
+}
+
+- (BOOL)prepareForDragOperation:(id <NSDraggingInfo>)sender
+{
+	if (!self.isEnabled || ![self pasteboardHasAcceptableFile:[sender draggingPasteboard]])
+		return NSDragOperationNone;
+	return NSDragOperationLink;
+}
+
+- (BOOL)performDragOperation:(id <NSDraggingInfo>)sender {
+	self.shouldDrawFocusRing = NO;
+	if (!self.isEnabled || ![self pasteboardHasAcceptableFile:[sender draggingPasteboard]])
+		return NO;
+	NSPasteboard *pboard = [sender draggingPasteboard];
+	NSArray *objects = [pboard readObjectsForClasses:[NSArray arrayWithObject:[NSURL class]] options:nil];
+	if (!IsEmpty(objects)) {
+		self.fileURL = [objects objectAtIndex:0];
+		[self.delegate soundView:self userSelectedSound:self.fileURL];
+		return YES;
+	}
+	return NO;
+}
+
+#pragma mark - standard
+
+-(void)drawRect:(NSRect)dirtyRect
+{
+	[super drawRect:dirtyRect];
+	if (__drawFocusRing) {
+		NSSetFocusRingStyle(NSFocusRingOnly);
+		NSRectFill(self.bounds);
+	}
+}
+
 #pragma mark - actions
 -(IBAction)selectSoundFile:(id)sender
 {
@@ -183,6 +276,12 @@ withKeyPath:(NSString *)keyPath
 		}
 	}
 	[self.movie play];
+}
+
+-(IBAction)deleteSound:(id)sender
+{
+	self.soundData=nil;
+	[self.delegate soundView:self userSelectedSound:nil];
 }
 
 #pragma mark - meat & potatoes
@@ -255,6 +354,17 @@ withKeyPath:(NSString *)keyPath
 
 #pragma mark- accessors
 
+-(BOOL)shouldDrawFocusRing
+{
+	return __drawFocusRing;
+}
+-(void)setShouldDrawFocusRing:(BOOL)val
+{
+	__drawFocusRing = val;
+	[self setNeedsDisplay:YES];
+	[[self superview] setNeedsDisplayInRect:NSInsetRect([self frame], -4, -4)];
+}
+
 -(NSData*)soundData { return __data; }
 
 -(void)setSoundData:(NSData *)soundData
@@ -289,12 +399,13 @@ withKeyPath:(NSString *)keyPath
 
 -(BOOL)isEnabled
 {
-	return [__bevelButton isEnabled];
+	return [__setButton isEnabled];
 }
 -(void)setEnabled:(BOOL)enabled
 {
 	[__bevelButton setEnabled:enabled && nil != self.soundData];
 	[__setButton setEnabled:enabled];
+	[__deleteButton setEnabled:[__bevelButton isEnabled]];
 }
 
 @synthesize canChangeSound;
@@ -305,4 +416,5 @@ withKeyPath:(NSString *)keyPath
 @synthesize observedObjectForEnabled;
 @synthesize observedKeyPathForEnabled;
 @synthesize movie;
+@synthesize shouldDrawFocusRing=__drawFocusRing;
 @end

@@ -16,6 +16,11 @@
 		08435A561347E5460044089C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A551347E5460044089C /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		08435A631347EC700044089C /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A621347EC6F0044089C /* QTKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		08507A43134DE9EB00705079 /* AMStandardMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08507A88134E382B00705079 /* AMFileSizeTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08507A86134E382B00705079 /* AMFileSizeTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08507A8A134E382B00705079 /* AMFileSizeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A87134E382B00705079 /* AMFileSizeTransformer.m */; };
+		08507A8E134E38E400705079 /* AMFileSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08507A8C134E38E400705079 /* AMFileSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08507A8F134E38E400705079 /* AMFileSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A8D134E38E400705079 /* AMFileSelectionView.m */; };
+		08507A91134E451500705079 /* VyanaDelete.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08507A90134E451500705079 /* VyanaDelete.icns */; };
 		08B6522C134BE1BC001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
 		08B65237134BE1BD001C6159 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B65236134BE1BD001C6159 /* UIKit.framework */; };
 		08B65238134BE1BD001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
@@ -167,6 +172,11 @@
 		08435A3E134768C40044089C /* AMControlledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMControlledView.m; sourceTree = "<group>"; };
 		08435A551347E5460044089C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		08435A621347EC6F0044089C /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		08507A86134E382B00705079 /* AMFileSizeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFileSizeTransformer.h; sourceTree = "<group>"; };
+		08507A87134E382B00705079 /* AMFileSizeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFileSizeTransformer.m; sourceTree = "<group>"; };
+		08507A8C134E38E400705079 /* AMFileSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFileSelectionView.h; sourceTree = "<group>"; };
+		08507A8D134E38E400705079 /* AMFileSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFileSelectionView.m; sourceTree = "<group>"; };
+		08507A90134E451500705079 /* VyanaDelete.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = VyanaDelete.icns; sourceTree = "<group>"; };
 		08B6522A134BE1BC001C6159 /* libVyana-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVyana-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6522B134BE1BC001C6159 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08B65235134BE1BD001C6159 /* Vyana-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vyana-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -436,10 +446,10 @@
 				08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */,
 				08EFE4511341D02C00231C8A /* AMAppKit */,
 				08EFE3F71341AD5800231C8A /* AMFoundation */,
+				08B6528F134BF1F2001C6159 /* AMUIKit */,
 				08EFE43B1341CBA300231C8A /* AppKit */,
 				08EFE3E31341A87300231C8A /* Foundation */,
 				08EFE4AC13421CDE00231C8A /* Lumberjack */,
-				08B6528F134BF1F2001C6159 /* AMUIKit */,
 				08B6527C134BF1CF001C6159 /* UIKit */,
 				08EFE3BD1341A4FB00231C8A /* Supporting Files */,
 			);
@@ -451,6 +461,7 @@
 			children = (
 				08EFE4F01342B03900231C8A /* VyanaConfig.plist */,
 				08EFE4DC1342637600231C8A /* nosound.icns */,
+				08507A90134E451500705079 /* VyanaDelete.icns */,
 				08EFE3BE1341A4FB00231C8A /* Vyana-Info.plist */,
 				08EFE3BF1341A4FB00231C8A /* InfoPlist.strings */,
 				08EFE3C21341A4FB00231C8A /* Vyana-Prefix.pch */,
@@ -510,6 +521,8 @@
 				08EFE4E5134297CC00231C8A /* AMDefaultsConfigFile.m */,
 				08EFE4E8134297ED00231C8A /* AMDefaultsSet.h */,
 				08EFE4E9134297ED00231C8A /* AMDefaultsSet.m */,
+				08507A86134E382B00705079 /* AMFileSizeTransformer.h */,
+				08507A87134E382B00705079 /* AMFileSizeTransformer.m */,
 				08435A2D134508C30044089C /* AMZeroingWeakRef.h */,
 				08435A2E134508C30044089C /* AMZeroingWeakRef.m */,
 			);
@@ -546,6 +559,8 @@
 				08EFE4531341D02C00231C8A /* AMBaseTreeNode.m */,
 				08435A3D134768C40044089C /* AMControlledView.h */,
 				08435A3E134768C40044089C /* AMControlledView.m */,
+				08507A8C134E38E400705079 /* AMFileSelectionView.h */,
+				08507A8D134E38E400705079 /* AMFileSelectionView.m */,
 				08EFE4601341D4BA00231C8A /* AMKeychainItem.h */,
 				08EFE4611341D4BA00231C8A /* AMKeychainItem.m */,
 				08EFE4621341D4BA00231C8A /* AMKeychainManager.h */,
@@ -676,6 +691,8 @@
 				08EFE4FD1342B35800231C8A /* AMAppDefaultsWindowController.h in Headers */,
 				08EFE4E6134297CC00231C8A /* AMDefaultsConfigFile.h in Headers */,
 				08EFE4ED13429E4F00231C8A /* VyanaPrivate.h in Headers */,
+				08507A88134E382B00705079 /* AMFileSizeTransformer.h in Headers */,
+				08507A8E134E38E400705079 /* AMFileSelectionView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,6 +820,7 @@
 				08EFE4DD1342637600231C8A /* nosound.icns in Resources */,
 				08EFE4F11342B03900231C8A /* VyanaConfig.plist in Resources */,
 				08EFE4FF1342B35800231C8A /* AMAppDefaultsWindowController.xib in Resources */,
+				08507A91134E451500705079 /* VyanaDelete.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -916,6 +934,8 @@
 				08435A30134508C30044089C /* AMZeroingWeakRef.m in Sources */,
 				08435A3C1347614C0044089C /* AMProgressWindowController.m in Sources */,
 				08435A40134768C40044089C /* AMControlledView.m in Sources */,
+				08507A8A134E382B00705079 /* AMFileSizeTransformer.m in Sources */,
+				08507A8F134E38E400705079 /* AMFileSelectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

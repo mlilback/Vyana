@@ -19,8 +19,10 @@
 	@private
 	NSButton *__bevelButton;
 	NSButton *__setButton;
+	NSButton *__deleteButton;
 	NSData *__data;
 	NSURL *__fileUrl;
+	BOOL __drawFocusRing;
 }
 @property (nonatomic, retain) NSURL *fileURL;
 @property (nonatomic, copy)  NSData *soundData;
@@ -32,6 +34,7 @@
 
 -(IBAction)selectSoundFile:(id)sender;
 -(IBAction)playSound:(id)sender;
+-(IBAction)deleteSound:(id)sender;
 
 -(BOOL)isAIFFFile;
 -(BOOL)isWAVFile;

@@ -14,6 +14,7 @@
 #import <Vyana/NSNumber+AMExtensions.h>
 #import <Vyana/NSString+AMExtensions.h>
 
+#import <Vyana/AMFileSizeTransformer.h>
 #import <Vyana/AMZeroingWeakRef.h>
 
 #import <Vyana/NSAnimation+AMExtensions.h>
@@ -28,6 +29,7 @@
 #import <Vyana/AMApplication.h>
 #import <Vyana/AMBaseTreeNode.h>
 #import <Vyana/AMControlledView.h>
+#import <Vyana/AMFileSelectionView.h>
 #import <Vyana/AMKeychainItem.h>
 #import <Vyana/AMKeychainManager.h>
 #import <Vyana/AMLogger.h>
