@@ -1135,7 +1135,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
 				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-ios";
 				SKIP_INSTALL = YES;
@@ -1160,7 +1160,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
 				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-ios";
 				RUN_CLANG_STATIC_ANALYZER = YES;
