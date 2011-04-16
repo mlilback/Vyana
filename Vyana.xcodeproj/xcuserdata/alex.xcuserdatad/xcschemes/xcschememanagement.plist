@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Vyana-ios.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Vyana.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>08B65229134BE1BC001C6159</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>08B65234134BE1BD001C6159</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>08EFE3B21341A4FB00231C8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>08EFE3C71341A4FB00231C8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
