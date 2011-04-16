@@ -17,6 +17,8 @@
 #import <Vyana/AMFileSizeTransformer.h>
 #import <Vyana/AMZeroingWeakRef.h>
 
+#import <Vyana/NSManagedObjectContext+AMExtensions.h>
+
 #import <Vyana/NSAnimation+AMExtensions.h>
 #import <Vyana/NSAppleScript+AMExtensions.h>
 #import <Vyana/NSApplication+AMExtensions.h>

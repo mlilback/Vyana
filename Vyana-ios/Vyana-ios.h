@@ -14,7 +14,7 @@
 #import <Vyana-ios/NSNumber+AMExtensions.h>
 #import <Vyana-ios/NSString+AMExtensions.h>
 
-#import <Vyana-ios/AMZeroingWeakRef.h>
+#import <Vyana-ios/NSManagedObjectContext+AMExtensions.h>
 
 #import <Vyana-ios/iAMApplication.h>
 #import <Vyana-ios/UIAlertView+AMExtensions.h>

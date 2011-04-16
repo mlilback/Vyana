@@ -44,8 +44,6 @@
 		08B6525C134BE30B001C6159 /* NSNumber+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3EE1341AA0A00231C8A /* NSNumber+AMExtensions.m */; };
 		08B6525D134BE30B001C6159 /* NSString+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3E41341A87300231C8A /* NSString+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08B6525E134BE30B001C6159 /* NSString+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3E51341A87300231C8A /* NSString+AMExtensions.m */; };
-		08B6525F134BE32A001C6159 /* AMZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A2D134508C30044089C /* AMZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08B65260134BE32A001C6159 /* AMZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A2E134508C30044089C /* AMZeroingWeakRef.m */; };
 		08B65262134BE5AA001C6159 /* Vyana-ios-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 08B65261134BE5AA001C6159 /* Vyana-ios-Prefix.pch */; };
 		08B65264134BE5C6001C6159 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B65263134BE5C5001C6159 /* UIKit.framework */; };
 		08B65265134BF108001C6159 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4AD13421CE100231C8A /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -62,6 +60,10 @@
 		08B65293134BF1F2001C6159 /* iAMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65291134BF1F2001C6159 /* iAMApplication.m */; };
 		08B65298134BF8EA001C6159 /* UIAlertView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B65294134BF6A9001C6159 /* UIAlertView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08B65299134BF8EF001C6159 /* UIAlertView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */; };
+		08ECD46E135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08ECD46F135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08ECD470135A54960027E15E /* NSManagedObjectContext+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */; };
+		08ECD471135A54960027E15E /* NSManagedObjectContext+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */; };
 		08EFE3B71341A4FB00231C8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE3B61341A4FB00231C8A /* Cocoa.framework */; };
 		08EFE3C11341A4FB00231C8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3BF1341A4FB00231C8A /* InfoPlist.strings */; };
 		08EFE3C91341A4FB00231C8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE3B61341A4FB00231C8A /* Cocoa.framework */; };
@@ -196,6 +198,8 @@
 		08B65291134BF1F2001C6159 /* iAMApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iAMApplication.m; sourceTree = "<group>"; };
 		08B65294134BF6A9001C6159 /* UIAlertView+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AMExtensions.h"; sourceTree = "<group>"; };
 		08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AMExtensions.m"; sourceTree = "<group>"; };
+		08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+AMExtensions.h"; sourceTree = "<group>"; };
+		08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+AMExtensions.m"; sourceTree = "<group>"; };
 		08EFE3B31341A4FB00231C8A /* Vyana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08EFE3B61341A4FB00231C8A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		08EFE3B91341A4FB00231C8A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -502,6 +506,8 @@
 				08EFE4811341D86C00231C8A /* NSFileHandle+AMExtensions.m */,
 				08EFE4321341CA0000231C8A /* NSIndexPath+AMExtensions.h */,
 				08EFE4331341CA0000231C8A /* NSIndexPath+AMExtensions.m */,
+				08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */,
+				08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */,
 				08EFE3ED1341AA0A00231C8A /* NSNumber+AMExtensions.h */,
 				08EFE3EE1341AA0A00231C8A /* NSNumber+AMExtensions.m */,
 				08EFE3E41341A87300231C8A /* NSString+AMExtensions.h */,
@@ -635,7 +641,6 @@
 				08B65259134BE30B001C6159 /* NSIndexPath+AMExtensions.h in Headers */,
 				08B6525B134BE30B001C6159 /* NSNumber+AMExtensions.h in Headers */,
 				08B6525D134BE30B001C6159 /* NSString+AMExtensions.h in Headers */,
-				08B6525F134BE32A001C6159 /* AMZeroingWeakRef.h in Headers */,
 				08B65262134BE5AA001C6159 /* Vyana-ios-Prefix.pch in Headers */,
 				08B65265134BF108001C6159 /* DDASLLogger.h in Headers */,
 				08B65267134BF122001C6159 /* DDFileLogger.h in Headers */,
@@ -645,6 +650,7 @@
 				08B65292134BF1F2001C6159 /* iAMApplication.h in Headers */,
 				08B65298134BF8EA001C6159 /* UIAlertView+AMExtensions.h in Headers */,
 				08507A43134DE9EB00705079 /* AMStandardMacros.h in Headers */,
+				08ECD46F135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,6 +699,7 @@
 				08EFE4ED13429E4F00231C8A /* VyanaPrivate.h in Headers */,
 				08507A88134E382B00705079 /* AMFileSizeTransformer.h in Headers */,
 				08507A8E134E38E400705079 /* AMFileSelectionView.h in Headers */,
+				08ECD46E135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -876,7 +883,6 @@
 				08B6525A134BE30B001C6159 /* NSIndexPath+AMExtensions.m in Sources */,
 				08B6525C134BE30B001C6159 /* NSNumber+AMExtensions.m in Sources */,
 				08B6525E134BE30B001C6159 /* NSString+AMExtensions.m in Sources */,
-				08B65260134BE32A001C6159 /* AMZeroingWeakRef.m in Sources */,
 				08B65266134BF118001C6159 /* DDASLLogger.m in Sources */,
 				08B65268134BF12C001C6159 /* DDFileLogger.m in Sources */,
 				08B6526A134BF139001C6159 /* DDLog.m in Sources */,
@@ -884,6 +890,7 @@
 				08B6528E134BF1D0001C6159 /* UIColor+AMExtensions.m in Sources */,
 				08B65293134BF1F2001C6159 /* iAMApplication.m in Sources */,
 				08B65299134BF8EF001C6159 /* UIAlertView+AMExtensions.m in Sources */,
+				08ECD471135A54960027E15E /* NSManagedObjectContext+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -936,6 +943,7 @@
 				08435A40134768C40044089C /* AMControlledView.m in Sources */,
 				08507A8A134E382B00705079 /* AMFileSizeTransformer.m in Sources */,
 				08507A8F134E38E400705079 /* AMFileSelectionView.m in Sources */,
+				08ECD470135A54960027E15E /* NSManagedObjectContext+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
