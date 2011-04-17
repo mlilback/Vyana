@@ -13,6 +13,7 @@
 #import <Vyana-ios/NSIndexPath+AMExtensions.h>
 #import <Vyana-ios/NSNumber+AMExtensions.h>
 #import <Vyana-ios/NSString+AMExtensions.h>
+#import <Vyana-ios/AMFileSizeTransformer.h>
 
 #import <Vyana-ios/NSManagedObjectContext+AMExtensions.h>
 
