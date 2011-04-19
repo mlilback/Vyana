@@ -15,7 +15,9 @@
 #import <Vyana-ios/NSString+AMExtensions.h>
 #import <Vyana-ios/AMFileSizeTransformer.h>
 
+#ifdef NSCoreDataVersionNumber10_5_3
 #import <Vyana-ios/NSManagedObjectContext+AMExtensions.h>
+#endif
 
 #import <Vyana-ios/iAMApplication.h>
 #import <Vyana-ios/AMAppState.h>

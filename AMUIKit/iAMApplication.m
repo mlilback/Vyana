@@ -50,6 +50,7 @@
 		aTrans.startState = [states objectForKey:[tdict objectForKey:@"start"]];
 		aTrans.endState = [states objectForKey:[tdict objectForKey:@"end"]];
 		aTrans.event = NSSelectorFromString([tdict objectForKey:@"event"]);
+		aTrans.targetPath = [tdict objectForKey:@"target"];
 		[aTrans.startState addTransition:aTrans];
 		[events addObject:[tdict objectForKey:@"event"]];
 	}
@@ -105,6 +106,7 @@
 
 -(void)setCurrentState:(AMAppState *)aState
 {
+	NSLog(@"currentState set to %@", aState.name);
 	[__pdata setObject:aState forKey:kCurStateKey];
 }
 

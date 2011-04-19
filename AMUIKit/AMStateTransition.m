@@ -21,10 +21,12 @@
 {
 	self.startState=nil;
 	self.endState=nil;
+	self.targetPath=nil;
 	[super dealloc];
 }
 
 @synthesize startState;
 @synthesize endState;
 @synthesize event=__event;
+@synthesize targetPath;
 @end

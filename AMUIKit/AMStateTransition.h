@@ -17,4 +17,5 @@
 @property (nonatomic, retain) AMAppState *startState;
 @property (nonatomic, retain) AMAppState *endState;
 @property (nonatomic, assign) SEL event;
+@property (nonatomic, copy) NSString *targetPath;
 @end

@@ -75,7 +75,18 @@ static NSMutableSet *sEvents;
 	NSString *str = NSStringFromSelector(sel);
 	if ([[__pdata objectForKey:kEventsKey] containsObject:NSStringFromSelector(sel)]) {
 		AMStateTransitionBlock theBlock = [[__pdata objectForKey:kBlocksKey] objectForKey:str];
-		theBlock(sender);
+		if (theBlock) {
+			theBlock(sender);
+		} else {
+			AMStateTransition *trans = [self transitionForSelector:sel];
+			if ([trans.targetPath length] > 0) {
+				id target = [(id)[[UIApplication sharedApplication] delegate] valueForKeyPath:trans.targetPath];
+				[target performSelector:sel withObject:sender];
+			} else {
+				//we don't know how to handle this one
+				[NSException raise:NSInvalidArgumentException format:@"%@ has no implementation for %@", self.name, str];
+			}
+		}
 	} else {
 		//oops. badness
 		NSLog(@"unsupported event (%@) received by state %@", str, self.name);
