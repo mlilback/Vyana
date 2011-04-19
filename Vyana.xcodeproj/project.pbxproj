@@ -21,6 +21,11 @@
 		08507A8E134E38E400705079 /* AMFileSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08507A8C134E38E400705079 /* AMFileSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08507A8F134E38E400705079 /* AMFileSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A8D134E38E400705079 /* AMFileSelectionView.m */; };
 		08507A91134E451500705079 /* VyanaDelete.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08507A90134E451500705079 /* VyanaDelete.icns */; };
+		085F98F6135D079400CB4101 /* AMAppState.h in Headers */ = {isa = PBXBuildFile; fileRef = 085F98F4135D079300CB4101 /* AMAppState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		085F98F7135D079400CB4101 /* AMAppState.m in Sources */ = {isa = PBXBuildFile; fileRef = 085F98F5135D079400CB4101 /* AMAppState.m */; };
+		085F98FB135D084200CB4101 /* AMStateTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 085F98F9135D084200CB4101 /* AMStateTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		085F98FC135D084200CB4101 /* AMStateTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 085F98FA135D084200CB4101 /* AMStateTransition.m */; };
+		085F9912135DE8E400CB4101 /* AMStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 085F9911135DE8E400CB4101 /* AMStateMachine.h */; };
 		08B6522C134BE1BC001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
 		08B65237134BE1BD001C6159 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B65236134BE1BD001C6159 /* UIKit.framework */; };
 		08B65238134BE1BD001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
@@ -181,6 +186,11 @@
 		08507A8C134E38E400705079 /* AMFileSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFileSelectionView.h; sourceTree = "<group>"; };
 		08507A8D134E38E400705079 /* AMFileSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFileSelectionView.m; sourceTree = "<group>"; };
 		08507A90134E451500705079 /* VyanaDelete.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = VyanaDelete.icns; sourceTree = "<group>"; };
+		085F98F4135D079300CB4101 /* AMAppState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAppState.h; sourceTree = "<group>"; };
+		085F98F5135D079400CB4101 /* AMAppState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAppState.m; sourceTree = "<group>"; };
+		085F98F9135D084200CB4101 /* AMStateTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStateTransition.h; sourceTree = "<group>"; };
+		085F98FA135D084200CB4101 /* AMStateTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMStateTransition.m; sourceTree = "<group>"; };
+		085F9911135DE8E400CB4101 /* AMStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStateMachine.h; sourceTree = "<group>"; };
 		08B6522A134BE1BC001C6159 /* libVyana-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVyana-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6522B134BE1BC001C6159 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08B65235134BE1BD001C6159 /* Vyana-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vyana-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -385,8 +395,13 @@
 		08B6528F134BF1F2001C6159 /* AMUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				085F9911135DE8E400CB4101 /* AMStateMachine.h */,
 				08B65290134BF1F2001C6159 /* iAMApplication.h */,
 				08B65291134BF1F2001C6159 /* iAMApplication.m */,
+				085F98F4135D079300CB4101 /* AMAppState.h */,
+				085F98F5135D079400CB4101 /* AMAppState.m */,
+				085F98F9135D084200CB4101 /* AMStateTransition.h */,
+				085F98FA135D084200CB4101 /* AMStateTransition.m */,
 			);
 			path = AMUIKit;
 			sourceTree = SOURCE_ROOT;
@@ -654,6 +669,9 @@
 				08507A43134DE9EB00705079 /* AMStandardMacros.h in Headers */,
 				08ECD46F135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */,
 				08ECD473135A569A0027E15E /* AMFileSizeTransformer.h in Headers */,
+				085F98F6135D079400CB4101 /* AMAppState.h in Headers */,
+				085F98FB135D084200CB4101 /* AMStateTransition.h in Headers */,
+				085F9912135DE8E400CB4101 /* AMStateMachine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -895,6 +913,8 @@
 				08B65299134BF8EF001C6159 /* UIAlertView+AMExtensions.m in Sources */,
 				08ECD471135A54960027E15E /* NSManagedObjectContext+AMExtensions.m in Sources */,
 				08ECD474135A56A00027E15E /* AMFileSizeTransformer.m in Sources */,
+				085F98F7135D079400CB4101 /* AMAppState.m in Sources */,
+				085F98FC135D084200CB4101 /* AMStateTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

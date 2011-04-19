@@ -18,5 +18,7 @@
 #import <Vyana-ios/NSManagedObjectContext+AMExtensions.h>
 
 #import <Vyana-ios/iAMApplication.h>
+#import <Vyana-ios/AMAppState.h>
+#import <Vyana-ios/AMStateTransition.h>
 #import <Vyana-ios/UIAlertView+AMExtensions.h>
 #import <Vyana-ios/UIColor+AMExtensions.h>
