@@ -81,7 +81,10 @@ In Cornerstone, drag & drop the file from AMSharedCode into the appropriate subf
 \cf0 1. Look at functions that deal with counts/lengths and if their are unsigned. Compare with the foundation classes to make sure they are the same.\
 2. Does a unsigned/find/indexOf method return NSNotFound or -1 on failure? What do the similar foundation methods do? We need to be consistent.\
 3. Are there any hard coded constants (numbers or strings)? Do we need to make the symbolic constants (const, enum, #define)?\
-4. \
+4. You have to add the other linker flags -ObjC -all_load for Vyana categories to load.
+\fs24 \
+
+\fs28 \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
 \cf0 TKA\
