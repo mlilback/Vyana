@@ -30,11 +30,13 @@
 
 #import <Vyana/AMApplication.h>
 #import <Vyana/AMBaseTreeNode.h>
+#import <Vyana/AMCenteredBox.h>
 #import <Vyana/AMControlledView.h>
 #import <Vyana/AMFileSelectionView.h>
 #import <Vyana/AMKeychainItem.h>
 #import <Vyana/AMKeychainManager.h>
-#import <Vyana/AMLogger.h>
+#import <Vyana/AMPreferenceModule.h>
+#import <Vyana/AMPreferencesController.h>
 #import <Vyana/AMProgressWindowController.h>
 #import <Vyana/AMSoundView.h>
 
