@@ -26,6 +26,7 @@
 		085F98FB135D084200CB4101 /* AMStateTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 085F98F9135D084200CB4101 /* AMStateTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		085F98FC135D084200CB4101 /* AMStateTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 085F98FA135D084200CB4101 /* AMStateTransition.m */; };
 		085F9912135DE8E400CB4101 /* AMStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 085F9911135DE8E400CB4101 /* AMStateMachine.h */; };
+		086F88B5135FDB6300F0FF9F /* VyanaLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4BF1342287D00231C8A /* VyanaLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08B6522C134BE1BC001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
 		08B65237134BE1BD001C6159 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B65236134BE1BD001C6159 /* UIKit.framework */; };
 		08B65238134BE1BD001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
@@ -672,6 +673,7 @@
 				085F98F6135D079400CB4101 /* AMAppState.h in Headers */,
 				085F98FB135D084200CB4101 /* AMStateTransition.h in Headers */,
 				085F9912135DE8E400CB4101 /* AMStateMachine.h in Headers */,
+				086F88B5135FDB6300F0FF9F /* VyanaLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1169,7 +1171,7 @@
 				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-ios";
+				PUBLIC_HEADERS_FOLDER_PATH = Vyana.framework/Versions/A/Headers;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1194,7 +1196,7 @@
 				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-ios";
+				PUBLIC_HEADERS_FOLDER_PATH = Vyana.framework/Versions/A/Headers;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
