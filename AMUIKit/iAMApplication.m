@@ -28,6 +28,15 @@
 	return self;
 }
 
+-(void)loadDefaultDefaults
+{
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSURL *url = [[NSBundle mainBundle] URLForResource:@"DefaultDefaults" withExtension:@"plist"];
+	NSDictionary *d = [NSDictionary dictionaryWithContentsOfURL:url];
+	if (d)
+		[defaults registerDefaults:d];	
+}
+
 #pragma mark - meat & potatoes
 -(void)loadStateEngine
 {

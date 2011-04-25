@@ -24,4 +24,7 @@
 -(void)sendDelegateEventNotifications;
 //called to load AMAppStates.plist and initialize the state engine
 -(void)loadStateEngine;
+
+//unfortunately, there is no legal place to hook into UIApplication to perform this. So delegate must call it
+-(void)loadDefaultDefaults;
 @end
