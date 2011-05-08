@@ -19,4 +19,8 @@
 -(NSImage *)tintedImageWithColor:(NSColor *)tint;
 //returns a CGImageRef that must be released. Uses the TIFF data
 -(CGImageRef)createImageRef;
+
+-(NSData*)bitmapDataOfType:(NSBitmapImageFileType)bitmapType properties:(NSDictionary*)props;
+-(NSData*)jpegDataWithCompressionPercent:(CGFloat)percent;
+-(NSData*)pngData;
 @end

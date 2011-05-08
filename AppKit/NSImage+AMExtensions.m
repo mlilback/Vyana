@@ -45,6 +45,31 @@
 	
 	return [copiedImage autorelease];
 }
+
+-(NSData*)bitmapDataOfType:(NSBitmapImageFileType)bitmapType properties:(NSDictionary*)props
+{
+	NSBitmapImageRep *rep=nil;
+	for (NSImageRep *irep in self.representations) {
+		if ([irep isKindOfClass:[NSBitmapImageRep class]]) {
+			rep = (id)irep;
+			break;
+		}
+	}
+	return [rep representationUsingType:bitmapType properties:props];
+}
+
+-(NSData*)jpegDataWithCompressionPercent:(CGFloat)per
+{
+	return [self bitmapDataOfType:NSJPEGFileType 
+					   properties:[NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:per] 
+															  forKey:NSImageCompressionFactor]];
+}
+
+-(NSData*)pngData
+{
+	return [self bitmapDataOfType:NSPNGFileType properties:nil];
+}
+
 -(CGImageRef)createImageRef
 {
 	NSData * imageData = [self TIFFRepresentation];
