@@ -60,9 +60,9 @@
 
 -(NSData*)jpegDataWithCompressionPercent:(CGFloat)per
 {
-	return [self bitmapDataOfType:NSJPEGFileType 
-					   properties:[NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:per] 
-															  forKey:NSImageCompressionFactor]];
+	NSDictionary *props = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:per]
+													  forKey:NSImageCompressionFactor];
+	return [self bitmapDataOfType:NSJPEGFileType properties:props];
 }
 
 -(NSData*)pngData
