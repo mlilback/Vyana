@@ -28,6 +28,7 @@
 #import <Vyana/NSFont+AMExtensions.h>
 #import <Vyana/NSImage+AMExtensions.h>
 
+#import <Vyana/AMAboutBoxController.h>
 #import <Vyana/AMApplication.h>
 #import <Vyana/AMBaseTreeNode.h>
 #import <Vyana/AMCenteredBox.h>
