@@ -10,8 +10,9 @@
 
 @interface AMAboutBoxController()
 @property (nonatomic, assign, readwrite) WebView *webView;
+@property (nonatomic, assign) NSTimeInterval startTime;
 -(void)loadWebview;
--(NSString*)htmlDirectoryName; //for subclasses to override
+-(NSString*)htmlFileName; //for subclasses to override
 @end
 
 #pragma mark -
@@ -38,6 +39,7 @@
 
 -(void)dealloc
 {
+	[__compBlock release];
 	[super dealloc];
 }
 
@@ -45,7 +47,12 @@
 {
 }
 
--(NSString*)htmlDirectoryName { return @"about"; }
+-(NSString*)htmlFileName { return @"index"; }
+
+-(void)fireLoadCompletionBlock
+{
+	__compBlock(self);
+}
 
 -(void)loadWebview
 {
@@ -57,7 +64,8 @@
 	[wv setDrawsBackground:NO];
 	[wv setFrameLoadDelegate:self];
 	[wv setPolicyDelegate:self];
-	NSURL *pageUrl = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html" subdirectory:[self htmlDirectoryName]];
+	self.startTime = [NSDate timeIntervalSinceReferenceDate];
+	NSURL *pageUrl = [[NSBundle mainBundle] URLForResource:[self htmlFileName] withExtension:@"html" subdirectory:@"about"];
 	if (pageUrl) {
 		[[wv mainFrame] loadRequest:[NSURLRequest requestWithURL:pageUrl]];
 	}
@@ -83,6 +91,19 @@
 	[anElement replaceChild:[domDoc createTextNode:newStr] 
 				   oldChild:[anElement firstChild]];
 	[[[self.webView mainFrame] frameView] setAllowsScrolling:self.allowScrolling];
+	if (!self.isLoaded) {
+		if (__compBlock) {
+			NSTimeInterval timeDiff = [NSDate timeIntervalSinceReferenceDate] - self.startTime;
+			if (self.minimumDisplayTime && timeDiff < self.minimumDisplayTime) {
+				NSTimer *timer =  [NSTimer timerWithTimeInterval:self.minimumDisplayTime - timeDiff target:self 
+														selector:@selector(fireLoadCompletionBlock) userInfo:nil repeats:NO];
+				[[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+			} else {
+				[self fireLoadCompletionBlock];
+			}
+		}
+		self.isLoaded = YES;
+	}
 }
 -(NSArray *)webView:(WebView *)sender contextMenuItemsForElement:(NSDictionary *)element 
    defaultMenuItems:(NSArray *)defaultMenuItems
@@ -115,7 +136,15 @@ decisionListener:(id < WebPolicyDecisionListener >)listener
 
 #pragma mark - accessors & synthesizes
 
+-(void)setLoadCompletionBlock:(void (^)(id))block
+{
+	[__compBlock release];
+	__compBlock = [block copy];
+}
+
 @synthesize webView;
 @synthesize allowScrolling;
-
+@synthesize isLoaded;
+@synthesize minimumDisplayTime;
+@synthesize startTime;
 @end

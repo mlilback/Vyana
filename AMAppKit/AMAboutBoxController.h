@@ -28,10 +28,16 @@
  */
 
 @interface AMAboutBoxController : NSWindowController<NSWindowDelegate> {
+	void(^__compBlock)(id);
 }
 @property (nonatomic, assign, readonly) WebView *webView;
 @property (nonatomic, assign) BOOL allowScrolling; ///defaults to NO
+@property (nonatomic, assign) BOOL isLoaded; //do not release the controller unless this is true
+///if a load completion block is set, it will not be called unless this many seconds have passed
+@property (nonatomic, assign) NSTimeInterval minimumDisplayTime;
 
 -(id)init; //uses a default size. frame should be adjustd later
 -(id)initWithWindow:(NSWindow *)window;
+
+-(void)setLoadCompletionBlock:(void (^)(id))block;
 @end
