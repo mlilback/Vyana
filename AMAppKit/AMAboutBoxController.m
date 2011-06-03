@@ -10,7 +10,8 @@
 
 @interface AMAboutBoxController()
 @property (nonatomic, assign, readwrite) WebView *webView;
--(void)loadSubviews;
+-(void)loadWebview;
+-(NSString*)htmlDirectoryName; //for subclasses to override
 @end
 
 #pragma mark -
@@ -23,9 +24,14 @@
 												 styleMask:NSTitledWindowMask|NSClosableWindowMask 
 												   backing:NSBackingStoreBuffered 
 													 defer:YES] autorelease];
-	if ((self = [super initWithWindow:win])) {
-		[self loadSubviews];
-		[win setDelegate:self];
+	return [self initWithWindow:win];
+}
+
+-(id)initWithWindow:(NSWindow *)window
+{
+	if ((self = [super initWithWindow:window])) {
+		[self loadWebview];
+		[window setDelegate:self];
 	}
 	return self;
 }
@@ -39,7 +45,9 @@
 {
 }
 
--(void)loadSubviews
+-(NSString*)htmlDirectoryName { return @"about"; }
+
+-(void)loadWebview
 {
 	WebView *wv = [[WebView alloc] initWithFrame:[self.window.contentView bounds] frameName:nil groupName:nil];
 	self.webView = wv;
@@ -49,7 +57,7 @@
 	[wv setDrawsBackground:NO];
 	[wv setFrameLoadDelegate:self];
 	[wv setPolicyDelegate:self];
-	NSURL *pageUrl = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html" subdirectory:@"about"];
+	NSURL *pageUrl = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html" subdirectory:[self htmlDirectoryName]];
 	if (pageUrl) {
 		[[wv mainFrame] loadRequest:[NSURLRequest requestWithURL:pageUrl]];
 	}

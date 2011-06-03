@@ -75,6 +75,8 @@
 		08BF6AF313996E3E00BC8066 /* AMAboutBoxController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BF6AF113996E3E00BC8066 /* AMAboutBoxController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08BF6AF413996E3E00BC8066 /* AMAboutBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF6AF213996E3E00BC8066 /* AMAboutBoxController.m */; };
 		08BF6AF713996EA100BC8066 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BF6AF613996EA100BC8066 /* WebKit.framework */; };
+		08BF6B02139974E800BC8066 /* AMSplashScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BF6B00139974E800BC8066 /* AMSplashScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08BF6B03139974E800BC8066 /* AMSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF6B01139974E800BC8066 /* AMSplashScreen.m */; };
 		08ECD46E135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08ECD46F135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08ECD470135A54960027E15E /* NSManagedObjectContext+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */; };
@@ -229,6 +231,8 @@
 		08BF6AF113996E3E00BC8066 /* AMAboutBoxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAboutBoxController.h; sourceTree = "<group>"; };
 		08BF6AF213996E3E00BC8066 /* AMAboutBoxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAboutBoxController.m; sourceTree = "<group>"; };
 		08BF6AF613996EA100BC8066 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		08BF6B00139974E800BC8066 /* AMSplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSplashScreen.h; sourceTree = "<group>"; };
+		08BF6B01139974E800BC8066 /* AMSplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSplashScreen.m; sourceTree = "<group>"; };
 		08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+AMExtensions.h"; sourceTree = "<group>"; };
 		08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+AMExtensions.m"; sourceTree = "<group>"; };
 		08EFE3B31341A4FB00231C8A /* Vyana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -622,6 +626,8 @@
 				08EFE4641341D4BB00231C8A /* AMSoundView.h */,
 				08EFE4651341D4BB00231C8A /* AMSoundView.m */,
 				08EFE4861341DAA300231C8A /* AMSourceListView */,
+				08BF6B00139974E800BC8066 /* AMSplashScreen.h */,
+				08BF6B01139974E800BC8066 /* AMSplashScreen.m */,
 				08EFE4FA1342B34E00231C8A /* AMAppDefaultsWindowController.h */,
 				08EFE4FB1342B35100231C8A /* AMAppDefaultsWindowController.m */,
 				08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */,
@@ -755,6 +761,7 @@
 				086F88C2135FE40B00F0FF9F /* AMPreferenceModule.h in Headers */,
 				086F88C4135FE40B00F0FF9F /* AMPreferencesController.h in Headers */,
 				08BF6AF313996E3E00BC8066 /* AMAboutBoxController.h in Headers */,
+				08BF6B02139974E800BC8066 /* AMSplashScreen.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1006,6 +1013,7 @@
 				086F88C3135FE40B00F0FF9F /* AMPreferenceModule.m in Sources */,
 				086F88C5135FE40B00F0FF9F /* AMPreferencesController.m in Sources */,
 				08BF6AF413996E3E00BC8066 /* AMAboutBoxController.m in Sources */,
+				08BF6B03139974E800BC8066 /* AMSplashScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

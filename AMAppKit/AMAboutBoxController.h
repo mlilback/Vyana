@@ -31,4 +31,7 @@
 }
 @property (nonatomic, assign, readonly) WebView *webView;
 @property (nonatomic, assign) BOOL allowScrolling; ///defaults to NO
+
+-(id)init; //uses a default size. frame should be adjustd later
+-(id)initWithWindow:(NSWindow *)window;
 @end
