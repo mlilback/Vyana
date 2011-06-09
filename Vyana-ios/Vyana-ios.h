@@ -19,6 +19,7 @@
 #import <Vyana-ios/NSManagedObjectContext+AMExtensions.h>
 #endif
 
+#import <Vyana-ios/AMLabel.h>
 #import <Vyana-ios/iAMApplication.h>
 #import <Vyana-ios/AMAppState.h>
 #import <Vyana-ios/AMStateTransition.h>
