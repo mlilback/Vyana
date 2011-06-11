@@ -49,6 +49,8 @@
 
 -(NSArray*)arrayByRemovingObjectAtIndex:(NSInteger)idx;
 
+-(NSArray*)subarrayFromIndex:(NSInteger)index;
+
 -(BOOL)containsObjectIdenticalTo:(id)object;
 -(BOOL)containsAnyObjectsIdenticalTo:(NSArray*)objects;
 -(NSIndexSet*)indexesOfObjects:(NSArray*)objects;

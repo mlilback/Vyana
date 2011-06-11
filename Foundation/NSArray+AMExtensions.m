@@ -156,6 +156,12 @@
 	return YES;
 }
 
+-(NSArray*)subarrayFromIndex:(NSInteger)index
+{
+	NSRange rng = NSMakeRange(index, [self count] - index);
+	return [self subarrayWithRange:rng];
+}
+
 -(NSArray *)arrayByPerformingSelector:(SEL)aSelector
 {
 	// objc_msgSend won't bother passing the nil argument to the method implementation because of the selector signature.
