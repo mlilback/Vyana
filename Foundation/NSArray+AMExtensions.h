@@ -13,6 +13,8 @@
 @interface NSArray (AMExtensions)
 //adds object count times
 +(id)arrayWithObject:(id)object count:(NSInteger)count;
+//same as objectAtIndex: except returns nil instead of raising range exceptions
+-(id)objectAtIndexNoExceptions:(NSUInteger)index;
 //finds an index based on comparing value with value returned by sel 
 // on each object in the array. returns -1 if no match found.
 -(NSInteger)indexOfObjectWithValue:(id)value usingSelector:(SEL)sel;

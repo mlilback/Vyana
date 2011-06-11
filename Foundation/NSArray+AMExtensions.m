@@ -23,6 +23,14 @@
 	return array;
 }
 
+//same as objectAtIndex: except returns nil instead of raising range exceptions
+-(id)objectAtIndexNoExceptions:(NSUInteger)index
+{
+	if ([self count] <= 0 || index >= [self count])
+		return nil;
+	return [self objectAtIndex:index];
+}
+
 -(BOOL)containsObject:(id)object withKeyPath:(NSString*)key
 {
 	id value = [object valueForKeyPath:key];
