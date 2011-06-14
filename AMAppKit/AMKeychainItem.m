@@ -51,7 +51,6 @@
 -(id)initWithServer:(NSString*)server account:(NSString*)account protocol:(FourCharCode)protocol
 	password:(NSString*)pass port:(UInt16)port path:(NSString*)path
 {
-	OSStatus err = noErr;
 	if (([account length] < 1) || ([server length] < 1))
 		[NSException raise: NSInvalidArgumentException 
 			format: @"server and account are required parameters"];
@@ -60,7 +59,8 @@
 		const char *accountStr = [account UTF8String];
 		const char *pathStr = [path UTF8String];
 		//create a ref for us
-		err = SecKeychainAddInternetPassword(NULL, 
+		//FIXME: need to handle error
+		SecKeychainAddInternetPassword(NULL, 
 			serverStr ? (UInt32)strlen(serverStr) : 0, serverStr,
 			0, NULL, 
 			accountStr ? (UInt32)strlen(accountStr) : 0, accountStr, 

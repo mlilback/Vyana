@@ -164,8 +164,8 @@ ERROR:
 -(AMKeychainItem*)createGenericPassword:(NSString*)serviceName user:(NSString*)user 
 	password:(NSString*)password
 {
-	return [[AMKeychainItem alloc] initWithServiceName: serviceName 
-		account: user password: password];
+	return [[[AMKeychainItem alloc] initWithServiceName: serviceName 
+		account: user password: password] autorelease];
 }
 
 -(AMKeychainItem*)createInternetPassword:(NSURL*)url user:(NSString*)user password:(NSString*)password
