@@ -13,6 +13,7 @@
 @property (nonatomic, assign) NSTimeInterval startTime;
 -(void)loadWebview;
 -(NSString*)htmlFileName; //for subclasses to override
+-(void)injectValues:(NSDictionary*)dict;
 @end
 
 #pragma mark -
@@ -40,6 +41,7 @@
 -(void)dealloc
 {
 	[__compBlock release];
+	self.substitutions=nil;
 	[super dealloc];
 }
 
@@ -72,24 +74,33 @@
 	[self.window setTitle:[NSString stringWithFormat:@"About %@", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"]]];
 }
 
+-(void)injectValues:(NSDictionary*)dict
+{
+	//inject our dynamic data
+	DOMDocument *domDoc = [[self.webView mainFrame] DOMDocument];
+	for (NSString *anId in [dict allKeys]) {
+		DOMElement *anElement = [domDoc getElementById:anId];
+		[anElement replaceChild:[domDoc createTextNode:[dict objectForKey:anId]] 
+					   oldChild:[anElement firstChild]];
+	}
+}
+
 #pragma mark - web view delegate
 
 -(void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame
 {
 	//inject our dynamic data
-	DOMDocument *domDoc = [[self.webView mainFrame] DOMDocument];
-	NSString *newStr = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
-	DOMElement *anElement = [domDoc getElementById:@"versionString"];
-	[anElement replaceChild:[domDoc createTextNode:newStr] 
-				   oldChild:[anElement firstChild]];
-	newStr = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
-	anElement = [domDoc getElementById:@"bundleVersion"];
-	[anElement replaceChild:[domDoc createTextNode:newStr] 
-				   oldChild:[anElement firstChild]];
-	newStr = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
-	anElement = [domDoc getElementById:@"appName"];
-	[anElement replaceChild:[domDoc createTextNode:newStr] 
-				   oldChild:[anElement firstChild]];
+	NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+	[dict setObject:[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"] 
+			 forKey:@"versionString"];
+	[dict setObject:[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"] 
+			 forKey:@"bundleVersion"];
+	[dict setObject:[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"] 
+			 forKey:@"appName"];
+	if (self.substitutions)
+		[dict addEntriesFromDictionary:self.substitutions];
+	[self injectValues:dict];
+	//basic setup
 	[[[self.webView mainFrame] frameView] setAllowsScrolling:self.allowScrolling];
 	if (!self.isLoaded) {
 		if (__compBlock) {
@@ -142,9 +153,20 @@ decisionListener:(id < WebPolicyDecisionListener >)listener
 	__compBlock = [block copy];
 }
 
+-(void)setSubstitutions:(NSDictionary *)subs
+{
+	[__substitutions autorelease];
+	__substitutions = [subs copy];
+	if (self.isLoaded) {
+		//need to set the values in the already loaded page
+		[self injectValues:subs];
+	}
+}
+
 @synthesize webView;
 @synthesize allowScrolling;
 @synthesize isLoaded;
 @synthesize minimumDisplayTime;
 @synthesize startTime;
+@synthesize substitutions=__substitutions;
 @end

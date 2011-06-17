@@ -23,6 +23,16 @@
 		08507A8E134E38E400705079 /* AMFileSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08507A8C134E38E400705079 /* AMFileSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08507A8F134E38E400705079 /* AMFileSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A8D134E38E400705079 /* AMFileSelectionView.m */; };
 		08507A91134E451500705079 /* VyanaDelete.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08507A90134E451500705079 /* VyanaDelete.icns */; };
+		08587CF113ABC56C00CBAC32 /* AMPromptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587CEF13ABC56C00CBAC32 /* AMPromptView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08587CF213ABC56C00CBAC32 /* AMPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587CF013ABC56C00CBAC32 /* AMPromptView.m */; };
+		08587CF813ABC68200CBAC32 /* iAMTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587CF413ABC68100CBAC32 /* iAMTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08587CF913ABC68200CBAC32 /* iAMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587CF513ABC68100CBAC32 /* iAMTableViewCell.m */; };
+		08587CFA13ABC68200CBAC32 /* SFHFKeychainUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587CF613ABC68100CBAC32 /* SFHFKeychainUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08587CFB13ABC68200CBAC32 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587CF713ABC68200CBAC32 /* SFHFKeychainUtils.m */; };
+		08587CFE13ABC7F100CBAC32 /* AMGearMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587CFC13ABC7F100CBAC32 /* AMGearMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08587CFF13ABC7F100CBAC32 /* AMGearMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587CFD13ABC7F100CBAC32 /* AMGearMenuController.m */; };
+		08587D0213ABC7FF00CBAC32 /* UIScreen+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587D0013ABC7FF00CBAC32 /* UIScreen+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08587D0313ABC7FF00CBAC32 /* UIScreen+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587D0113ABC7FF00CBAC32 /* UIScreen+AMExtensions.m */; };
 		085F98F6135D079400CB4101 /* AMAppState.h in Headers */ = {isa = PBXBuildFile; fileRef = 085F98F4135D079300CB4101 /* AMAppState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		085F98F7135D079400CB4101 /* AMAppState.m in Sources */ = {isa = PBXBuildFile; fileRef = 085F98F5135D079400CB4101 /* AMAppState.m */; };
 		085F98FB135D084200CB4101 /* AMStateTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 085F98F9135D084200CB4101 /* AMStateTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -202,6 +212,16 @@
 		08507A8C134E38E400705079 /* AMFileSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFileSelectionView.h; sourceTree = "<group>"; };
 		08507A8D134E38E400705079 /* AMFileSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFileSelectionView.m; sourceTree = "<group>"; };
 		08507A90134E451500705079 /* VyanaDelete.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = VyanaDelete.icns; sourceTree = "<group>"; };
+		08587CEF13ABC56C00CBAC32 /* AMPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPromptView.h; sourceTree = "<group>"; };
+		08587CF013ABC56C00CBAC32 /* AMPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPromptView.m; sourceTree = "<group>"; };
+		08587CF413ABC68100CBAC32 /* iAMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAMTableViewCell.h; sourceTree = "<group>"; };
+		08587CF513ABC68100CBAC32 /* iAMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iAMTableViewCell.m; sourceTree = "<group>"; };
+		08587CF613ABC68100CBAC32 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		08587CF713ABC68200CBAC32 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		08587CFC13ABC7F100CBAC32 /* AMGearMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGearMenuController.h; sourceTree = "<group>"; };
+		08587CFD13ABC7F100CBAC32 /* AMGearMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGearMenuController.m; sourceTree = "<group>"; };
+		08587D0013ABC7FF00CBAC32 /* UIScreen+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "UIScreen+AMExtensions.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		08587D0113ABC7FF00CBAC32 /* UIScreen+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "UIScreen+AMExtensions.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		085F98F4135D079300CB4101 /* AMAppState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAppState.h; sourceTree = "<group>"; };
 		085F98F5135D079400CB4101 /* AMAppState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAppState.m; sourceTree = "<group>"; };
 		085F98F9135D084200CB4101 /* AMStateTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStateTransition.h; sourceTree = "<group>"; };
@@ -223,7 +243,7 @@
 		08B65244134BE1BD001C6159 /* Vyana-iosTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vyana-iosTests-Prefix.pch"; sourceTree = "<group>"; };
 		08B65245134BE1BD001C6159 /* Vyana_iosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vyana_iosTests.h; sourceTree = "<group>"; };
 		08B65247134BE1BD001C6159 /* Vyana_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vyana_iosTests.m; sourceTree = "<group>"; };
-		08B6524F134BE2E7001C6159 /* Vyana-ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Vyana-ios.h"; sourceTree = "<group>"; };
+		08B6524F134BE2E7001C6159 /* Vyana-ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "Vyana-ios.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		08B65261134BE5AA001C6159 /* Vyana-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Vyana-ios-Prefix.pch"; sourceTree = "<group>"; };
 		08B65263134BE5C5001C6159 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		08B6527D134BF1D0001C6159 /* UIColor+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AMExtensions.h"; sourceTree = "<group>"; };
@@ -416,6 +436,8 @@
 				08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */,
 				08B6527D134BF1D0001C6159 /* UIColor+AMExtensions.h */,
 				08B6527E134BF1D0001C6159 /* UIColor+AMExtensions.m */,
+				08587D0013ABC7FF00CBAC32 /* UIScreen+AMExtensions.h */,
+				08587D0113ABC7FF00CBAC32 /* UIScreen+AMExtensions.m */,
 			);
 			path = UIKit;
 			sourceTree = SOURCE_ROOT;
@@ -423,8 +445,16 @@
 		08B6528F134BF1F2001C6159 /* AMUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				08587CFC13ABC7F100CBAC32 /* AMGearMenuController.h */,
+				08587CFD13ABC7F100CBAC32 /* AMGearMenuController.m */,
+				08587CF413ABC68100CBAC32 /* iAMTableViewCell.h */,
+				08587CF513ABC68100CBAC32 /* iAMTableViewCell.m */,
+				08587CF613ABC68100CBAC32 /* SFHFKeychainUtils.h */,
+				08587CF713ABC68200CBAC32 /* SFHFKeychainUtils.m */,
 				082DDE4E13A0683A004F46CD /* AMLabel.h */,
 				082DDE4F13A0683A004F46CD /* AMLabel.m */,
+				08587CEF13ABC56C00CBAC32 /* AMPromptView.h */,
+				08587CF013ABC56C00CBAC32 /* AMPromptView.m */,
 				085F9911135DE8E400CB4101 /* AMStateMachine.h */,
 				08B65290134BF1F2001C6159 /* iAMApplication.h */,
 				08B65291134BF1F2001C6159 /* iAMApplication.m */,
@@ -715,6 +745,11 @@
 				085F9912135DE8E400CB4101 /* AMStateMachine.h in Headers */,
 				086F88B5135FDB6300F0FF9F /* VyanaLog.h in Headers */,
 				082DDE5013A0683A004F46CD /* AMLabel.h in Headers */,
+				08587CF113ABC56C00CBAC32 /* AMPromptView.h in Headers */,
+				08587CF813ABC68200CBAC32 /* iAMTableViewCell.h in Headers */,
+				08587CFA13ABC68200CBAC32 /* SFHFKeychainUtils.h in Headers */,
+				08587CFE13ABC7F100CBAC32 /* AMGearMenuController.h in Headers */,
+				08587D0213ABC7FF00CBAC32 /* UIScreen+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,6 +999,11 @@
 				085F98F7135D079400CB4101 /* AMAppState.m in Sources */,
 				085F98FC135D084200CB4101 /* AMStateTransition.m in Sources */,
 				082DDE5113A0683A004F46CD /* AMLabel.m in Sources */,
+				08587CF213ABC56C00CBAC32 /* AMPromptView.m in Sources */,
+				08587CF913ABC68200CBAC32 /* iAMTableViewCell.m in Sources */,
+				08587CFB13ABC68200CBAC32 /* SFHFKeychainUtils.m in Sources */,
+				08587CFF13ABC7F100CBAC32 /* AMGearMenuController.m in Sources */,
+				08587D0313ABC7FF00CBAC32 /* UIScreen+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
