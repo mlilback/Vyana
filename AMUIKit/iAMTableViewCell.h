@@ -36,6 +36,7 @@
 
 //dequeues the cell, or creates it if it doesn't exist
 +(id)cellForTableView:(UITableView*)aTableView;
++(id)cellForTableView:(UITableView*)aTableView withIdentifier:(NSString*)ident;
 
 //default initializer
 -(id)initWithCellIdentifier:(NSString*)anIdent;

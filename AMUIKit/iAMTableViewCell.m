@@ -26,9 +26,14 @@
 
 +(id)cellForTableView:(UITableView*)aTableView
 {
-	id cell = [aTableView dequeueReusableCellWithIdentifier:[self cellIdentifier]];
+	return [self cellForTableView:aTableView withIdentifier:[self cellIdentifier]];
+}
+
++(id)cellForTableView:(UITableView*)aTableView withIdentifier:(NSString*)ident
+{
+	id cell = [aTableView dequeueReusableCellWithIdentifier:ident];
 	if (nil == cell)
-		cell = [[[self alloc] initWithCellIdentifier:[self cellIdentifier]] autorelease];
+		cell = [[[self alloc] initWithCellIdentifier:ident] autorelease];
 	return cell;
 }
 
