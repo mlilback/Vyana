@@ -16,7 +16,7 @@
 	[super viewDidLoad];
 	self.clearsSelectionOnViewWillAppear=NO;
 	self.contentSizeForViewInPopover = CGSizeMake(240,140);
-	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 	self.tableView.bounces = NO;
 }
 

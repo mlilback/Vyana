@@ -23,6 +23,12 @@
 		08507A8E134E38E400705079 /* AMFileSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08507A8C134E38E400705079 /* AMFileSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08507A8F134E38E400705079 /* AMFileSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A8D134E38E400705079 /* AMFileSelectionView.m */; };
 		08507A91134E451500705079 /* VyanaDelete.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08507A90134E451500705079 /* VyanaDelete.icns */; };
+		0854F71E13C614C900CEF018 /* AMActionItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0854F71C13C614C900CEF018 /* AMActionItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0854F71F13C614C900CEF018 /* AMActionItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0854F71C13C614C900CEF018 /* AMActionItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0854F72013C614C900CEF018 /* AMActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854F71D13C614C900CEF018 /* AMActionItem.m */; };
+		0854F72113C614C900CEF018 /* AMActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854F71D13C614C900CEF018 /* AMActionItem.m */; };
+		0854F72513C615B800CEF018 /* AMActionMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 0854F72313C615B800CEF018 /* AMActionMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0854F72613C615B800CEF018 /* AMActionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854F72413C615B800CEF018 /* AMActionMenu.m */; };
 		08587CF113ABC56C00CBAC32 /* AMPromptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587CEF13ABC56C00CBAC32 /* AMPromptView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08587CF213ABC56C00CBAC32 /* AMPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587CF013ABC56C00CBAC32 /* AMPromptView.m */; };
 		08587CF813ABC68200CBAC32 /* iAMTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587CF413ABC68100CBAC32 /* iAMTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -212,6 +218,10 @@
 		08507A8C134E38E400705079 /* AMFileSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFileSelectionView.h; sourceTree = "<group>"; };
 		08507A8D134E38E400705079 /* AMFileSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFileSelectionView.m; sourceTree = "<group>"; };
 		08507A90134E451500705079 /* VyanaDelete.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = VyanaDelete.icns; sourceTree = "<group>"; };
+		0854F71C13C614C900CEF018 /* AMActionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMActionItem.h; sourceTree = "<group>"; };
+		0854F71D13C614C900CEF018 /* AMActionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMActionItem.m; sourceTree = "<group>"; };
+		0854F72313C615B800CEF018 /* AMActionMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMActionMenu.h; sourceTree = "<group>"; };
+		0854F72413C615B800CEF018 /* AMActionMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMActionMenu.m; sourceTree = "<group>"; };
 		08587CEF13ABC56C00CBAC32 /* AMPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPromptView.h; sourceTree = "<group>"; };
 		08587CF013ABC56C00CBAC32 /* AMPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPromptView.m; sourceTree = "<group>"; };
 		08587CF413ABC68100CBAC32 /* iAMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAMTableViewCell.h; sourceTree = "<group>"; };
@@ -445,6 +455,8 @@
 		08B6528F134BF1F2001C6159 /* AMUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				0854F72313C615B800CEF018 /* AMActionMenu.h */,
+				0854F72413C615B800CEF018 /* AMActionMenu.m */,
 				08587CFC13ABC7F100CBAC32 /* AMGearMenuController.h */,
 				08587CFD13ABC7F100CBAC32 /* AMGearMenuController.m */,
 				08587CF413ABC68100CBAC32 /* iAMTableViewCell.h */,
@@ -597,6 +609,8 @@
 		08EFE3F71341AD5800231C8A /* AMFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				0854F71C13C614C900CEF018 /* AMActionItem.h */,
+				0854F71D13C614C900CEF018 /* AMActionItem.m */,
 				08EFE3F81341AD5800231C8A /* AMLogger.h */,
 				08EFE3F91341AD5800231C8A /* AMLogger.m */,
 				08EFE4E01342977A00231C8A /* AMAppDefaults.h */,
@@ -750,6 +764,8 @@
 				08587CFA13ABC68200CBAC32 /* SFHFKeychainUtils.h in Headers */,
 				08587CFE13ABC7F100CBAC32 /* AMGearMenuController.h in Headers */,
 				08587D0213ABC7FF00CBAC32 /* UIScreen+AMExtensions.h in Headers */,
+				0854F71F13C614C900CEF018 /* AMActionItem.h in Headers */,
+				0854F72513C615B800CEF018 /* AMActionMenu.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,6 +820,7 @@
 				086F88C4135FE40B00F0FF9F /* AMPreferencesController.h in Headers */,
 				08BF6AF313996E3E00BC8066 /* AMAboutBoxController.h in Headers */,
 				08BF6B02139974E800BC8066 /* AMSplashScreen.h in Headers */,
+				0854F71E13C614C900CEF018 /* AMActionItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1004,6 +1021,8 @@
 				08587CFB13ABC68200CBAC32 /* SFHFKeychainUtils.m in Sources */,
 				08587CFF13ABC7F100CBAC32 /* AMGearMenuController.m in Sources */,
 				08587D0313ABC7FF00CBAC32 /* UIScreen+AMExtensions.m in Sources */,
+				0854F72113C614C900CEF018 /* AMActionItem.m in Sources */,
+				0854F72613C615B800CEF018 /* AMActionMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1062,6 +1081,7 @@
 				086F88C5135FE40B00F0FF9F /* AMPreferencesController.m in Sources */,
 				08BF6AF413996E3E00BC8066 /* AMAboutBoxController.m in Sources */,
 				08BF6B03139974E800BC8066 /* AMSplashScreen.m in Sources */,
+				0854F72013C614C900CEF018 /* AMActionItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
