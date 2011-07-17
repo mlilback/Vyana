@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		082DDE5013A0683A004F46CD /* AMLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 082DDE4E13A0683A004F46CD /* AMLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		082DDE5113A0683A004F46CD /* AMLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 082DDE4F13A0683A004F46CD /* AMLabel.m */; };
+		08375D5713D26ECC0056925A /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08375D5813D26ECC0056925A /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08375D5913D26ECC0056925A /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */; };
+		08375D5A13D26ECC0056925A /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */; };
 		08435A2F134508C30044089C /* AMZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A2D134508C30044089C /* AMZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08435A30134508C30044089C /* AMZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A2E134508C30044089C /* AMZeroingWeakRef.m */; };
 		08435A3B1347614C0044089C /* AMProgressWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A391347614C0044089C /* AMProgressWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -205,6 +209,8 @@
 /* Begin PBXFileReference section */
 		082DDE4E13A0683A004F46CD /* AMLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMLabel.h; sourceTree = "<group>"; };
 		082DDE4F13A0683A004F46CD /* AMLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMLabel.m; sourceTree = "<group>"; };
+		08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BlockObservation.h"; sourceTree = "<group>"; };
+		08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BlockObservation.m"; sourceTree = "<group>"; };
 		08435A2D134508C30044089C /* AMZeroingWeakRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMZeroingWeakRef.h; sourceTree = "<group>"; };
 		08435A2E134508C30044089C /* AMZeroingWeakRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMZeroingWeakRef.m; sourceTree = "<group>"; };
 		08435A391347614C0044089C /* AMProgressWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProgressWindowController.h; sourceTree = "<group>"; };
@@ -600,6 +606,8 @@
 				08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */,
 				08EFE3ED1341AA0A00231C8A /* NSNumber+AMExtensions.h */,
 				08EFE3EE1341AA0A00231C8A /* NSNumber+AMExtensions.m */,
+				08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */,
+				08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */,
 				08EFE3E41341A87300231C8A /* NSString+AMExtensions.h */,
 				08EFE3E51341A87300231C8A /* NSString+AMExtensions.m */,
 			);
@@ -766,6 +774,7 @@
 				08587D0213ABC7FF00CBAC32 /* UIScreen+AMExtensions.h in Headers */,
 				0854F71F13C614C900CEF018 /* AMActionItem.h in Headers */,
 				0854F72513C615B800CEF018 /* AMActionMenu.h in Headers */,
+				08375D5813D26ECC0056925A /* NSObject+BlockObservation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,6 +830,7 @@
 				08BF6AF313996E3E00BC8066 /* AMAboutBoxController.h in Headers */,
 				08BF6B02139974E800BC8066 /* AMSplashScreen.h in Headers */,
 				0854F71E13C614C900CEF018 /* AMActionItem.h in Headers */,
+				08375D5713D26ECC0056925A /* NSObject+BlockObservation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1023,6 +1033,7 @@
 				08587D0313ABC7FF00CBAC32 /* UIScreen+AMExtensions.m in Sources */,
 				0854F72113C614C900CEF018 /* AMActionItem.m in Sources */,
 				0854F72613C615B800CEF018 /* AMActionMenu.m in Sources */,
+				08375D5A13D26ECC0056925A /* NSObject+BlockObservation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1082,6 +1093,7 @@
 				08BF6AF413996E3E00BC8066 /* AMAboutBoxController.m in Sources */,
 				08BF6B03139974E800BC8066 /* AMSplashScreen.m in Sources */,
 				0854F72013C614C900CEF018 /* AMActionItem.m in Sources */,
+				08375D5913D26ECC0056925A /* NSObject+BlockObservation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
