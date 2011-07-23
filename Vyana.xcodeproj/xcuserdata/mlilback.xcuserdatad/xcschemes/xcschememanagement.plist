@@ -4,19 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Vyana-ios.xcscheme</key>
+		<key>Vyana Lion.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>4</integer>
 		</dict>
-		<key>Vyana.xcscheme</key>
+		<key>Vyana-ios.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Vyana.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>08AD678213DB3A8200687B3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>08B65229134BE1BC001C6159</key>
 		<dict>
 			<key>primary</key>

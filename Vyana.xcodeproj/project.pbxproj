@@ -55,6 +55,109 @@
 		086F88C3135FE40B00F0FF9F /* AMPreferenceModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88BF135FE40B00F0FF9F /* AMPreferenceModule.m */; };
 		086F88C4135FE40B00F0FF9F /* AMPreferencesController.h in Headers */ = {isa = PBXBuildFile; fileRef = 086F88C0135FE40B00F0FF9F /* AMPreferencesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		086F88C5135FE40B00F0FF9F /* AMPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88C1135FE40B00F0FF9F /* AMPreferencesController.m */; };
+		08AD678413DB3A8200687B3D /* NSString+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3E51341A87300231C8A /* NSString+AMExtensions.m */; };
+		08AD678513DB3A8200687B3D /* NSArray+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3EC1341AA0A00231C8A /* NSArray+AMExtensions.m */; };
+		08AD678613DB3A8200687B3D /* NSNumber+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3EE1341AA0A00231C8A /* NSNumber+AMExtensions.m */; };
+		08AD678713DB3A8200687B3D /* NSIndexPath+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4331341CA0000231C8A /* NSIndexPath+AMExtensions.m */; };
+		08AD678813DB3A8200687B3D /* NSDictionary+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4381341CAA000231C8A /* NSDictionary+AMExtensions.m */; };
+		08AD678913DB3A8200687B3D /* NSButton+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE43D1341CBA300231C8A /* NSButton+AMExtensions.m */; };
+		08AD678A13DB3A8200687B3D /* NSColor+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE43F1341CBA300231C8A /* NSColor+AMExtensions.m */; };
+		08AD678B13DB3A8200687B3D /* AMBaseTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4531341D02C00231C8A /* AMBaseTreeNode.m */; };
+		08AD678C13DB3A8200687B3D /* NSFont+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4571341D14600231C8A /* NSFont+AMExtensions.m */; };
+		08AD678D13DB3A8200687B3D /* NSImage+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4591341D14600231C8A /* NSImage+AMExtensions.m */; };
+		08AD678E13DB3A8200687B3D /* AMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE45F1341D4BA00231C8A /* AMApplication.m */; };
+		08AD678F13DB3A8200687B3D /* AMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4611341D4BA00231C8A /* AMKeychainItem.m */; };
+		08AD679013DB3A8200687B3D /* AMKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4631341D4BA00231C8A /* AMKeychainManager.m */; };
+		08AD679113DB3A8200687B3D /* AMSoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4651341D4BB00231C8A /* AMSoundView.m */; };
+		08AD679213DB3A8200687B3D /* NSAnimation+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4711341D6EF00231C8A /* NSAnimation+AMExtensions.m */; };
+		08AD679313DB3A8200687B3D /* NSAppleScript+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4731341D6F000231C8A /* NSAppleScript+AMExtensions.m */; };
+		08AD679413DB3A8200687B3D /* NSApplication+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4751341D6F100231C8A /* NSApplication+AMExtensions.m */; };
+		08AD679513DB3A8200687B3D /* NSAttributedString+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE47D1341D86400231C8A /* NSAttributedString+AMExtensions.m */; };
+		08AD679613DB3A8200687B3D /* NSFileHandle+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4811341D86C00231C8A /* NSFileHandle+AMExtensions.m */; };
+		08AD679713DB3A8200687B3D /* AMSourceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4881341DAA300231C8A /* AMSourceListCell.m */; };
+		08AD679813DB3A8200687B3D /* AMSourceListColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE48A1341DAA300231C8A /* AMSourceListColumn.m */; };
+		08AD679913DB3A8200687B3D /* AMSourceListSourceGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE48C1341DAA300231C8A /* AMSourceListSourceGroupCell.m */; };
+		08AD679A13DB3A8200687B3D /* AMSourceListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE48E1341DAA300231C8A /* AMSourceListView.m */; };
+		08AD679B13DB3A8200687B3D /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4AE13421CE100231C8A /* DDASLLogger.m */; };
+		08AD679C13DB3A8200687B3D /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4B013421CE100231C8A /* DDFileLogger.m */; };
+		08AD679D13DB3A8200687B3D /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4B213421CE100231C8A /* DDLog.m */; };
+		08AD679E13DB3A8200687B3D /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4B413421CE100231C8A /* DDTTYLogger.m */; };
+		08AD679F13DB3A8200687B3D /* AMAppDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4E11342977A00231C8A /* AMAppDefaults.m */; };
+		08AD67A013DB3A8200687B3D /* AMDefaultsConfigFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4E5134297CC00231C8A /* AMDefaultsConfigFile.m */; };
+		08AD67A113DB3A8200687B3D /* AMDefaultsSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4E9134297ED00231C8A /* AMDefaultsSet.m */; };
+		08AD67A213DB3A8200687B3D /* AMAppDefaultsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4FB1342B35100231C8A /* AMAppDefaultsWindowController.m */; };
+		08AD67A413DB3A8200687B3D /* AMProgressWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3A1347614C0044089C /* AMProgressWindowController.m */; };
+		08AD67A513DB3A8200687B3D /* AMControlledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3E134768C40044089C /* AMControlledView.m */; };
+		08AD67A613DB3A8200687B3D /* AMFileSizeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A87134E382B00705079 /* AMFileSizeTransformer.m */; };
+		08AD67A713DB3A8200687B3D /* AMFileSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A8D134E38E400705079 /* AMFileSelectionView.m */; };
+		08AD67A813DB3A8200687B3D /* NSManagedObjectContext+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */; };
+		08AD67A913DB3A8200687B3D /* AMCenteredBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88BB135FE36A00F0FF9F /* AMCenteredBox.m */; };
+		08AD67AA13DB3A8200687B3D /* AMPreferenceModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88BF135FE40B00F0FF9F /* AMPreferenceModule.m */; };
+		08AD67AB13DB3A8200687B3D /* AMPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88C1135FE40B00F0FF9F /* AMPreferencesController.m */; };
+		08AD67AC13DB3A8200687B3D /* AMAboutBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF6AF213996E3E00BC8066 /* AMAboutBoxController.m */; };
+		08AD67AD13DB3A8200687B3D /* AMSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF6B01139974E800BC8066 /* AMSplashScreen.m */; };
+		08AD67AE13DB3A8200687B3D /* AMActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854F71D13C614C900CEF018 /* AMActionItem.m */; };
+		08AD67AF13DB3A8200687B3D /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */; };
+		08AD67B113DB3A8200687B3D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BF6AF613996EA100BC8066 /* WebKit.framework */; };
+		08AD67B213DB3A8200687B3D /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A621347EC6F0044089C /* QTKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		08AD67B313DB3A8200687B3D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A551347E5460044089C /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		08AD67B413DB3A8200687B3D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE4841341D9F500231C8A /* QuartzCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		08AD67B513DB3A8200687B3D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE46E1341D57200231C8A /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		08AD67B613DB3A8200687B3D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE3B61341A4FB00231C8A /* Cocoa.framework */; };
+		08AD67B813DB3A8200687B3D /* Vyana.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3E91341A90F00231C8A /* Vyana.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67B913DB3A8200687B3D /* AMStandardMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67BA13DB3A8200687B3D /* NSArray+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3EB1341AA0A00231C8A /* NSArray+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67BB13DB3A8200687B3D /* NSNumber+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3ED1341AA0A00231C8A /* NSNumber+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67BC13DB3A8200687B3D /* NSDictionary+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4371341CAA000231C8A /* NSDictionary+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67BD13DB3A8200687B3D /* NSColor+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE43E1341CBA300231C8A /* NSColor+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67BE13DB3A8200687B3D /* NSButton+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE43C1341CBA300231C8A /* NSButton+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67BF13DB3A8200687B3D /* NSIndexPath+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4321341CA0000231C8A /* NSIndexPath+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67C013DB3A8200687B3D /* AMKeychainItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4601341D4BA00231C8A /* AMKeychainItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67C113DB3A8200687B3D /* AMKeychainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4621341D4BA00231C8A /* AMKeychainManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67C213DB3A8200687B3D /* NSApplication+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4741341D6F000231C8A /* NSApplication+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67C313DB3A8200687B3D /* NSImage+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4581341D14600231C8A /* NSImage+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67C413DB3A8200687B3D /* NSAppleScript+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4721341D6EF00231C8A /* NSAppleScript+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67C513DB3A8200687B3D /* AMApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE45E1341D4BA00231C8A /* AMApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67C613DB3A8200687B3D /* NSAnimation+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4701341D6EE00231C8A /* NSAnimation+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67C713DB3A8200687B3D /* AMSoundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4641341D4BB00231C8A /* AMSoundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67C813DB3A8200687B3D /* AMSourceListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE48D1341DAA300231C8A /* AMSourceListView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67C913DB3A8200687B3D /* NSFileHandle+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4801341D86C00231C8A /* NSFileHandle+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67CA13DB3A8200687B3D /* NSAttributedString+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE47C1341D86300231C8A /* NSAttributedString+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67CB13DB3A8200687B3D /* AMBaseTreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4521341D02C00231C8A /* AMBaseTreeNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67CC13DB3A8200687B3D /* AMSourceListSourceGroupCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE48B1341DAA300231C8A /* AMSourceListSourceGroupCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67CD13DB3A8200687B3D /* AMSourceListColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4891341DAA300231C8A /* AMSourceListColumn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67CE13DB3A8200687B3D /* AMSourceListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4871341DAA300231C8A /* AMSourceListCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67CF13DB3A8200687B3D /* NSFont+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4561341D14600231C8A /* NSFont+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67D013DB3A8200687B3D /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4AF13421CE100231C8A /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67D113DB3A8200687B3D /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4AD13421CE100231C8A /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67D213DB3A8200687B3D /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4B313421CE100231C8A /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67D313DB3A8200687B3D /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4B113421CE100231C8A /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67D413DB3A8200687B3D /* VyanaLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4BF1342287D00231C8A /* VyanaLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67D513DB3A8200687B3D /* AMProgressWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A391347614C0044089C /* AMProgressWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67D613DB3A8200687B3D /* NSString+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3E41341A87300231C8A /* NSString+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67D713DB3A8200687B3D /* AMAppDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4E01342977A00231C8A /* AMAppDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67D813DB3A8200687B3D /* AMDefaultsSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4E8134297ED00231C8A /* AMDefaultsSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67D913DB3A8200687B3D /* AMControlledView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A3D134768C40044089C /* AMControlledView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67DB13DB3A8200687B3D /* AMAppDefaultsWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4FA1342B34E00231C8A /* AMAppDefaultsWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67DC13DB3A8200687B3D /* AMDefaultsConfigFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4E4134297CC00231C8A /* AMDefaultsConfigFile.h */; };
+		08AD67DD13DB3A8200687B3D /* VyanaPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4EC13429E4600231C8A /* VyanaPrivate.h */; };
+		08AD67DE13DB3A8200687B3D /* AMFileSizeTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08507A86134E382B00705079 /* AMFileSizeTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67DF13DB3A8200687B3D /* AMFileSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08507A8C134E38E400705079 /* AMFileSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67E013DB3A8200687B3D /* NSManagedObjectContext+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67E113DB3A8200687B3D /* AMCenteredBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 086F88BA135FE36A00F0FF9F /* AMCenteredBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67E213DB3A8200687B3D /* AMPreferenceModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 086F88BE135FE40B00F0FF9F /* AMPreferenceModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67E313DB3A8200687B3D /* AMPreferencesController.h in Headers */ = {isa = PBXBuildFile; fileRef = 086F88C0135FE40B00F0FF9F /* AMPreferencesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67E413DB3A8200687B3D /* AMAboutBoxController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BF6AF113996E3E00BC8066 /* AMAboutBoxController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67E513DB3A8200687B3D /* AMSplashScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BF6B00139974E800BC8066 /* AMSplashScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67E613DB3A8200687B3D /* AMActionItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0854F71C13C614C900CEF018 /* AMActionItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67E713DB3A8200687B3D /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD67E913DB3A8200687B3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3BF1341A4FB00231C8A /* InfoPlist.strings */; };
+		08AD67EA13DB3A8200687B3D /* highlight_blue.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE48F1341DAA300231C8A /* highlight_blue.tiff */; };
+		08AD67EB13DB3A8200687B3D /* highlight_grey.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4901341DAA300231C8A /* highlight_grey.tiff */; };
+		08AD67EC13DB3A8200687B3D /* nosound.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4DC1342637600231C8A /* nosound.icns */; };
+		08AD67ED13DB3A8200687B3D /* VyanaConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4F01342B03900231C8A /* VyanaConfig.plist */; };
+		08AD67EE13DB3A8200687B3D /* AMAppDefaultsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */; };
+		08AD67EF13DB3A8200687B3D /* VyanaDelete.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08507A90134E451500705079 /* VyanaDelete.icns */; };
 		08B6522C134BE1BC001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
 		08B65237134BE1BD001C6159 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B65236134BE1BD001C6159 /* UIKit.framework */; };
 		08B65238134BE1BD001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
@@ -120,8 +223,6 @@
 		08EFE3F11341AA0B00231C8A /* NSNumber+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3ED1341AA0A00231C8A /* NSNumber+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08EFE3F21341AA0B00231C8A /* NSNumber+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3EE1341AA0A00231C8A /* NSNumber+AMExtensions.m */; };
 		08EFE3F61341AD4E00231C8A /* AMStandardMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE3FA1341AD5800231C8A /* AMLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3F81341AD5800231C8A /* AMLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE3FB1341AD5800231C8A /* AMLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3F91341AD5800231C8A /* AMLogger.m */; };
 		08EFE4341341CA0100231C8A /* NSIndexPath+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4321341CA0000231C8A /* NSIndexPath+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08EFE4351341CA0100231C8A /* NSIndexPath+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4331341CA0000231C8A /* NSIndexPath+AMExtensions.m */; };
 		08EFE4391341CAA000231C8A /* NSDictionary+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4371341CAA000231C8A /* NSDictionary+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -249,6 +350,7 @@
 		086F88BF135FE40B00F0FF9F /* AMPreferenceModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPreferenceModule.m; sourceTree = "<group>"; };
 		086F88C0135FE40B00F0FF9F /* AMPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPreferencesController.h; sourceTree = "<group>"; };
 		086F88C1135FE40B00F0FF9F /* AMPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPreferencesController.m; sourceTree = "<group>"; };
+		08AD67F313DB3A8200687B3D /* Vyana(Lion).framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Vyana(Lion).framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6522A134BE1BC001C6159 /* libVyana-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVyana-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6522B134BE1BC001C6159 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08B65235134BE1BD001C6159 /* Vyana-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vyana-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -371,6 +473,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		08AD67B013DB3A8200687B3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08AD67B113DB3A8200687B3D /* WebKit.framework in Frameworks */,
+				08AD67B213DB3A8200687B3D /* QTKit.framework in Frameworks */,
+				08AD67B313DB3A8200687B3D /* AudioToolbox.framework in Frameworks */,
+				08AD67B413DB3A8200687B3D /* QuartzCore.framework in Frameworks */,
+				08AD67B513DB3A8200687B3D /* Security.framework in Frameworks */,
+				08AD67B613DB3A8200687B3D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08B65227134BE1BC001C6159 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -506,6 +621,7 @@
 				08EFE3C81341A4FB00231C8A /* VyanaTests.octest */,
 				08B6522A134BE1BC001C6159 /* libVyana-ios.a */,
 				08B65235134BE1BD001C6159 /* Vyana-iosTests.octest */,
+				08AD67F313DB3A8200687B3D /* Vyana(Lion).framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -739,6 +855,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		08AD67B713DB3A8200687B3D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08AD67B813DB3A8200687B3D /* Vyana.h in Headers */,
+				08AD67B913DB3A8200687B3D /* AMStandardMacros.h in Headers */,
+				08AD67BA13DB3A8200687B3D /* NSArray+AMExtensions.h in Headers */,
+				08AD67BB13DB3A8200687B3D /* NSNumber+AMExtensions.h in Headers */,
+				08AD67BC13DB3A8200687B3D /* NSDictionary+AMExtensions.h in Headers */,
+				08AD67BD13DB3A8200687B3D /* NSColor+AMExtensions.h in Headers */,
+				08AD67BE13DB3A8200687B3D /* NSButton+AMExtensions.h in Headers */,
+				08AD67BF13DB3A8200687B3D /* NSIndexPath+AMExtensions.h in Headers */,
+				08AD67C013DB3A8200687B3D /* AMKeychainItem.h in Headers */,
+				08AD67C113DB3A8200687B3D /* AMKeychainManager.h in Headers */,
+				08AD67C213DB3A8200687B3D /* NSApplication+AMExtensions.h in Headers */,
+				08AD67C313DB3A8200687B3D /* NSImage+AMExtensions.h in Headers */,
+				08AD67C413DB3A8200687B3D /* NSAppleScript+AMExtensions.h in Headers */,
+				08AD67C513DB3A8200687B3D /* AMApplication.h in Headers */,
+				08AD67C613DB3A8200687B3D /* NSAnimation+AMExtensions.h in Headers */,
+				08AD67C713DB3A8200687B3D /* AMSoundView.h in Headers */,
+				08AD67C813DB3A8200687B3D /* AMSourceListView.h in Headers */,
+				08AD67C913DB3A8200687B3D /* NSFileHandle+AMExtensions.h in Headers */,
+				08AD67CA13DB3A8200687B3D /* NSAttributedString+AMExtensions.h in Headers */,
+				08AD67CB13DB3A8200687B3D /* AMBaseTreeNode.h in Headers */,
+				08AD67CC13DB3A8200687B3D /* AMSourceListSourceGroupCell.h in Headers */,
+				08AD67CD13DB3A8200687B3D /* AMSourceListColumn.h in Headers */,
+				08AD67CE13DB3A8200687B3D /* AMSourceListCell.h in Headers */,
+				08AD67CF13DB3A8200687B3D /* NSFont+AMExtensions.h in Headers */,
+				08AD67D013DB3A8200687B3D /* DDFileLogger.h in Headers */,
+				08AD67D113DB3A8200687B3D /* DDASLLogger.h in Headers */,
+				08AD67D213DB3A8200687B3D /* DDTTYLogger.h in Headers */,
+				08AD67D313DB3A8200687B3D /* DDLog.h in Headers */,
+				08AD67D413DB3A8200687B3D /* VyanaLog.h in Headers */,
+				08AD67D513DB3A8200687B3D /* AMProgressWindowController.h in Headers */,
+				08AD67D613DB3A8200687B3D /* NSString+AMExtensions.h in Headers */,
+				08AD67D713DB3A8200687B3D /* AMAppDefaults.h in Headers */,
+				08AD67D813DB3A8200687B3D /* AMDefaultsSet.h in Headers */,
+				08AD67D913DB3A8200687B3D /* AMControlledView.h in Headers */,
+				08AD67DB13DB3A8200687B3D /* AMAppDefaultsWindowController.h in Headers */,
+				08AD67DC13DB3A8200687B3D /* AMDefaultsConfigFile.h in Headers */,
+				08AD67DD13DB3A8200687B3D /* VyanaPrivate.h in Headers */,
+				08AD67DE13DB3A8200687B3D /* AMFileSizeTransformer.h in Headers */,
+				08AD67DF13DB3A8200687B3D /* AMFileSelectionView.h in Headers */,
+				08AD67E013DB3A8200687B3D /* NSManagedObjectContext+AMExtensions.h in Headers */,
+				08AD67E113DB3A8200687B3D /* AMCenteredBox.h in Headers */,
+				08AD67E213DB3A8200687B3D /* AMPreferenceModule.h in Headers */,
+				08AD67E313DB3A8200687B3D /* AMPreferencesController.h in Headers */,
+				08AD67E413DB3A8200687B3D /* AMAboutBoxController.h in Headers */,
+				08AD67E513DB3A8200687B3D /* AMSplashScreen.h in Headers */,
+				08AD67E613DB3A8200687B3D /* AMActionItem.h in Headers */,
+				08AD67E713DB3A8200687B3D /* NSObject+BlockObservation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08B65228134BE1BC001C6159 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -784,7 +954,6 @@
 			files = (
 				08EFE3EA1341A90F00231C8A /* Vyana.h in Headers */,
 				08EFE3F61341AD4E00231C8A /* AMStandardMacros.h in Headers */,
-				08EFE3FA1341AD5800231C8A /* AMLogger.h in Headers */,
 				08EFE3EF1341AA0A00231C8A /* NSArray+AMExtensions.h in Headers */,
 				08EFE3F11341AA0B00231C8A /* NSNumber+AMExtensions.h in Headers */,
 				08EFE4391341CAA000231C8A /* NSDictionary+AMExtensions.h in Headers */,
@@ -837,6 +1006,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		08AD678213DB3A8200687B3D /* Vyana Lion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08AD67F013DB3A8200687B3D /* Build configuration list for PBXNativeTarget "Vyana Lion" */;
+			buildPhases = (
+				08AD678313DB3A8200687B3D /* Sources */,
+				08AD67B013DB3A8200687B3D /* Frameworks */,
+				08AD67B713DB3A8200687B3D /* Headers */,
+				08AD67E813DB3A8200687B3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vyana Lion";
+			productName = Vyana;
+			productReference = 08AD67F313DB3A8200687B3D /* Vyana(Lion).framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		08B65229134BE1BC001C6159 /* Vyana-ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08B65249134BE1BD001C6159 /* Build configuration list for PBXNativeTarget "Vyana-ios" */;
@@ -931,6 +1118,7 @@
 			projectRoot = "";
 			targets = (
 				08EFE3B21341A4FB00231C8A /* Vyana */,
+				08AD678213DB3A8200687B3D /* Vyana Lion */,
 				08EFE3C71341A4FB00231C8A /* VyanaTests */,
 				08B65229134BE1BC001C6159 /* Vyana-ios */,
 				08B65234134BE1BD001C6159 /* Vyana-iosTests */,
@@ -939,6 +1127,20 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		08AD67E813DB3A8200687B3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08AD67E913DB3A8200687B3D /* InfoPlist.strings in Resources */,
+				08AD67EA13DB3A8200687B3D /* highlight_blue.tiff in Resources */,
+				08AD67EB13DB3A8200687B3D /* highlight_grey.tiff in Resources */,
+				08AD67EC13DB3A8200687B3D /* nosound.icns in Resources */,
+				08AD67ED13DB3A8200687B3D /* VyanaConfig.plist in Resources */,
+				08AD67EE13DB3A8200687B3D /* AMAppDefaultsWindowController.xib in Resources */,
+				08AD67EF13DB3A8200687B3D /* VyanaDelete.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08B65232134BE1BD001C6159 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1003,6 +1205,56 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		08AD678313DB3A8200687B3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08AD678413DB3A8200687B3D /* NSString+AMExtensions.m in Sources */,
+				08AD678513DB3A8200687B3D /* NSArray+AMExtensions.m in Sources */,
+				08AD678613DB3A8200687B3D /* NSNumber+AMExtensions.m in Sources */,
+				08AD678713DB3A8200687B3D /* NSIndexPath+AMExtensions.m in Sources */,
+				08AD678813DB3A8200687B3D /* NSDictionary+AMExtensions.m in Sources */,
+				08AD678913DB3A8200687B3D /* NSButton+AMExtensions.m in Sources */,
+				08AD678A13DB3A8200687B3D /* NSColor+AMExtensions.m in Sources */,
+				08AD678B13DB3A8200687B3D /* AMBaseTreeNode.m in Sources */,
+				08AD678C13DB3A8200687B3D /* NSFont+AMExtensions.m in Sources */,
+				08AD678D13DB3A8200687B3D /* NSImage+AMExtensions.m in Sources */,
+				08AD678E13DB3A8200687B3D /* AMApplication.m in Sources */,
+				08AD678F13DB3A8200687B3D /* AMKeychainItem.m in Sources */,
+				08AD679013DB3A8200687B3D /* AMKeychainManager.m in Sources */,
+				08AD679113DB3A8200687B3D /* AMSoundView.m in Sources */,
+				08AD679213DB3A8200687B3D /* NSAnimation+AMExtensions.m in Sources */,
+				08AD679313DB3A8200687B3D /* NSAppleScript+AMExtensions.m in Sources */,
+				08AD679413DB3A8200687B3D /* NSApplication+AMExtensions.m in Sources */,
+				08AD679513DB3A8200687B3D /* NSAttributedString+AMExtensions.m in Sources */,
+				08AD679613DB3A8200687B3D /* NSFileHandle+AMExtensions.m in Sources */,
+				08AD679713DB3A8200687B3D /* AMSourceListCell.m in Sources */,
+				08AD679813DB3A8200687B3D /* AMSourceListColumn.m in Sources */,
+				08AD679913DB3A8200687B3D /* AMSourceListSourceGroupCell.m in Sources */,
+				08AD679A13DB3A8200687B3D /* AMSourceListView.m in Sources */,
+				08AD679B13DB3A8200687B3D /* DDASLLogger.m in Sources */,
+				08AD679C13DB3A8200687B3D /* DDFileLogger.m in Sources */,
+				08AD679D13DB3A8200687B3D /* DDLog.m in Sources */,
+				08AD679E13DB3A8200687B3D /* DDTTYLogger.m in Sources */,
+				08AD679F13DB3A8200687B3D /* AMAppDefaults.m in Sources */,
+				08AD67A013DB3A8200687B3D /* AMDefaultsConfigFile.m in Sources */,
+				08AD67A113DB3A8200687B3D /* AMDefaultsSet.m in Sources */,
+				08AD67A213DB3A8200687B3D /* AMAppDefaultsWindowController.m in Sources */,
+				08AD67A413DB3A8200687B3D /* AMProgressWindowController.m in Sources */,
+				08AD67A513DB3A8200687B3D /* AMControlledView.m in Sources */,
+				08AD67A613DB3A8200687B3D /* AMFileSizeTransformer.m in Sources */,
+				08AD67A713DB3A8200687B3D /* AMFileSelectionView.m in Sources */,
+				08AD67A813DB3A8200687B3D /* NSManagedObjectContext+AMExtensions.m in Sources */,
+				08AD67A913DB3A8200687B3D /* AMCenteredBox.m in Sources */,
+				08AD67AA13DB3A8200687B3D /* AMPreferenceModule.m in Sources */,
+				08AD67AB13DB3A8200687B3D /* AMPreferencesController.m in Sources */,
+				08AD67AC13DB3A8200687B3D /* AMAboutBoxController.m in Sources */,
+				08AD67AD13DB3A8200687B3D /* AMSplashScreen.m in Sources */,
+				08AD67AE13DB3A8200687B3D /* AMActionItem.m in Sources */,
+				08AD67AF13DB3A8200687B3D /* NSObject+BlockObservation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08B65226134BE1BC001C6159 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1052,7 +1304,6 @@
 				08EFE3E71341A87300231C8A /* NSString+AMExtensions.m in Sources */,
 				08EFE3F01341AA0A00231C8A /* NSArray+AMExtensions.m in Sources */,
 				08EFE3F21341AA0B00231C8A /* NSNumber+AMExtensions.m in Sources */,
-				08EFE3FB1341AD5800231C8A /* AMLogger.m in Sources */,
 				08EFE4351341CA0100231C8A /* NSIndexPath+AMExtensions.m in Sources */,
 				08EFE43A1341CAA000231C8A /* NSDictionary+AMExtensions.m in Sources */,
 				08EFE4411341CBA300231C8A /* NSButton+AMExtensions.m in Sources */,
@@ -1148,6 +1399,61 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		08AD67F113DB3A8200687B3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
+				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "Vyana(Lion)";
+				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-Info.plist";
+				SDKROOT = macosx10.7;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		08AD67F213DB3A8200687B3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
+				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "Vyana(Lion)";
+				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-Info.plist";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.7;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		08B6524A134BE1BD001C6159 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1376,6 +1682,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		08AD67F013DB3A8200687B3D /* Build configuration list for PBXNativeTarget "Vyana Lion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08AD67F113DB3A8200687B3D /* Debug */,
+				08AD67F213DB3A8200687B3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		08B65249134BE1BD001C6159 /* Build configuration list for PBXNativeTarget "Vyana-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -5,6 +5,8 @@
 //	overridden by mlilback to add support for dynamic properties on ref'd class
 //
 
+#if MACOSX_DEPLOYMENT_TARGET <= MAC_OS_X_VERSION_10_6
+
 #import "AMZeroingWeakRef.h"
 
 #import <dlfcn.h>
@@ -543,3 +545,5 @@ static void UnregisterRef(AMZeroingWeakRef *ref)
 
 @end
 
+
+#endif

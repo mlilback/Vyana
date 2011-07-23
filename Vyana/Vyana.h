@@ -15,7 +15,9 @@
 #import <Vyana/NSString+AMExtensions.h>
 
 #import <Vyana/AMFileSizeTransformer.h>
+#if MACOSX_DEPLOYMENT_TARGET <= MAC_OS_X_VERSION_10_6 
 #import <Vyana/AMZeroingWeakRef.h>
+#endif
 
 #import <Vyana/NSManagedObjectContext+AMExtensions.h>
 

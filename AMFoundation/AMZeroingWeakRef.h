@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-
+#if MACOSX_DEPLOYMENT_TARGET <= MAC_OS_X_VERSION_10_6
 @interface AMZeroingWeakRef : NSObject
 {
     id _target;
@@ -38,3 +38,4 @@
 - (id)target;
 
 @end
+#endif
