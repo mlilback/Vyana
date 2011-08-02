@@ -5,9 +5,10 @@
 //	overridden by mlilback to add support for dynamic properties on ref'd class
 //
 
-#if MACOSX_DEPLOYMENT_TARGET <= MAC_OS_X_VERSION_10_6
-
 #import "AMZeroingWeakRef.h"
+
+#if MACOSX_DEPLOYMENT_TARGET < 1070
+
 
 #import <dlfcn.h>
 #import <libkern/OSAtomic.h>
@@ -545,5 +546,25 @@ static void UnregisterRef(AMZeroingWeakRef *ref)
 
 @end
 
+#else //Lion
+
+@implementation AMZeroingWeakRef
+
++(id)refWithTarget:(id)target
+{
+	return [[[self alloc] initWithTarget:target] autorelease];
+}
+-(id)initWithTarget:(id)target
+{
+	self = [super init];
+	_target = target;
+}
+-(id)target 
+{
+	return _target;
+}
+
+- (void)setCleanupBlock: (void (^)(id target))block {}
+@end
 
 #endif

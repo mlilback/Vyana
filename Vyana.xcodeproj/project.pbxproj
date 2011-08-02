@@ -55,6 +55,7 @@
 		086F88C3135FE40B00F0FF9F /* AMPreferenceModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88BF135FE40B00F0FF9F /* AMPreferenceModule.m */; };
 		086F88C4135FE40B00F0FF9F /* AMPreferencesController.h in Headers */ = {isa = PBXBuildFile; fileRef = 086F88C0135FE40B00F0FF9F /* AMPreferencesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		086F88C5135FE40B00F0FF9F /* AMPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88C1135FE40B00F0FF9F /* AMPreferencesController.m */; };
+		089DFEEB13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m in Sources */ = {isa = PBXBuildFile; fileRef = 089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */; };
 		08AD678413DB3A8200687B3D /* NSString+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3E51341A87300231C8A /* NSString+AMExtensions.m */; };
 		08AD678513DB3A8200687B3D /* NSArray+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3EC1341AA0A00231C8A /* NSArray+AMExtensions.m */; };
 		08AD678613DB3A8200687B3D /* NSNumber+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3EE1341AA0A00231C8A /* NSNumber+AMExtensions.m */; };
@@ -350,6 +351,7 @@
 		086F88BF135FE40B00F0FF9F /* AMPreferenceModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPreferenceModule.m; sourceTree = "<group>"; };
 		086F88C0135FE40B00F0FF9F /* AMPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPreferencesController.h; sourceTree = "<group>"; };
 		086F88C1135FE40B00F0FF9F /* AMPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPreferencesController.m; sourceTree = "<group>"; };
+		089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMZeroingWeakRef+Lion.m"; sourceTree = "<group>"; };
 		08AD67F313DB3A8200687B3D /* Vyana(Lion).framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Vyana(Lion).framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6522A134BE1BC001C6159 /* libVyana-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVyana-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6522B134BE1BC001C6159 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -747,6 +749,7 @@
 				08507A87134E382B00705079 /* AMFileSizeTransformer.m */,
 				08435A2D134508C30044089C /* AMZeroingWeakRef.h */,
 				08435A2E134508C30044089C /* AMZeroingWeakRef.m */,
+				089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */,
 			);
 			path = AMFoundation;
 			sourceTree = SOURCE_ROOT;
@@ -1252,6 +1255,7 @@
 				08AD67AD13DB3A8200687B3D /* AMSplashScreen.m in Sources */,
 				08AD67AE13DB3A8200687B3D /* AMActionItem.m in Sources */,
 				08AD67AF13DB3A8200687B3D /* NSObject+BlockObservation.m in Sources */,
+				089DFEEB13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

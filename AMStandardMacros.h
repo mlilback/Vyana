@@ -31,6 +31,8 @@ static inline BOOL IsEmpty(id thing) { return thing == nil || ([thing respondsTo
 
 #define ARRAY(...) [NSArray arrayWithObjects: IDARRAY(__VA_ARGS__) count: IDCOUNT(__VA_ARGS__)]
 
+#if MACOSX_DEPLOYMENT_TARGET <= MAC_OS_X_VERSION_10_6
+
 //The helper function unpacks the object array and then calls through to NSDictionary to create the dictionary:
 __inline__  NSDictionary *DictionaryWithIDArray(id *array, NSUInteger count)
 {
@@ -47,4 +49,6 @@ __inline__  NSDictionary *DictionaryWithIDArray(id *array, NSUInteger count)
 }
 
 #define DICT(...) DictionaryWithIDArray(IDARRAY(__VA_ARGS__), IDCOUNT(__VA_ARGS__) / 2)
+
+#endif
 
