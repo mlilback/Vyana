@@ -40,6 +40,7 @@
 #import <Vyana/AMKeychainManager.h>
 #import <Vyana/AMPreferenceModule.h>
 #import <Vyana/AMPreferencesController.h>
+#import <Vyana/AMProcessInfo.h>
 #import <Vyana/AMProgressWindowController.h>
 #import <Vyana/AMSoundView.h>
 #import <Vyana/AMSplashScreen.h>
