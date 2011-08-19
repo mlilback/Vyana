@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081F4C5513FDF343001BDEBF /* AMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 081F4C5313FDF343001BDEBF /* AMViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		081F4C5613FDF343001BDEBF /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F4C5413FDF343001BDEBF /* AMViewController.m */; };
+		081F4C5813FE06AF001BDEBF /* AMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 081F4C5313FDF343001BDEBF /* AMViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		081F4C5B13FE09EC001BDEBF /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F4C5413FDF343001BDEBF /* AMViewController.m */; };
 		082DDE5013A0683A004F46CD /* AMLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 082DDE4E13A0683A004F46CD /* AMLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		082DDE5113A0683A004F46CD /* AMLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 082DDE4F13A0683A004F46CD /* AMLabel.m */; };
 		08375D5713D26ECC0056925A /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -296,6 +300,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		081F4C5913FE0930001BDEBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08EFE3A91341A4FB00231C8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08EFE3B21341A4FB00231C8A;
+			remoteInfo = Vyana;
+		};
 		08B6523B134BE1BD001C6159 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08EFE3A91341A4FB00231C8A /* Project object */;
@@ -313,6 +324,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		081F4C5313FDF343001BDEBF /* AMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMViewController.h; sourceTree = "<group>"; };
+		081F4C5413FDF343001BDEBF /* AMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViewController.m; sourceTree = "<group>"; };
 		082DDE4E13A0683A004F46CD /* AMLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMLabel.h; sourceTree = "<group>"; };
 		082DDE4F13A0683A004F46CD /* AMLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMLabel.m; sourceTree = "<group>"; };
 		08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BlockObservation.h"; sourceTree = "<group>"; };
@@ -358,7 +371,7 @@
 		089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMZeroingWeakRef+Lion.m"; sourceTree = "<group>"; };
 		08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProcessInfo.h; sourceTree = "<group>"; };
 		08A8B19B13FCC99C003BE670 /* AMProcessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMProcessInfo.m; sourceTree = "<group>"; };
-		08AD67F313DB3A8200687B3D /* Vyana(Lion).framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Vyana(Lion).framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08AD67F313DB3A8200687B3D /* Vyana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6522A134BE1BC001C6159 /* libVyana-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVyana-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6522B134BE1BC001C6159 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08B65235134BE1BD001C6159 /* Vyana-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vyana-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -610,7 +623,6 @@
 		08EFE3A71341A4FB00231C8A = {
 			isa = PBXGroup;
 			children = (
-				08BF6AF613996EA100BC8066 /* WebKit.framework */,
 				08EFE3F31341AA6F00231C8A /* Notes.rtf */,
 				08EFE4DF1342924D00231C8A /* Documentation */,
 				08EFE3BC1341A4FB00231C8A /* Vyana */,
@@ -629,7 +641,7 @@
 				08EFE3C81341A4FB00231C8A /* VyanaTests.octest */,
 				08B6522A134BE1BC001C6159 /* libVyana-ios.a */,
 				08B65235134BE1BD001C6159 /* Vyana-iosTests.octest */,
-				08AD67F313DB3A8200687B3D /* Vyana(Lion).framework */,
+				08AD67F313DB3A8200687B3D /* Vyana.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -637,6 +649,7 @@
 		08EFE3B51341A4FB00231C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				08BF6AF613996EA100BC8066 /* WebKit.framework */,
 				08435A621347EC6F0044089C /* QTKit.framework */,
 				08435A551347E5460044089C /* AudioToolbox.framework */,
 				08EFE46E1341D57200231C8A /* Security.framework */,
@@ -816,6 +829,8 @@
 				08EFE4FA1342B34E00231C8A /* AMAppDefaultsWindowController.h */,
 				08EFE4FB1342B35100231C8A /* AMAppDefaultsWindowController.m */,
 				08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */,
+				081F4C5313FDF343001BDEBF /* AMViewController.h */,
+				081F4C5413FDF343001BDEBF /* AMViewController.m */,
 			);
 			path = AMAppKit;
 			sourceTree = SOURCE_ROOT;
@@ -918,6 +933,7 @@
 				08AD67E613DB3A8200687B3D /* AMActionItem.h in Headers */,
 				08AD67E713DB3A8200687B3D /* NSObject+BlockObservation.h in Headers */,
 				08A8B19D13FCC99C003BE670 /* AMProcessInfo.h in Headers */,
+				081F4C5813FE06AF001BDEBF /* AMViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1013,6 +1029,7 @@
 				0854F71E13C614C900CEF018 /* AMActionItem.h in Headers */,
 				08375D5713D26ECC0056925A /* NSObject+BlockObservation.h in Headers */,
 				08A8B19C13FCC99C003BE670 /* AMProcessInfo.h in Headers */,
+				081F4C5513FDF343001BDEBF /* AMViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1031,10 +1048,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				081F4C5A13FE0930001BDEBF /* PBXTargetDependency */,
 			);
 			name = "Vyana Lion";
 			productName = Vyana;
-			productReference = 08AD67F313DB3A8200687B3D /* Vyana(Lion).framework */;
+			productReference = 08AD67F313DB3A8200687B3D /* Vyana.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		08B65229134BE1BC001C6159 /* Vyana-ios */ = {
@@ -1267,6 +1285,7 @@
 				08AD67AF13DB3A8200687B3D /* NSObject+BlockObservation.m in Sources */,
 				089DFEEB13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m in Sources */,
 				08A8B19F13FCC99C003BE670 /* AMProcessInfo.m in Sources */,
+				081F4C5B13FE09EC001BDEBF /* AMViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1361,6 +1380,7 @@
 				0854F72013C614C900CEF018 /* AMActionItem.m in Sources */,
 				08375D5913D26ECC0056925A /* NSObject+BlockObservation.m in Sources */,
 				08A8B19E13FCC99C003BE670 /* AMProcessInfo.m in Sources */,
+				081F4C5613FDF343001BDEBF /* AMViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1375,6 +1395,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		081F4C5A13FE0930001BDEBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08EFE3B21341A4FB00231C8A /* Vyana */;
+			targetProxy = 081F4C5913FE0930001BDEBF /* PBXContainerItemProxy */;
+		};
 		08B6523C134BE1BD001C6159 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 08B65229134BE1BC001C6159 /* Vyana-ios */;
@@ -1426,7 +1451,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/3rdParty\"",
 				);
-				FRAMEWORK_VERSION = A;
+				FRAMEWORK_VERSION = B;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1434,7 +1459,7 @@
 				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "Vyana(Lion)";
+				PRODUCT_NAME = Vyana;
 				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-Info.plist";
 				SDKROOT = macosx10.7;
 				SKIP_INSTALL = YES;
@@ -1454,14 +1479,14 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/3rdParty\"",
 				);
-				FRAMEWORK_VERSION = A;
+				FRAMEWORK_VERSION = B;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
 				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "Vyana(Lion)";
+				PRODUCT_NAME = Vyana;
 				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-Info.plist";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx10.7;

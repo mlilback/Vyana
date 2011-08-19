@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "08AD678213DB3A8200687B3D"
-               BuildableName = "Vyana(Lion).framework"
+               BuildableName = "Vyana.framework"
                BlueprintName = "Vyana Lion"
                ReferencedContainer = "container:Vyana.xcodeproj">
             </BuildableReference>
