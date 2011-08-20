@@ -10,6 +10,7 @@
 #import <Vyana/NSArray+AMExtensions.h>
 #import <Vyana/NSDictionary+AMExtensions.h>
 #import <Vyana/NSFileHandle+AMExtensions.h>
+#import <Vyana/NSFileManager+AMExtensions.h>
 #import <Vyana/NSIndexPath+AMExtensions.h>
 #import <Vyana/NSNumber+AMExtensions.h>
 #import <Vyana/NSString+AMExtensions.h>
@@ -21,6 +22,7 @@
 
 #import <Vyana/NSManagedObjectContext+AMExtensions.h>
 
+#import <Vyana/NSAlert+AMExtensions.h>
 #import <Vyana/NSAnimation+AMExtensions.h>
 #import <Vyana/NSAppleScript+AMExtensions.h>
 #import <Vyana/NSApplication+AMExtensions.h>
