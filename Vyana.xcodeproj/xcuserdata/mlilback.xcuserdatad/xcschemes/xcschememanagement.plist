@@ -7,21 +7,31 @@
 		<key>Vyana Lion.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
+		</dict>
+		<key>Vyana OS X.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>Vyana-ios.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>4</integer>
 		</dict>
 		<key>Vyana.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>087CE8D713FECB2600C9F758</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>08AD678213DB3A8200687B3D</key>
 		<dict>
 			<key>primary</key>

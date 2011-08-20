@@ -6,6 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		087CE8D713FECB2600C9F758 /* Vyana OS X */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 087CE8DA13FECB2600C9F758 /* Build configuration list for PBXAggregateTarget "Vyana OS X" */;
+			buildPhases = (
+				087CE8E013FECB4100C9F758 /* ShellScript */,
+			);
+			dependencies = (
+				087CE8DD13FECB3500C9F758 /* PBXTargetDependency */,
+				087CE8DF13FECB3500C9F758 /* PBXTargetDependency */,
+			);
+			name = "Vyana OS X";
+			productName = "Vyana OS X";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		081F4C5513FDF343001BDEBF /* AMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 081F4C5313FDF343001BDEBF /* AMViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		081F4C5613FDF343001BDEBF /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F4C5413FDF343001BDEBF /* AMViewController.m */; };
@@ -306,6 +322,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 08EFE3B21341A4FB00231C8A;
 			remoteInfo = Vyana;
+		};
+		087CE8DC13FECB3500C9F758 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08EFE3A91341A4FB00231C8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08EFE3B21341A4FB00231C8A;
+			remoteInfo = Vyana;
+		};
+		087CE8DE13FECB3500C9F758 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08EFE3A91341A4FB00231C8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08AD678213DB3A8200687B3D;
+			remoteInfo = "Vyana Lion";
 		};
 		08B6523B134BE1BD001C6159 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1044,6 +1074,7 @@
 				08AD67B013DB3A8200687B3D /* Frameworks */,
 				08AD67B713DB3A8200687B3D /* Headers */,
 				08AD67E813DB3A8200687B3D /* Resources */,
+				087CE8E213FECECE00C9F758 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1153,6 +1184,7 @@
 				08EFE3C71341A4FB00231C8A /* VyanaTests */,
 				08B65229134BE1BC001C6159 /* Vyana-ios */,
 				08B65234134BE1BD001C6159 /* Vyana-iosTests */,
+				087CE8D713FECB2600C9F758 /* Vyana OS X */,
 			);
 		};
 /* End PBXProject section */
@@ -1207,6 +1239,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		087CE8E013FECB4100C9F758 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd $BUILT_PRODUCTS_DIR\nln -s ../A/Headers Vyana.framework/Versions/B/Headers\nrm Vyana.framework/Versions/Current\nln -s B Vyana.framework/Versions/Current\n";
+		};
+		087CE8E213FECECE00C9F758 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd $BUILT_PRODUCTS_DIR\nln -s ../A/Headers Vyana.framework/Versions/B/Headers\nrm Vyana.framework/Versions/Current\nln -s B Vyana.framework/Versions/Current\n";
+		};
 		08B65233134BE1BD001C6159 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1400,6 +1458,16 @@
 			target = 08EFE3B21341A4FB00231C8A /* Vyana */;
 			targetProxy = 081F4C5913FE0930001BDEBF /* PBXContainerItemProxy */;
 		};
+		087CE8DD13FECB3500C9F758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08EFE3B21341A4FB00231C8A /* Vyana */;
+			targetProxy = 087CE8DC13FECB3500C9F758 /* PBXContainerItemProxy */;
+		};
+		087CE8DF13FECB3500C9F758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08AD678213DB3A8200687B3D /* Vyana Lion */;
+			targetProxy = 087CE8DE13FECB3500C9F758 /* PBXContainerItemProxy */;
+		};
 		08B6523C134BE1BD001C6159 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 08B65229134BE1BC001C6159 /* Vyana-ios */;
@@ -1440,6 +1508,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		087CE8D813FECB2600C9F758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		087CE8D913FECB2600C9F758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		08AD67F113DB3A8200687B3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1723,6 +1805,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		087CE8DA13FECB2600C9F758 /* Build configuration list for PBXAggregateTarget "Vyana OS X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087CE8D813FECB2600C9F758 /* Debug */,
+				087CE8D913FECB2600C9F758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		08AD67F013DB3A8200687B3D /* Build configuration list for PBXNativeTarget "Vyana Lion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
