@@ -35,7 +35,7 @@
 -(void)saveBlockToken:(id)aToken forObject:(id)obj
 {
 	if (nil == self.blockTokens)
-		self.blockTokens = [[NSMutableArray alloc] init];
+		self.blockTokens = [[[NSMutableArray alloc] init] autorelease];
 	[self.blockTokens addObject:[AMVCBlockTokenWrapper wrapperWithToken:aToken forObject:obj]];
 }
 

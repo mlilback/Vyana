@@ -14,6 +14,7 @@
 #import <Vyana/NSIndexPath+AMExtensions.h>
 #import <Vyana/NSNumber+AMExtensions.h>
 #import <Vyana/NSString+AMExtensions.h>
+#import <Vyana/NSURLConnection+CompletionHandler.h>
 
 #import <Vyana/AMFileSizeTransformer.h>
 #if MACOSX_DEPLOYMENT_TARGET <= MAC_OS_X_VERSION_10_6 

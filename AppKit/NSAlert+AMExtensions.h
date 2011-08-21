@@ -11,4 +11,8 @@ typedef void (^AMAlertCompletionBlock)(NSAlert*, NSInteger);
 
 @interface NSAlert(AMExtensions)
 -(void)beginSheetModalForWindow:(NSWindow*)window completionHandler:(AMAlertCompletionBlock)cblock;
+
+///this method displays an alert with a single OK button. It displays as a sheet
+/// on [NSApp mainWindow], or as a standaline dialog.
++(void)displayAlertWithTitle:(NSString*)title details:(NSString*)details;
 @end

@@ -227,6 +227,8 @@ ERROR:
 	
 	err = SecKeychainItemCreateFromContent(kSecInternetPasswordItemClass, &attributes,
 		(UInt32)strlen([password UTF8String]), [password UTF8String], NULL, access, &itemRef);
+	if (noErr != err)
+		return nil;
 	
 	if (access)
 		CFRelease(access);

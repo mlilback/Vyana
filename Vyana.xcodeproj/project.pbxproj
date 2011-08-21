@@ -239,6 +239,12 @@
 		08D9D95813FF5A750089DB86 /* AMBlockUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95613FF5A750089DB86 /* AMBlockUtils.m */; };
 		08D9D95913FF5ABB0089DB86 /* AMBlockUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95613FF5A750089DB86 /* AMBlockUtils.m */; };
 		08D9D95A13FF5AC10089DB86 /* AMBlockUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95513FF5A750089DB86 /* AMBlockUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D9D95D1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95B1401CC930089DB86 /* NSURLConnection+CompletionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D9D95E1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95B1401CC930089DB86 /* NSURLConnection+CompletionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D9D95F1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95B1401CC930089DB86 /* NSURLConnection+CompletionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D9D9601401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */; };
+		08D9D9611401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */; };
+		08D9D9621401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */; };
 		08ECD46E135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08ECD46F135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08ECD470135A54960027E15E /* NSManagedObjectContext+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */; };
@@ -444,6 +450,8 @@
 		08D9D94F13FF3FD20089DB86 /* NSAlert+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+AMExtensions.m"; sourceTree = "<group>"; };
 		08D9D95513FF5A750089DB86 /* AMBlockUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBlockUtils.h; sourceTree = "<group>"; };
 		08D9D95613FF5A750089DB86 /* AMBlockUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBlockUtils.m; sourceTree = "<group>"; };
+		08D9D95B1401CC930089DB86 /* NSURLConnection+CompletionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+CompletionHandler.h"; sourceTree = "<group>"; };
+		08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+CompletionHandler.m"; sourceTree = "<group>"; };
 		08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+AMExtensions.h"; sourceTree = "<group>"; };
 		08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+AMExtensions.m"; sourceTree = "<group>"; };
 		08EFE3B31341A4FB00231C8A /* Vyana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -797,6 +805,8 @@
 				08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */,
 				08EFE3E41341A87300231C8A /* NSString+AMExtensions.h */,
 				08EFE3E51341A87300231C8A /* NSString+AMExtensions.m */,
+				08D9D95B1401CC930089DB86 /* NSURLConnection+CompletionHandler.h */,
+				08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */,
 			);
 			path = Foundation;
 			sourceTree = SOURCE_ROOT;
@@ -991,6 +1001,7 @@
 				08D9D93413FF365E0089DB86 /* NSFileManager+AMExtensions.h in Headers */,
 				08D9D95213FF42BC0089DB86 /* NSAlert+AMExtensions.h in Headers */,
 				08D9D95A13FF5AC10089DB86 /* AMBlockUtils.h in Headers */,
+				08D9D95E1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1030,6 +1041,7 @@
 				0854F71F13C614C900CEF018 /* AMActionItem.h in Headers */,
 				0854F72513C615B800CEF018 /* AMActionMenu.h in Headers */,
 				08375D5813D26ECC0056925A /* NSObject+BlockObservation.h in Headers */,
+				08D9D95F1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1090,6 +1102,7 @@
 				08D9D93313FF365E0089DB86 /* NSFileManager+AMExtensions.h in Headers */,
 				08D9D95013FF3FD20089DB86 /* NSAlert+AMExtensions.h in Headers */,
 				08D9D95713FF5A750089DB86 /* AMBlockUtils.h in Headers */,
+				08D9D95D1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1363,6 +1376,7 @@
 				08D9D93613FF365E0089DB86 /* NSFileManager+AMExtensions.m in Sources */,
 				08D9D95413FF4B220089DB86 /* NSAlert+AMExtensions.m in Sources */,
 				08D9D95913FF5ABB0089DB86 /* AMBlockUtils.m in Sources */,
+				08D9D9611401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1397,6 +1411,7 @@
 				0854F72113C614C900CEF018 /* AMActionItem.m in Sources */,
 				0854F72613C615B800CEF018 /* AMActionMenu.m in Sources */,
 				08375D5A13D26ECC0056925A /* NSObject+BlockObservation.m in Sources */,
+				08D9D9621401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1461,6 +1476,7 @@
 				08D9D93513FF365E0089DB86 /* NSFileManager+AMExtensions.m in Sources */,
 				08D9D95113FF3FD20089DB86 /* NSAlert+AMExtensions.m in Sources */,
 				08D9D95813FF5A750089DB86 /* AMBlockUtils.m in Sources */,
+				08D9D9601401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

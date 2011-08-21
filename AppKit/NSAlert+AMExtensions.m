@@ -34,6 +34,16 @@
 @end
 
 @implementation NSAlert(AMExtensions)
++(void)displayAlertWithTitle:(NSString*)title details:(NSString*)details
+{
+	NSAlert *alert = [NSAlert alertWithMessageText:title defaultButton:nil alternateButton:nil otherButton:nil informativeTextWithFormat:details];
+	if ([NSApp mainWindow])
+		[alert beginSheetModalForWindow:[NSApp mainWindow] modalDelegate:nil didEndSelector:nil contextInfo:nil];
+	else
+		[alert runModal];
+	[self autorelease];
+}
+
 -(void)beginSheetModalForWindow:(NSWindow*)window completionHandler:(AMAlertCompletionBlock)cblock
 {
 	AMAlertDelegate *del = [[AMAlertDelegate alloc] initWithBlock:cblock];
