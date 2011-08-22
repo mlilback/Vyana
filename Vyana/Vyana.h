@@ -35,6 +35,7 @@
 
 #import <Vyana/AMAboutBoxController.h>
 #import <Vyana/AMApplication.h>
+#import <Vyana/AMBackgroundTask.h>
 #import <Vyana/AMBaseTreeNode.h>
 #import <Vyana/AMCenteredBox.h>
 #import <Vyana/AMControlledView.h>
