@@ -29,6 +29,8 @@
 		081F4C5B13FE09EC001BDEBF /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F4C5413FDF343001BDEBF /* AMViewController.m */; };
 		082DDE5013A0683A004F46CD /* AMLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 082DDE4E13A0683A004F46CD /* AMLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		082DDE5113A0683A004F46CD /* AMLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 082DDE4F13A0683A004F46CD /* AMLabel.m */; };
+		08349ED51404386100B629B4 /* AMBlockUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95513FF5A750089DB86 /* AMBlockUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08349ED71404386700B629B4 /* AMBlockUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95613FF5A750089DB86 /* AMBlockUtils.m */; };
 		08375D5713D26ECC0056925A /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08375D5813D26ECC0056925A /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08375D5913D26ECC0056925A /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */; };
@@ -1051,6 +1053,7 @@
 				0854F72513C615B800CEF018 /* AMActionMenu.h in Headers */,
 				08375D5813D26ECC0056925A /* NSObject+BlockObservation.h in Headers */,
 				08D9D95F1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */,
+				08349ED51404386100B629B4 /* AMBlockUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1423,6 +1426,7 @@
 				0854F72613C615B800CEF018 /* AMActionMenu.m in Sources */,
 				08375D5A13D26ECC0056925A /* NSObject+BlockObservation.m in Sources */,
 				08D9D9621401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */,
+				08349ED71404386700B629B4 /* AMBlockUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
