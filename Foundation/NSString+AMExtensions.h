@@ -38,6 +38,7 @@
 -(NSUInteger)countOfSubstring:(NSString*)str;
 
 -(NSString*)stringByTrimmingWhitespace;
+-(NSString*)stringbyRemovingPercentEscapes;
 
 #if (__MAC_OS_X_VERSION_MIN_REQUIRED >= 1060)
 -(NSString*)stringByEscapingXMLEntities;

@@ -95,7 +95,8 @@ static dispatch_queue_t AMObserverMutationQueueCreatingIfNecessary()
 
 - (AMBlockToken *)addObserverForKeyPath:(NSString *)keyPath task:(AMBlockTask)task
 {
-  return [self addObserverForKeyPath:keyPath onQueue:nil task:task];
+	NSAssert([keyPath length] > 0, @"keyPath must not be empty");
+	return [self addObserverForKeyPath:keyPath onQueue:nil task:task];
 }
 
 - (AMBlockToken *)addObserverForKeyPath:(NSString *)keyPath onQueue:(NSOperationQueue *)queue task:(AMBlockTask)task
