@@ -27,6 +27,7 @@
 #import <Vyana-ios/AMGearMenuController.h>
 #import <Vyana-ios/AMLabel.h>
 #import <Vyana-ios/AMPromptView.h>
+#import <Vyana-ios/AMTableView.h>
 #import <Vyana-ios/iAMTableViewCell.h>
 #import <Vyana-ios/SFHFKeychainUtils.h>
 #import <Vyana-ios/iAMApplication.h>

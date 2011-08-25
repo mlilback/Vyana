@@ -77,6 +77,8 @@
 		086F88C3135FE40B00F0FF9F /* AMPreferenceModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88BF135FE40B00F0FF9F /* AMPreferenceModule.m */; };
 		086F88C4135FE40B00F0FF9F /* AMPreferencesController.h in Headers */ = {isa = PBXBuildFile; fileRef = 086F88C0135FE40B00F0FF9F /* AMPreferencesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		086F88C5135FE40B00F0FF9F /* AMPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88C1135FE40B00F0FF9F /* AMPreferencesController.m */; };
+		088A76D11406A90C003D6A3F /* AMTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 088A76CF1406A90C003D6A3F /* AMTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		088A76D21406A90C003D6A3F /* AMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 088A76D01406A90C003D6A3F /* AMTableView.m */; };
 		089DFEEB13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m in Sources */ = {isa = PBXBuildFile; fileRef = 089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */; };
 		08A8B19C13FCC99C003BE670 /* AMProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A8B19D13FCC99C003BE670 /* AMProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -422,6 +424,8 @@
 		086F88BF135FE40B00F0FF9F /* AMPreferenceModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPreferenceModule.m; sourceTree = "<group>"; };
 		086F88C0135FE40B00F0FF9F /* AMPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPreferencesController.h; sourceTree = "<group>"; };
 		086F88C1135FE40B00F0FF9F /* AMPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPreferencesController.m; sourceTree = "<group>"; };
+		088A76CF1406A90C003D6A3F /* AMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTableView.h; sourceTree = "<group>"; };
+		088A76D01406A90C003D6A3F /* AMTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTableView.m; sourceTree = "<group>"; };
 		089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMZeroingWeakRef+Lion.m"; sourceTree = "<group>"; };
 		08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProcessInfo.h; sourceTree = "<group>"; };
 		08A8B19B13FCC99C003BE670 /* AMProcessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMProcessInfo.m; sourceTree = "<group>"; };
@@ -680,6 +684,8 @@
 				085F98F5135D079400CB4101 /* AMAppState.m */,
 				085F98F9135D084200CB4101 /* AMStateTransition.h */,
 				085F98FA135D084200CB4101 /* AMStateTransition.m */,
+				088A76CF1406A90C003D6A3F /* AMTableView.h */,
+				088A76D01406A90C003D6A3F /* AMTableView.m */,
 			);
 			path = AMUIKit;
 			sourceTree = SOURCE_ROOT;
@@ -1054,6 +1060,7 @@
 				08375D5813D26ECC0056925A /* NSObject+BlockObservation.h in Headers */,
 				08D9D95F1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */,
 				08349ED51404386100B629B4 /* AMBlockUtils.h in Headers */,
+				088A76D11406A90C003D6A3F /* AMTableView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1427,6 +1434,7 @@
 				08375D5A13D26ECC0056925A /* NSObject+BlockObservation.m in Sources */,
 				08D9D9621401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */,
 				08349ED71404386700B629B4 /* AMBlockUtils.m in Sources */,
+				088A76D21406A90C003D6A3F /* AMTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
