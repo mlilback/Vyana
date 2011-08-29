@@ -10,6 +10,8 @@
 
 
 @implementation AMPromptView
+@synthesize completionHandler=_handler;
+
 -(id)initWithPrompt:(NSString*)prompt acceptTitle:(NSString*)acceptTitle
 	cancelTitle:(NSString*)cancelTitle delegate:(id)delegate
 {
@@ -31,6 +33,7 @@
 -(void)dealloc
 {
 	[textField release];
+	self.completionHandler=nil;
 	[super dealloc];
 }
 
@@ -38,6 +41,20 @@
 {
 	[textField becomeFirstResponder];
 	[super show];
+}
+
+-(void)setCompletionHandler:(AMPromptViewCompletionBlock)completionHandler
+{
+	[_handler release];
+	_handler = Block_copy(completionHandler);
+	self.delegate = self;
+}
+
+-(void)alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if (_handler) {
+		_handler(self, buttonIndex==1 ? textField.text : nil);
+	}
 }
 
 -(NSString*)enteredText

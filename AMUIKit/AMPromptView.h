@@ -11,6 +11,10 @@
 	handler block. It will be called with a nil value if cancel was selected.
 */
 
+@class AMPromptView;
+
+typedef void (^AMPromptViewCompletionBlock)(AMPromptView*, NSString*);
+
 @interface AMPromptView : UIAlertView {
 	UITextField *textField;
 }
@@ -18,4 +22,5 @@
 	cancelTitle:(NSString*)cancelTitle delegate:(id)delegate;
 
 @property (nonatomic, readonly) NSString *enteredText;
+@property (nonatomic, copy) AMPromptViewCompletionBlock completionHandler;
 @end

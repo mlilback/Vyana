@@ -30,6 +30,18 @@
 	return success;
 }
 
+-(NSManagedObject*)firstObjectFromFetchRequestNamed:(NSString*)reqName parameters:(NSDictionary*)params
+{
+	NSManagedObjectModel *mom = [[self persistentStoreCoordinator] managedObjectModel];
+	NSFetchRequest *req = [mom fetchRequestFromTemplateWithName:reqName substitutionVariables:params];
+	NSError *err=nil;
+	NSArray *matches = [self executeFetchRequest:req error:&err];
+	if (err)
+		NSLog(@"error in firstObjectFromFetchRequestNamed:parameters: : %@", [err localizedDescription]);
+	if ([matches count] > 0)
+		return [matches firstObject];
+	return nil;
+}
 
 //when using multiple configurations, countForFetcRequest fails unless 
 // setAffectedStores is set on the fetch request. This convience method

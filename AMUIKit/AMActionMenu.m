@@ -39,6 +39,7 @@
 	self.view = v;
 	[v release];
 	[self setupView:v];
+	self.contentSizeForViewInPopover = v.frame.size;
 }
 
 -(void)setupView:(UIView*)v

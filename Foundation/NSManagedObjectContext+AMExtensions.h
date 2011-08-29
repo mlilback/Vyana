@@ -29,4 +29,6 @@
 
 - (NSArray *)fetchObjectsForEntityName:(NSString *)newEntityName
     withPredicate:(NSPredicate*)predicate sortKey:(NSString*)sortKey;
+
+-(NSManagedObject*)firstObjectFromFetchRequestNamed:(NSString*)reqName parameters:(NSDictionary*)params;
 @end
