@@ -253,6 +253,10 @@
 		08D9D9661401D34D0089DB86 /* AMBackgroundTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D9631401D34D0089DB86 /* AMBackgroundTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08D9D9671401D34D0089DB86 /* AMBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D9641401D34D0089DB86 /* AMBackgroundTask.m */; };
 		08D9D9681401D34D0089DB86 /* AMBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D9641401D34D0089DB86 /* AMBackgroundTask.m */; };
+		08EC7FEF140DE0CE00902B99 /* AMBCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EC7FED140DE0CE00902B99 /* AMBCrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08EC7FF0140DE0CE00902B99 /* AMBCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EC7FED140DE0CE00902B99 /* AMBCrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08EC7FF1140DE0CE00902B99 /* AMBCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EC7FEE140DE0CE00902B99 /* AMBCrypt.m */; };
+		08EC7FF2140DE0CE00902B99 /* AMBCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EC7FEE140DE0CE00902B99 /* AMBCrypt.m */; };
 		08ECD46E135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08ECD46F135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08ECD470135A54960027E15E /* NSManagedObjectContext+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */; };
@@ -464,6 +468,8 @@
 		08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+CompletionHandler.m"; sourceTree = "<group>"; };
 		08D9D9631401D34D0089DB86 /* AMBackgroundTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBackgroundTask.h; sourceTree = "<group>"; };
 		08D9D9641401D34D0089DB86 /* AMBackgroundTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBackgroundTask.m; sourceTree = "<group>"; };
+		08EC7FED140DE0CE00902B99 /* AMBCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBCrypt.h; sourceTree = "<group>"; };
+		08EC7FEE140DE0CE00902B99 /* AMBCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBCrypt.m; sourceTree = "<group>"; };
 		08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+AMExtensions.h"; sourceTree = "<group>"; };
 		08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+AMExtensions.m"; sourceTree = "<group>"; };
 		08EFE3B31341A4FB00231C8A /* Vyana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -828,6 +834,8 @@
 		08EFE3F71341AD5800231C8A /* AMFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				08EC7FED140DE0CE00902B99 /* AMBCrypt.h */,
+				08EC7FEE140DE0CE00902B99 /* AMBCrypt.m */,
 				08D9D9631401D34D0089DB86 /* AMBackgroundTask.h */,
 				08D9D9641401D34D0089DB86 /* AMBackgroundTask.m */,
 				0854F71C13C614C900CEF018 /* AMActionItem.h */,
@@ -1019,6 +1027,7 @@
 				08D9D95A13FF5AC10089DB86 /* AMBlockUtils.h in Headers */,
 				08D9D95E1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */,
 				08D9D9661401D34D0089DB86 /* AMBackgroundTask.h in Headers */,
+				08EC7FF0140DE0CE00902B99 /* AMBCrypt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1123,6 +1132,7 @@
 				08D9D95713FF5A750089DB86 /* AMBlockUtils.h in Headers */,
 				08D9D95D1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */,
 				08D9D9651401D34D0089DB86 /* AMBackgroundTask.h in Headers */,
+				08EC7FEF140DE0CE00902B99 /* AMBCrypt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1398,6 +1408,7 @@
 				08D9D95913FF5ABB0089DB86 /* AMBlockUtils.m in Sources */,
 				08D9D9611401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */,
 				08D9D9681401D34D0089DB86 /* AMBackgroundTask.m in Sources */,
+				08EC7FF2140DE0CE00902B99 /* AMBCrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1501,6 +1512,7 @@
 				08D9D95813FF5A750089DB86 /* AMBlockUtils.m in Sources */,
 				08D9D9601401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */,
 				08D9D9671401D34D0089DB86 /* AMBackgroundTask.m in Sources */,
+				08EC7FF1140DE0CE00902B99 /* AMBCrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1600,9 +1612,15 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/3rdParty\"";
 				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "-lbcrypt";
 				PRODUCT_NAME = Vyana;
 				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-Info.plist";
 				SDKROOT = macosx10.7;
@@ -1627,9 +1645,15 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/3rdParty\"";
 				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "-lbcrypt";
 				PRODUCT_NAME = Vyana;
 				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-Info.plist";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -1783,8 +1807,14 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/3rdParty\"";
 				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
+				OTHER_LDFLAGS = "-lbcrypt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = Vyana.framework/Versions/A/Headers;
 				SKIP_INSTALL = YES;
@@ -1808,8 +1838,14 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/3rdParty\"";
 				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
+				OTHER_LDFLAGS = "-lbcrypt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = Vyana.framework/Versions/A/Headers;
 				RUN_CLANG_STATIC_ANALYZER = YES;

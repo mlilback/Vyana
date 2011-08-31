@@ -33,6 +33,7 @@
 #import <Vyana/NSFont+AMExtensions.h>
 #import <Vyana/NSImage+AMExtensions.h>
 
+#import <Vyana/AMBCrypt.h>
 #import <Vyana/AMAboutBoxController.h>
 #import <Vyana/AMApplication.h>
 #import <Vyana/AMBackgroundTask.h>
