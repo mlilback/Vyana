@@ -14,5 +14,6 @@
 
 @interface AMApplication : NSApplication {
 }
+-(void)loadFScriptIfAvailable;
 
 @end

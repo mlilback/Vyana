@@ -21,4 +21,15 @@
 	[super finishLaunching];
 }
 
+-(void)loadFScriptIfAvailable
+{
+	if ([[NSBundle bundleWithPath:@"~/Library/Frameworks/FScript.framework"] load] ||
+		 [[NSBundle bundleWithPath:@"/Library/Frameworks/FScript.framework"] load])
+	{
+		//we loaded it. install the menu
+		id mitem = [[NSClassFromString(@"FScriptMenuItem") alloc] init];
+		if (mitem)
+			[[NSApp mainMenu] addItem:mitem];
+	}	
+}
 @end
