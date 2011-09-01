@@ -14,7 +14,7 @@
 // The work factor of bcrypt determines how expensive you wish this hash
 // function to be. The higher it is, the longer it takes to compute (and thus
 // the longer it takes to break).
-#define kAMBCryptDefaultWorkFactor 12
+#define kAMBCryptDefaultWorkFactor 10
 
 
 @interface AMBCrypt : NSObject
@@ -23,5 +23,7 @@
 + (NSString*)hash:(NSString*)password workFactor:(NSUInteger)workFactor;
 
 + (BOOL)check:(NSString*)password againstHash:(NSString*)storedHash;
+
++ (BOOL)compareSecret:(NSString*)secret againstHash:(NSString*)hash;
 
 @end

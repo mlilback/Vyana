@@ -15,4 +15,8 @@ typedef void (^TableEventBlock)(AMTableView *tv);
 
 @interface AMTableView : UITableView
 @property (nonatomic, copy) TableEventBlock doubleTapHandler;
+
+///if true, deselects selection when a touch does not happen over a row.
+// fires off the tableView:didDeselectIndexRow: method and the selection did change notification
+@property (nonatomic, assign) BOOL deselectOnTouchesOutsideCells;
 @end

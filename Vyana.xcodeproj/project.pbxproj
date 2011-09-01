@@ -1237,6 +1237,7 @@
 		08EFE3A91341A4FB00231C8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Agile Monks";
 			};
 			buildConfigurationList = 08EFE3AC1341A4FB00231C8A /* Build configuration list for PBXProject "Vyana" */;
@@ -1610,6 +1611,7 @@
 				FRAMEWORK_VERSION = B;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/3rdParty\"";
@@ -1623,7 +1625,7 @@
 				OTHER_LDFLAGS = "-lbcrypt";
 				PRODUCT_NAME = Vyana;
 				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-Info.plist";
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1643,6 +1645,7 @@
 				);
 				FRAMEWORK_VERSION = B;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/3rdParty\"";
@@ -1657,7 +1660,7 @@
 				PRODUCT_NAME = Vyana;
 				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-Info.plist";
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};

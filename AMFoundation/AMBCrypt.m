@@ -9,7 +9,7 @@
 #import "AMBCrypt.h"
 #import "bcrypt.h"
 
-#define kAMBCryptDefaultWorkFactor 12
+#define kAMBCryptDefaultWorkFactor 10
 
 @implementation AMBCrypt
 
@@ -17,6 +17,7 @@
 {
 	return [AMBCrypt hash:password workFactor:kAMBCryptDefaultWorkFactor];
 }
+
 
 
 + (NSString*)hash:(NSString*)password workFactor:(NSUInteger)workFactor
@@ -31,6 +32,15 @@
 	NSAssert(bcrypt_hashpw([password cStringUsingEncoding:[NSString defaultCStringEncoding]], salt, hash) == 0, @"Error generating BCrypt hash");
 	return [NSString stringWithCString:hash 
 	                          encoding:[NSString defaultCStringEncoding]];
+}
+
++ (BOOL)compareSecret:(NSString*)secret againstHash:(NSString*)hash
+{
+	NSString *salt = [hash substringWithRange:NSMakeRange(7, 29)];
+	char chash[BCRYPT_HASHSIZE];
+	bcrypt_hashpw([secret UTF8String], [salt UTF8String], chash);
+	NSString *testhash = [NSString stringWithCString:chash encoding:NSUTF8StringEncoding];
+	return [hash isEqualToString:testhash];
 }
 
 
