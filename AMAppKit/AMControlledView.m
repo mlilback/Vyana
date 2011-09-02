@@ -7,6 +7,10 @@
 
 #import "AMControlledView.h"
 
+@interface AMControlledView() {
+	NSViewController *__vc;
+}
+@end
 
 @implementation AMControlledView
 - (void)setViewController:(NSViewController *)newController

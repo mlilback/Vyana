@@ -8,9 +8,10 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface AMControlledView : NSView {
-	@private
-	NSViewController *__vc;
-}
+@interface AMControlledView : NSView
+#if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_7
+@property (nonatomic, weak) NSViewController *viewController;
+#else
 @property (nonatomic, assign) NSViewController *viewController;
+#endif
 @end
