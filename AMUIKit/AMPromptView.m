@@ -53,7 +53,9 @@
 -(void)alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
 	if (_handler) {
-		_handler(self, buttonIndex==1 ? textField.text : nil);
+		dispatch_async(dispatch_get_main_queue(), ^{
+			_handler(self, buttonIndex==1 ? textField.text : nil);
+		});
 	}
 }
 
