@@ -37,6 +37,8 @@
 		08375D5A13D26ECC0056925A /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */; };
 		0838B36414166291003264A8 /* UIImage+Tint.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B36214166291003264A8 /* UIImage+Tint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0838B36514166291003264A8 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B36314166291003264A8 /* UIImage+Tint.m */; };
+		0838B3671416712D003264A8 /* AMZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A2E134508C30044089C /* AMZeroingWeakRef.m */; };
+		0838B36814167131003264A8 /* AMZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A2D134508C30044089C /* AMZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08435A2F134508C30044089C /* AMZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A2D134508C30044089C /* AMZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08435A30134508C30044089C /* AMZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A2E134508C30044089C /* AMZeroingWeakRef.m */; };
 		08435A3B1347614C0044089C /* AMProgressWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A391347614C0044089C /* AMProgressWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1077,6 +1079,7 @@
 				08349ED51404386100B629B4 /* AMBlockUtils.h in Headers */,
 				088A76D11406A90C003D6A3F /* AMTableView.h in Headers */,
 				0838B36414166291003264A8 /* UIImage+Tint.h in Headers */,
+				0838B36814167131003264A8 /* AMZeroingWeakRef.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1455,6 +1458,7 @@
 				08349ED71404386700B629B4 /* AMBlockUtils.m in Sources */,
 				088A76D21406A90C003D6A3F /* AMTableView.m in Sources */,
 				0838B36514166291003264A8 /* UIImage+Tint.m in Sources */,
+				0838B3671416712D003264A8 /* AMZeroingWeakRef.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

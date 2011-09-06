@@ -9,6 +9,10 @@
 
 #if MACOSX_DEPLOYMENT_TARGET < 1070
 
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
+#undef COREFOUNDATION_HACK_LEVEL
+#define COREFOUNDATION_HACK_LEVEL 0
+#endif
 
 #import <dlfcn.h>
 #import <libkern/OSAtomic.h>
