@@ -47,7 +47,8 @@
 			ZAssert([nibView isKindOfClass:[UIView class]], @"first object in nib isn't a UIView");
 			self.frame = [nibView bounds];
 			[self addSubview:[objs firstObject]];
-			[self awakeFromNib];
+			if ([self respondsToSelector:@selector(awakeFromNib)])
+				[self awakeFromNib];
 		}
 	}
 	return self;

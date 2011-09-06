@@ -35,6 +35,8 @@
 		08375D5813D26ECC0056925A /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08375D5913D26ECC0056925A /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */; };
 		08375D5A13D26ECC0056925A /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */; };
+		0838B36414166291003264A8 /* UIImage+Tint.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B36214166291003264A8 /* UIImage+Tint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0838B36514166291003264A8 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B36314166291003264A8 /* UIImage+Tint.m */; };
 		08435A2F134508C30044089C /* AMZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A2D134508C30044089C /* AMZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08435A30134508C30044089C /* AMZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A2E134508C30044089C /* AMZeroingWeakRef.m */; };
 		08435A3B1347614C0044089C /* AMProgressWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A391347614C0044089C /* AMProgressWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -390,6 +392,8 @@
 		082DDE4F13A0683A004F46CD /* AMLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMLabel.m; sourceTree = "<group>"; };
 		08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BlockObservation.h"; sourceTree = "<group>"; };
 		08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BlockObservation.m"; sourceTree = "<group>"; };
+		0838B36214166291003264A8 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
+		0838B36314166291003264A8 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
 		08435A2D134508C30044089C /* AMZeroingWeakRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMZeroingWeakRef.h; sourceTree = "<group>"; };
 		08435A2E134508C30044089C /* AMZeroingWeakRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMZeroingWeakRef.m; sourceTree = "<group>"; };
 		08435A391347614C0044089C /* AMProgressWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProgressWindowController.h; sourceTree = "<group>"; };
@@ -662,6 +666,8 @@
 				08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */,
 				08B6527D134BF1D0001C6159 /* UIColor+AMExtensions.h */,
 				08B6527E134BF1D0001C6159 /* UIColor+AMExtensions.m */,
+				0838B36214166291003264A8 /* UIImage+Tint.h */,
+				0838B36314166291003264A8 /* UIImage+Tint.m */,
 				08587D0013ABC7FF00CBAC32 /* UIScreen+AMExtensions.h */,
 				08587D0113ABC7FF00CBAC32 /* UIScreen+AMExtensions.m */,
 			);
@@ -1070,6 +1076,7 @@
 				08D9D95F1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */,
 				08349ED51404386100B629B4 /* AMBlockUtils.h in Headers */,
 				088A76D11406A90C003D6A3F /* AMTableView.h in Headers */,
+				0838B36414166291003264A8 /* UIImage+Tint.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1447,6 +1454,7 @@
 				08D9D9621401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */,
 				08349ED71404386700B629B4 /* AMBlockUtils.m in Sources */,
 				088A76D21406A90C003D6A3F /* AMTableView.m in Sources */,
+				0838B36514166291003264A8 /* UIImage+Tint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1820,6 +1828,7 @@
 				OTHER_LDFLAGS = "-lbcrypt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = Vyana.framework/Versions/A/Headers;
+				SDKROOT = macosx10.6;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1852,6 +1861,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = Vyana.framework/Versions/A/Headers;
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.6;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};

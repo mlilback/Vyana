@@ -31,4 +31,9 @@
     withPredicate:(NSPredicate*)predicate sortKey:(NSString*)sortKey;
 
 -(NSManagedObject*)firstObjectFromFetchRequestNamed:(NSString*)reqName parameters:(NSDictionary*)params;
+
+- (NSInteger)countForEntityName:(NSString *)newEntityName
+							  withPredicate:(id)stringOrPredicate, ...;
+- (NSInteger)countForEntityName:(NSString *)newEntityName
+							  withPredicate:(id)stringOrPredicate arguments:(va_list)arguments;
 @end

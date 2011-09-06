@@ -101,7 +101,7 @@
 // made from a format NSString and variable arguments.
 //
 - (NSSet *)fetchObjectsForEntityName:(NSString *)newEntityName
-    withPredicate:(id)stringOrPredicate, ...
+	withPredicate:(id)stringOrPredicate, ...
 {
 	NSArray *a = nil;
 	va_list variadicArguments;
@@ -113,7 +113,7 @@
 }
 
 - (NSArray *)fetchObjectsArrayForEntityName:(NSString *)newEntityName
-    withPredicate:(id)stringOrPredicate, ...
+	withPredicate:(id)stringOrPredicate, ...
 {
 	NSArray *a = nil;
 	va_list variadicArguments;
@@ -125,50 +125,50 @@
 }
 
 - (NSArray *)fetchObjectsArrayForEntityName:(NSString *)newEntityName
-    withPredicate:(id)stringOrPredicate arguments:(va_list)arguments
+	withPredicate:(id)stringOrPredicate arguments:(va_list)arguments
 {
-    NSEntityDescription *entity = [NSEntityDescription
-        entityForName:newEntityName inManagedObjectContext:self];
+	NSEntityDescription *entity = [NSEntityDescription
+		entityForName:newEntityName inManagedObjectContext:self];
 
-    NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
-    [request setEntity:entity];
-    
-    if (stringOrPredicate)
-    {
-        NSPredicate *predicate;
-        if ([stringOrPredicate isKindOfClass:[NSString class]])
-        {
-            predicate = [NSPredicate predicateWithFormat:stringOrPredicate
-                arguments:arguments];
-        }
-        else
-        {
-            NSAssert2([stringOrPredicate isKindOfClass:[NSPredicate class]],
-                @"Second parameter passed to %s is of unexpected class %@",
-                sel_getName(_cmd), NSStringFromClass([stringOrPredicate class]));
-            predicate = (NSPredicate *)stringOrPredicate;
-        }
-        [request setPredicate:predicate];
-    }
-     
-    NSError *error = nil;
-    NSArray *results = [self executeFetchRequest:request error:&error];
-    if (error != nil)
-    {
-        [NSException raise:NSGenericException format: @"%@", [error description]];
-    }
-    
-    return results;
+	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
+	[request setEntity:entity];
+	
+	if (stringOrPredicate)
+	{
+		NSPredicate *predicate;
+		if ([stringOrPredicate isKindOfClass:[NSString class]])
+		{
+			predicate = [NSPredicate predicateWithFormat:stringOrPredicate
+				arguments:arguments];
+		}
+		else
+		{
+			NSAssert2([stringOrPredicate isKindOfClass:[NSPredicate class]],
+				@"Second parameter passed to %s is of unexpected class %@",
+				sel_getName(_cmd), NSStringFromClass([stringOrPredicate class]));
+			predicate = (NSPredicate *)stringOrPredicate;
+		}
+		[request setPredicate:predicate];
+	}
+	 
+	NSError *error = nil;
+	NSArray *results = [self executeFetchRequest:request error:&error];
+	if (error != nil)
+	{
+		[NSException raise:NSGenericException format: @"%@", [error description]];
+	}
+	
+	return results;
 }
 
 - (NSArray *)fetchObjectsForEntityName:(NSString *)newEntityName
-    withPredicate:(NSPredicate*)predicate sortKey:(NSString*)sortKey
+	withPredicate:(NSPredicate*)predicate sortKey:(NSString*)sortKey
 {
-    NSEntityDescription *entity = [NSEntityDescription
-        entityForName:newEntityName inManagedObjectContext:self];
+	NSEntityDescription *entity = [NSEntityDescription
+		entityForName:newEntityName inManagedObjectContext:self];
 
-    NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
-    [request setEntity:entity];
+	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
+	[request setEntity:entity];
 	if (predicate)
 		[request setPredicate:predicate];
 	if (sortKey) {
@@ -176,14 +176,64 @@
 			arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:sortKey ascending:YES]];
 		[request setSortDescriptors:sortDescriptors];
 	}
-     
-    NSError *error = nil;
-    NSArray *results = [self executeFetchRequest:request error:&error];
-    if (error != nil)
-    {
-        [NSException raise:NSGenericException format: @"%@", [error description]];
-    }
-    
-    return results;
+	 
+	NSError *error = nil;
+	NSArray *results = [self executeFetchRequest:request error:&error];
+	if (error != nil)
+	{
+		[NSException raise:NSGenericException format: @"%@", [error description]];
+	}
+	
+	return results;
 }
+
+- (NSInteger)countForEntityName:(NSString *)newEntityName
+				  withPredicate:(id)stringOrPredicate, ...
+{
+	va_list variadicArguments;
+	va_start(variadicArguments, stringOrPredicate);
+	NSInteger cnt = [self countForEntityName:newEntityName withPredicate:stringOrPredicate
+								   arguments: variadicArguments];
+	va_end(variadicArguments);
+	return cnt;
+}
+
+- (NSInteger)countForEntityName:(NSString *)newEntityName
+				  withPredicate:(id)stringOrPredicate arguments:(va_list)arguments
+{
+	NSEntityDescription *entity = [NSEntityDescription
+								   entityForName:newEntityName inManagedObjectContext:self];
+	
+	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
+	[request setEntity:entity];
+	
+	if (stringOrPredicate)
+	{
+		NSPredicate *predicate;
+		if ([stringOrPredicate isKindOfClass:[NSString class]])
+		{
+			predicate = [NSPredicate predicateWithFormat:stringOrPredicate
+											   arguments:arguments];
+		}
+		else
+		{
+			NSAssert2([stringOrPredicate isKindOfClass:[NSPredicate class]],
+					  @"Second parameter passed to %s is of unexpected class %@",
+					  sel_getName(_cmd), NSStringFromClass([stringOrPredicate class]));
+			predicate = (NSPredicate *)stringOrPredicate;
+		}
+		[request setPredicate:predicate];
+	}
+	
+	NSError *error = nil;
+	NSInteger results = [self countForFetchRequest:request error:&error];
+	if (error != nil)
+	{
+		[NSException raise:NSGenericException format: @"%@", [error description]];
+	}
+	
+	return results;
+}
+
+
 @end
