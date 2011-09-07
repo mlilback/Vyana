@@ -187,26 +187,23 @@
 	return results;
 }
 
-- (NSInteger)countForEntityName:(NSString *)newEntityName
-				  withPredicate:(id)stringOrPredicate, ...
+-(NSInteger)countForEntityName:(NSString*)name withPredicate:(id)stringOrPredicate, ...
 {
+	NSInteger cnt=0;
 	va_list variadicArguments;
 	va_start(variadicArguments, stringOrPredicate);
-	NSInteger cnt = [self countForEntityName:newEntityName withPredicate:stringOrPredicate
-								   arguments: variadicArguments];
+	cnt = [self countForEntityName:name withPredicate:stringOrPredicate
+						 arguments: variadicArguments];
 	va_end(variadicArguments);
 	return cnt;
 }
 
-- (NSInteger)countForEntityName:(NSString *)newEntityName
-				  withPredicate:(id)stringOrPredicate arguments:(va_list)arguments
+-(NSInteger)countForEntityName:(NSString*)name withPredicate:(id)stringOrPredicate 
+					 arguments:(va_list)arguments
 {
-	NSEntityDescription *entity = [NSEntityDescription
-								   entityForName:newEntityName inManagedObjectContext:self];
-	
-	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
-	[request setEntity:entity];
-	
+	NSFetchRequest *fr = [[[NSFetchRequest alloc] init] autorelease];
+	[fr setEntity:[NSEntityDescription entityForName:name inManagedObjectContext:self]];
+
 	if (stringOrPredicate)
 	{
 		NSPredicate *predicate;
@@ -222,18 +219,11 @@
 					  sel_getName(_cmd), NSStringFromClass([stringOrPredicate class]));
 			predicate = (NSPredicate *)stringOrPredicate;
 		}
-		[request setPredicate:predicate];
+		[fr setPredicate:predicate];
 	}
-	
-	NSError *error = nil;
-	NSInteger results = [self countForFetchRequest:request error:&error];
-	if (error != nil)
-	{
-		[NSException raise:NSGenericException format: @"%@", [error description]];
-	}
-	
-	return results;
-}
 
+	NSInteger icount = [self countForFetchRequest:fr error:nil];
+	return icount;
+}
 
 @end

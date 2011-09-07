@@ -47,6 +47,8 @@
 		08435A40134768C40044089C /* AMControlledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3E134768C40044089C /* AMControlledView.m */; };
 		08435A561347E5460044089C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A551347E5460044089C /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		08435A631347EC700044089C /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A621347EC6F0044089C /* QTKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		08447F8B141707C800A8DDF8 /* AMZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A2D134508C30044089C /* AMZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08447F8D141707D100A8DDF8 /* AMZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A2E134508C30044089C /* AMZeroingWeakRef.m */; };
 		08507A43134DE9EB00705079 /* AMStandardMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08507A88134E382B00705079 /* AMFileSizeTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08507A86134E382B00705079 /* AMFileSizeTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08507A8A134E382B00705079 /* AMFileSizeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A87134E382B00705079 /* AMFileSizeTransformer.m */; };
@@ -191,6 +193,8 @@
 		08AD67ED13DB3A8200687B3D /* VyanaConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4F01342B03900231C8A /* VyanaConfig.plist */; };
 		08AD67EE13DB3A8200687B3D /* AMAppDefaultsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */; };
 		08AD67EF13DB3A8200687B3D /* VyanaDelete.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08507A90134E451500705079 /* VyanaDelete.icns */; };
+		08AE4E971414417100963C52 /* UIImage+Tint.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AE4E951414417100963C52 /* UIImage+Tint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AE4E981414417100963C52 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AE4E961414417100963C52 /* UIImage+Tint.m */; };
 		08B6522C134BE1BC001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
 		08B65237134BE1BD001C6159 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B65236134BE1BD001C6159 /* UIKit.framework */; };
 		08B65238134BE1BD001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
@@ -440,6 +444,8 @@
 		08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProcessInfo.h; sourceTree = "<group>"; };
 		08A8B19B13FCC99C003BE670 /* AMProcessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMProcessInfo.m; sourceTree = "<group>"; };
 		08AD67F313DB3A8200687B3D /* Vyana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08AE4E951414417100963C52 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
+		08AE4E961414417100963C52 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
 		08B6522A134BE1BC001C6159 /* libVyana-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVyana-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6522B134BE1BC001C6159 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08B65235134BE1BD001C6159 /* Vyana-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vyana-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };

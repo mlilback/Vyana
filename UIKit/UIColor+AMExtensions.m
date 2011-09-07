@@ -15,6 +15,8 @@
 	unsigned ccode = 0;
 	unsigned char redByte, greenByte, blueByte;
 	
+	if ([hexString characterAtIndex:0] == '#')
+		hexString = [hexString substringFromIndex:1];
 	if ([hexString length] != 6)
 		return nil;
 

@@ -9,6 +9,7 @@
 
 
 @interface UIColor (AMExtensions)
+//works with and withour the #
 +(UIColor*)colorWithHexString:(NSString*)hexString;
 
 + (id)aliceBlue;
