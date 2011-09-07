@@ -47,8 +47,8 @@
 		08435A40134768C40044089C /* AMControlledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3E134768C40044089C /* AMControlledView.m */; };
 		08435A561347E5460044089C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A551347E5460044089C /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		08435A631347EC700044089C /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A621347EC6F0044089C /* QTKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		08447F8B141707C800A8DDF8 /* AMZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A2D134508C30044089C /* AMZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08447F8D141707D100A8DDF8 /* AMZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A2E134508C30044089C /* AMZeroingWeakRef.m */; };
+		08447F9B1417404B00A8DDF8 /* AMTextFieldFloater.h in Headers */ = {isa = PBXBuildFile; fileRef = 08447F991417404B00A8DDF8 /* AMTextFieldFloater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08447F9C1417404B00A8DDF8 /* AMTextFieldFloater.m in Sources */ = {isa = PBXBuildFile; fileRef = 08447F9A1417404B00A8DDF8 /* AMTextFieldFloater.m */; };
 		08507A43134DE9EB00705079 /* AMStandardMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08507A88134E382B00705079 /* AMFileSizeTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08507A86134E382B00705079 /* AMFileSizeTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08507A8A134E382B00705079 /* AMFileSizeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A87134E382B00705079 /* AMFileSizeTransformer.m */; };
@@ -71,6 +71,12 @@
 		08587CFF13ABC7F100CBAC32 /* AMGearMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587CFD13ABC7F100CBAC32 /* AMGearMenuController.m */; };
 		08587D0213ABC7FF00CBAC32 /* UIScreen+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587D0013ABC7FF00CBAC32 /* UIScreen+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08587D0313ABC7FF00CBAC32 /* UIScreen+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587D0113ABC7FF00CBAC32 /* UIScreen+AMExtensions.m */; };
+		085B94591417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 085B94571417C6F700042E91 /* CALayer+LayerDebugging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		085B945A1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 085B94571417C6F700042E91 /* CALayer+LayerDebugging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		085B945B1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 085B94571417C6F700042E91 /* CALayer+LayerDebugging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		085B945C1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B94581417C6F700042E91 /* CALayer+LayerDebugging.m */; };
+		085B945D1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B94581417C6F700042E91 /* CALayer+LayerDebugging.m */; };
+		085B945E1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B94581417C6F700042E91 /* CALayer+LayerDebugging.m */; };
 		085F98F6135D079400CB4101 /* AMAppState.h in Headers */ = {isa = PBXBuildFile; fileRef = 085F98F4135D079300CB4101 /* AMAppState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		085F98F7135D079400CB4101 /* AMAppState.m in Sources */ = {isa = PBXBuildFile; fileRef = 085F98F5135D079400CB4101 /* AMAppState.m */; };
 		085F98FB135D084200CB4101 /* AMStateTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 085F98F9135D084200CB4101 /* AMStateTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -193,8 +199,6 @@
 		08AD67ED13DB3A8200687B3D /* VyanaConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4F01342B03900231C8A /* VyanaConfig.plist */; };
 		08AD67EE13DB3A8200687B3D /* AMAppDefaultsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */; };
 		08AD67EF13DB3A8200687B3D /* VyanaDelete.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08507A90134E451500705079 /* VyanaDelete.icns */; };
-		08AE4E971414417100963C52 /* UIImage+Tint.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AE4E951414417100963C52 /* UIImage+Tint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08AE4E981414417100963C52 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AE4E961414417100963C52 /* UIImage+Tint.m */; };
 		08B6522C134BE1BC001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
 		08B65237134BE1BD001C6159 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B65236134BE1BD001C6159 /* UIKit.framework */; };
 		08B65238134BE1BD001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
@@ -408,6 +412,8 @@
 		08435A3E134768C40044089C /* AMControlledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMControlledView.m; sourceTree = "<group>"; };
 		08435A551347E5460044089C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		08435A621347EC6F0044089C /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		08447F991417404B00A8DDF8 /* AMTextFieldFloater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTextFieldFloater.h; sourceTree = "<group>"; };
+		08447F9A1417404B00A8DDF8 /* AMTextFieldFloater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTextFieldFloater.m; sourceTree = "<group>"; };
 		08507A86134E382B00705079 /* AMFileSizeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFileSizeTransformer.h; sourceTree = "<group>"; };
 		08507A87134E382B00705079 /* AMFileSizeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFileSizeTransformer.m; sourceTree = "<group>"; };
 		08507A8C134E38E400705079 /* AMFileSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFileSelectionView.h; sourceTree = "<group>"; };
@@ -427,6 +433,8 @@
 		08587CFD13ABC7F100CBAC32 /* AMGearMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGearMenuController.m; sourceTree = "<group>"; };
 		08587D0013ABC7FF00CBAC32 /* UIScreen+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "UIScreen+AMExtensions.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		08587D0113ABC7FF00CBAC32 /* UIScreen+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "UIScreen+AMExtensions.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		085B94571417C6F700042E91 /* CALayer+LayerDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CALayer+LayerDebugging.h"; path = "Quartz/CALayer+LayerDebugging.h"; sourceTree = SOURCE_ROOT; };
+		085B94581417C6F700042E91 /* CALayer+LayerDebugging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CALayer+LayerDebugging.m"; path = "Quartz/CALayer+LayerDebugging.m"; sourceTree = SOURCE_ROOT; };
 		085F98F4135D079300CB4101 /* AMAppState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAppState.h; sourceTree = "<group>"; };
 		085F98F5135D079400CB4101 /* AMAppState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAppState.m; sourceTree = "<group>"; };
 		085F98F9135D084200CB4101 /* AMStateTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStateTransition.h; sourceTree = "<group>"; };
@@ -444,8 +452,6 @@
 		08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProcessInfo.h; sourceTree = "<group>"; };
 		08A8B19B13FCC99C003BE670 /* AMProcessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMProcessInfo.m; sourceTree = "<group>"; };
 		08AD67F313DB3A8200687B3D /* Vyana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		08AE4E951414417100963C52 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
-		08AE4E961414417100963C52 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
 		08B6522A134BE1BC001C6159 /* libVyana-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVyana-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6522B134BE1BC001C6159 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08B65235134BE1BD001C6159 /* Vyana-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vyana-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -638,6 +644,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		085B94551417C6B700042E91 /* Quartz */ = {
+			isa = PBXGroup;
+			children = (
+				085B94571417C6F700042E91 /* CALayer+LayerDebugging.h */,
+				085B94581417C6F700042E91 /* CALayer+LayerDebugging.m */,
+			);
+			name = Quartz;
+			sourceTree = "<group>";
+		};
 		08B6522D134BE1BC001C6159 /* Vyana-ios */ = {
 			isa = PBXGroup;
 			children = (
@@ -706,6 +721,8 @@
 				085F98FA135D084200CB4101 /* AMStateTransition.m */,
 				088A76CF1406A90C003D6A3F /* AMTableView.h */,
 				088A76D01406A90C003D6A3F /* AMTableView.m */,
+				08447F991417404B00A8DDF8 /* AMTextFieldFloater.h */,
+				08447F9A1417404B00A8DDF8 /* AMTextFieldFloater.m */,
 			);
 			path = AMUIKit;
 			sourceTree = SOURCE_ROOT;
@@ -777,6 +794,7 @@
 				08EFE43B1341CBA300231C8A /* AppKit */,
 				08EFE3E31341A87300231C8A /* Foundation */,
 				08EFE4AC13421CDE00231C8A /* Lumberjack */,
+				085B94551417C6B700042E91 /* Quartz */,
 				08B6527C134BF1CF001C6159 /* UIKit */,
 				08EFE3BD1341A4FB00231C8A /* Supporting Files */,
 			);
@@ -1042,6 +1060,7 @@
 				08D9D95E1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */,
 				08D9D9661401D34D0089DB86 /* AMBackgroundTask.h in Headers */,
 				08EC7FF0140DE0CE00902B99 /* AMBCrypt.h in Headers */,
+				085B945A1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1086,6 +1105,8 @@
 				088A76D11406A90C003D6A3F /* AMTableView.h in Headers */,
 				0838B36414166291003264A8 /* UIImage+Tint.h in Headers */,
 				0838B36814167131003264A8 /* AMZeroingWeakRef.h in Headers */,
+				08447F9B1417404B00A8DDF8 /* AMTextFieldFloater.h in Headers */,
+				085B945B1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1149,6 +1170,7 @@
 				08D9D95D1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */,
 				08D9D9651401D34D0089DB86 /* AMBackgroundTask.h in Headers */,
 				08EC7FEF140DE0CE00902B99 /* AMBCrypt.h in Headers */,
+				085B94591417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1426,6 +1448,7 @@
 				08D9D9611401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */,
 				08D9D9681401D34D0089DB86 /* AMBackgroundTask.m in Sources */,
 				08EC7FF2140DE0CE00902B99 /* AMBCrypt.m in Sources */,
+				085B945D1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1465,6 +1488,8 @@
 				088A76D21406A90C003D6A3F /* AMTableView.m in Sources */,
 				0838B36514166291003264A8 /* UIImage+Tint.m in Sources */,
 				0838B3671416712D003264A8 /* AMZeroingWeakRef.m in Sources */,
+				08447F9C1417404B00A8DDF8 /* AMTextFieldFloater.m in Sources */,
+				085B945E1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1532,6 +1557,7 @@
 				08D9D9601401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */,
 				08D9D9671401D34D0089DB86 /* AMBackgroundTask.m in Sources */,
 				08EC7FF1140DE0CE00902B99 /* AMBCrypt.m in Sources */,
+				085B945C1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1601,6 +1627,167 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		085B94621417E08200042E91 /* Archive */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.6;
+			};
+			name = Archive;
+		};
+		085B94631417E08200042E91 /* Archive */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/3rdParty\"";
+				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
+				OTHER_LDFLAGS = "-lbcrypt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = Vyana.framework/Versions/A/Headers;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.6;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Archive;
+		};
+		085B94641417E08200042E91 /* Archive */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
+				FRAMEWORK_VERSION = B;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/3rdParty\"";
+				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "-lbcrypt";
+				PRODUCT_NAME = Vyana;
+				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-Info.plist";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Archive;
+		};
+		085B94651417E08200042E91 /* Archive */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/3rdParty\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VyanaTests/VyanaTests-Prefix.pch";
+				INFOPLIST_FILE = "VyanaTests/VyanaTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Archive;
+		};
+		085B94661417E08200042E91 /* Archive */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = "$(BUILT_PRODUCTS_DIR)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vyana-ios/Vyana-ios-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(TARGET_TEMP_DIR)/UninstalledProducts";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SYMROOT = "$(BUILD_DIR)/Vyana";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Archive;
+		};
+		085B94671417E08200042E91 /* Archive */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vyana-iosTests/Vyana-iosTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Vyana-iosTests/Vyana-iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Archive;
+		};
+		085B94681417E08200042E91 /* Archive */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Archive;
+		};
 		087CE8D813FECB2600C9F758 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1692,7 +1879,7 @@
 				DSTROOT = "$(BUILT_PRODUCTS_DIR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vyana-ios/Vyana-ios-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
@@ -1713,7 +1900,7 @@
 				DSTROOT = "$(BUILT_PRODUCTS_DIR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vyana-ios/Vyana-ios-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
@@ -1931,6 +2118,7 @@
 			buildConfigurations = (
 				087CE8D813FECB2600C9F758 /* Debug */,
 				087CE8D913FECB2600C9F758 /* Release */,
+				085B94681417E08200042E91 /* Archive */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1940,6 +2128,7 @@
 			buildConfigurations = (
 				08AD67F113DB3A8200687B3D /* Debug */,
 				08AD67F213DB3A8200687B3D /* Release */,
+				085B94641417E08200042E91 /* Archive */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1949,6 +2138,7 @@
 			buildConfigurations = (
 				08B6524A134BE1BD001C6159 /* Debug */,
 				08B6524B134BE1BD001C6159 /* Release */,
+				085B94661417E08200042E91 /* Archive */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1958,6 +2148,7 @@
 			buildConfigurations = (
 				08B6524D134BE1BD001C6159 /* Debug */,
 				08B6524E134BE1BD001C6159 /* Release */,
+				085B94671417E08200042E91 /* Archive */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1967,6 +2158,7 @@
 			buildConfigurations = (
 				08EFE3D81341A4FB00231C8A /* Debug */,
 				08EFE3D91341A4FB00231C8A /* Release */,
+				085B94621417E08200042E91 /* Archive */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1976,6 +2168,7 @@
 			buildConfigurations = (
 				08EFE3DB1341A4FB00231C8A /* Debug */,
 				08EFE3DC1341A4FB00231C8A /* Release */,
+				085B94631417E08200042E91 /* Archive */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1985,6 +2178,7 @@
 			buildConfigurations = (
 				08EFE3DE1341A4FB00231C8A /* Debug */,
 				08EFE3DF1341A4FB00231C8A /* Release */,
+				085B94651417E08200042E91 /* Archive */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
