@@ -39,6 +39,18 @@
 		0838B36514166291003264A8 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B36314166291003264A8 /* UIImage+Tint.m */; };
 		0838B3671416712D003264A8 /* AMZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A2E134508C30044089C /* AMZeroingWeakRef.m */; };
 		0838B36814167131003264A8 /* AMZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A2D134508C30044089C /* AMZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0838B393141EAA41003264A8 /* AMKeyValueObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B391141EAA41003264A8 /* AMKeyValueObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0838B394141EAA41003264A8 /* AMKeyValueObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B391141EAA41003264A8 /* AMKeyValueObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0838B395141EAA41003264A8 /* AMKeyValueObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B391141EAA41003264A8 /* AMKeyValueObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0838B396141EAA41003264A8 /* AMKeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B392141EAA41003264A8 /* AMKeyValueObserver.m */; };
+		0838B397141EAA41003264A8 /* AMKeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B392141EAA41003264A8 /* AMKeyValueObserver.m */; };
+		0838B398141EAA41003264A8 /* AMKeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B392141EAA41003264A8 /* AMKeyValueObserver.m */; };
+		0838B39C141EB256003264A8 /* MAZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B39A141EB255003264A8 /* MAZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0838B39D141EB256003264A8 /* MAZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B39A141EB255003264A8 /* MAZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0838B39E141EB256003264A8 /* MAZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B39A141EB255003264A8 /* MAZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0838B39F141EB256003264A8 /* MAZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B39B141EB255003264A8 /* MAZeroingWeakRef.m */; };
+		0838B3A0141EB256003264A8 /* MAZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B39B141EB255003264A8 /* MAZeroingWeakRef.m */; };
+		0838B3A1141EB256003264A8 /* MAZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B39B141EB255003264A8 /* MAZeroingWeakRef.m */; };
 		08435A2F134508C30044089C /* AMZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A2D134508C30044089C /* AMZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08435A30134508C30044089C /* AMZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A2E134508C30044089C /* AMZeroingWeakRef.m */; };
 		08435A3B1347614C0044089C /* AMProgressWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A391347614C0044089C /* AMProgressWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -404,6 +416,10 @@
 		08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BlockObservation.m"; sourceTree = "<group>"; };
 		0838B36214166291003264A8 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
 		0838B36314166291003264A8 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
+		0838B391141EAA41003264A8 /* AMKeyValueObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKeyValueObserver.h; sourceTree = "<group>"; };
+		0838B392141EAA41003264A8 /* AMKeyValueObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMKeyValueObserver.m; sourceTree = "<group>"; };
+		0838B39A141EB255003264A8 /* MAZeroingWeakRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAZeroingWeakRef.h; sourceTree = "<group>"; };
+		0838B39B141EB255003264A8 /* MAZeroingWeakRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAZeroingWeakRef.m; sourceTree = "<group>"; };
 		08435A2D134508C30044089C /* AMZeroingWeakRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMZeroingWeakRef.h; sourceTree = "<group>"; };
 		08435A2E134508C30044089C /* AMZeroingWeakRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMZeroingWeakRef.m; sourceTree = "<group>"; };
 		08435A391347614C0044089C /* AMProgressWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProgressWindowController.h; sourceTree = "<group>"; };
@@ -462,7 +478,7 @@
 		08B65244134BE1BD001C6159 /* Vyana-iosTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vyana-iosTests-Prefix.pch"; sourceTree = "<group>"; };
 		08B65245134BE1BD001C6159 /* Vyana_iosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vyana_iosTests.h; sourceTree = "<group>"; };
 		08B65247134BE1BD001C6159 /* Vyana_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vyana_iosTests.m; sourceTree = "<group>"; };
-		08B6524F134BE2E7001C6159 /* Vyana-ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "Vyana-ios.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		08B6524F134BE2E7001C6159 /* Vyana-ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = "Vyana-ios.h"; path = "Vyana-ios/Vyana-ios.h"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		08B65261134BE5AA001C6159 /* Vyana-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Vyana-ios-Prefix.pch"; sourceTree = "<group>"; };
 		08B65263134BE5C5001C6159 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		08B6527D134BF1D0001C6159 /* UIColor+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AMExtensions.h"; sourceTree = "<group>"; };
@@ -656,7 +672,6 @@
 		08B6522D134BE1BC001C6159 /* Vyana-ios */ = {
 			isa = PBXGroup;
 			children = (
-				08B6524F134BE2E7001C6159 /* Vyana-ios.h */,
 				08B65261134BE5AA001C6159 /* Vyana-ios-Prefix.pch */,
 			);
 			path = "Vyana-ios";
@@ -785,6 +800,7 @@
 			isa = PBXGroup;
 			children = (
 				08EFE3E91341A90F00231C8A /* Vyana.h */,
+				08B6524F134BE2E7001C6159 /* Vyana-ios.h */,
 				08EFE4BF1342287D00231C8A /* VyanaLog.h */,
 				08EFE4EC13429E4600231C8A /* VyanaPrivate.h */,
 				08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */,
@@ -872,6 +888,8 @@
 				08D9D9641401D34D0089DB86 /* AMBackgroundTask.m */,
 				0854F71C13C614C900CEF018 /* AMActionItem.h */,
 				0854F71D13C614C900CEF018 /* AMActionItem.m */,
+				0838B391141EAA41003264A8 /* AMKeyValueObserver.h */,
+				0838B392141EAA41003264A8 /* AMKeyValueObserver.m */,
 				08EFE3F81341AD5800231C8A /* AMLogger.h */,
 				08EFE3F91341AD5800231C8A /* AMLogger.m */,
 				08EFE4E01342977A00231C8A /* AMAppDefaults.h */,
@@ -885,6 +903,8 @@
 				08435A2D134508C30044089C /* AMZeroingWeakRef.h */,
 				08435A2E134508C30044089C /* AMZeroingWeakRef.m */,
 				089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */,
+				0838B39A141EB255003264A8 /* MAZeroingWeakRef.h */,
+				0838B39B141EB255003264A8 /* MAZeroingWeakRef.m */,
 				08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */,
 				08A8B19B13FCC99C003BE670 /* AMProcessInfo.m */,
 				08D9D95513FF5A750089DB86 /* AMBlockUtils.h */,
@@ -1061,6 +1081,8 @@
 				08D9D9661401D34D0089DB86 /* AMBackgroundTask.h in Headers */,
 				08EC7FF0140DE0CE00902B99 /* AMBCrypt.h in Headers */,
 				085B945A1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
+				0838B394141EAA41003264A8 /* AMKeyValueObserver.h in Headers */,
+				0838B39D141EB256003264A8 /* MAZeroingWeakRef.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1107,6 +1129,8 @@
 				0838B36814167131003264A8 /* AMZeroingWeakRef.h in Headers */,
 				08447F9B1417404B00A8DDF8 /* AMTextFieldFloater.h in Headers */,
 				085B945B1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
+				0838B395141EAA41003264A8 /* AMKeyValueObserver.h in Headers */,
+				0838B39E141EB256003264A8 /* MAZeroingWeakRef.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1171,6 +1195,8 @@
 				08D9D9651401D34D0089DB86 /* AMBackgroundTask.h in Headers */,
 				08EC7FEF140DE0CE00902B99 /* AMBCrypt.h in Headers */,
 				085B94591417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
+				0838B393141EAA41003264A8 /* AMKeyValueObserver.h in Headers */,
+				0838B39C141EB256003264A8 /* MAZeroingWeakRef.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1361,7 +1387,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd $BUILT_PRODUCTS_DIR\nln -s ../A/Headers Vyana.framework/Versions/B/Headers\nrm Vyana.framework/Versions/Current\nln -s B Vyana.framework/Versions/Current\n";
+			shellScript = "cd $BUILT_PRODUCTS_DIR\nif [ ! -L Vyana.framework/Versions/B/Headers ]; then\n    ln -s ../A/Headers Vyana.framework/Versions/B/Headers\nfi\nrm Vyana.framework/Versions/Current\nln -s B Vyana.framework/Versions/Current\n";
 		};
 		08B65233134BE1BD001C6159 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1449,6 +1475,8 @@
 				08D9D9681401D34D0089DB86 /* AMBackgroundTask.m in Sources */,
 				08EC7FF2140DE0CE00902B99 /* AMBCrypt.m in Sources */,
 				085B945D1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */,
+				0838B397141EAA41003264A8 /* AMKeyValueObserver.m in Sources */,
+				0838B3A0141EB256003264A8 /* MAZeroingWeakRef.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1490,6 +1518,8 @@
 				0838B3671416712D003264A8 /* AMZeroingWeakRef.m in Sources */,
 				08447F9C1417404B00A8DDF8 /* AMTextFieldFloater.m in Sources */,
 				085B945E1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */,
+				0838B398141EAA41003264A8 /* AMKeyValueObserver.m in Sources */,
+				0838B3A1141EB256003264A8 /* MAZeroingWeakRef.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1558,6 +1588,8 @@
 				08D9D9671401D34D0089DB86 /* AMBackgroundTask.m in Sources */,
 				08EC7FF1140DE0CE00902B99 /* AMBCrypt.m in Sources */,
 				085B945C1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */,
+				0838B396141EAA41003264A8 /* AMKeyValueObserver.m in Sources */,
+				0838B39F141EB256003264A8 /* MAZeroingWeakRef.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,7 @@
 #import <Vyana-ios/NSURLConnection+CompletionHandler.h>
 #import <Vyana-ios/AMFileSizeTransformer.h>
 #import <Vyana-ios/AMBlockUtils.h>
+#import <Vyana-ios/AMKeyValueObserver.h>
 
 #ifdef _COREDATADEFINES_H
 #import <Vyana-ios/NSManagedObjectContext+AMExtensions.h>

@@ -23,8 +23,13 @@
 
 -(NSString*)debugDescription
 {
+#if (__MAC_OS_X_VERSION_MIN_REQUIRED >= 1060)
+	NSString *frame = NSStringFromRect(NSRectFromCGRect(self.frame));
+#else
+	NSString *frame = NSStringFromCGRect(self.frame);
+#endif
 	return [NSString stringWithFormat:@"<%@ (%@) frame=%@ zAnchor=%1.1f>", NSStringFromClass([self class]),
-			self.name, NSStringFromCGRect(self.frame), self.zPosition];
+			self.name, frame, self.zPosition];
 }
 
 -(void)debugAppendToLayerTree:(NSMutableString*)treeStr indention:(NSString*)indentStr
