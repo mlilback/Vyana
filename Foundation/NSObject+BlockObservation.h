@@ -15,4 +15,8 @@ typedef void (^AMBlockTask)(id obj, NSDictionary *change);
 - (AMBlockToken *)addObserverForKeyPath:(NSString *)keyPath onQueue:(NSOperationQueue *)queue task:(AMBlockTask)task;
 - (void)removeObserverWithBlockToken:(AMBlockToken *)token;
 - (void)removeAllBlockObservers;
+
+//useful for notification block tokens. just store them all, and then call unregister in dealloc
+- (void)storeNotificationToken:(id)aToken;
+- (void)unregisterAllNotificationTokens;
 @end

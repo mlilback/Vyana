@@ -10,8 +10,8 @@
 
 @interface AMControlledView : NSView
 #if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_7
-@property (nonatomic, weak) NSViewController *viewController;
+@property (nonatomic, weak) IBOutlet NSViewController *viewController;
 #else
-@property (nonatomic, assign) NSViewController *viewController;
+@property (nonatomic, assign) IBOutlet NSViewController *viewController;
 #endif
 @end

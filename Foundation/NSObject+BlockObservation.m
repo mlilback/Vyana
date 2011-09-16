@@ -80,6 +80,7 @@ static NSString *AMObserverTrampolineContext = @"AMObserverTrampolineContext";
 @end
 
 static NSString *AMObserverMapKey = @"org.andymatuschak.observerMap";
+static NSString *AMNotificationArray = @"com.agilemonks.Vyana.noteArray";
 static dispatch_queue_t AMObserverMutationQueue = NULL;
 
 static dispatch_queue_t AMObserverMutationQueueCreatingIfNecessary()
@@ -157,5 +158,30 @@ static dispatch_queue_t AMObserverMutationQueueCreatingIfNecessary()
 		[keys release];
 	}
 }
+
+- (void)storeNotificationToken:(id)aToken
+{
+	dispatch_sync(AMObserverMutationQueueCreatingIfNecessary(), ^{
+		NSMutableArray *a = objc_getAssociatedObject(self, AMNotificationArray);
+		
+		if (nil == a)
+		{
+			a = [[NSMutableArray alloc] init];
+			objc_setAssociatedObject(self, AMNotificationArray, a, OBJC_ASSOCIATION_RETAIN);
+			[a release];
+		}
+		[a addObject:aToken];
+	});
+}
+
+- (void)unregisterAllNotificationTokens
+{
+    NSMutableArray *a = objc_getAssociatedObject(self, AMNotificationArray);
+	for (id aToken in a) {
+		[[NSNotificationCenter defaultCenter] removeObserver:aToken];
+	}
+	[a removeAllObjects];
+}
+
 
 @end
