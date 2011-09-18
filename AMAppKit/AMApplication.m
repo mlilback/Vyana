@@ -9,7 +9,20 @@
 
 #import "AMApplication.h"
 
+@interface AMApplication() {
+	BOOL _isTerm;
+}
+@end
+
 @implementation AMApplication
+
+-(BOOL)isTerminating { return _isTerm; }
+
+-(void)terminate:(id)sender
+{
+	_isTerm=YES;
+	[super terminate:sender];
+}
 
 -(void)finishLaunching
 {

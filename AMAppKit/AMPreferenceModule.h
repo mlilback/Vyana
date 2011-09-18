@@ -8,6 +8,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AMPreferenceModule : NSViewController {
+	@protected
+	NSUserDefaults *_prefs; //set at init so subclasses can use instead of [NSUserDefaults standardUserDefaults]
 	@private
 	NSImage *_image;
 	NSString *_identifier;

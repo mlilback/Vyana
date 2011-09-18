@@ -23,6 +23,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0809757914255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0809757A14255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0809757B14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */; };
+		0809757C14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */; };
 		081F4C5513FDF343001BDEBF /* AMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 081F4C5313FDF343001BDEBF /* AMViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		081F4C5613FDF343001BDEBF /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F4C5413FDF343001BDEBF /* AMViewController.m */; };
 		081F4C5813FE06AF001BDEBF /* AMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 081F4C5313FDF343001BDEBF /* AMViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -408,6 +412,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+AMExtensions.h"; sourceTree = "<group>"; };
+		0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+AMExtensions.m"; sourceTree = "<group>"; };
 		081F4C5313FDF343001BDEBF /* AMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMViewController.h; sourceTree = "<group>"; };
 		081F4C5413FDF343001BDEBF /* AMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViewController.m; sourceTree = "<group>"; };
 		082DDE4E13A0683A004F46CD /* AMLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMLabel.h; sourceTree = "<group>"; };
@@ -932,6 +938,8 @@
 				08EFE4571341D14600231C8A /* NSFont+AMExtensions.m */,
 				08EFE4581341D14600231C8A /* NSImage+AMExtensions.h */,
 				08EFE4591341D14600231C8A /* NSImage+AMExtensions.m */,
+				0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */,
+				0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */,
 			);
 			path = AppKit;
 			sourceTree = SOURCE_ROOT;
@@ -1083,6 +1091,7 @@
 				085B945A1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
 				0838B394141EAA41003264A8 /* AMKeyValueObserver.h in Headers */,
 				0838B39D141EB256003264A8 /* MAZeroingWeakRef.h in Headers */,
+				0809757A14255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1197,6 +1206,7 @@
 				085B94591417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
 				0838B393141EAA41003264A8 /* AMKeyValueObserver.h in Headers */,
 				0838B39C141EB256003264A8 /* MAZeroingWeakRef.h in Headers */,
+				0809757914255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1477,6 +1487,7 @@
 				085B945D1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */,
 				0838B397141EAA41003264A8 /* AMKeyValueObserver.m in Sources */,
 				0838B3A0141EB256003264A8 /* MAZeroingWeakRef.m in Sources */,
+				0809757C14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1590,6 +1601,7 @@
 				085B945C1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */,
 				0838B396141EAA41003264A8 /* AMKeyValueObserver.m in Sources */,
 				0838B39F141EB256003264A8 /* MAZeroingWeakRef.m in Sources */,
+				0809757B14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

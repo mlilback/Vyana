@@ -39,6 +39,7 @@ static AMPreferencesController *sInstance=nil;
 		[_viewAnimation setAnimationBlockingMode:NSAnimationNonblocking];
 		[_viewAnimation setAnimationCurve:NSAnimationEaseInOut];
 		[_viewAnimation setDelegate:self];
+		[win setExcludedFromWindowsMenu:YES];
 	}
 	return self;
 }

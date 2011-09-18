@@ -38,6 +38,7 @@
 -(id)initWithNibName:(NSString*)nibName bundle:(NSBundle*)bundle
 {
 	if ((self = [super initWithNibName:nibName bundle:bundle])) {
+		_prefs = [NSUserDefaults standardUserDefaults];
 		self.title = @"lazy programmer";
 		self.identifier = @"com.fart.clownpenis";
 		self.initialFirstResponder = self;

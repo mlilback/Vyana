@@ -15,5 +15,5 @@
 @interface AMApplication : NSApplication {
 }
 -(void)loadFScriptIfAvailable;
-
+@property (nonatomic, readonly) BOOL isTerminating;
 @end
