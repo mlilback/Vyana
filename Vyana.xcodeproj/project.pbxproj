@@ -27,6 +27,14 @@
 		0809757A14255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0809757B14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */; };
 		0809757C14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */; };
+		080975B6142672F30010FD68 /* MAWeakArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B2142672F30010FD68 /* MAWeakArray.h */; };
+		080975B7142672F30010FD68 /* MAWeakArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B2142672F30010FD68 /* MAWeakArray.h */; };
+		080975B8142672F30010FD68 /* MAWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 080975B3142672F30010FD68 /* MAWeakArray.m */; };
+		080975B9142672F30010FD68 /* MAWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 080975B3142672F30010FD68 /* MAWeakArray.m */; };
+		080975BA142672F30010FD68 /* MAWeakDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B4142672F30010FD68 /* MAWeakDictionary.h */; };
+		080975BB142672F30010FD68 /* MAWeakDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B4142672F30010FD68 /* MAWeakDictionary.h */; };
+		080975BC142672F30010FD68 /* MAWeakDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 080975B5142672F30010FD68 /* MAWeakDictionary.m */; };
+		080975BD142672F30010FD68 /* MAWeakDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 080975B5142672F30010FD68 /* MAWeakDictionary.m */; };
 		081F4C5513FDF343001BDEBF /* AMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 081F4C5313FDF343001BDEBF /* AMViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		081F4C5613FDF343001BDEBF /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F4C5413FDF343001BDEBF /* AMViewController.m */; };
 		081F4C5813FE06AF001BDEBF /* AMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 081F4C5313FDF343001BDEBF /* AMViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -414,6 +422,10 @@
 /* Begin PBXFileReference section */
 		0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+AMExtensions.h"; sourceTree = "<group>"; };
 		0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+AMExtensions.m"; sourceTree = "<group>"; };
+		080975B2142672F30010FD68 /* MAWeakArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWeakArray.h; sourceTree = "<group>"; };
+		080975B3142672F30010FD68 /* MAWeakArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWeakArray.m; sourceTree = "<group>"; };
+		080975B4142672F30010FD68 /* MAWeakDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWeakDictionary.h; sourceTree = "<group>"; };
+		080975B5142672F30010FD68 /* MAWeakDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWeakDictionary.m; sourceTree = "<group>"; };
 		081F4C5313FDF343001BDEBF /* AMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMViewController.h; sourceTree = "<group>"; };
 		081F4C5413FDF343001BDEBF /* AMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViewController.m; sourceTree = "<group>"; };
 		082DDE4E13A0683A004F46CD /* AMLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMLabel.h; sourceTree = "<group>"; };
@@ -911,6 +923,10 @@
 				089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */,
 				0838B39A141EB255003264A8 /* MAZeroingWeakRef.h */,
 				0838B39B141EB255003264A8 /* MAZeroingWeakRef.m */,
+				080975B2142672F30010FD68 /* MAWeakArray.h */,
+				080975B3142672F30010FD68 /* MAWeakArray.m */,
+				080975B4142672F30010FD68 /* MAWeakDictionary.h */,
+				080975B5142672F30010FD68 /* MAWeakDictionary.m */,
 				08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */,
 				08A8B19B13FCC99C003BE670 /* AMProcessInfo.m */,
 				08D9D95513FF5A750089DB86 /* AMBlockUtils.h */,
@@ -1092,6 +1108,8 @@
 				0838B394141EAA41003264A8 /* AMKeyValueObserver.h in Headers */,
 				0838B39D141EB256003264A8 /* MAZeroingWeakRef.h in Headers */,
 				0809757A14255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */,
+				080975B7142672F30010FD68 /* MAWeakArray.h in Headers */,
+				080975BB142672F30010FD68 /* MAWeakDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1207,6 +1225,8 @@
 				0838B393141EAA41003264A8 /* AMKeyValueObserver.h in Headers */,
 				0838B39C141EB256003264A8 /* MAZeroingWeakRef.h in Headers */,
 				0809757914255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */,
+				080975B6142672F30010FD68 /* MAWeakArray.h in Headers */,
+				080975BA142672F30010FD68 /* MAWeakDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1488,6 +1508,8 @@
 				0838B397141EAA41003264A8 /* AMKeyValueObserver.m in Sources */,
 				0838B3A0141EB256003264A8 /* MAZeroingWeakRef.m in Sources */,
 				0809757C14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */,
+				080975B9142672F30010FD68 /* MAWeakArray.m in Sources */,
+				080975BD142672F30010FD68 /* MAWeakDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1602,6 +1624,8 @@
 				0838B396141EAA41003264A8 /* AMKeyValueObserver.m in Sources */,
 				0838B39F141EB256003264A8 /* MAZeroingWeakRef.m in Sources */,
 				0809757B14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */,
+				080975B8142672F30010FD68 /* MAWeakArray.m in Sources */,
+				080975BC142672F30010FD68 /* MAWeakDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
