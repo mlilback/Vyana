@@ -111,7 +111,7 @@
 	return -1;
 }
 
-//If any item conforms to NSMutableCopying, -mutableCopy is called.
+// If any item conforms to NSMutableCopying, -mutableCopy is called.
 // else, if conforms to NSCopying, -copy is called.
 // otherwise, same item is placed in new array
 -(NSArray*)deepCopy
@@ -193,7 +193,7 @@
 			[result addObject:selectorResult];
 	}
 
-	return result;
+	return result;	//!! should we return mutable?
 }
 
 -(NSArray*)arrayByRemovingObjectAtIndex:(NSInteger)idx
@@ -283,12 +283,24 @@
     }
 }
 
-// Only adds unique objects to the array:
+// Only adds unique objects to the array using containsObject's isEqual mesage on each obj:
 -(BOOL)addUniqueObject:(id)anObject
 {
 	if (nil == anObject)
 		return NO;	// don't add nil objects
 	if ([self containsObject:anObject])
+		return NO;	// don't add objects already there
+	else
+		[self addObject:anObject];
+	return YES;
+}
+
+// Only adds objects with unique pointers (contents are not compared):
+-(BOOL)addUniqueObjectPointer:(id)anObject
+{
+	if (nil == anObject)
+		return NO;	// don't add nil objects
+	if (NSNotFound != [self indexOfObjectIdenticalTo:obj])
 		return NO;	// don't add objects already there
 	else
 		[self addObject:anObject];
