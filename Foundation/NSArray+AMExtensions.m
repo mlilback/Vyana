@@ -300,7 +300,7 @@
 {
 	if (nil == anObject)
 		return NO;	// don't add nil objects
-	if (NSNotFound != [self indexOfObjectIdenticalTo:obj])
+	if (NSNotFound != [self indexOfObjectIdenticalTo:anObject])
 		return NO;	// don't add objects already there
 	else
 		[self addObject:anObject];

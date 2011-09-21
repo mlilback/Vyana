@@ -41,6 +41,8 @@
 		081F4C5B13FE09EC001BDEBF /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F4C5413FDF343001BDEBF /* AMViewController.m */; };
 		082DDE5013A0683A004F46CD /* AMLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 082DDE4E13A0683A004F46CD /* AMLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		082DDE5113A0683A004F46CD /* AMLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 082DDE4F13A0683A004F46CD /* AMLabel.m */; };
+		083179BD1423D46C009701C6 /* UIActionSheet+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 083179BB1423D46C009701C6 /* UIActionSheet+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		083179BE1423D46C009701C6 /* UIActionSheet+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 083179BC1423D46C009701C6 /* UIActionSheet+AMExtensions.m */; };
 		08349ED51404386100B629B4 /* AMBlockUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95513FF5A750089DB86 /* AMBlockUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08349ED71404386700B629B4 /* AMBlockUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95613FF5A750089DB86 /* AMBlockUtils.m */; };
 		08375D5713D26ECC0056925A /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -430,6 +432,8 @@
 		081F4C5413FDF343001BDEBF /* AMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViewController.m; sourceTree = "<group>"; };
 		082DDE4E13A0683A004F46CD /* AMLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMLabel.h; sourceTree = "<group>"; };
 		082DDE4F13A0683A004F46CD /* AMLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMLabel.m; sourceTree = "<group>"; };
+		083179BB1423D46C009701C6 /* UIActionSheet+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+AMExtensions.h"; sourceTree = "<group>"; };
+		083179BC1423D46C009701C6 /* UIActionSheet+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+AMExtensions.m"; sourceTree = "<group>"; };
 		08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BlockObservation.h"; sourceTree = "<group>"; };
 		08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BlockObservation.m"; sourceTree = "<group>"; };
 		0838B36214166291003264A8 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
@@ -718,6 +722,8 @@
 		08B6527C134BF1CF001C6159 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				083179BB1423D46C009701C6 /* UIActionSheet+AMExtensions.h */,
+				083179BC1423D46C009701C6 /* UIActionSheet+AMExtensions.m */,
 				08B65294134BF6A9001C6159 /* UIAlertView+AMExtensions.h */,
 				08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */,
 				08B6527D134BF1D0001C6159 /* UIColor+AMExtensions.h */,
@@ -1158,6 +1164,7 @@
 				085B945B1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
 				0838B395141EAA41003264A8 /* AMKeyValueObserver.h in Headers */,
 				0838B39E141EB256003264A8 /* MAZeroingWeakRef.h in Headers */,
+				083179BD1423D46C009701C6 /* UIActionSheet+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1553,6 +1560,7 @@
 				085B945E1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */,
 				0838B398141EAA41003264A8 /* AMKeyValueObserver.m in Sources */,
 				0838B3A1141EB256003264A8 /* MAZeroingWeakRef.m in Sources */,
+				083179BE1423D46C009701C6 /* UIActionSheet+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
