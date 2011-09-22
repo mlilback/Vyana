@@ -13,6 +13,27 @@
 #import "Vyana-ios/DDLog.h"
 #endif
 
+//the log level defaults to LOG_LEVEL_WARN. Overridden by the 
+// default/command line argument VyanaLogLevel
+@interface VyanaLogger : NSObject
++(id)sharedInstance;
+@property (nonatomic) NSInteger logLevel;
+@end
+
+//never read all the options for lumberjack. A custom context works much better
+// our constant is hex for "AMVy"
+#define VYANA_LOG_CONTEXT 0x79564D41
+
+#define VyanaLogLevel [[VyanaLogger sharedInstance] logLevel]
+
+#define VyanaLogError(frmt, ...)     SYNC_LOG_OBJC_MAYBE(VyanaLogLevel, LOG_FLAG_ERROR,   VYANA_LOG_CONTEXT, frmt, ##__VA_ARGS__)
+#define VyanaLogWarn(frmt, ...)     ASYNC_LOG_OBJC_MAYBE(VyanaLogLevel, LOG_FLAG_WARN,    VYANA_LOG_CONTEXT, frmt, ##__VA_ARGS__)
+#define VyanaLogInfo(frmt, ...)     ASYNC_LOG_OBJC_MAYBE(VyanaLogLevel, LOG_FLAG_INFO,    VYANA_LOG_CONTEXT, frmt, ##__VA_ARGS__)
+#define VyanaLogVerbose(frmt, ...)  ASYNC_LOG_OBJC_MAYBE(VyanaLogLevel, LOG_FLAG_VERBOSE, VYANA_LOG_CONTEXT, frmt, ##__VA_ARGS__)
+
+//with the above, I don't really see a need for the following. treat as deprecated
+//not used in Vyana, but might be used in older frameworks
+
 //used for logigng enter/exit of methods
 #define LOG_FLAG_TRACE	(1 << 4)
 //used in -init and -dealloc methods

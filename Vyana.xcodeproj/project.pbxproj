@@ -264,6 +264,9 @@
 		08B65293134BF1F2001C6159 /* iAMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65291134BF1F2001C6159 /* iAMApplication.m */; };
 		08B65298134BF8EA001C6159 /* UIAlertView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B65294134BF6A9001C6159 /* UIAlertView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08B65299134BF8EF001C6159 /* UIAlertView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */; };
+		08BD1DAE142BC0D1008BFD89 /* VyanaLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD1DAD142BC0D1008BFD89 /* VyanaLogger.m */; };
+		08BD1DAF142BC0D1008BFD89 /* VyanaLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD1DAD142BC0D1008BFD89 /* VyanaLogger.m */; };
+		08BD1DB0142BC0D1008BFD89 /* VyanaLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD1DAD142BC0D1008BFD89 /* VyanaLogger.m */; };
 		08BF6AF313996E3E00BC8066 /* AMAboutBoxController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BF6AF113996E3E00BC8066 /* AMAboutBoxController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08BF6AF413996E3E00BC8066 /* AMAboutBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF6AF213996E3E00BC8066 /* AMAboutBoxController.m */; };
 		08BF6AF713996EA100BC8066 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BF6AF613996EA100BC8066 /* WebKit.framework */; };
@@ -509,6 +512,7 @@
 		08B65291134BF1F2001C6159 /* iAMApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iAMApplication.m; sourceTree = "<group>"; };
 		08B65294134BF6A9001C6159 /* UIAlertView+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AMExtensions.h"; sourceTree = "<group>"; };
 		08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AMExtensions.m"; sourceTree = "<group>"; };
+		08BD1DAD142BC0D1008BFD89 /* VyanaLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VyanaLogger.m; sourceTree = "<group>"; };
 		08BF6AF113996E3E00BC8066 /* AMAboutBoxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAboutBoxController.h; sourceTree = "<group>"; };
 		08BF6AF213996E3E00BC8066 /* AMAboutBoxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAboutBoxController.m; sourceTree = "<group>"; };
 		08BF6AF613996EA100BC8066 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -828,6 +832,7 @@
 				08EFE4BF1342287D00231C8A /* VyanaLog.h */,
 				08EFE4EC13429E4600231C8A /* VyanaPrivate.h */,
 				08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */,
+				08BD1DAD142BC0D1008BFD89 /* VyanaLogger.m */,
 				08EFE4511341D02C00231C8A /* AMAppKit */,
 				08EFE3F71341AD5800231C8A /* AMFoundation */,
 				08B6528F134BF1F2001C6159 /* AMUIKit */,
@@ -1517,6 +1522,7 @@
 				0809757C14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */,
 				080975B9142672F30010FD68 /* MAWeakArray.m in Sources */,
 				080975BD142672F30010FD68 /* MAWeakDictionary.m in Sources */,
+				08BD1DAF142BC0D1008BFD89 /* VyanaLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1561,6 +1567,7 @@
 				0838B398141EAA41003264A8 /* AMKeyValueObserver.m in Sources */,
 				0838B3A1141EB256003264A8 /* MAZeroingWeakRef.m in Sources */,
 				083179BE1423D46C009701C6 /* UIActionSheet+AMExtensions.m in Sources */,
+				08BD1DB0142BC0D1008BFD89 /* VyanaLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1634,6 +1641,7 @@
 				0809757B14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */,
 				080975B8142672F30010FD68 /* MAWeakArray.m in Sources */,
 				080975BC142672F30010FD68 /* MAWeakDictionary.m in Sources */,
+				08BD1DAE142BC0D1008BFD89 /* VyanaLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
