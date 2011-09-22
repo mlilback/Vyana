@@ -18,6 +18,12 @@
 @interface VyanaLogger : NSObject
 +(id)sharedInstance;
 @property (nonatomic) NSInteger logLevel;
+//removes all loggers and then adds a DDASLLogger and a DDTTYLogger.
+//only executes the first time it is called
+-(void)startLogging;
+//allows other frameworks or objects define their own contexts
+-(int)logLevelForKey:(NSString*)key;
+-(void)setLogLevel:(int)level forKey:(NSString*)key;
 @end
 
 //never read all the options for lumberjack. A custom context works much better

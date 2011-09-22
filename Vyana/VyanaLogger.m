@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "VyanaLog.h"
+#import "DDASLLogger.h"
+#import "DDTTYLogger.h"
+
+@interface VyanaLogger()
+@property (nonatomic, retain) NSMutableDictionary *logLevels;
+@end
 
 @implementation VyanaLogger
 
@@ -23,6 +29,7 @@
 -(id)init
 {
 	self = [super init];
+	self.logLevels = [[NSMutableDictionary alloc] init];
 	self.logLevel = LOG_LEVEL_WARN;
 	id obj = [[NSUserDefaults standardUserDefaults] objectForKey:@"VyanaLogLevel"];
 	if (obj && [obj integerValue] >= 0)
@@ -30,5 +37,27 @@
 	return self;
 }
 
+//adds a DDASLLogger and a DDTTYLogger
+-(void)startLogging
+{
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		[DDLog removeAllLoggers];
+		[DDLog addLogger:[DDASLLogger sharedInstance]];
+		[DDLog addLogger:[DDTTYLogger sharedInstance]];
+	});
+}
+
+-(int)logLevelForKey:(NSString*)key
+{
+	return [[self.logLevels objectForKey:key] intValue];
+}
+
+-(void)setLogLevel:(int)level forKey:(NSString*)key
+{
+	[self.logLevels setObject:[NSNumber numberWithInt:level] forKey:key];
+}
+
 @synthesize logLevel;
+@synthesize logLevels;
 @end
