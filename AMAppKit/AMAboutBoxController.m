@@ -8,7 +8,10 @@
 
 #import "AMAboutBoxController.h"
 
-@interface AMAboutBoxController()
+@interface AMAboutBoxController() {
+	void(^__compBlock)(id);
+	NSDictionary *__substitutions;
+}
 @property (nonatomic, assign, readwrite) WebView *webView;
 @property (nonatomic, assign) NSTimeInterval startTime;
 -(void)loadWebview;

@@ -7,7 +7,11 @@
 
 #import "AMFileSelectionView.h"
 
-@interface AMFileSelectionView()
+@interface AMFileSelectionView() {
+	id _privData;
+	NSURL *__theFile;
+	BOOL __drawFocusRing;
+}
 -(BOOL)pasteboardHasAcceptableFile:(NSPasteboard*)pboard;
 -(void)initSmall;
 -(void)initLarge;

@@ -8,6 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
+/**
+ \class AMCenteredBox
+ \brief A NSBox subclass that centers itself inside its superview
+ 
+ */
+
 @interface AMCenteredBox : NSBox {
 @private
 	CGFloat	_offsetFromTop;

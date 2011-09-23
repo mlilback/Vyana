@@ -9,11 +9,21 @@
 
 #import <Foundation/Foundation.h>
 
-//This subclass will automatically register default defaults from a resource file
-// called DefaultDefaults.plist if it exists.
+/** 
+ 	\class AMApplication
+	\brief Autoloads defaults from property list
+
+ 	This subclass will look for a resource file named DefaultDefaults.plist. If found,
+ 	it will call [[NSUserDefaults standardUserDefaults] registerDefaults:dict] with
+ 	the contents of that file.
+*/
 
 @interface AMApplication : NSApplication {
 }
+///If the FScript framework is installed
+/// in the computer or user's Frameworks folder, this will load its menu item.
+/// see  http://www.fscript.org/
 -(void)loadFScriptIfAvailable;
+///set to YES when the termination process starts
 @property (nonatomic, readonly) BOOL isTerminating;
 @end
