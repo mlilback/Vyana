@@ -118,6 +118,10 @@
 		088A76D11406A90C003D6A3F /* AMTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 088A76CF1406A90C003D6A3F /* AMTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		088A76D21406A90C003D6A3F /* AMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 088A76D01406A90C003D6A3F /* AMTableView.m */; };
 		089DFEEB13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m in Sources */ = {isa = PBXBuildFile; fileRef = 089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */; };
+		08A6000E1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A6000F1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A600101432AF5500E8AB4B /* NSView+AMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */; };
+		08A600111432AF5500E8AB4B /* NSView+AMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */; };
 		08A8B19C13FCC99C003BE670 /* AMProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A8B19D13FCC99C003BE670 /* AMProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A8B19E13FCC99C003BE670 /* AMProcessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8B19B13FCC99C003BE670 /* AMProcessInfo.m */; };
@@ -490,6 +494,8 @@
 		088A76CF1406A90C003D6A3F /* AMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTableView.h; sourceTree = "<group>"; };
 		088A76D01406A90C003D6A3F /* AMTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTableView.m; sourceTree = "<group>"; };
 		089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMZeroingWeakRef+Lion.m"; sourceTree = "<group>"; };
+		08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+AMExtension.h"; sourceTree = "<group>"; };
+		08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+AMExtension.m"; sourceTree = "<group>"; };
 		08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProcessInfo.h; sourceTree = "<group>"; };
 		08A8B19B13FCC99C003BE670 /* AMProcessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMProcessInfo.m; sourceTree = "<group>"; };
 		08AD67F313DB3A8200687B3D /* Vyana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -967,6 +973,8 @@
 				08EFE4591341D14600231C8A /* NSImage+AMExtensions.m */,
 				0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */,
 				0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */,
+				08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */,
+				08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */,
 			);
 			path = AppKit;
 			sourceTree = SOURCE_ROOT;
@@ -1121,6 +1129,7 @@
 				0809757A14255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */,
 				080975B7142672F30010FD68 /* MAWeakArray.h in Headers */,
 				080975BB142672F30010FD68 /* MAWeakDictionary.h in Headers */,
+				08A6000F1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1239,6 +1248,7 @@
 				0809757914255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */,
 				080975B6142672F30010FD68 /* MAWeakArray.h in Headers */,
 				080975BA142672F30010FD68 /* MAWeakDictionary.h in Headers */,
+				08A6000E1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1523,6 +1533,7 @@
 				080975B9142672F30010FD68 /* MAWeakArray.m in Sources */,
 				080975BD142672F30010FD68 /* MAWeakDictionary.m in Sources */,
 				08BD1DAF142BC0D1008BFD89 /* VyanaLogger.m in Sources */,
+				08A600111432AF5500E8AB4B /* NSView+AMExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1642,6 +1653,7 @@
 				080975B8142672F30010FD68 /* MAWeakArray.m in Sources */,
 				080975BC142672F30010FD68 /* MAWeakDictionary.m in Sources */,
 				08BD1DAE142BC0D1008BFD89 /* VyanaLogger.m in Sources */,
+				08A600101432AF5500E8AB4B /* NSView+AMExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

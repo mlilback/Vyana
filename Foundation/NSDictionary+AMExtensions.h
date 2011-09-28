@@ -10,15 +10,15 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDictionary(AMExtensions)
-//If any item conforms to NSMutableCopying, -mutableCopy is called.
-// else, if conforms to NSCopying, -copy is called.
-// otherwise, same item is placed in new dict
+///If any item conforms to NSMutableCopying, -mutableCopy is called.
+/// else, if conforms to NSCopying, -copy is called.
+/// otherwise, same item is placed in new dict
 -(NSDictionary*)deepCopy;
 @end
 
 @interface NSMutableDictionary(AMExtensions)
-//inits self by adding each item in items keyed by valueForKey:keyName
+///inits self by adding each item in items keyed by valueForKey:keyName
 -(id)initWithItems:(NSArray*)items usingKeyName:(NSString*)keyName;
-//same as setObject:forKey: but if object is nil, ignores it instead of exception
+///same as setObject:forKey: but if object is nil, ignores it instead of exception
 -(void)setObjectIgnoringNil:(id)object forKey:(id)key;
 @end

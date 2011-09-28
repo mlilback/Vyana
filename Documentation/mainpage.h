@@ -14,3 +14,8 @@
 	OS X and iOS. Some of this code even goes back to Mac OS X 10.0 days.
 	
 */
+
+/**
+  \defgroup appkit Appkit Categories
+  Categories on AppKit classes
+*/

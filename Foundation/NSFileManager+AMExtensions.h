@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NSFileManager(AMExtensions)
-//generate a md5 checksum for a file
+///generate a md5 checksum for a file
 -(NSString*)md5ForFileAtPath:(NSString*)path;
 @end

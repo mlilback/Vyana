@@ -9,6 +9,6 @@
 
 
 @interface NSFont(AMExtensions)
-///<Returns an italic variant. If the font doesn't have an italic variant, creates a transform that skews it in the same manner as WebKit
+///Returns an italic variant. If the font doesn't have an italic variant, creates a transform that skews it in the same manner as WebKit
 -(NSFont*)italicVersion;
 @end

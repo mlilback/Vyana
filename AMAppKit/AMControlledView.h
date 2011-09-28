@@ -12,7 +12,8 @@
  	\brief A NSView subclass that tracks its view controller
  
  	Sometimes you'd like to have a view be able to refer back to its controller,
-	for example, to get the undo manager.
+	for example, to get the undo manager. It also inserts the view controller
+ 	into the responder chain above the view.
  */
 
 @interface AMControlledView : NSView
