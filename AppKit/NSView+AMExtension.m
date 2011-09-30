@@ -19,4 +19,11 @@
 	} while (parent);
 	return nil;
 }
+
+-(void)removeAllSubviews
+{
+	while ([self.subviews count] > 0)
+		[[self.subviews objectAtIndex:0] removeFromSuperview];
+}
+
 @end

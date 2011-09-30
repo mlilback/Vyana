@@ -15,5 +15,9 @@
  	@param aClass The class of the ancestor to look for
  	@returns the first ancestor of aClass, or nil.
 */
+
 -(NSView*)firstAncestorOfClass:(Class)aClass;
+/** Removes all subviews
+ */
+-(void)removeAllSubviews;
 @end
