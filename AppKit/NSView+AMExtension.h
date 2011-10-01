@@ -17,7 +17,13 @@
 */
 
 -(NSView*)firstAncestorOfClass:(Class)aClass;
+
+/** Returns an NSImage of the view that includes all subviews and any area offscreen
+*/
+-(NSImage *)imageWithSubviews;
+
 /** Removes all subviews
  */
 -(void)removeAllSubviews;
+
 @end
