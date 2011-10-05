@@ -68,6 +68,8 @@
 ///@returns an index set containing the indexes of any values in objects that are also in this array
 -(NSIndexSet*)indexesOfObjects:(NSArray*)objects;
 
+-(NSArray*)sortedArrayUsingKey:(NSString*)key ascending:(BOOL)asc;
+
 @end
 
 ///Convience methods on NSMutableArray

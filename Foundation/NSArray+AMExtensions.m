@@ -239,6 +239,12 @@
 	return indexSet;
 }
 
+-(NSArray*)sortedArrayUsingKey:(NSString*)key ascending:(BOOL)asc
+{
+	NSSortDescriptor *sortDesc = [NSSortDescriptor sortDescriptorWithKey:key ascending:asc];
+	NSArray *sortDescArray = [NSArray arrayWithObject:sortDesc];
+	return [self sortedArrayUsingDescriptors:sortDescArray];
+}
 
 @end
 
