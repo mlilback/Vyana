@@ -29,7 +29,7 @@
 -(id)init
 {
 	self = [super init];
-	self.logLevels = [[NSMutableDictionary alloc] init];
+	self.logLevels = [NSMutableDictionary dictionary];
 	self.logLevel = LOG_LEVEL_WARN;
 	id obj = [[NSUserDefaults standardUserDefaults] objectForKey:@"VyanaLogLevel"];
 	if (obj && [obj integerValue] >= 0)

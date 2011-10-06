@@ -35,7 +35,7 @@
 //the second parameter is the button index that was clicked.
 -(void)showWithCompletionHandler:(AMAlertViewCompletionBlock)cblock
 {
-	AMAlertViewDelegate *del = [[AMAlertViewDelegate alloc] initWithBlock:cblock];
+	AMAlertViewDelegate *del = [[[AMAlertViewDelegate alloc] initWithBlock:cblock] autorelease];
 	self.delegate = del;
 	[self show];
 }

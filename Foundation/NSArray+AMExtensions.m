@@ -116,7 +116,7 @@
 // otherwise, same item is placed in new array
 -(NSArray*)deepCopy
 {
-	id newArray = [[NSMutableArray alloc] init];
+	id newArray = [[[NSMutableArray alloc] init] autorelease];
 	NSEnumerator *en = [self objectEnumerator];
 	id anItem;
 	while ((anItem = [en nextObject])) {

@@ -61,6 +61,7 @@
 		aTrans.event = NSSelectorFromString([tdict objectForKey:@"event"]);
 		aTrans.targetPath = [tdict objectForKey:@"target"];
 		[aTrans.startState addTransition:aTrans];
+		[aTrans release];
 		[events addObject:[tdict objectForKey:@"event"]];
 	}
 	[__pdata setObject:[NSSet setWithSet:events] forKey:kEventsKey];

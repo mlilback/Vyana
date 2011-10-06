@@ -15,15 +15,15 @@
 // otherwise, same item is placed in new dict
 -(NSDictionary*)deepCopy
 {
-	id newDict = [[NSMutableDictionary alloc] init];
+	id newDict = [[[NSMutableDictionary alloc] init] autorelease];
 	for (id aKey in [self allKeys]) {
 		id anItem = [self objectForKey:aKey];
 		if ([anItem conformsToProtocol:@protocol(NSMutableCopying)]) {
-			anItem = [[anItem mutableCopy] autorelease];
+			anItem = [anItem mutableCopy];
 			[newDict setObject:anItem forKey:aKey];
 			[anItem release];
 		} else if ([anItem conformsToProtocol:@protocol(NSCopying)]) {
-			anItem = [[anItem copy] autorelease];
+			anItem = [anItem copy];
 			[newDict setObject:anItem forKey:aKey];
 			[anItem release];
 		} else {
