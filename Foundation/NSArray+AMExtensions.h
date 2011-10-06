@@ -82,4 +82,5 @@
 -(void)moveItemAtIndex:(NSInteger)srcIndex toIndex:(NSInteger)destIndex;
 ///adds anObject only if not already in the array
 -(BOOL)addUniqueObject:(id)anObject;
+-(BOOL)addUniqueObjectPointer:(id)anObject;
 @end

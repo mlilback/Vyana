@@ -237,7 +237,6 @@
 		08AD67EE13DB3A8200687B3D /* AMAppDefaultsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */; };
 		08AD67EF13DB3A8200687B3D /* VyanaDelete.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08507A90134E451500705079 /* VyanaDelete.icns */; };
 		08B6522C134BE1BC001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
-		08B65237134BE1BD001C6159 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B65236134BE1BD001C6159 /* UIKit.framework */; };
 		08B65238134BE1BD001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
 		08B6523A134BE1BD001C6159 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B65239134BE1BD001C6159 /* CoreGraphics.framework */; };
 		08B6523D134BE1BD001C6159 /* libVyana-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522A134BE1BC001C6159 /* libVyana-ios.a */; };
@@ -513,7 +512,6 @@
 		08B6522A134BE1BC001C6159 /* libVyana-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVyana-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6522B134BE1BC001C6159 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08B65235134BE1BD001C6159 /* Vyana-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vyana-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		08B65236134BE1BD001C6159 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		08B65239134BE1BD001C6159 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		08B65240134BE1BD001C6159 /* Vyana-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Vyana-iosTests-Info.plist"; sourceTree = "<group>"; };
 		08B65242134BE1BD001C6159 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -671,7 +669,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08B65237134BE1BD001C6159 /* UIKit.framework in Frameworks */,
 				08B65238134BE1BD001C6159 /* Foundation.framework in Frameworks */,
 				08B6523A134BE1BD001C6159 /* CoreGraphics.framework in Frameworks */,
 				08B6523D134BE1BD001C6159 /* libVyana-ios.a in Frameworks */,
@@ -824,7 +821,6 @@
 				08EFE3B61341A4FB00231C8A /* Cocoa.framework */,
 				08B65263134BE5C5001C6159 /* UIKit.framework */,
 				08B6522B134BE1BC001C6159 /* Foundation.framework */,
-				08B65236134BE1BD001C6159 /* UIKit.framework */,
 				08B65239134BE1BD001C6159 /* CoreGraphics.framework */,
 				08EFE3B81341A4FB00231C8A /* Other Frameworks */,
 			);
