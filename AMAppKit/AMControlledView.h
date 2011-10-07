@@ -8,8 +8,8 @@
 #import <Cocoa/Cocoa.h>
 
 /**
- 	\class AMControlledView
- 	\brief A NSView subclass that tracks its view controller
+ 	@class AMControlledView
+ 	@brief A NSView subclass that tracks its view controller
  
  	Sometimes you'd like to have a view be able to refer back to its controller,
 	for example, to get the undo manager. It also inserts the view controller
@@ -17,12 +17,11 @@
  */
 
 @interface AMControlledView : NSView
-/// \brief 
-/// When compiled with Lion as the minimum target, the property will be weak.
-/// On older OS versions, it is a unretained pointer.
-#if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_7
-@property (nonatomic, weak) IBOutlet NSViewController *viewController;
-#else
+/** @brief 
+	Ideally when compiled with Lion as the minimum target, the property would be weak. However,
+	you can't make weak references to a subclass of NSViewController. So if you aren't careful,
+	uoi can get BAD_ACCESS exceptions. To avoid this, make sure your view controller subclasses
+	AMViewController, which will make sure this does not happen.
+*/
 @property (nonatomic, assign) IBOutlet NSViewController *viewController;
-#endif
 @end

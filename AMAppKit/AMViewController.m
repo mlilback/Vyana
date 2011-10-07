@@ -9,6 +9,7 @@
 #import "AMViewController.h"
 #import <objc/runtime.h>
 #import "NSObject+BlockObservation.h"
+#import "AMControlledView.h"
 
 @interface AMVCBlockTokenWrapper : NSObject {
 #if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_7
@@ -28,6 +29,9 @@
 
 - (void)dealloc
 {
+	if ([self.view isKindOfClass:[AMControlledView class]]) {
+		[((AMControlledView*)self.view) setViewController:nil];
+	}
 	[self releaseAllBlockTokens];
 	[super dealloc];
 }
