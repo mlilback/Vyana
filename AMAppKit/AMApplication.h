@@ -26,9 +26,6 @@
 */
 -(void)loadFScriptIfAvailable;
 
-/** Returns the url to the application support folder for name of the running application */
--(NSURL*)appSupportDirectoryURL;
-
 /** set to YES when the termination process starts */
 @property (nonatomic, readonly) BOOL isTerminating;
 @end

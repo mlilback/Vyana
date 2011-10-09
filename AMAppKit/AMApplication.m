@@ -45,11 +45,4 @@
 			[[NSApp mainMenu] addItem:mitem];
 	}	
 }
-
--(NSURL*)appSupportDirectoryURL
-{
-	NSFileManager *fileManager = [NSFileManager defaultManager];
-	NSURL *libraryURL = [[fileManager URLsForDirectory:NSLibraryDirectory inDomains:NSUserDomainMask] lastObject];
-	return [libraryURL URLByAppendingPathComponent:[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"]];
-}
 @end

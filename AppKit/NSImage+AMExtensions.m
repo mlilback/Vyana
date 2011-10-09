@@ -55,6 +55,10 @@
 			break;
 		}
 	}
+	if (nil == rep) {
+		//we need to create one
+		rep = [NSBitmapImageRep imageRepWithData:[self TIFFRepresentation]];
+	}
 	return [rep representationUsingType:bitmapType properties:props];
 }
 
