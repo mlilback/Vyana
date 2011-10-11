@@ -13,6 +13,21 @@
 @end
 
 @implementation AMControlledView
+
+-(void)viewDidMoveToSuperview
+{
+	[super viewDidMoveToSuperview];
+	if ([self.viewController respondsToSelector:@selector(viewDidMoveToSuperview)])
+		[self.viewController performSelector:@selector(viewDidMoveToSuperview)];
+}
+
+-(void)viewDidMoveToWindow
+{
+	[super viewDidMoveToWindow];
+	if ([self.viewController respondsToSelector:@selector(viewDidMoveToWindow)])
+		[self.viewController performSelector:@selector(viewDidMoveToWindow)];
+}
+
 - (void)setViewController:(NSViewController *)newController
 {
 	if (__vc) {

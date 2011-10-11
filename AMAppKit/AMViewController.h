@@ -15,4 +15,14 @@
 -(void)saveBlockToken:(id)aToken forObject:(id)obj;
 -(void)releaseAllBlockTokens;
 
+/** If the controlled view is a subclass of AMControlledView, this method will be called
+ 	as appropriate.
+ */
+-(void)viewDidMoveToSuperview;
+
+/** If the controlled view is a subclass of AMControlledView, this method will be called
+ as appropriate.
+ */
+-(void)viewDidMoveToWindow;
+
 @end

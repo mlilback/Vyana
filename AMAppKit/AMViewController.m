@@ -36,6 +36,14 @@
 	[super dealloc];
 }
 
+-(void)viewDidMoveToWindow
+{
+}
+
+-(void)viewDidMoveToSuperview
+{
+}
+
 -(void)saveBlockToken:(id)aToken forObject:(id)obj
 {
 	if (nil == self.blockTokens)
