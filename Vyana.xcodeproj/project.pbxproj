@@ -23,6 +23,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		08056DF91444D56C0002766D /* UIApplication+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08056DF71444D56C0002766D /* UIApplication+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08056DFA1444D56C0002766D /* UIApplication+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08056DF81444D56C0002766D /* UIApplication+AMExtensions.m */; };
 		0809757914255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0809757A14255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0809757B14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */; };
@@ -435,6 +437,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08056DF71444D56C0002766D /* UIApplication+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+AMExtensions.h"; sourceTree = "<group>"; };
+		08056DF81444D56C0002766D /* UIApplication+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+AMExtensions.m"; sourceTree = "<group>"; };
 		0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+AMExtensions.h"; sourceTree = "<group>"; };
 		0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+AMExtensions.m"; sourceTree = "<group>"; };
 		080975B2142672F30010FD68 /* MAWeakArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWeakArray.h; sourceTree = "<group>"; };
@@ -740,6 +744,8 @@
 		08B6527C134BF1CF001C6159 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				08056DF71444D56C0002766D /* UIApplication+AMExtensions.h */,
+				08056DF81444D56C0002766D /* UIApplication+AMExtensions.m */,
 				083179BB1423D46C009701C6 /* UIActionSheet+AMExtensions.h */,
 				083179BC1423D46C009701C6 /* UIActionSheet+AMExtensions.m */,
 				08B65294134BF6A9001C6159 /* UIAlertView+AMExtensions.h */,
@@ -1192,6 +1198,7 @@
 				0838B395141EAA41003264A8 /* AMKeyValueObserver.h in Headers */,
 				0838B39E141EB256003264A8 /* MAZeroingWeakRef.h in Headers */,
 				083179BD1423D46C009701C6 /* UIActionSheet+AMExtensions.h in Headers */,
+				08056DF91444D56C0002766D /* UIApplication+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1596,6 +1603,7 @@
 				0838B3A1141EB256003264A8 /* MAZeroingWeakRef.m in Sources */,
 				083179BE1423D46C009701C6 /* UIActionSheet+AMExtensions.m in Sources */,
 				08BD1DB0142BC0D1008BFD89 /* VyanaLogger.m in Sources */,
+				08056DFA1444D56C0002766D /* UIApplication+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,6 +35,7 @@
 #import <Vyana-ios/AMAppState.h>
 #import <Vyana-ios/AMStateTransition.h>
 #import <Vyana-ios/UIAlertView+AMExtensions.h>
+#import <Vyana-ios/UIApplication+AMExtensions.h>
 #import <Vyana-ios/UIColor+AMExtensions.h>
 #import <Vyana-ios/UIImage+Tint.h>
 #import <Vyana-ios/UIScreen+AMExtensions.h>
