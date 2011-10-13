@@ -14,6 +14,13 @@
 
 @implementation AMControlledView
 
+-(void)viewWillMoveToSuperview:(NSView *)newSuperview
+{
+	[super viewWillMoveToSuperview:newSuperview];
+	if ([self.viewController respondsToSelector:@selector(viewWillMoveToSuperview:)])
+		[self.viewController performSelector:@selector(viewWillMoveToSuperview:) withObject:newSuperview];
+}
+
 -(void)viewDidMoveToSuperview
 {
 	[super viewDidMoveToSuperview];

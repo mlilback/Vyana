@@ -36,6 +36,11 @@
 	[super dealloc];
 }
 
+-(void)viewWillMoveToSuperview:(NSView *)newSuperview
+{
+	
+}
+
 -(void)viewDidMoveToWindow
 {
 }

@@ -18,6 +18,11 @@
 /** If the controlled view is a subclass of AMControlledView, this method will be called
  	as appropriate.
  */
+- (void)viewWillMoveToSuperview:(NSView *)newSuperview;
+
+/** If the controlled view is a subclass of AMControlledView, this method will be called
+ 	as appropriate.
+ */
 -(void)viewDidMoveToSuperview;
 
 /** If the controlled view is a subclass of AMControlledView, this method will be called
