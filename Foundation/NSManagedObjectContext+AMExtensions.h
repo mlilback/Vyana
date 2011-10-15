@@ -28,7 +28,12 @@
     withPredicate:(id)stringOrPredicate arguments:(va_list)arguments;
 
 - (NSArray *)fetchObjectsForEntityName:(NSString *)newEntityName
-    withPredicate:(NSPredicate*)predicate sortKey:(NSString*)sortKey;
+						 withPredicate:(NSPredicate*)predicate 
+							   sortKey:(NSString*)sortKey;
+
+- (NSArray *)fetchObjectsForEntityName:(NSString *)newEntityName
+						 withPredicate:(NSPredicate*)predicate 
+					   sortDescriptors:(NSArray*)sortDescriptors;
 
 -(NSManagedObject*)firstObjectFromFetchRequestNamed:(NSString*)reqName parameters:(NSDictionary*)params;
 

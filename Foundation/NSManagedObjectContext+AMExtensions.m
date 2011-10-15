@@ -162,21 +162,18 @@
 }
 
 - (NSArray *)fetchObjectsForEntityName:(NSString *)newEntityName
-	withPredicate:(NSPredicate*)predicate sortKey:(NSString*)sortKey
+						 withPredicate:(NSPredicate*)predicate 
+					   sortDescriptors:(NSArray*)sortDescriptors
 {
 	NSEntityDescription *entity = [NSEntityDescription
-		entityForName:newEntityName inManagedObjectContext:self];
-
+								   entityForName:newEntityName inManagedObjectContext:self];
+	
 	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
 	[request setEntity:entity];
 	if (predicate)
 		[request setPredicate:predicate];
-	if (sortKey) {
-		NSArray *sortDescriptors = [NSArray 
-			arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:sortKey ascending:YES]];
-		[request setSortDescriptors:sortDescriptors];
-	}
-	 
+	[request setSortDescriptors:sortDescriptors];
+	
 	NSError *error = nil;
 	NSArray *results = [self executeFetchRequest:request error:&error];
 	if (error != nil)
@@ -185,6 +182,18 @@
 	}
 	
 	return results;
+}
+
+
+- (NSArray *)fetchObjectsForEntityName:(NSString *)newEntityName
+	withPredicate:(NSPredicate*)predicate sortKey:(NSString*)sortKey
+{
+	NSArray *sortDescriptors = nil;
+	if (sortKey) {
+		sortDescriptors = [NSArray 
+			arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:sortKey ascending:YES]];
+	}
+	return [self fetchObjectsForEntityName:newEntityName withPredicate:predicate sortDescriptors:sortDescriptors];
 }
 
 -(NSInteger)countForEntityName:(NSString*)name withPredicate:(id)stringOrPredicate, ...
