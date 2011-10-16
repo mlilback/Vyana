@@ -238,6 +238,10 @@
 		08AD67ED13DB3A8200687B3D /* VyanaConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4F01342B03900231C8A /* VyanaConfig.plist */; };
 		08AD67EE13DB3A8200687B3D /* AMAppDefaultsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */; };
 		08AD67EF13DB3A8200687B3D /* VyanaDelete.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08507A90134E451500705079 /* VyanaDelete.icns */; };
+		08ADF5B5144B9AF000F787E6 /* AMWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ADF5B3144B9AF000F787E6 /* AMWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08ADF5B6144B9AF000F787E6 /* AMWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ADF5B3144B9AF000F787E6 /* AMWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08ADF5B7144B9AF000F787E6 /* AMWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ADF5B4144B9AF000F787E6 /* AMWindow.m */; };
+		08ADF5B8144B9AF000F787E6 /* AMWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ADF5B4144B9AF000F787E6 /* AMWindow.m */; };
 		08B6522C134BE1BC001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
 		08B65238134BE1BD001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
 		08B6523A134BE1BD001C6159 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B65239134BE1BD001C6159 /* CoreGraphics.framework */; };
@@ -513,6 +517,8 @@
 		08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProcessInfo.h; sourceTree = "<group>"; };
 		08A8B19B13FCC99C003BE670 /* AMProcessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMProcessInfo.m; sourceTree = "<group>"; };
 		08AD67F313DB3A8200687B3D /* Vyana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08ADF5B3144B9AF000F787E6 /* AMWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMWindow.h; sourceTree = "<group>"; };
+		08ADF5B4144B9AF000F787E6 /* AMWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMWindow.m; sourceTree = "<group>"; };
 		08B6522A134BE1BC001C6159 /* libVyana-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVyana-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6522B134BE1BC001C6159 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08B65235134BE1BD001C6159 /* Vyana-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vyana-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1031,6 +1037,8 @@
 				08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */,
 				081F4C5313FDF343001BDEBF /* AMViewController.h */,
 				081F4C5413FDF343001BDEBF /* AMViewController.m */,
+				08ADF5B3144B9AF000F787E6 /* AMWindow.h */,
+				08ADF5B4144B9AF000F787E6 /* AMWindow.m */,
 			);
 			path = AMAppKit;
 			sourceTree = SOURCE_ROOT;
@@ -1149,6 +1157,7 @@
 				08A6000F1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */,
 				088DF15C143CBAA800CF4844 /* NSMenu+AMExtensions.h in Headers */,
 				088DF16A143CDF3F00CF4844 /* NSTableView+AMExtensions.h in Headers */,
+				08ADF5B6144B9AF000F787E6 /* AMWindow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1271,6 +1280,7 @@
 				08A6000E1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */,
 				088DF160143CC04000CF4844 /* NSMenu+AMExtensions.h in Headers */,
 				088DF169143CDF3F00CF4844 /* NSTableView+AMExtensions.h in Headers */,
+				08ADF5B5144B9AF000F787E6 /* AMWindow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1558,6 +1568,7 @@
 				08A600111432AF5500E8AB4B /* NSView+AMExtension.m in Sources */,
 				088DF15E143CBAA800CF4844 /* NSMenu+AMExtensions.m in Sources */,
 				088DF16C143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */,
+				08ADF5B8144B9AF000F787E6 /* AMWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1680,6 +1691,7 @@
 				08BD1DAE142BC0D1008BFD89 /* VyanaLogger.m in Sources */,
 				08A600101432AF5500E8AB4B /* NSView+AMExtension.m in Sources */,
 				088DF16B143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */,
+				08ADF5B7144B9AF000F787E6 /* AMWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

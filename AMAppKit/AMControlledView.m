@@ -28,6 +28,13 @@
 		[self.viewController performSelector:@selector(viewDidMoveToSuperview)];
 }
 
+-(void)viewWillMoveToWindow:(NSWindow *)newWindow
+{
+	[super viewWillMoveToWindow:newWindow];
+	if ([self.viewController respondsToSelector:@selector(viewWillMoveToWindow:)])
+		[self.viewController performSelector:@selector(viewWillMoveToWindow:) withObject:newWindow];
+}
+
 -(void)viewDidMoveToWindow
 {
 	[super viewDidMoveToWindow];

@@ -22,6 +22,7 @@
 
 #if MACOSX_DEPLOYMENT_TARGET >= MAC_OS_X_VERSION_10_7
 #import <Vyana/NSMenu+AMExtensions.h>
+#import <Vyana/AMWindow.h>
 #endif
 
 #import <Vyana/NSManagedObjectContext+AMExtensions.h>

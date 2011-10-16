@@ -28,6 +28,11 @@
 /** If the controlled view is a subclass of AMControlledView, this method will be called
  as appropriate.
  */
+- (void)viewWillMoveToWindow:(NSWindow *)newWindow;
+
+/** If the controlled view is a subclass of AMControlledView, this method will be called
+ as appropriate.
+ */
 -(void)viewDidMoveToWindow;
 
 @end

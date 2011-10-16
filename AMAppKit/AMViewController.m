@@ -38,7 +38,10 @@
 
 -(void)viewWillMoveToSuperview:(NSView *)newSuperview
 {
-	
+}
+
+-(void)viewWillMoveToWindow:(NSWindow *)newWindow
+{
 }
 
 -(void)viewDidMoveToWindow
