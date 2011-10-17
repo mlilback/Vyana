@@ -192,7 +192,7 @@ static AMPreferencesController *sInstance=nil;
 	//get list of subviews
 	NSEnumerator *en = [[[self.window contentView] subviews] reverseObjectEnumerator];
 	//this is the current module's view.
-	aView = [en nextObject];
+	[en nextObject];
 	//if the user clicked a lot, there might be other views. remove them all
 	while ((aView = [en nextObject]))
 		[aView removeFromSuperview];

@@ -91,13 +91,18 @@
 -(CGColorRef)createCGColorRef
 {
 	NSColor *rgbColor = [self colorUsingColorSpaceName:NSCalibratedRGBColorSpace];
-	return CGColorCreateGenericRGB([rgbColor redComponent], 
+	CGColorRef colorRef = CGColorCreateGenericRGB([rgbColor redComponent], 
 		[rgbColor greenComponent], [rgbColor blueComponent], [rgbColor alphaComponent]);
+	[(id)colorRef autorelease];
+	return colorRef;
 }
 
 //returns an autoreleased cg color
 -(CGColorRef)cgColorRef
 {
-	return (CGColorRef)[(id)[self createCGColorRef] autorelease];
+	NSColor *rgbColor = [self colorUsingColorSpaceName:NSCalibratedRGBColorSpace];
+	CGColorRef cref = CGColorCreateGenericRGB([rgbColor redComponent], 
+								   [rgbColor greenComponent], [rgbColor blueComponent], [rgbColor alphaComponent]);
+	return (CGColorRef)[(id)cref autorelease];
 }
 @end

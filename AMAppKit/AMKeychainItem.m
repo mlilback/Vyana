@@ -229,6 +229,7 @@
 	OSStatus status = SecKeychainItemCopyContent(itemRef, NULL, &itemAttrList, NULL, NULL);
 	if (noErr == status) {
 		valPtr = (int*)itemAttrs[0].data;
+		val = *valPtr;
 		SecKeychainItemFreeContent(&itemAttrList, NULL);
 	}
 	return val;

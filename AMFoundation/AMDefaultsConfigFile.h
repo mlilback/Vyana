@@ -7,11 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AMDefaultsConfigFile : NSObject {
-	@private
-	NSDictionary *__dict;
-	NSBundle *__bundle; //should change to a weak ref and remove ourselves when bundle unloaded
-}
+@interface AMDefaultsConfigFile : NSObject
 -(id)initWithDictionary:(NSDictionary*)dict bundle:(NSBundle*)bundle;
 
 @property(nonatomic, readonly) NSDictionary *configDictionary;

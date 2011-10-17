@@ -32,6 +32,7 @@
 	CGPathCloseSubpath(shakePath);
 	shakeAnimation.path = shakePath;
 	shakeAnimation.duration = shakeDuration;
+	CGPathRelease(shakePath);
 	return shakeAnimation;
 }
 

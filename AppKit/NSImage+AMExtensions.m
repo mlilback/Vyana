@@ -81,6 +81,7 @@
 	if(!imageData) return nil;
 	CGImageSourceRef imageSource = CGImageSourceCreateWithData((CFDataRef)imageData, NULL);
 	imageRef = CGImageSourceCreateImageAtIndex(imageSource, 0, NULL);
-	return imageRef;
+	CFRelease(imageSource);
+	return (CGImageRef)[(id)imageRef autorelease];
 }
 @end

@@ -36,7 +36,7 @@ static int getArgMaxLen();
 		//error
 		NSLog(@"error!!!");
 	}
-	if (curLen > 0) {
+	if (curLen > 0 && bsdProcs) {
 		for (i=0; i < listLen; i++) {
 			AMProcessInfo *aProcess = [[AMProcessInfo alloc] init];
 			aProcess.pid = bsdProcs[i].kp_proc.p_pid;

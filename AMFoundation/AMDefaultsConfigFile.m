@@ -7,6 +7,11 @@
 
 #import "AMDefaultsConfigFile.h"
 
+@interface AMDefaultsConfigFile() {
+	NSDictionary *__dict;
+}
+@end
+
 @implementation AMDefaultsConfigFile
 
 -(id)initWithDictionary:(NSDictionary*)dict bundle:(NSBundle*)bundle

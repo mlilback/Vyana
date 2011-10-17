@@ -43,6 +43,7 @@
 		id mitem = [[NSClassFromString(@"FScriptMenuItem") alloc] init];
 		if (mitem)
 			[[NSApp mainMenu] addItem:mitem];
+		[mitem release];
 	}	
 }
 @end
