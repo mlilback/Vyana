@@ -66,6 +66,23 @@
 	[super setNextResponder:newNextResponder];
 }
 
+-(void)print:(id)sender
+{
+	if ([self.viewController respondsToSelector:@selector(shouldHandlePrintCommand:)] &&
+		![(id)self.viewController shouldHandlePrintCommand:sender])
+	{
+		return;
+	}
+	[super print:sender];
+}
+
+-(NSString*)printJobTitle
+{
+	if ([self.viewController respondsToSelector:@selector(printJobTitle)])
+		return [self.viewController performSelector:@selector(printJobTitle)];
+	return [super printJobTitle];
+}
+
 
 @synthesize viewController=__vc;
 @end

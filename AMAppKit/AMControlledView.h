@@ -25,3 +25,17 @@
 */
 @property (nonatomic, assign) IBOutlet NSViewController *viewController;
 @end
+
+/** @brief
+	If the viewController responds to any of these messages, they will be invoked instead of the
+	default NSView implementation. There is no need to conform to this protocol as it is never
+	checked for.
+*/
+
+@protocol AMControlledViewController <NSObject>
+@optional
+/** If implemented and YES is returned, the default NSView implementation is called. */
+-(BOOL)shouldHandlePrintCommand:(id)sender;
+/** IF implemented, used instead of the NSView implementation. */
+-(NSString*)printJobTitle;
+@end
