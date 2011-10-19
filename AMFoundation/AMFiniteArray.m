@@ -16,6 +16,7 @@
 @implementation AMFiniteArray
 
 @synthesize countMax=max_;
+@synthesize count;
 @synthesize location=loc_;
 @synthesize uniqueObjects=uni_;
 
@@ -142,7 +143,7 @@
 		//!!! throw an exception
 		return nil;
 	}
-	return [array_ objectAtIndex:(ind0_+index)%max_];
+	return [array_ objectAtIndex:ind];
 }
 
 - (NSUInteger)indexOfObject:(id)anObject {
@@ -174,7 +175,6 @@
 	return [array_ objectAtIndex:loc_];
 }
 
-
 #pragma mark -
 #pragma mark Accessors
 
@@ -182,8 +182,19 @@
 	return [array_ count];
 }
 
-- (void)setCount:(NSUInteger)count {
-	//!!!
+- (void)setCountMax:(NSUInteger)newMax {
+	if (max_ == newMax) return;
+	NSMutableArray *newArray = [NSMutableArray arrayWithCapacity:newMax];
+	int minMax = MIN(newMax, [array_ count]);
+	id obj=nil;
+	for (int it=0; it < minMax; it++) {
+		obj = [array_ objectAtIndex:(ind0_+it)%max_];
+		[newArray addObject:obj];
+	}
+	self.array = newArray;
+	max_ = newMax;
+	ind0_ = 0;
+	loc_ = [array_ count]-1;
 }
 
 @end

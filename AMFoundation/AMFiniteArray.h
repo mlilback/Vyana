@@ -12,6 +12,8 @@
 // such that objects added after count=countMax cause the oldest added objects to
 // pop off (first-in, first-out). It also addes a location counter, set to the most
 // recently added object, so that previous and next can iterate.
+// NOTE: setCountMax can used to increase or decrease our array cap size without
+// erasing its data (it does however make a new internal array and resets location). 
 @interface AMFiniteArray : NSObject
 
 @property (nonatomic, assign) NSUInteger countMax;	// max length of our array (also capacity)
