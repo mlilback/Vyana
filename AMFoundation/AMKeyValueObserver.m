@@ -12,7 +12,7 @@
 @interface AMKeyValueObserver()
 @property (nonatomic, copy) AMKVOBlock block;
 @property (nonatomic, copy) NSString *keyPath;
-@property (nonatomic, assign) MAZeroingWeakRef *objectRef;
+@property (nonatomic, retain) MAZeroingWeakRef *objectRef;
 @end
 
 @implementation AMKeyValueObserver

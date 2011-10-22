@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 typedef void (^BasicBlock)(void);
+typedef void (^BasicBlock1Arg)(id);
+typedef void (^BasicBlock2Arg)(id,id);
 
 void RunAfterDelay(NSTimeInterval delay, BasicBlock block);
 
