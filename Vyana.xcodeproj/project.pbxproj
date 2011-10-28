@@ -126,6 +126,10 @@
 		088DF16A143CDF3F00CF4844 /* NSTableView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 088DF167143CDF3F00CF4844 /* NSTableView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		088DF16B143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 088DF168143CDF3F00CF4844 /* NSTableView+AMExtensions.m */; };
 		088DF16C143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 088DF168143CDF3F00CF4844 /* NSTableView+AMExtensions.m */; };
+		089C0B23145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B21145A2B3D00DF9984 /* NSWindow+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089C0B24145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B21145A2B3D00DF9984 /* NSWindow+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089C0B25145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */; };
+		089C0B26145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */; };
 		089DFEEB13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m in Sources */ = {isa = PBXBuildFile; fileRef = 089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */; };
 		08A6000E1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A6000F1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -511,6 +515,8 @@
 		088DF15A143CBAA800CF4844 /* NSMenu+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMenu+AMExtensions.m"; sourceTree = "<group>"; };
 		088DF167143CDF3F00CF4844 /* NSTableView+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTableView+AMExtensions.h"; sourceTree = "<group>"; };
 		088DF168143CDF3F00CF4844 /* NSTableView+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTableView+AMExtensions.m"; sourceTree = "<group>"; };
+		089C0B21145A2B3D00DF9984 /* NSWindow+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+AMExtensions.h"; sourceTree = "<group>"; };
+		089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+AMExtensions.m"; sourceTree = "<group>"; };
 		089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMZeroingWeakRef+Lion.m"; sourceTree = "<group>"; };
 		08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+AMExtension.h"; sourceTree = "<group>"; };
 		08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+AMExtension.m"; sourceTree = "<group>"; };
@@ -998,6 +1004,8 @@
 				0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */,
 				08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */,
 				08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */,
+				089C0B21145A2B3D00DF9984 /* NSWindow+AMExtensions.h */,
+				089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */,
 			);
 			path = AppKit;
 			sourceTree = SOURCE_ROOT;
@@ -1158,6 +1166,7 @@
 				088DF15C143CBAA800CF4844 /* NSMenu+AMExtensions.h in Headers */,
 				088DF16A143CDF3F00CF4844 /* NSTableView+AMExtensions.h in Headers */,
 				08ADF5B6144B9AF000F787E6 /* AMWindow.h in Headers */,
+				089C0B24145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1281,6 +1290,7 @@
 				088DF160143CC04000CF4844 /* NSMenu+AMExtensions.h in Headers */,
 				088DF169143CDF3F00CF4844 /* NSTableView+AMExtensions.h in Headers */,
 				08ADF5B5144B9AF000F787E6 /* AMWindow.h in Headers */,
+				089C0B23145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1569,6 +1579,7 @@
 				088DF15E143CBAA800CF4844 /* NSMenu+AMExtensions.m in Sources */,
 				088DF16C143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */,
 				08ADF5B8144B9AF000F787E6 /* AMWindow.m in Sources */,
+				089C0B26145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1692,6 +1703,7 @@
 				08A600101432AF5500E8AB4B /* NSView+AMExtension.m in Sources */,
 				088DF16B143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */,
 				08ADF5B7144B9AF000F787E6 /* AMWindow.m in Sources */,
+				089C0B25145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
