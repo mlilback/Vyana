@@ -15,4 +15,6 @@
 -(NSString*)thisApplicationsSupportFolder;
 ///Returns the path to the folder this application should use in the user's caches folder.
 -(NSString*)thisApplicationsCacheFolder;
+-(void)beginSheet:(NSWindow*)sheet modalForWindow:(NSWindow*)parentWindow 
+	completionHandler:(BasicBlock1IntArg)handler;
 @end

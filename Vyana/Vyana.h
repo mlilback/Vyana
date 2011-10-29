@@ -7,6 +7,8 @@
 
 #import <Cocoa/Cocoa.h>
 #import <Vyana/AMStandardMacros.h>
+#import <Vyana/AMBlockUtils.h>
+
 #import <Vyana/NSArray+AMExtensions.h>
 #import <Vyana/NSDictionary+AMExtensions.h>
 #import <Vyana/NSFileHandle+AMExtensions.h>
@@ -20,7 +22,9 @@
 #import <Vyana/AMFileSizeTransformer.h>
 #import <Vyana/AMZeroingWeakRef.h>
 
-#if MACOSX_DEPLOYMENT_TARGET >= MAC_OS_X_VERSION_10_7
+#if MAC_OS_X_VERSION_MIN_REQUIRED >= 1070
+#import <Vyana/AMCharacterSetFormatter.h>
+#import <Vyana/AMRegExpFormatter.h>
 #import <Vyana/NSMenu+AMExtensions.h>
 #import <Vyana/AMWindow.h>
 #endif

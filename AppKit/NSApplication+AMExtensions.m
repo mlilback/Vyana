@@ -7,8 +7,13 @@
 //	Compatibility: Mac OS X: 10.6, iPhone: NA
 //
 
+#import "AMBlockUtils.h"
 #import "NSApplication+AMExtensions.h"
 
+@interface AMSheetTrampoline : NSObject
+@property (nonatomic, copy) BasicBlock1IntArg handler;
+-(void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo;
+@end
 
 @implementation NSApplication (AMExtensions)
 -(NSString*)thisApplicationsSupportFolder
@@ -34,5 +39,26 @@
 	if (![fm fileExistsAtPath:path isDirectory:&isDir])
 		[fm createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
 	return path;
+}
+
+-(void)beginSheet:(NSWindow*)sheet modalForWindow:(NSWindow*)parentWindow 
+	completionHandler:(BasicBlock1IntArg)handler
+{
+	AMSheetTrampoline *tramp = [[AMSheetTrampoline alloc] init];
+	tramp.handler = handler;
+	[NSApp beginSheet:sheet 
+	   modalForWindow:parentWindow 
+		modalDelegate:tramp 
+	   didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) 
+		  contextInfo:nil];
+}
+@end
+
+
+@implementation AMSheetTrampoline
+@synthesize handler;
+-(void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo
+{
+	self.handler(returnCode);
 }
 @end

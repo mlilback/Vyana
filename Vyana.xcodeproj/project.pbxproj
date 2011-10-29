@@ -130,6 +130,12 @@
 		089C0B24145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B21145A2B3D00DF9984 /* NSWindow+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		089C0B25145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */; };
 		089C0B26145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */; };
+		089C0B2F145B36EF00DF9984 /* AMRegExpFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B2D145B36EF00DF9984 /* AMRegExpFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089C0B30145B36EF00DF9984 /* AMRegExpFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B2E145B36EF00DF9984 /* AMRegExpFormatter.m */; };
+		089C0B31145B36F800DF9984 /* AMRegExpFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B2D145B36EF00DF9984 /* AMRegExpFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089C0B34145B39F900DF9984 /* AMCharacterSetFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B32145B39F900DF9984 /* AMCharacterSetFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089C0B35145B39F900DF9984 /* AMCharacterSetFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B33145B39F900DF9984 /* AMCharacterSetFormatter.m */; };
+		089C0B36145B3A5300DF9984 /* AMCharacterSetFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B32145B39F900DF9984 /* AMCharacterSetFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		089DFEEB13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m in Sources */ = {isa = PBXBuildFile; fileRef = 089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */; };
 		08A6000E1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A6000F1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -517,6 +523,10 @@
 		088DF168143CDF3F00CF4844 /* NSTableView+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTableView+AMExtensions.m"; sourceTree = "<group>"; };
 		089C0B21145A2B3D00DF9984 /* NSWindow+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+AMExtensions.h"; sourceTree = "<group>"; };
 		089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+AMExtensions.m"; sourceTree = "<group>"; };
+		089C0B2D145B36EF00DF9984 /* AMRegExpFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMRegExpFormatter.h; sourceTree = "<group>"; };
+		089C0B2E145B36EF00DF9984 /* AMRegExpFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMRegExpFormatter.m; sourceTree = "<group>"; };
+		089C0B32145B39F900DF9984 /* AMCharacterSetFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCharacterSetFormatter.h; sourceTree = "<group>"; };
+		089C0B33145B39F900DF9984 /* AMCharacterSetFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCharacterSetFormatter.m; sourceTree = "<group>"; };
 		089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMZeroingWeakRef+Lion.m"; sourceTree = "<group>"; };
 		08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+AMExtension.h"; sourceTree = "<group>"; };
 		08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+AMExtension.m"; sourceTree = "<group>"; };
@@ -973,6 +983,10 @@
 				08A8B19B13FCC99C003BE670 /* AMProcessInfo.m */,
 				08D9D95513FF5A750089DB86 /* AMBlockUtils.h */,
 				08D9D95613FF5A750089DB86 /* AMBlockUtils.m */,
+				089C0B2D145B36EF00DF9984 /* AMRegExpFormatter.h */,
+				089C0B2E145B36EF00DF9984 /* AMRegExpFormatter.m */,
+				089C0B32145B39F900DF9984 /* AMCharacterSetFormatter.h */,
+				089C0B33145B39F900DF9984 /* AMCharacterSetFormatter.m */,
 			);
 			path = AMFoundation;
 			sourceTree = SOURCE_ROOT;
@@ -1167,6 +1181,8 @@
 				088DF16A143CDF3F00CF4844 /* NSTableView+AMExtensions.h in Headers */,
 				08ADF5B6144B9AF000F787E6 /* AMWindow.h in Headers */,
 				089C0B24145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */,
+				089C0B2F145B36EF00DF9984 /* AMRegExpFormatter.h in Headers */,
+				089C0B34145B39F900DF9984 /* AMCharacterSetFormatter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1291,6 +1307,8 @@
 				088DF169143CDF3F00CF4844 /* NSTableView+AMExtensions.h in Headers */,
 				08ADF5B5144B9AF000F787E6 /* AMWindow.h in Headers */,
 				089C0B23145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */,
+				089C0B31145B36F800DF9984 /* AMRegExpFormatter.h in Headers */,
+				089C0B36145B3A5300DF9984 /* AMCharacterSetFormatter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1580,6 +1598,8 @@
 				088DF16C143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */,
 				08ADF5B8144B9AF000F787E6 /* AMWindow.m in Sources */,
 				089C0B26145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */,
+				089C0B30145B36EF00DF9984 /* AMRegExpFormatter.m in Sources */,
+				089C0B35145B39F900DF9984 /* AMCharacterSetFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
