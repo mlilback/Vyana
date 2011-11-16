@@ -55,6 +55,7 @@
 #import <Vyana/AMFileSelectionView.h>
 #import <Vyana/AMKeychainItem.h>
 #import <Vyana/AMKeychainManager.h>
+#import <Vyana/AMMacNavController.h>
 #import <Vyana/AMPreferenceModule.h>
 #import <Vyana/AMPreferencesController.h>
 #import <Vyana/AMProcessInfo.h>

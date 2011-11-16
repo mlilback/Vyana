@@ -293,6 +293,10 @@
 		08BD1DAE142BC0D1008BFD89 /* VyanaLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD1DAD142BC0D1008BFD89 /* VyanaLogger.m */; };
 		08BD1DAF142BC0D1008BFD89 /* VyanaLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD1DAD142BC0D1008BFD89 /* VyanaLogger.m */; };
 		08BD1DB0142BC0D1008BFD89 /* VyanaLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD1DAD142BC0D1008BFD89 /* VyanaLogger.m */; };
+		08BD996514744A6E004EF624 /* AMMacNavController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BD996314744A6E004EF624 /* AMMacNavController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08BD996614744A6E004EF624 /* AMMacNavController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BD996314744A6E004EF624 /* AMMacNavController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08BD996714744A6E004EF624 /* AMMacNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD996414744A6E004EF624 /* AMMacNavController.m */; };
+		08BD996814744A6E004EF624 /* AMMacNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD996414744A6E004EF624 /* AMMacNavController.m */; };
 		08BF6AF313996E3E00BC8066 /* AMAboutBoxController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BF6AF113996E3E00BC8066 /* AMAboutBoxController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08BF6AF413996E3E00BC8066 /* AMAboutBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF6AF213996E3E00BC8066 /* AMAboutBoxController.m */; };
 		08BF6AF713996EA100BC8066 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BF6AF613996EA100BC8066 /* WebKit.framework */; };
@@ -554,6 +558,8 @@
 		08B65294134BF6A9001C6159 /* UIAlertView+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AMExtensions.h"; sourceTree = "<group>"; };
 		08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AMExtensions.m"; sourceTree = "<group>"; };
 		08BD1DAD142BC0D1008BFD89 /* VyanaLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VyanaLogger.m; sourceTree = "<group>"; };
+		08BD996314744A6E004EF624 /* AMMacNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMacNavController.h; sourceTree = "<group>"; };
+		08BD996414744A6E004EF624 /* AMMacNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMacNavController.m; sourceTree = "<group>"; };
 		08BF6AF113996E3E00BC8066 /* AMAboutBoxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAboutBoxController.h; sourceTree = "<group>"; };
 		08BF6AF213996E3E00BC8066 /* AMAboutBoxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAboutBoxController.m; sourceTree = "<group>"; };
 		08BF6AF613996EA100BC8066 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -1043,6 +1049,8 @@
 				08EFE4611341D4BA00231C8A /* AMKeychainItem.m */,
 				08EFE4621341D4BA00231C8A /* AMKeychainManager.h */,
 				08EFE4631341D4BA00231C8A /* AMKeychainManager.m */,
+				08BD996314744A6E004EF624 /* AMMacNavController.h */,
+				08BD996414744A6E004EF624 /* AMMacNavController.m */,
 				086F88BE135FE40B00F0FF9F /* AMPreferenceModule.h */,
 				086F88BF135FE40B00F0FF9F /* AMPreferenceModule.m */,
 				086F88C0135FE40B00F0FF9F /* AMPreferencesController.h */,
@@ -1183,6 +1191,7 @@
 				089C0B24145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */,
 				089C0B2F145B36EF00DF9984 /* AMRegExpFormatter.h in Headers */,
 				089C0B34145B39F900DF9984 /* AMCharacterSetFormatter.h in Headers */,
+				08BD996614744A6E004EF624 /* AMMacNavController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1309,6 +1318,7 @@
 				089C0B23145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */,
 				089C0B31145B36F800DF9984 /* AMRegExpFormatter.h in Headers */,
 				089C0B36145B3A5300DF9984 /* AMCharacterSetFormatter.h in Headers */,
+				08BD996514744A6E004EF624 /* AMMacNavController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1600,6 +1610,7 @@
 				089C0B26145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */,
 				089C0B30145B36EF00DF9984 /* AMRegExpFormatter.m in Sources */,
 				089C0B35145B39F900DF9984 /* AMCharacterSetFormatter.m in Sources */,
+				08BD996814744A6E004EF624 /* AMMacNavController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1724,6 +1735,7 @@
 				088DF16B143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */,
 				08ADF5B7144B9AF000F787E6 /* AMWindow.m in Sources */,
 				089C0B25145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */,
+				08BD996714744A6E004EF624 /* AMMacNavController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
