@@ -8,9 +8,12 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import "AMMacNavController.h"
-#import <Vyana/NSColor+AMExtensions.h>
+#import "NSColor+AMExtensions.h"
+#import "AMControlledView.h"
 
-@interface AMMacNavController()
+@interface AMMacNavController() {
+	BOOL __swipeAnimationCancelled;
+}
 @property (nonatomic, strong, readwrite) NSViewController *rootViewController;
 @property (nonatomic, strong) NSMutableArray *myViewControllers;
 @property (nonatomic, assign, readwrite) BOOL canPopViewController;
@@ -26,7 +29,7 @@
 		self.myViewControllers = [NSMutableArray array];
 		[self.myViewControllers addObject:viewController];
 		NSView *parentView = viewController.view;
-		NSView *view = [[NSView alloc] initWithFrame:parentView.frame];
+		AMControlledView *view = [[AMControlledView alloc] initWithFrame:parentView.frame];
 		parentView.frame = view.bounds;
 		view.wantsLayer=YES;
 		view.autoresizingMask = parentView.autoresizingMask;
@@ -34,9 +37,93 @@
 		[parentView.superview addSubview:view];
 		[view addSubview:parentView];
 		self.view = view;
+		view.viewController = self;
+		//add self to responder chain for view
 	}
 	return self;
 }
+
+-(BOOL)acceptsFirstResponder { return YES; }
+
+#pragma mark - swiping
+
+#if MAC_OS_X_VERSION_MIN_REQUIRED >= 1070
+
+-(BOOL)wantsScrollEventsForSwipeTrackingOnAxis:(NSEventGestureAxis)axis
+{
+    return (axis == NSEventGestureAxisHorizontal) ? YES : NO;
+}
+
+-(void)scrollWheel:(NSEvent *)event
+{
+    NSDisableScreenUpdates();
+/*	
+	BOOL toClipView = self.currentContentView == self.videosView;
+	NSView *srcView = self.currentContentView;
+	NSView *dstView = toClipView ? self.clipsController.view : self.videosView;
+	[dstView setHidden:NO];
+	[srcView setHidden:NO];
+	
+	NSLog(@"starting a swipe toClip:%@", toClipView?@"YES":@"NO");
+	
+	if (__swipeAnimationCancelled && *__swipeAnimationCancelled == NO) {
+		*__swipeAnimationCancelled=YES;
+		__swipeAnimationCancelled=nil;
+		NSLog(@"hiding dstView because of cancel");
+		//		[dstView setHidden:YES];
+	}
+	
+	CGFloat backItemCount = toClipView ? 0 : 1;
+	CGFloat forwardItemCount = toClipView ? 1 : 0;
+	
+	__block BOOL animationCancelled=NO;
+	[event trackSwipeEventWithOptions:0 
+			 dampenAmountThresholdMin:backItemCount
+								  max:forwardItemCount 
+						 usingHandler:^(CGFloat gestureAmount, NSEventPhase phase, BOOL isComplete, BOOL *stop)
+	 {
+		 if (NSEventPhaseStationary == phase)
+			 return;
+		 //NSLog(@"swipe block called: amt=%1.2f, phase=%lu, complete=%d", gestureAmount, phase, isComplete);
+		 if (animationCancelled) {
+			 *stop=YES;
+			 return;
+		 }
+		 if (NSEventPhaseBegan == phase) {
+			 //show the dest view at the correct edge
+			 NSPoint fo = dstView.frame.origin;
+			 fo.x = toClipView ? NSMaxX(self.view.bounds)-20 : 0;
+			 [dstView setFrameOrigin:fo];
+			 [dstView setHidden:NO];
+			 NSLog(@"phase begin, showing dstView at %@, src at %@", NSStringFromRect(dstView.frame), NSStringFromRect(srcView.frame));
+			 return;
+		 }
+		 //move content by gesture amount
+		 CGFloat offset = gestureAmount * self.rootView.bounds.size.width;
+		 NSPoint newOrigin = dstView.frame.origin;
+		 newOrigin.x = offset;
+		 //NSLog(@"offseting dstView by %1.2f to %@", offset, NSStringFromPoint(newOrigin));
+		 [dstView setFrameOrigin:newOrigin];
+		 
+		 if (NSEventPhaseEnded == phase) {
+			 NSLog(@"phase end, hiding srcView");
+			 //gesture successful
+			 self.currentContentView = dstView;
+			 //			[srcView setHidden:YES];
+		 } else if (NSEventPhaseCancelled == phase) {
+			 NSLog(@"phase canceled");
+		 }
+		 
+		 if (isComplete) {
+			 __swipeAnimationCancelled=nil;
+		 }
+	 }];
+*/	NSEnableScreenUpdates();
+}
+
+#endif
+
+#pragma mark - stack management
 
 -(void)pushViewController:(NSViewController*)viewController animated:(BOOL)animated
 {

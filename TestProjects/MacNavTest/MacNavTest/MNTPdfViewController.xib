@@ -37,13 +37,13 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="PDFView" id="962424632">
+					<object class="PDFView" id="555985271">
 						<reference key="NSNextResponder" ref="1005"/>
 						<int key="NSvFlags">18</int>
 						<set class="NSMutableSet" key="NSDragTypes">
 							<string>NSFilenamesPboardType</string>
 						</set>
-						<string key="NSFrameSize">{545, 567}</string>
+						<string key="NSFrame">{{83, 0}, {462, 567}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:51</string>
@@ -73,7 +73,7 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">pdfView</string>
 						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="962424632"/>
+						<reference key="destination" ref="555985271"/>
 					</object>
 					<int key="connectionID">4</int>
 				</object>
@@ -108,13 +108,13 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="1005"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="962424632"/>
+							<reference ref="555985271"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">3</int>
-						<reference key="object" ref="962424632"/>
+						<reference key="object" ref="555985271"/>
 						<reference key="parent" ref="1005"/>
 					</object>
 				</array>
