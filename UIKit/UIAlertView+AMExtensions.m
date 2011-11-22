@@ -7,35 +7,45 @@
 
 #import "UIAlertView+AMExtensions.h"
 
-@interface AMAlertViewDelegate :NSObject<UIAlertViewDelegate> {
-	AMAlertViewCompletionBlock __cblock;
-}
+@interface AMAlertViewDelegate :NSObject<UIAlertViewDelegate>
+@property (nonatomic, copy) AMAlertViewCompletionBlock cblock;
 @end
 
 @implementation AMAlertViewDelegate
+@synthesize cblock;
+
 -(id)initWithBlock:(AMAlertViewCompletionBlock)ablock
 {
 	self = [super init];
-	__cblock = [ablock copy];
+	self.cblock = ablock;
 	return self;
 }
 -(void)dealloc
 {
-	[__cblock release];
+	self.cblock=nil;
 	[super dealloc];
 }
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex 
 {
-	__cblock(alertView, buttonIndex);
+	if (self.cblock)
+		self.cblock(alertView, buttonIndex);
 	[self autorelease];
 }
 @end
 
 @implementation UIAlertView(AMExtensions)
++(void)showAlertWithTitle:(NSString*)title message:(NSString*)message
+{
+	AMAlertViewDelegate *del = [[AMAlertViewDelegate alloc] initWithBlock:nil];
+	UIAlertView *av = [[UIAlertView alloc] initWithTitle:title message:message delegate:del cancelButtonTitle:NSLocalizedString(@"Ok", @"") otherButtonTitles:nil, nil];
+	av.delegate = del;
+	[av show];
+}
+
 //the second parameter is the button index that was clicked.
 -(void)showWithCompletionHandler:(AMAlertViewCompletionBlock)cblock
 {
-	AMAlertViewDelegate *del = [[[AMAlertViewDelegate alloc] initWithBlock:cblock] autorelease];
+	AMAlertViewDelegate *del = [[AMAlertViewDelegate alloc] initWithBlock:cblock];
 	self.delegate = del;
 	[self show];
 }

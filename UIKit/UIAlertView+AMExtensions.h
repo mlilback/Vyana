@@ -12,5 +12,7 @@
 typedef void (^AMAlertViewCompletionBlock)(UIAlertView*, NSInteger);
 
 @interface UIAlertView(AMExtensions)
+/** will display alert with specified title and message and a single Ok button. */
++(void)showAlertWithTitle:(NSString*)title message:(NSString*)message;
 -(void)showWithCompletionHandler:(AMAlertViewCompletionBlock)cblock;
 @end
