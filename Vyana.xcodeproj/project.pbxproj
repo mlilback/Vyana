@@ -137,6 +137,8 @@
 		089C0B35145B39F900DF9984 /* AMCharacterSetFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B33145B39F900DF9984 /* AMCharacterSetFormatter.m */; };
 		089C0B36145B3A5300DF9984 /* AMCharacterSetFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B32145B39F900DF9984 /* AMCharacterSetFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		089DFEEB13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m in Sources */ = {isa = PBXBuildFile; fileRef = 089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */; };
+		08A0C719148AE766000FAA00 /* AMRoundedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A0C717148AE766000FAA00 /* AMRoundedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A0C71A148AE766000FAA00 /* AMRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A0C718148AE766000FAA00 /* AMRoundedButton.m */; };
 		08A6000E1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A6000F1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A600101432AF5500E8AB4B /* NSView+AMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */; };
@@ -532,6 +534,8 @@
 		089C0B32145B39F900DF9984 /* AMCharacterSetFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCharacterSetFormatter.h; sourceTree = "<group>"; };
 		089C0B33145B39F900DF9984 /* AMCharacterSetFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCharacterSetFormatter.m; sourceTree = "<group>"; };
 		089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMZeroingWeakRef+Lion.m"; sourceTree = "<group>"; };
+		08A0C717148AE766000FAA00 /* AMRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMRoundedButton.h; sourceTree = "<group>"; };
+		08A0C718148AE766000FAA00 /* AMRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMRoundedButton.m; sourceTree = "<group>"; };
 		08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+AMExtension.h"; sourceTree = "<group>"; };
 		08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+AMExtension.m"; sourceTree = "<group>"; };
 		08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProcessInfo.h; sourceTree = "<group>"; };
@@ -814,6 +818,8 @@
 				088A76D01406A90C003D6A3F /* AMTableView.m */,
 				08447F991417404B00A8DDF8 /* AMTextFieldFloater.h */,
 				08447F9A1417404B00A8DDF8 /* AMTextFieldFloater.m */,
+				08A0C717148AE766000FAA00 /* AMRoundedButton.h */,
+				08A0C718148AE766000FAA00 /* AMRoundedButton.m */,
 			);
 			path = AMUIKit;
 			sourceTree = SOURCE_ROOT;
@@ -1242,6 +1248,7 @@
 				0838B39E141EB256003264A8 /* MAZeroingWeakRef.h in Headers */,
 				083179BD1423D46C009701C6 /* UIActionSheet+AMExtensions.h in Headers */,
 				08056DF91444D56C0002766D /* UIApplication+AMExtensions.h in Headers */,
+				08A0C719148AE766000FAA00 /* AMRoundedButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1657,6 +1664,7 @@
 				083179BE1423D46C009701C6 /* UIActionSheet+AMExtensions.m in Sources */,
 				08BD1DB0142BC0D1008BFD89 /* VyanaLogger.m in Sources */,
 				08056DFA1444D56C0002766D /* UIApplication+AMExtensions.m in Sources */,
+				08A0C71A148AE766000FAA00 /* AMRoundedButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
