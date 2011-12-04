@@ -10,6 +10,10 @@
 
 
 @implementation AMGearMenuController
+@synthesize menuObjects=_objects;
+@synthesize menuObjectTitleKey=_objKey;
+@synthesize delegate=_delegate;
+@synthesize selectedMenuObject=_selectedMenuObject;
 
 - (void)viewDidLoad
 {
@@ -36,6 +40,15 @@
 	[self.tableView reloadData];
 }
 
+-(void)setSelectedMenuObject:(id)selectedMenuObject
+{
+	if (_selectedMenuObject == selectedMenuObject)
+		return;
+	[_selectedMenuObject release];
+	_selectedMenuObject = [selectedMenuObject retain];
+	[self.tableView reloadData];
+}
+
 #pragma mark -
 #pragma mark Table view data source
 
@@ -49,7 +62,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 	// Return the number of rows in the section.
-	return [self.menuObjects count];;
+	return [self.menuObjects count];
 }
 
 
@@ -65,6 +78,10 @@
 			reuseIdentifier:CellIdentifier] autorelease];
 	}
 	id val = [self.menuObjects objectAtIndex:indexPath.row];
+	if (val == self.selectedMenuObject)
+		cell.accessoryType = UITableViewCellAccessoryCheckmark;
+	else
+		cell.accessoryType = UITableViewCellAccessoryNone;
 	if ([val isKindOfClass:[AMGearMenuItem class]])
 		val = [val title];
 	else if (self.menuObjectTitleKey)
@@ -80,11 +97,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	id obj = [self.menuObjects objectAtIndex:indexPath.row];
+	self.selectedMenuObject = obj;
 	if ([obj isKindOfClass:[AMGearMenuItem class]])
 		[[obj target] performSelector:[obj action] withObject:obj];
 	else if (self.delegate)
 		[self.delegate gearMenuSelected:obj];
 	[tableView deselectRowAtIndexPath:indexPath animated:NO];
+	[tableView reloadData];
 }
 
 
@@ -92,12 +111,10 @@
 {
 	self.menuObjects=nil;
 	self.menuObjectTitleKey=nil;
+	self.selectedMenuObject=nil;
 	[super dealloc];
 }
 
-@synthesize menuObjects=_objects;
-@synthesize menuObjectTitleKey=_objKey;
-@synthesize delegate=_delegate;
 @end
 
 #pragma mark -

@@ -18,8 +18,7 @@
 -(void)gearMenuSelected:(id)selectedObject;
 @end
 
-@interface AMGearMenuItem : NSObject {
-}
+@interface AMGearMenuItem : NSObject
 +(AMGearMenuItem*)gearMenuItem:(NSString*)inTitle target:(id)inTarget action:(SEL)inAction
 	userInfo:(id)userInfo;
 @property (nonatomic, copy) NSString *title;
@@ -28,13 +27,10 @@
 @property (nonatomic, retain) id userInfo;
 @end
 
-@interface AMGearMenuController : UITableViewController {
-	NSArray *_objects;
-	NSString *_objKey;
-	id<AMGearMenuDelegate> _delegate;
-}
+@interface AMGearMenuController : UITableViewController
 @property (nonatomic, retain) NSArray *menuObjects;
 @property (nonatomic, copy) NSString *menuObjectTitleKey;
 @property (nonatomic, assign) id<AMGearMenuDelegate> delegate;
+@property (nonatomic, retain) id selectedMenuObject;
 
 @end
