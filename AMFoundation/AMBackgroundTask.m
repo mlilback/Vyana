@@ -83,7 +83,7 @@
 		[self.theTask setStandardInput:p];
 		stdInput = [p fileHandleForWriting];
 	}
-	__block AMBackgroundTask *blockSelf = self;
+	__unsafe_unretained AMBackgroundTask *blockSelf = self;
 	self.noteRef = [[NSNotificationCenter defaultCenter] addObserverForName:NSFileHandleReadCompletionNotification 
 													  object:nil queue:[NSOperationQueue mainQueue] 
 												  usingBlock:^(NSNotification *note)

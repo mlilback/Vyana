@@ -87,6 +87,17 @@
 	return -1;
 }
 
+//returns NSNotFound if not found
+-(NSUInteger)indexOfFirstObjectWithValue:(id)value forKey:(NSString*)key
+{
+	NSUInteger i;
+	for (i=0; i < [self count]; i++) {
+		if ([value isEqual: [[self objectAtIndex: i] valueForKey:key]])
+			return i;
+	}
+	return NSNotFound;
+}
+
 //returns -1 if not found, otherwise the best possible match
 // for string out of the strings in self
 -(NSInteger)indexOfBestStringMatch:(NSString*)string

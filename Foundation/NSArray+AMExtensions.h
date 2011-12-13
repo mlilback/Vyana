@@ -28,7 +28,8 @@
 
 //finds the first object whose valueForKey: returns value
 -(id)firstObjectWithValue:(id)value forKey:(NSString*)key;
-
+//returns NSNotFound if not found
+-(NSUInteger)indexOfFirstObjectWithValue:(id)value forKey:(NSString*)key;
 
 -(BOOL)containsObject:(id)object withKeyPath:(NSString*)key;
 ///@returns YES if the array contains an object whose property key is equal to value
