@@ -138,7 +138,9 @@
 	} else {
 		[self.view replaceSubview:self.topViewController.view with:viewController.view];
 	}
+	[self willChangeValueForKey:@"topViewController"];
 	[self.myViewControllers addObject:viewController];
+	[self didChangeValueForKey:@"topViewController"];
 	self.canPopViewController=YES;
 }
 
@@ -149,7 +151,9 @@
 	NSViewController *fromController = [self.myViewControllers lastObject];
 	NSViewController *toController = [self.myViewControllers objectAtIndex:self.myViewControllers.count-2];
 	[self popFromViewController:fromController toController:toController animated:animated];
+	[self willChangeValueForKey:@"topViewController"];
 	[self.myViewControllers removeLastObject];
+	[self didChangeValueForKey:@"topViewController"];
 	self.canPopViewController = self.myViewControllers.count > 1;
 }
 
@@ -160,7 +164,9 @@
 	NSViewController *fromController = [self.myViewControllers lastObject];
 	NSViewController *toController = self.rootViewController;
 	[self popFromViewController:fromController toController:toController animated:animated];
+	[self willChangeValueForKey:@"topViewController"];
 	[self.myViewControllers removeObjectsInRange:NSMakeRange(1, self.myViewControllers.count-1)];
+	[self didChangeValueForKey:@"topViewController"];
 	self.canPopViewController = NO;
 }
 
@@ -170,8 +176,10 @@
 		return;
 	ZAssert([self.myViewControllers containsObject:viewController], @"can't pop to controller not in view controller stack");
 	[self popFromViewController:self.topViewController toController:viewController animated:animated];
+	[self willChangeValueForKey:@"topViewController"];
 	while ([self.myViewControllers lastObject] != viewController)
 		[self.myViewControllers removeLastObject];
+	[self didChangeValueForKey:@"topViewController"];
 	self.canPopViewController = self.myViewControllers.count > 1;
 }
 
