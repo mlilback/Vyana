@@ -52,6 +52,11 @@
 {
 }
 
+-(void)resizeSubviewsWithOldSize:(NSSize)oldBoundsSize
+{
+	
+}
+
 -(void)saveBlockToken:(id)aToken forObject:(id)obj
 {
 	if (nil == self.blockTokens)

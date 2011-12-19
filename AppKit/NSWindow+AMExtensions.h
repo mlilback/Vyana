@@ -10,6 +10,9 @@
 
 @interface NSWindow (AMExtensions)
 
+//debugging convience that returns a string with each object in the responder chain on a line
+-(NSString*)responderChainDescription;
+
 -(BOOL)endEditing;
 -(void)forceEndEditing;
 @end

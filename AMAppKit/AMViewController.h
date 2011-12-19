@@ -9,6 +9,8 @@
 // This subclass of NSViewControllers offers the following features:
 //		* keeps track of AMBlockTokens so you don't have to implement that logic
 //			(see NSObject+AMBlockObservation.h)
+// Be sure to check out the AMControlledViewController protocol in AMControlledView.h
+// Those methods are optional for a view controller.
 
 @interface AMViewController : NSViewController {}
 
@@ -34,5 +36,10 @@
  as appropriate.
  */
 -(void)viewDidMoveToWindow;
+
+/** If the controlled view is a subclass of AMControlledView, this method will be called
+ as appropriate.
+ */
+- (void)resizeSubviewsWithOldSize:(NSSize)oldBoundsSize;
 
 @end

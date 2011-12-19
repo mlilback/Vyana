@@ -35,4 +35,15 @@
 	[self endEditingFor:nil];
 }
 
+-(NSString*)responderChainDescription
+{
+	NSMutableString *s = [NSMutableString string];
+	NSResponder *r = [self firstResponder];
+	while (nil != r) {
+		[s appendFormat:@"%@\n", [r valueForKey:@"debugDescription"]];
+		r = [r nextResponder];
+	}
+	return s;
+}
+
 @end

@@ -42,6 +42,13 @@
 		[self.viewController performSelector:@selector(viewDidMoveToWindow)];
 }
 
+-(void)resizeSubviewsWithOldSize:(NSSize)oldBoundsSize
+{
+	[super resizeSubviewsWithOldSize:oldBoundsSize];
+	if ([self.viewController respondsToSelector:@selector(resizeSubviewsWithOldSize:)])
+		[(id)self.viewController resizeSubviewsWithOldSize:oldBoundsSize];
+}
+
 - (void)setViewController:(NSViewController *)newController
 {
 	if (__vc) {
