@@ -32,6 +32,14 @@
 	}
 	return newDict;
 }
+
+-(id)objectForKey:(NSString*)key replacingNilWith:(id)defaultValue
+{
+	id val = [self objectForKey:key];
+	if (nil == val)
+		val = defaultValue;
+	return val;
+}
 @end
 
 @implementation NSMutableDictionary(AMExtensions)

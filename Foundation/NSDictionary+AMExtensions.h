@@ -14,6 +14,8 @@
 /// else, if conforms to NSCopying, -copy is called.
 /// otherwise, same item is placed in new dict
 -(NSDictionary*)deepCopy;
+/** If the dictionary does not contain a value for the requested key, it returns the default value */
+-(id)objectForKey:(NSString*)key replacingNilWith:(id)defaultValue;
 @end
 
 @interface NSMutableDictionary(AMExtensions)
