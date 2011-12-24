@@ -36,13 +36,19 @@
 	return self;
 }
 
--(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
 	if (buttonIndex < 0)
 		return;
 	AMActionItem *action = [self.actionItems objectAtIndex:buttonIndex];
-	[action.target performSelector:action.action withObject:actionSheet];
-	[self autorelease];
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[action.target performSelector:action.action withObject:actionSheet];
+	});
+	actionSheet.delegate=nil;
+	//autorelease wasn't being properly called for some reason. this does work.
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[self release];
+	});
 }
 
 -(void)dealloc
