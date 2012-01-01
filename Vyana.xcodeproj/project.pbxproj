@@ -119,6 +119,8 @@
 		086F88C5135FE40B00F0FF9F /* AMPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88C1135FE40B00F0FF9F /* AMPreferencesController.m */; };
 		088A76D11406A90C003D6A3F /* AMTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 088A76CF1406A90C003D6A3F /* AMTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		088A76D21406A90C003D6A3F /* AMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 088A76D01406A90C003D6A3F /* AMTableView.m */; };
+		088AC24E14AFE01E0094D134 /* UIImage+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 088AC24C14AFE01E0094D134 /* UIImage+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		088AC24F14AFE01E0094D134 /* UIImage+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 088AC24D14AFE01E0094D134 /* UIImage+AMExtensions.m */; };
 		088DF15C143CBAA800CF4844 /* NSMenu+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 088DF159143CBAA800CF4844 /* NSMenu+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		088DF15E143CBAA800CF4844 /* NSMenu+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 088DF15A143CBAA800CF4844 /* NSMenu+AMExtensions.m */; };
 		088DF160143CC04000CF4844 /* NSMenu+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 088DF159143CBAA800CF4844 /* NSMenu+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -523,6 +525,8 @@
 		086F88C1135FE40B00F0FF9F /* AMPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPreferencesController.m; sourceTree = "<group>"; };
 		088A76CF1406A90C003D6A3F /* AMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTableView.h; sourceTree = "<group>"; };
 		088A76D01406A90C003D6A3F /* AMTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTableView.m; sourceTree = "<group>"; };
+		088AC24C14AFE01E0094D134 /* UIImage+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AMExtensions.h"; sourceTree = "<group>"; };
+		088AC24D14AFE01E0094D134 /* UIImage+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AMExtensions.m"; sourceTree = "<group>"; };
 		088DF159143CBAA800CF4844 /* NSMenu+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMenu+AMExtensions.h"; sourceTree = "<group>"; };
 		088DF15A143CBAA800CF4844 /* NSMenu+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMenu+AMExtensions.m"; sourceTree = "<group>"; };
 		088DF167143CDF3F00CF4844 /* NSTableView+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTableView+AMExtensions.h"; sourceTree = "<group>"; };
@@ -784,6 +788,8 @@
 				08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */,
 				08B6527D134BF1D0001C6159 /* UIColor+AMExtensions.h */,
 				08B6527E134BF1D0001C6159 /* UIColor+AMExtensions.m */,
+				088AC24C14AFE01E0094D134 /* UIImage+AMExtensions.h */,
+				088AC24D14AFE01E0094D134 /* UIImage+AMExtensions.m */,
 				0838B36214166291003264A8 /* UIImage+Tint.h */,
 				0838B36314166291003264A8 /* UIImage+Tint.m */,
 				08587D0013ABC7FF00CBAC32 /* UIScreen+AMExtensions.h */,
@@ -1249,6 +1255,7 @@
 				083179BD1423D46C009701C6 /* UIActionSheet+AMExtensions.h in Headers */,
 				08056DF91444D56C0002766D /* UIApplication+AMExtensions.h in Headers */,
 				08A0C719148AE766000FAA00 /* AMRoundedButton.h in Headers */,
+				088AC24E14AFE01E0094D134 /* UIImage+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1665,6 +1672,7 @@
 				08BD1DB0142BC0D1008BFD89 /* VyanaLogger.m in Sources */,
 				08056DFA1444D56C0002766D /* UIApplication+AMExtensions.m in Sources */,
 				08A0C71A148AE766000FAA00 /* AMRoundedButton.m in Sources */,
+				088AC24F14AFE01E0094D134 /* UIImage+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
