@@ -47,8 +47,6 @@
 
 #pragma mark - swiping
 
-#if MAC_OS_X_VERSION_MIN_REQUIRED >= 1070
-
 -(BOOL)wantsScrollEventsForSwipeTrackingOnAxis:(NSEventGestureAxis)axis
 {
     return (axis == NSEventGestureAxisHorizontal) ? YES : NO;
@@ -120,8 +118,6 @@
 	 }];
 */	NSEnableScreenUpdates();
 }
-
-#endif
 
 #pragma mark - stack management
 

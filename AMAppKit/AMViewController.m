@@ -84,7 +84,6 @@
 	return w;
 }
 
-#if MACOSX_DEPLOYMENT_TARGET >= 1070
 -(id)theObject
 {
 	return objc_loadWeak(&_objWeakRef);
@@ -93,9 +92,6 @@
 {
 	objc_storeWeak(&_objWeakRef, obj);
 }
-#else
-@synthesize theObject;
-#endif
 
 @synthesize token;
 @end

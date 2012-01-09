@@ -6,39 +6,15 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		087CE8D713FECB2600C9F758 /* Vyana OS X */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 087CE8DA13FECB2600C9F758 /* Build configuration list for PBXAggregateTarget "Vyana OS X" */;
-			buildPhases = (
-				087CE8E013FECB4100C9F758 /* ShellScript */,
-			);
-			dependencies = (
-				087CE8DD13FECB3500C9F758 /* PBXTargetDependency */,
-				087CE8DF13FECB3500C9F758 /* PBXTargetDependency */,
-			);
-			name = "Vyana OS X";
-			productName = "Vyana OS X";
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		08056DF91444D56C0002766D /* UIApplication+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08056DF71444D56C0002766D /* UIApplication+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08056DFA1444D56C0002766D /* UIApplication+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08056DF81444D56C0002766D /* UIApplication+AMExtensions.m */; };
-		0809757914255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0809757A14255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0809757B14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */; };
 		0809757C14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */; };
-		080975B6142672F30010FD68 /* MAWeakArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B2142672F30010FD68 /* MAWeakArray.h */; };
 		080975B7142672F30010FD68 /* MAWeakArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B2142672F30010FD68 /* MAWeakArray.h */; };
-		080975B8142672F30010FD68 /* MAWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 080975B3142672F30010FD68 /* MAWeakArray.m */; };
 		080975B9142672F30010FD68 /* MAWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 080975B3142672F30010FD68 /* MAWeakArray.m */; };
-		080975BA142672F30010FD68 /* MAWeakDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B4142672F30010FD68 /* MAWeakDictionary.h */; };
 		080975BB142672F30010FD68 /* MAWeakDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B4142672F30010FD68 /* MAWeakDictionary.h */; };
-		080975BC142672F30010FD68 /* MAWeakDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 080975B5142672F30010FD68 /* MAWeakDictionary.m */; };
 		080975BD142672F30010FD68 /* MAWeakDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 080975B5142672F30010FD68 /* MAWeakDictionary.m */; };
-		081F4C5513FDF343001BDEBF /* AMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 081F4C5313FDF343001BDEBF /* AMViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		081F4C5613FDF343001BDEBF /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F4C5413FDF343001BDEBF /* AMViewController.m */; };
 		081F4C5813FE06AF001BDEBF /* AMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 081F4C5313FDF343001BDEBF /* AMViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		081F4C5B13FE09EC001BDEBF /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F4C5413FDF343001BDEBF /* AMViewController.m */; };
 		082DDE5013A0683A004F46CD /* AMLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 082DDE4E13A0683A004F46CD /* AMLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,45 +23,22 @@
 		083179BE1423D46C009701C6 /* UIActionSheet+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 083179BC1423D46C009701C6 /* UIActionSheet+AMExtensions.m */; };
 		08349ED51404386100B629B4 /* AMBlockUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95513FF5A750089DB86 /* AMBlockUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08349ED71404386700B629B4 /* AMBlockUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95613FF5A750089DB86 /* AMBlockUtils.m */; };
-		08375D5713D26ECC0056925A /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08375D5813D26ECC0056925A /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08375D5913D26ECC0056925A /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */; };
 		08375D5A13D26ECC0056925A /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */; };
 		0838B36414166291003264A8 /* UIImage+Tint.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B36214166291003264A8 /* UIImage+Tint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0838B36514166291003264A8 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B36314166291003264A8 /* UIImage+Tint.m */; };
-		0838B3671416712D003264A8 /* AMZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A2E134508C30044089C /* AMZeroingWeakRef.m */; };
-		0838B36814167131003264A8 /* AMZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A2D134508C30044089C /* AMZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0838B393141EAA41003264A8 /* AMKeyValueObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B391141EAA41003264A8 /* AMKeyValueObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0838B394141EAA41003264A8 /* AMKeyValueObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B391141EAA41003264A8 /* AMKeyValueObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0838B395141EAA41003264A8 /* AMKeyValueObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B391141EAA41003264A8 /* AMKeyValueObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0838B396141EAA41003264A8 /* AMKeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B392141EAA41003264A8 /* AMKeyValueObserver.m */; };
 		0838B397141EAA41003264A8 /* AMKeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B392141EAA41003264A8 /* AMKeyValueObserver.m */; };
 		0838B398141EAA41003264A8 /* AMKeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B392141EAA41003264A8 /* AMKeyValueObserver.m */; };
-		0838B39C141EB256003264A8 /* MAZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B39A141EB255003264A8 /* MAZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0838B39D141EB256003264A8 /* MAZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B39A141EB255003264A8 /* MAZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0838B39E141EB256003264A8 /* MAZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838B39A141EB255003264A8 /* MAZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0838B39F141EB256003264A8 /* MAZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B39B141EB255003264A8 /* MAZeroingWeakRef.m */; };
 		0838B3A0141EB256003264A8 /* MAZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B39B141EB255003264A8 /* MAZeroingWeakRef.m */; };
 		0838B3A1141EB256003264A8 /* MAZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838B39B141EB255003264A8 /* MAZeroingWeakRef.m */; };
-		08435A2F134508C30044089C /* AMZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A2D134508C30044089C /* AMZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08435A30134508C30044089C /* AMZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A2E134508C30044089C /* AMZeroingWeakRef.m */; };
-		08435A3B1347614C0044089C /* AMProgressWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A391347614C0044089C /* AMProgressWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08435A3C1347614C0044089C /* AMProgressWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3A1347614C0044089C /* AMProgressWindowController.m */; };
-		08435A3F134768C40044089C /* AMControlledView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08435A3D134768C40044089C /* AMControlledView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08435A40134768C40044089C /* AMControlledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3E134768C40044089C /* AMControlledView.m */; };
-		08435A561347E5460044089C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A551347E5460044089C /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		08435A631347EC700044089C /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A621347EC6F0044089C /* QTKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		08447F9B1417404B00A8DDF8 /* AMTextFieldFloater.h in Headers */ = {isa = PBXBuildFile; fileRef = 08447F991417404B00A8DDF8 /* AMTextFieldFloater.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08447F9C1417404B00A8DDF8 /* AMTextFieldFloater.m in Sources */ = {isa = PBXBuildFile; fileRef = 08447F9A1417404B00A8DDF8 /* AMTextFieldFloater.m */; };
 		08507A43134DE9EB00705079 /* AMStandardMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08507A88134E382B00705079 /* AMFileSizeTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08507A86134E382B00705079 /* AMFileSizeTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08507A8A134E382B00705079 /* AMFileSizeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A87134E382B00705079 /* AMFileSizeTransformer.m */; };
-		08507A8E134E38E400705079 /* AMFileSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08507A8C134E38E400705079 /* AMFileSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08507A8F134E38E400705079 /* AMFileSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A8D134E38E400705079 /* AMFileSelectionView.m */; };
-		08507A91134E451500705079 /* VyanaDelete.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08507A90134E451500705079 /* VyanaDelete.icns */; };
-		0854F71E13C614C900CEF018 /* AMActionItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0854F71C13C614C900CEF018 /* AMActionItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0854F71F13C614C900CEF018 /* AMActionItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0854F71C13C614C900CEF018 /* AMActionItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0854F72013C614C900CEF018 /* AMActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854F71D13C614C900CEF018 /* AMActionItem.m */; };
 		0854F72113C614C900CEF018 /* AMActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854F71D13C614C900CEF018 /* AMActionItem.m */; };
 		0854F72513C615B800CEF018 /* AMActionMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 0854F72313C615B800CEF018 /* AMActionMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0854F72613C615B800CEF018 /* AMActionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854F72413C615B800CEF018 /* AMActionMenu.m */; };
@@ -99,10 +52,8 @@
 		08587CFF13ABC7F100CBAC32 /* AMGearMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587CFD13ABC7F100CBAC32 /* AMGearMenuController.m */; };
 		08587D0213ABC7FF00CBAC32 /* UIScreen+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587D0013ABC7FF00CBAC32 /* UIScreen+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08587D0313ABC7FF00CBAC32 /* UIScreen+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587D0113ABC7FF00CBAC32 /* UIScreen+AMExtensions.m */; };
-		085B94591417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 085B94571417C6F700042E91 /* CALayer+LayerDebugging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		085B945A1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 085B94571417C6F700042E91 /* CALayer+LayerDebugging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		085B945B1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 085B94571417C6F700042E91 /* CALayer+LayerDebugging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		085B945C1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B94581417C6F700042E91 /* CALayer+LayerDebugging.m */; };
 		085B945D1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B94581417C6F700042E91 /* CALayer+LayerDebugging.m */; };
 		085B945E1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B94581417C6F700042E91 /* CALayer+LayerDebugging.m */; };
 		085F98F6135D079400CB4101 /* AMAppState.h in Headers */ = {isa = PBXBuildFile; fileRef = 085F98F4135D079300CB4101 /* AMAppState.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -111,43 +62,25 @@
 		085F98FC135D084200CB4101 /* AMStateTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 085F98FA135D084200CB4101 /* AMStateTransition.m */; };
 		085F9912135DE8E400CB4101 /* AMStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 085F9911135DE8E400CB4101 /* AMStateMachine.h */; };
 		086F88B5135FDB6300F0FF9F /* VyanaLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4BF1342287D00231C8A /* VyanaLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		086F88BC135FE36A00F0FF9F /* AMCenteredBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 086F88BA135FE36A00F0FF9F /* AMCenteredBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		086F88BD135FE36A00F0FF9F /* AMCenteredBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88BB135FE36A00F0FF9F /* AMCenteredBox.m */; };
-		086F88C2135FE40B00F0FF9F /* AMPreferenceModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 086F88BE135FE40B00F0FF9F /* AMPreferenceModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		086F88C3135FE40B00F0FF9F /* AMPreferenceModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88BF135FE40B00F0FF9F /* AMPreferenceModule.m */; };
-		086F88C4135FE40B00F0FF9F /* AMPreferencesController.h in Headers */ = {isa = PBXBuildFile; fileRef = 086F88C0135FE40B00F0FF9F /* AMPreferencesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		086F88C5135FE40B00F0FF9F /* AMPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88C1135FE40B00F0FF9F /* AMPreferencesController.m */; };
 		088A76D11406A90C003D6A3F /* AMTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 088A76CF1406A90C003D6A3F /* AMTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		088A76D21406A90C003D6A3F /* AMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 088A76D01406A90C003D6A3F /* AMTableView.m */; };
 		088AC24E14AFE01E0094D134 /* UIImage+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 088AC24C14AFE01E0094D134 /* UIImage+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		088AC24F14AFE01E0094D134 /* UIImage+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 088AC24D14AFE01E0094D134 /* UIImage+AMExtensions.m */; };
 		088DF15C143CBAA800CF4844 /* NSMenu+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 088DF159143CBAA800CF4844 /* NSMenu+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		088DF15E143CBAA800CF4844 /* NSMenu+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 088DF15A143CBAA800CF4844 /* NSMenu+AMExtensions.m */; };
-		088DF160143CC04000CF4844 /* NSMenu+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 088DF159143CBAA800CF4844 /* NSMenu+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		088DF169143CDF3F00CF4844 /* NSTableView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 088DF167143CDF3F00CF4844 /* NSTableView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		088DF16A143CDF3F00CF4844 /* NSTableView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 088DF167143CDF3F00CF4844 /* NSTableView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		088DF16B143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 088DF168143CDF3F00CF4844 /* NSTableView+AMExtensions.m */; };
 		088DF16C143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 088DF168143CDF3F00CF4844 /* NSTableView+AMExtensions.m */; };
-		089C0B23145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B21145A2B3D00DF9984 /* NSWindow+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		089C0B24145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B21145A2B3D00DF9984 /* NSWindow+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		089C0B25145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */; };
 		089C0B26145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */; };
 		089C0B2F145B36EF00DF9984 /* AMRegExpFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B2D145B36EF00DF9984 /* AMRegExpFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		089C0B30145B36EF00DF9984 /* AMRegExpFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B2E145B36EF00DF9984 /* AMRegExpFormatter.m */; };
-		089C0B31145B36F800DF9984 /* AMRegExpFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B2D145B36EF00DF9984 /* AMRegExpFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		089C0B34145B39F900DF9984 /* AMCharacterSetFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B32145B39F900DF9984 /* AMCharacterSetFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		089C0B35145B39F900DF9984 /* AMCharacterSetFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B33145B39F900DF9984 /* AMCharacterSetFormatter.m */; };
-		089C0B36145B3A5300DF9984 /* AMCharacterSetFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B32145B39F900DF9984 /* AMCharacterSetFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		089DFEEB13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m in Sources */ = {isa = PBXBuildFile; fileRef = 089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */; };
 		08A0C719148AE766000FAA00 /* AMRoundedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A0C717148AE766000FAA00 /* AMRoundedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A0C71A148AE766000FAA00 /* AMRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A0C718148AE766000FAA00 /* AMRoundedButton.m */; };
-		08A6000E1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A6000F1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08A600101432AF5500E8AB4B /* NSView+AMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */; };
 		08A600111432AF5500E8AB4B /* NSView+AMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */; };
-		08A8B19C13FCC99C003BE670 /* AMProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A8B19D13FCC99C003BE670 /* AMProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08A8B19E13FCC99C003BE670 /* AMProcessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8B19B13FCC99C003BE670 /* AMProcessInfo.m */; };
 		08A8B19F13FCC99C003BE670 /* AMProcessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8B19B13FCC99C003BE670 /* AMProcessInfo.m */; };
 		08AD678413DB3A8200687B3D /* NSString+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3E51341A87300231C8A /* NSString+AMExtensions.m */; };
 		08AD678513DB3A8200687B3D /* NSArray+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3EC1341AA0A00231C8A /* NSArray+AMExtensions.m */; };
@@ -252,9 +185,7 @@
 		08AD67ED13DB3A8200687B3D /* VyanaConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4F01342B03900231C8A /* VyanaConfig.plist */; };
 		08AD67EE13DB3A8200687B3D /* AMAppDefaultsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */; };
 		08AD67EF13DB3A8200687B3D /* VyanaDelete.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08507A90134E451500705079 /* VyanaDelete.icns */; };
-		08ADF5B5144B9AF000F787E6 /* AMWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ADF5B3144B9AF000F787E6 /* AMWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08ADF5B6144B9AF000F787E6 /* AMWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ADF5B3144B9AF000F787E6 /* AMWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08ADF5B7144B9AF000F787E6 /* AMWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ADF5B4144B9AF000F787E6 /* AMWindow.m */; };
 		08ADF5B8144B9AF000F787E6 /* AMWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ADF5B4144B9AF000F787E6 /* AMWindow.m */; };
 		08B6522C134BE1BC001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
 		08B65238134BE1BD001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
@@ -294,167 +225,41 @@
 		08B65293134BF1F2001C6159 /* iAMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65291134BF1F2001C6159 /* iAMApplication.m */; };
 		08B65298134BF8EA001C6159 /* UIAlertView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B65294134BF6A9001C6159 /* UIAlertView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08B65299134BF8EF001C6159 /* UIAlertView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B65295134BF6A9001C6159 /* UIAlertView+AMExtensions.m */; };
-		08BD1DAE142BC0D1008BFD89 /* VyanaLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD1DAD142BC0D1008BFD89 /* VyanaLogger.m */; };
 		08BD1DAF142BC0D1008BFD89 /* VyanaLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD1DAD142BC0D1008BFD89 /* VyanaLogger.m */; };
 		08BD1DB0142BC0D1008BFD89 /* VyanaLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD1DAD142BC0D1008BFD89 /* VyanaLogger.m */; };
-		08BD996514744A6E004EF624 /* AMMacNavController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BD996314744A6E004EF624 /* AMMacNavController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08BD996614744A6E004EF624 /* AMMacNavController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BD996314744A6E004EF624 /* AMMacNavController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08BD996714744A6E004EF624 /* AMMacNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD996414744A6E004EF624 /* AMMacNavController.m */; };
 		08BD996814744A6E004EF624 /* AMMacNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD996414744A6E004EF624 /* AMMacNavController.m */; };
-		08BF6AF313996E3E00BC8066 /* AMAboutBoxController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BF6AF113996E3E00BC8066 /* AMAboutBoxController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08BF6AF413996E3E00BC8066 /* AMAboutBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF6AF213996E3E00BC8066 /* AMAboutBoxController.m */; };
-		08BF6AF713996EA100BC8066 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BF6AF613996EA100BC8066 /* WebKit.framework */; };
-		08BF6B02139974E800BC8066 /* AMSplashScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BF6B00139974E800BC8066 /* AMSplashScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08BF6B03139974E800BC8066 /* AMSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF6B01139974E800BC8066 /* AMSplashScreen.m */; };
-		08D9D93313FF365E0089DB86 /* NSFileManager+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D93113FF365E0089DB86 /* NSFileManager+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08D9D93413FF365E0089DB86 /* NSFileManager+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D93113FF365E0089DB86 /* NSFileManager+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08D9D93513FF365E0089DB86 /* NSFileManager+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D93213FF365E0089DB86 /* NSFileManager+AMExtensions.m */; };
 		08D9D93613FF365E0089DB86 /* NSFileManager+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D93213FF365E0089DB86 /* NSFileManager+AMExtensions.m */; };
-		08D9D95013FF3FD20089DB86 /* NSAlert+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D94E13FF3FD20089DB86 /* NSAlert+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08D9D95113FF3FD20089DB86 /* NSAlert+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D94F13FF3FD20089DB86 /* NSAlert+AMExtensions.m */; };
 		08D9D95213FF42BC0089DB86 /* NSAlert+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D94E13FF3FD20089DB86 /* NSAlert+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08D9D95413FF4B220089DB86 /* NSAlert+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D94F13FF3FD20089DB86 /* NSAlert+AMExtensions.m */; };
-		08D9D95713FF5A750089DB86 /* AMBlockUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95513FF5A750089DB86 /* AMBlockUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08D9D95813FF5A750089DB86 /* AMBlockUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95613FF5A750089DB86 /* AMBlockUtils.m */; };
 		08D9D95913FF5ABB0089DB86 /* AMBlockUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95613FF5A750089DB86 /* AMBlockUtils.m */; };
 		08D9D95A13FF5AC10089DB86 /* AMBlockUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95513FF5A750089DB86 /* AMBlockUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08D9D95D1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95B1401CC930089DB86 /* NSURLConnection+CompletionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08D9D95E1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95B1401CC930089DB86 /* NSURLConnection+CompletionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08D9D95F1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95B1401CC930089DB86 /* NSURLConnection+CompletionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08D9D9601401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */; };
 		08D9D9611401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */; };
 		08D9D9621401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */; };
-		08D9D9651401D34D0089DB86 /* AMBackgroundTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D9631401D34D0089DB86 /* AMBackgroundTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08D9D9661401D34D0089DB86 /* AMBackgroundTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D9631401D34D0089DB86 /* AMBackgroundTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08D9D9671401D34D0089DB86 /* AMBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D9641401D34D0089DB86 /* AMBackgroundTask.m */; };
 		08D9D9681401D34D0089DB86 /* AMBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D9641401D34D0089DB86 /* AMBackgroundTask.m */; };
-		08EC7FEF140DE0CE00902B99 /* AMBCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EC7FED140DE0CE00902B99 /* AMBCrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08EC7FF0140DE0CE00902B99 /* AMBCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EC7FED140DE0CE00902B99 /* AMBCrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EC7FF1140DE0CE00902B99 /* AMBCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EC7FEE140DE0CE00902B99 /* AMBCrypt.m */; };
 		08EC7FF2140DE0CE00902B99 /* AMBCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EC7FEE140DE0CE00902B99 /* AMBCrypt.m */; };
-		08ECD46E135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08ECD46F135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08ECD470135A54960027E15E /* NSManagedObjectContext+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */; };
 		08ECD471135A54960027E15E /* NSManagedObjectContext+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */; };
 		08ECD473135A569A0027E15E /* AMFileSizeTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08507A86134E382B00705079 /* AMFileSizeTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08ECD474135A56A00027E15E /* AMFileSizeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A87134E382B00705079 /* AMFileSizeTransformer.m */; };
-		08EFE3B71341A4FB00231C8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE3B61341A4FB00231C8A /* Cocoa.framework */; };
-		08EFE3C11341A4FB00231C8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3BF1341A4FB00231C8A /* InfoPlist.strings */; };
 		08EFE3C91341A4FB00231C8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE3B61341A4FB00231C8A /* Cocoa.framework */; };
-		08EFE3CC1341A4FB00231C8A /* Vyana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE3B31341A4FB00231C8A /* Vyana.framework */; };
 		08EFE3D21341A4FB00231C8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3D01341A4FB00231C8A /* InfoPlist.strings */; };
 		08EFE3D51341A4FB00231C8A /* VyanaTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3D41341A4FB00231C8A /* VyanaTests.h */; };
 		08EFE3D71341A4FB00231C8A /* VyanaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3D61341A4FB00231C8A /* VyanaTests.m */; };
-		08EFE3E61341A87300231C8A /* NSString+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3E41341A87300231C8A /* NSString+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE3E71341A87300231C8A /* NSString+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3E51341A87300231C8A /* NSString+AMExtensions.m */; };
-		08EFE3EA1341A90F00231C8A /* Vyana.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3E91341A90F00231C8A /* Vyana.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE3EF1341AA0A00231C8A /* NSArray+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3EB1341AA0A00231C8A /* NSArray+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE3F01341AA0A00231C8A /* NSArray+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3EC1341AA0A00231C8A /* NSArray+AMExtensions.m */; };
-		08EFE3F11341AA0B00231C8A /* NSNumber+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3ED1341AA0A00231C8A /* NSNumber+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE3F21341AA0B00231C8A /* NSNumber+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3EE1341AA0A00231C8A /* NSNumber+AMExtensions.m */; };
-		08EFE3F61341AD4E00231C8A /* AMStandardMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE3F51341AD4E00231C8A /* AMStandardMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4341341CA0100231C8A /* NSIndexPath+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4321341CA0000231C8A /* NSIndexPath+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4351341CA0100231C8A /* NSIndexPath+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4331341CA0000231C8A /* NSIndexPath+AMExtensions.m */; };
-		08EFE4391341CAA000231C8A /* NSDictionary+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4371341CAA000231C8A /* NSDictionary+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE43A1341CAA000231C8A /* NSDictionary+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4381341CAA000231C8A /* NSDictionary+AMExtensions.m */; };
-		08EFE4401341CBA300231C8A /* NSButton+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE43C1341CBA300231C8A /* NSButton+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4411341CBA300231C8A /* NSButton+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE43D1341CBA300231C8A /* NSButton+AMExtensions.m */; };
-		08EFE4421341CBA300231C8A /* NSColor+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE43E1341CBA300231C8A /* NSColor+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4431341CBA300231C8A /* NSColor+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE43F1341CBA300231C8A /* NSColor+AMExtensions.m */; };
-		08EFE4541341D02C00231C8A /* AMBaseTreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4521341D02C00231C8A /* AMBaseTreeNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4551341D02C00231C8A /* AMBaseTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4531341D02C00231C8A /* AMBaseTreeNode.m */; };
-		08EFE45A1341D14600231C8A /* NSFont+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4561341D14600231C8A /* NSFont+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE45B1341D14600231C8A /* NSFont+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4571341D14600231C8A /* NSFont+AMExtensions.m */; };
-		08EFE45C1341D14600231C8A /* NSImage+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4581341D14600231C8A /* NSImage+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE45D1341D14600231C8A /* NSImage+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4591341D14600231C8A /* NSImage+AMExtensions.m */; };
-		08EFE4661341D4BB00231C8A /* AMApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE45E1341D4BA00231C8A /* AMApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4671341D4BB00231C8A /* AMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE45F1341D4BA00231C8A /* AMApplication.m */; };
-		08EFE4681341D4BB00231C8A /* AMKeychainItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4601341D4BA00231C8A /* AMKeychainItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4691341D4BB00231C8A /* AMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4611341D4BA00231C8A /* AMKeychainItem.m */; };
-		08EFE46A1341D4BB00231C8A /* AMKeychainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4621341D4BA00231C8A /* AMKeychainManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE46B1341D4BB00231C8A /* AMKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4631341D4BA00231C8A /* AMKeychainManager.m */; };
-		08EFE46C1341D4BB00231C8A /* AMSoundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4641341D4BB00231C8A /* AMSoundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE46D1341D4BB00231C8A /* AMSoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4651341D4BB00231C8A /* AMSoundView.m */; };
-		08EFE46F1341D57300231C8A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE46E1341D57200231C8A /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		08EFE4761341D6F200231C8A /* NSAnimation+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4701341D6EE00231C8A /* NSAnimation+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4771341D6F200231C8A /* NSAnimation+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4711341D6EF00231C8A /* NSAnimation+AMExtensions.m */; };
-		08EFE4781341D6F200231C8A /* NSAppleScript+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4721341D6EF00231C8A /* NSAppleScript+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4791341D6F200231C8A /* NSAppleScript+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4731341D6F000231C8A /* NSAppleScript+AMExtensions.m */; };
-		08EFE47A1341D6F200231C8A /* NSApplication+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4741341D6F000231C8A /* NSApplication+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE47B1341D6F200231C8A /* NSApplication+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4751341D6F100231C8A /* NSApplication+AMExtensions.m */; };
-		08EFE47E1341D86500231C8A /* NSAttributedString+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE47C1341D86300231C8A /* NSAttributedString+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE47F1341D86500231C8A /* NSAttributedString+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE47D1341D86400231C8A /* NSAttributedString+AMExtensions.m */; };
-		08EFE4821341D86E00231C8A /* NSFileHandle+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4801341D86C00231C8A /* NSFileHandle+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4831341D86E00231C8A /* NSFileHandle+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4811341D86C00231C8A /* NSFileHandle+AMExtensions.m */; };
-		08EFE4851341D9F600231C8A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EFE4841341D9F500231C8A /* QuartzCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		08EFE4911341DAA300231C8A /* AMSourceListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4871341DAA300231C8A /* AMSourceListCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4921341DAA300231C8A /* AMSourceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4881341DAA300231C8A /* AMSourceListCell.m */; };
-		08EFE4931341DAA300231C8A /* AMSourceListColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4891341DAA300231C8A /* AMSourceListColumn.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4941341DAA300231C8A /* AMSourceListColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE48A1341DAA300231C8A /* AMSourceListColumn.m */; };
-		08EFE4951341DAA300231C8A /* AMSourceListSourceGroupCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE48B1341DAA300231C8A /* AMSourceListSourceGroupCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4961341DAA300231C8A /* AMSourceListSourceGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE48C1341DAA300231C8A /* AMSourceListSourceGroupCell.m */; };
-		08EFE4971341DAA300231C8A /* AMSourceListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE48D1341DAA300231C8A /* AMSourceListView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4981341DAA300231C8A /* AMSourceListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE48E1341DAA300231C8A /* AMSourceListView.m */; };
-		08EFE4991341DAA300231C8A /* highlight_blue.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE48F1341DAA300231C8A /* highlight_blue.tiff */; };
-		08EFE49A1341DAA300231C8A /* highlight_grey.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4901341DAA300231C8A /* highlight_grey.tiff */; };
-		08EFE4B513421CE100231C8A /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4AD13421CE100231C8A /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4B613421CE100231C8A /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4AE13421CE100231C8A /* DDASLLogger.m */; };
-		08EFE4B713421CE100231C8A /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4AF13421CE100231C8A /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4B813421CE100231C8A /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4B013421CE100231C8A /* DDFileLogger.m */; };
-		08EFE4B913421CE100231C8A /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4B113421CE100231C8A /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4BA13421CE100231C8A /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4B213421CE100231C8A /* DDLog.m */; };
-		08EFE4BB13421CE100231C8A /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4B313421CE100231C8A /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4BC13421CE100231C8A /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4B413421CE100231C8A /* DDTTYLogger.m */; };
-		08EFE4C01342288200231C8A /* VyanaLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4BF1342287D00231C8A /* VyanaLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4DD1342637600231C8A /* nosound.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4DC1342637600231C8A /* nosound.icns */; };
-		08EFE4E21342977A00231C8A /* AMAppDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4E01342977A00231C8A /* AMAppDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4E31342977A00231C8A /* AMAppDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4E11342977A00231C8A /* AMAppDefaults.m */; };
-		08EFE4E6134297CC00231C8A /* AMDefaultsConfigFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4E4134297CC00231C8A /* AMDefaultsConfigFile.h */; };
-		08EFE4E7134297CC00231C8A /* AMDefaultsConfigFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4E5134297CC00231C8A /* AMDefaultsConfigFile.m */; };
-		08EFE4EA134297ED00231C8A /* AMDefaultsSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4E8134297ED00231C8A /* AMDefaultsSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4EB134297ED00231C8A /* AMDefaultsSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4E9134297ED00231C8A /* AMDefaultsSet.m */; };
-		08EFE4ED13429E4F00231C8A /* VyanaPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4EC13429E4600231C8A /* VyanaPrivate.h */; };
-		08EFE4F11342B03900231C8A /* VyanaConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4F01342B03900231C8A /* VyanaConfig.plist */; };
-		08EFE4FD1342B35800231C8A /* AMAppDefaultsWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4FA1342B34E00231C8A /* AMAppDefaultsWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08EFE4FE1342B35800231C8A /* AMAppDefaultsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4FB1342B35100231C8A /* AMAppDefaultsWindowController.m */; };
-		08EFE4FF1342B35800231C8A /* AMAppDefaultsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		081F4C5913FE0930001BDEBF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08EFE3A91341A4FB00231C8A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 08EFE3B21341A4FB00231C8A;
-			remoteInfo = Vyana;
-		};
-		087CE8DC13FECB3500C9F758 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08EFE3A91341A4FB00231C8A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 08EFE3B21341A4FB00231C8A;
-			remoteInfo = Vyana;
-		};
-		087CE8DE13FECB3500C9F758 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08EFE3A91341A4FB00231C8A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 08AD678213DB3A8200687B3D;
-			remoteInfo = "Vyana Lion";
-		};
 		08B6523B134BE1BD001C6159 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08EFE3A91341A4FB00231C8A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 08B65229134BE1BC001C6159;
 			remoteInfo = "Vyana-ios";
-		};
-		08EFE3CA1341A4FB00231C8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08EFE3A91341A4FB00231C8A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 08EFE3B21341A4FB00231C8A;
-			remoteInfo = Vyana;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -481,8 +286,6 @@
 		0838B392141EAA41003264A8 /* AMKeyValueObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMKeyValueObserver.m; sourceTree = "<group>"; };
 		0838B39A141EB255003264A8 /* MAZeroingWeakRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAZeroingWeakRef.h; sourceTree = "<group>"; };
 		0838B39B141EB255003264A8 /* MAZeroingWeakRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAZeroingWeakRef.m; sourceTree = "<group>"; };
-		08435A2D134508C30044089C /* AMZeroingWeakRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMZeroingWeakRef.h; sourceTree = "<group>"; };
-		08435A2E134508C30044089C /* AMZeroingWeakRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMZeroingWeakRef.m; sourceTree = "<group>"; };
 		08435A391347614C0044089C /* AMProgressWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProgressWindowController.h; sourceTree = "<group>"; };
 		08435A3A1347614C0044089C /* AMProgressWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMProgressWindowController.m; sourceTree = "<group>"; };
 		08435A3D134768C40044089C /* AMControlledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMControlledView.h; sourceTree = "<group>"; };
@@ -537,7 +340,6 @@
 		089C0B2E145B36EF00DF9984 /* AMRegExpFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMRegExpFormatter.m; sourceTree = "<group>"; };
 		089C0B32145B39F900DF9984 /* AMCharacterSetFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCharacterSetFormatter.h; sourceTree = "<group>"; };
 		089C0B33145B39F900DF9984 /* AMCharacterSetFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCharacterSetFormatter.m; sourceTree = "<group>"; };
-		089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMZeroingWeakRef+Lion.m"; sourceTree = "<group>"; };
 		08A0C717148AE766000FAA00 /* AMRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMRoundedButton.h; sourceTree = "<group>"; };
 		08A0C718148AE766000FAA00 /* AMRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMRoundedButton.m; sourceTree = "<group>"; };
 		08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+AMExtension.h"; sourceTree = "<group>"; };
@@ -587,7 +389,6 @@
 		08EC7FEE140DE0CE00902B99 /* AMBCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBCrypt.m; sourceTree = "<group>"; };
 		08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+AMExtensions.h"; sourceTree = "<group>"; };
 		08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+AMExtensions.m"; sourceTree = "<group>"; };
-		08EFE3B31341A4FB00231C8A /* Vyana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08EFE3B61341A4FB00231C8A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		08EFE3B91341A4FB00231C8A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		08EFE3BA1341A4FB00231C8A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -715,25 +516,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08EFE3AF1341A4FB00231C8A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				08BF6AF713996EA100BC8066 /* WebKit.framework in Frameworks */,
-				08435A631347EC700044089C /* QTKit.framework in Frameworks */,
-				08435A561347E5460044089C /* AudioToolbox.framework in Frameworks */,
-				08EFE4851341D9F600231C8A /* QuartzCore.framework in Frameworks */,
-				08EFE46F1341D57300231C8A /* Security.framework in Frameworks */,
-				08EFE3B71341A4FB00231C8A /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		08EFE3C41341A4FB00231C8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				08EFE3C91341A4FB00231C8A /* Cocoa.framework in Frameworks */,
-				08EFE3CC1341A4FB00231C8A /* Vyana.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,7 +634,6 @@
 		08EFE3B41341A4FB00231C8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08EFE3B31341A4FB00231C8A /* Vyana.framework */,
 				08EFE3C81341A4FB00231C8A /* VyanaTests.octest */,
 				08B6522A134BE1BC001C6159 /* libVyana-ios.a */,
 				08B65235134BE1BD001C6159 /* Vyana-iosTests.octest */,
@@ -988,9 +774,6 @@
 				08EFE4E9134297ED00231C8A /* AMDefaultsSet.m */,
 				08507A86134E382B00705079 /* AMFileSizeTransformer.h */,
 				08507A87134E382B00705079 /* AMFileSizeTransformer.m */,
-				08435A2D134508C30044089C /* AMZeroingWeakRef.h */,
-				08435A2E134508C30044089C /* AMZeroingWeakRef.m */,
-				089DFEEA13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m */,
 				0838B39A141EB255003264A8 /* MAZeroingWeakRef.h */,
 				0838B39B141EB255003264A8 /* MAZeroingWeakRef.m */,
 				080975B2142672F30010FD68 /* MAWeakArray.h */,
@@ -1247,7 +1030,6 @@
 				08349ED51404386100B629B4 /* AMBlockUtils.h in Headers */,
 				088A76D11406A90C003D6A3F /* AMTableView.h in Headers */,
 				0838B36414166291003264A8 /* UIImage+Tint.h in Headers */,
-				0838B36814167131003264A8 /* AMZeroingWeakRef.h in Headers */,
 				08447F9B1417404B00A8DDF8 /* AMTextFieldFloater.h in Headers */,
 				085B945B1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
 				0838B395141EAA41003264A8 /* AMKeyValueObserver.h in Headers */,
@@ -1259,89 +1041,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08EFE3B01341A4FB00231C8A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				08EFE3EA1341A90F00231C8A /* Vyana.h in Headers */,
-				08EFE3F61341AD4E00231C8A /* AMStandardMacros.h in Headers */,
-				08EFE3EF1341AA0A00231C8A /* NSArray+AMExtensions.h in Headers */,
-				08EFE3F11341AA0B00231C8A /* NSNumber+AMExtensions.h in Headers */,
-				08EFE4391341CAA000231C8A /* NSDictionary+AMExtensions.h in Headers */,
-				08EFE4421341CBA300231C8A /* NSColor+AMExtensions.h in Headers */,
-				08EFE4401341CBA300231C8A /* NSButton+AMExtensions.h in Headers */,
-				08EFE4341341CA0100231C8A /* NSIndexPath+AMExtensions.h in Headers */,
-				08EFE4681341D4BB00231C8A /* AMKeychainItem.h in Headers */,
-				08EFE46A1341D4BB00231C8A /* AMKeychainManager.h in Headers */,
-				08EFE47A1341D6F200231C8A /* NSApplication+AMExtensions.h in Headers */,
-				08EFE45C1341D14600231C8A /* NSImage+AMExtensions.h in Headers */,
-				08EFE4781341D6F200231C8A /* NSAppleScript+AMExtensions.h in Headers */,
-				08EFE4661341D4BB00231C8A /* AMApplication.h in Headers */,
-				08EFE4761341D6F200231C8A /* NSAnimation+AMExtensions.h in Headers */,
-				08EFE46C1341D4BB00231C8A /* AMSoundView.h in Headers */,
-				08EFE4971341DAA300231C8A /* AMSourceListView.h in Headers */,
-				08EFE4821341D86E00231C8A /* NSFileHandle+AMExtensions.h in Headers */,
-				08EFE47E1341D86500231C8A /* NSAttributedString+AMExtensions.h in Headers */,
-				08EFE4541341D02C00231C8A /* AMBaseTreeNode.h in Headers */,
-				08EFE4951341DAA300231C8A /* AMSourceListSourceGroupCell.h in Headers */,
-				08EFE4931341DAA300231C8A /* AMSourceListColumn.h in Headers */,
-				08EFE4911341DAA300231C8A /* AMSourceListCell.h in Headers */,
-				08EFE45A1341D14600231C8A /* NSFont+AMExtensions.h in Headers */,
-				08EFE4B713421CE100231C8A /* DDFileLogger.h in Headers */,
-				08EFE4B513421CE100231C8A /* DDASLLogger.h in Headers */,
-				08EFE4BB13421CE100231C8A /* DDTTYLogger.h in Headers */,
-				08EFE4B913421CE100231C8A /* DDLog.h in Headers */,
-				08EFE4C01342288200231C8A /* VyanaLog.h in Headers */,
-				08435A3B1347614C0044089C /* AMProgressWindowController.h in Headers */,
-				08EFE3E61341A87300231C8A /* NSString+AMExtensions.h in Headers */,
-				08EFE4E21342977A00231C8A /* AMAppDefaults.h in Headers */,
-				08EFE4EA134297ED00231C8A /* AMDefaultsSet.h in Headers */,
-				08435A3F134768C40044089C /* AMControlledView.h in Headers */,
-				08435A2F134508C30044089C /* AMZeroingWeakRef.h in Headers */,
-				08EFE4FD1342B35800231C8A /* AMAppDefaultsWindowController.h in Headers */,
-				08EFE4E6134297CC00231C8A /* AMDefaultsConfigFile.h in Headers */,
-				08EFE4ED13429E4F00231C8A /* VyanaPrivate.h in Headers */,
-				08507A88134E382B00705079 /* AMFileSizeTransformer.h in Headers */,
-				08507A8E134E38E400705079 /* AMFileSelectionView.h in Headers */,
-				08ECD46E135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */,
-				086F88BC135FE36A00F0FF9F /* AMCenteredBox.h in Headers */,
-				086F88C2135FE40B00F0FF9F /* AMPreferenceModule.h in Headers */,
-				086F88C4135FE40B00F0FF9F /* AMPreferencesController.h in Headers */,
-				08BF6AF313996E3E00BC8066 /* AMAboutBoxController.h in Headers */,
-				08BF6B02139974E800BC8066 /* AMSplashScreen.h in Headers */,
-				0854F71E13C614C900CEF018 /* AMActionItem.h in Headers */,
-				08375D5713D26ECC0056925A /* NSObject+BlockObservation.h in Headers */,
-				08A8B19C13FCC99C003BE670 /* AMProcessInfo.h in Headers */,
-				081F4C5513FDF343001BDEBF /* AMViewController.h in Headers */,
-				08D9D93313FF365E0089DB86 /* NSFileManager+AMExtensions.h in Headers */,
-				08D9D95013FF3FD20089DB86 /* NSAlert+AMExtensions.h in Headers */,
-				08D9D95713FF5A750089DB86 /* AMBlockUtils.h in Headers */,
-				08D9D95D1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */,
-				08D9D9651401D34D0089DB86 /* AMBackgroundTask.h in Headers */,
-				08EC7FEF140DE0CE00902B99 /* AMBCrypt.h in Headers */,
-				085B94591417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
-				0838B393141EAA41003264A8 /* AMKeyValueObserver.h in Headers */,
-				0838B39C141EB256003264A8 /* MAZeroingWeakRef.h in Headers */,
-				0809757914255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */,
-				080975B6142672F30010FD68 /* MAWeakArray.h in Headers */,
-				080975BA142672F30010FD68 /* MAWeakDictionary.h in Headers */,
-				08A6000E1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */,
-				088DF160143CC04000CF4844 /* NSMenu+AMExtensions.h in Headers */,
-				088DF169143CDF3F00CF4844 /* NSTableView+AMExtensions.h in Headers */,
-				08ADF5B5144B9AF000F787E6 /* AMWindow.h in Headers */,
-				089C0B23145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */,
-				089C0B31145B36F800DF9984 /* AMRegExpFormatter.h in Headers */,
-				089C0B36145B3A5300DF9984 /* AMCharacterSetFormatter.h in Headers */,
-				08BD996514744A6E004EF624 /* AMMacNavController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		08AD678213DB3A8200687B3D /* Vyana Lion */ = {
+		08AD678213DB3A8200687B3D /* Vyana */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08AD67F013DB3A8200687B3D /* Build configuration list for PBXNativeTarget "Vyana Lion" */;
+			buildConfigurationList = 08AD67F013DB3A8200687B3D /* Build configuration list for PBXNativeTarget "Vyana" */;
 			buildPhases = (
 				08AD678313DB3A8200687B3D /* Sources */,
 				08AD67B013DB3A8200687B3D /* Frameworks */,
@@ -1351,9 +1056,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				081F4C5A13FE0930001BDEBF /* PBXTargetDependency */,
 			);
-			name = "Vyana Lion";
+			name = Vyana;
 			productName = Vyana;
 			productReference = 08AD67F313DB3A8200687B3D /* Vyana.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1394,24 +1098,6 @@
 			productReference = 08B65235134BE1BD001C6159 /* Vyana-iosTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		08EFE3B21341A4FB00231C8A /* Vyana */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 08EFE3DA1341A4FB00231C8A /* Build configuration list for PBXNativeTarget "Vyana" */;
-			buildPhases = (
-				08EFE3AE1341A4FB00231C8A /* Sources */,
-				08EFE3AF1341A4FB00231C8A /* Frameworks */,
-				08EFE3B01341A4FB00231C8A /* Headers */,
-				08EFE3B11341A4FB00231C8A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Vyana;
-			productName = Vyana;
-			productReference = 08EFE3B31341A4FB00231C8A /* Vyana.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		08EFE3C71341A4FB00231C8A /* VyanaTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08EFE3DD1341A4FB00231C8A /* Build configuration list for PBXNativeTarget "VyanaTests" */;
@@ -1424,7 +1110,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				08EFE3CB1341A4FB00231C8A /* PBXTargetDependency */,
 			);
 			name = VyanaTests;
 			productName = VyanaTests;
@@ -1452,12 +1137,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				08EFE3B21341A4FB00231C8A /* Vyana */,
-				08AD678213DB3A8200687B3D /* Vyana Lion */,
+				08AD678213DB3A8200687B3D /* Vyana */,
 				08EFE3C71341A4FB00231C8A /* VyanaTests */,
 				08B65229134BE1BC001C6159 /* Vyana-ios */,
 				08B65234134BE1BD001C6159 /* Vyana-iosTests */,
-				087CE8D713FECB2600C9F758 /* Vyana OS X */,
 			);
 		};
 /* End PBXProject section */
@@ -1486,20 +1169,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08EFE3B11341A4FB00231C8A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				08EFE3C11341A4FB00231C8A /* InfoPlist.strings in Resources */,
-				08EFE4991341DAA300231C8A /* highlight_blue.tiff in Resources */,
-				08EFE49A1341DAA300231C8A /* highlight_grey.tiff in Resources */,
-				08EFE4DD1342637600231C8A /* nosound.icns in Resources */,
-				08EFE4F11342B03900231C8A /* VyanaConfig.plist in Resources */,
-				08EFE4FF1342B35800231C8A /* AMAppDefaultsWindowController.xib in Resources */,
-				08507A91134E451500705079 /* VyanaDelete.icns in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		08EFE3C51341A4FB00231C8A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1512,19 +1181,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		087CE8E013FECB4100C9F758 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd $BUILT_PRODUCTS_DIR\nif [ ! -L Vyana.framework/Versions/B/Headers ]; then\n    ln -s ../A/Headers Vyana.framework/Versions/B/Headers\nfi\nrm Vyana.framework/Versions/Current\nln -s B Vyana.framework/Versions/Current\n";
-		};
 		08B65233134BE1BD001C6159 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1601,7 +1257,6 @@
 				08AD67AD13DB3A8200687B3D /* AMSplashScreen.m in Sources */,
 				08AD67AE13DB3A8200687B3D /* AMActionItem.m in Sources */,
 				08AD67AF13DB3A8200687B3D /* NSObject+BlockObservation.m in Sources */,
-				089DFEEB13E88A980014E8B2 /* AMZeroingWeakRef+Lion.m in Sources */,
 				08A8B19F13FCC99C003BE670 /* AMProcessInfo.m in Sources */,
 				081F4C5B13FE09EC001BDEBF /* AMViewController.m in Sources */,
 				08D9D93613FF365E0089DB86 /* NSFileManager+AMExtensions.m in Sources */,
@@ -1663,7 +1318,6 @@
 				08349ED71404386700B629B4 /* AMBlockUtils.m in Sources */,
 				088A76D21406A90C003D6A3F /* AMTableView.m in Sources */,
 				0838B36514166291003264A8 /* UIImage+Tint.m in Sources */,
-				0838B3671416712D003264A8 /* AMZeroingWeakRef.m in Sources */,
 				08447F9C1417404B00A8DDF8 /* AMTextFieldFloater.m in Sources */,
 				085B945E1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */,
 				0838B398141EAA41003264A8 /* AMKeyValueObserver.m in Sources */,
@@ -1684,77 +1338,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08EFE3AE1341A4FB00231C8A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				08EFE3E71341A87300231C8A /* NSString+AMExtensions.m in Sources */,
-				08EFE3F01341AA0A00231C8A /* NSArray+AMExtensions.m in Sources */,
-				08EFE3F21341AA0B00231C8A /* NSNumber+AMExtensions.m in Sources */,
-				08EFE4351341CA0100231C8A /* NSIndexPath+AMExtensions.m in Sources */,
-				08EFE43A1341CAA000231C8A /* NSDictionary+AMExtensions.m in Sources */,
-				08EFE4411341CBA300231C8A /* NSButton+AMExtensions.m in Sources */,
-				08EFE4431341CBA300231C8A /* NSColor+AMExtensions.m in Sources */,
-				08EFE4551341D02C00231C8A /* AMBaseTreeNode.m in Sources */,
-				08EFE45B1341D14600231C8A /* NSFont+AMExtensions.m in Sources */,
-				08EFE45D1341D14600231C8A /* NSImage+AMExtensions.m in Sources */,
-				08EFE4671341D4BB00231C8A /* AMApplication.m in Sources */,
-				08EFE4691341D4BB00231C8A /* AMKeychainItem.m in Sources */,
-				08EFE46B1341D4BB00231C8A /* AMKeychainManager.m in Sources */,
-				08EFE46D1341D4BB00231C8A /* AMSoundView.m in Sources */,
-				08EFE4771341D6F200231C8A /* NSAnimation+AMExtensions.m in Sources */,
-				08EFE4791341D6F200231C8A /* NSAppleScript+AMExtensions.m in Sources */,
-				08EFE47B1341D6F200231C8A /* NSApplication+AMExtensions.m in Sources */,
-				08EFE47F1341D86500231C8A /* NSAttributedString+AMExtensions.m in Sources */,
-				08EFE4831341D86E00231C8A /* NSFileHandle+AMExtensions.m in Sources */,
-				08EFE4921341DAA300231C8A /* AMSourceListCell.m in Sources */,
-				08EFE4941341DAA300231C8A /* AMSourceListColumn.m in Sources */,
-				08EFE4961341DAA300231C8A /* AMSourceListSourceGroupCell.m in Sources */,
-				08EFE4981341DAA300231C8A /* AMSourceListView.m in Sources */,
-				08EFE4B613421CE100231C8A /* DDASLLogger.m in Sources */,
-				08EFE4B813421CE100231C8A /* DDFileLogger.m in Sources */,
-				08EFE4BA13421CE100231C8A /* DDLog.m in Sources */,
-				08EFE4BC13421CE100231C8A /* DDTTYLogger.m in Sources */,
-				08EFE4E31342977A00231C8A /* AMAppDefaults.m in Sources */,
-				08EFE4E7134297CC00231C8A /* AMDefaultsConfigFile.m in Sources */,
-				08EFE4EB134297ED00231C8A /* AMDefaultsSet.m in Sources */,
-				08EFE4FE1342B35800231C8A /* AMAppDefaultsWindowController.m in Sources */,
-				08435A30134508C30044089C /* AMZeroingWeakRef.m in Sources */,
-				08435A3C1347614C0044089C /* AMProgressWindowController.m in Sources */,
-				08435A40134768C40044089C /* AMControlledView.m in Sources */,
-				08507A8A134E382B00705079 /* AMFileSizeTransformer.m in Sources */,
-				08507A8F134E38E400705079 /* AMFileSelectionView.m in Sources */,
-				08ECD470135A54960027E15E /* NSManagedObjectContext+AMExtensions.m in Sources */,
-				086F88BD135FE36A00F0FF9F /* AMCenteredBox.m in Sources */,
-				086F88C3135FE40B00F0FF9F /* AMPreferenceModule.m in Sources */,
-				086F88C5135FE40B00F0FF9F /* AMPreferencesController.m in Sources */,
-				08BF6AF413996E3E00BC8066 /* AMAboutBoxController.m in Sources */,
-				08BF6B03139974E800BC8066 /* AMSplashScreen.m in Sources */,
-				0854F72013C614C900CEF018 /* AMActionItem.m in Sources */,
-				08375D5913D26ECC0056925A /* NSObject+BlockObservation.m in Sources */,
-				08A8B19E13FCC99C003BE670 /* AMProcessInfo.m in Sources */,
-				081F4C5613FDF343001BDEBF /* AMViewController.m in Sources */,
-				08D9D93513FF365E0089DB86 /* NSFileManager+AMExtensions.m in Sources */,
-				08D9D95113FF3FD20089DB86 /* NSAlert+AMExtensions.m in Sources */,
-				08D9D95813FF5A750089DB86 /* AMBlockUtils.m in Sources */,
-				08D9D9601401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */,
-				08D9D9671401D34D0089DB86 /* AMBackgroundTask.m in Sources */,
-				08EC7FF1140DE0CE00902B99 /* AMBCrypt.m in Sources */,
-				085B945C1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */,
-				0838B396141EAA41003264A8 /* AMKeyValueObserver.m in Sources */,
-				0838B39F141EB256003264A8 /* MAZeroingWeakRef.m in Sources */,
-				0809757B14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */,
-				080975B8142672F30010FD68 /* MAWeakArray.m in Sources */,
-				080975BC142672F30010FD68 /* MAWeakDictionary.m in Sources */,
-				08BD1DAE142BC0D1008BFD89 /* VyanaLogger.m in Sources */,
-				08A600101432AF5500E8AB4B /* NSView+AMExtension.m in Sources */,
-				088DF16B143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */,
-				08ADF5B7144B9AF000F787E6 /* AMWindow.m in Sources */,
-				089C0B25145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */,
-				08BD996714744A6E004EF624 /* AMMacNavController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		08EFE3C31341A4FB00231C8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1766,30 +1349,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		081F4C5A13FE0930001BDEBF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 08EFE3B21341A4FB00231C8A /* Vyana */;
-			targetProxy = 081F4C5913FE0930001BDEBF /* PBXContainerItemProxy */;
-		};
-		087CE8DD13FECB3500C9F758 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 08EFE3B21341A4FB00231C8A /* Vyana */;
-			targetProxy = 087CE8DC13FECB3500C9F758 /* PBXContainerItemProxy */;
-		};
-		087CE8DF13FECB3500C9F758 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 08AD678213DB3A8200687B3D /* Vyana Lion */;
-			targetProxy = 087CE8DE13FECB3500C9F758 /* PBXContainerItemProxy */;
-		};
 		08B6523C134BE1BD001C6159 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 08B65229134BE1BC001C6159 /* Vyana-ios */;
 			targetProxy = 08B6523B134BE1BD001C6159 /* PBXContainerItemProxy */;
-		};
-		08EFE3CB1341A4FB00231C8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 08EFE3B21341A4FB00231C8A /* Vyana */;
-			targetProxy = 08EFE3CA1341A4FB00231C8A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1831,42 +1394,9 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				SDKROOT = macosx10.6;
-			};
-			name = Archive;
-		};
-		085B94631417E08200042E91 /* Archive */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/3rdParty\"",
-				);
-				FRAMEWORK_VERSION = A;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/3rdParty\"";
-				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/3rdParty\"",
-				);
-				OTHER_LDFLAGS = "-lbcrypt";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = Vyana.framework/Versions/A/Headers;
-				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = macosx10.6;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = framework;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
 			};
 			name = Archive;
 		};
@@ -1939,7 +1469,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "$(TARGET_TEMP_DIR)/UninstalledProducts";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
@@ -1974,27 +1504,6 @@
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Archive;
-		};
-		085B94681417E08200042E91 /* Archive */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Archive;
-		};
-		087CE8D813FECB2600C9F758 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		087CE8D913FECB2600C9F758 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
 		};
 		08AD67F113DB3A8200687B3D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2076,7 +1585,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
@@ -2097,7 +1606,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
@@ -2170,10 +1679,10 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -2187,74 +1696,9 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				SDKROOT = macosx10.6;
-			};
-			name = Release;
-		};
-		08EFE3DB1341A4FB00231C8A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/3rdParty\"",
-				);
-				FRAMEWORK_VERSION = A;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/3rdParty\"";
-				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/3rdParty\"",
-				);
-				OTHER_LDFLAGS = "-lbcrypt";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = Vyana.framework/Versions/A/Headers;
-				SDKROOT = macosx10.6;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = framework;
-			};
-			name = Debug;
-		};
-		08EFE3DC1341A4FB00231C8A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/3rdParty\"",
-				);
-				FRAMEWORK_VERSION = A;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Vyana/Vyana-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/3rdParty\"";
-				INFOPLIST_FILE = "Vyana/Vyana-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/3rdParty\"",
-				);
-				OTHER_LDFLAGS = "-lbcrypt";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = Vyana.framework/Versions/A/Headers;
-				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = macosx10.6;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = framework;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -2307,17 +1751,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		087CE8DA13FECB2600C9F758 /* Build configuration list for PBXAggregateTarget "Vyana OS X" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				087CE8D813FECB2600C9F758 /* Debug */,
-				087CE8D913FECB2600C9F758 /* Release */,
-				085B94681417E08200042E91 /* Archive */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		08AD67F013DB3A8200687B3D /* Build configuration list for PBXNativeTarget "Vyana Lion" */ = {
+		08AD67F013DB3A8200687B3D /* Build configuration list for PBXNativeTarget "Vyana" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08AD67F113DB3A8200687B3D /* Debug */,
@@ -2353,16 +1787,6 @@
 				08EFE3D81341A4FB00231C8A /* Debug */,
 				08EFE3D91341A4FB00231C8A /* Release */,
 				085B94621417E08200042E91 /* Archive */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		08EFE3DA1341A4FB00231C8A /* Build configuration list for PBXNativeTarget "Vyana" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				08EFE3DB1341A4FB00231C8A /* Debug */,
-				08EFE3DC1341A4FB00231C8A /* Release */,
-				085B94631417E08200042E91 /* Archive */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

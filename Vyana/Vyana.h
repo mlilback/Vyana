@@ -8,6 +8,9 @@
 #import <Cocoa/Cocoa.h>
 #import <Vyana/AMStandardMacros.h>
 #import <Vyana/AMBlockUtils.h>
+#import <Vyana/MAZeroingWeakRef.h>
+#import <Vyana/MAWeakArray.h>
+#import <Vyana/MAWeakDictionary.h>
 
 #import <Vyana/NSArray+AMExtensions.h>
 #import <Vyana/NSDictionary+AMExtensions.h>
@@ -20,14 +23,11 @@
 
 #import <Vyana/AMKeyValueObserver.h>
 #import <Vyana/AMFileSizeTransformer.h>
-#import <Vyana/AMZeroingWeakRef.h>
 
-#if MAC_OS_X_VERSION_MIN_REQUIRED >= 1070
 #import <Vyana/AMCharacterSetFormatter.h>
 #import <Vyana/AMRegExpFormatter.h>
 #import <Vyana/NSMenu+AMExtensions.h>
 #import <Vyana/AMWindow.h>
-#endif
 
 #import <Vyana/NSManagedObjectContext+AMExtensions.h>
 
