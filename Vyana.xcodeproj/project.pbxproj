@@ -11,9 +11,9 @@
 		08056DFA1444D56C0002766D /* UIApplication+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08056DF81444D56C0002766D /* UIApplication+AMExtensions.m */; };
 		0809757A14255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0809757C14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */; };
-		080975B7142672F30010FD68 /* MAWeakArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B2142672F30010FD68 /* MAWeakArray.h */; };
+		080975B7142672F30010FD68 /* MAWeakArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B2142672F30010FD68 /* MAWeakArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		080975B9142672F30010FD68 /* MAWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 080975B3142672F30010FD68 /* MAWeakArray.m */; };
-		080975BB142672F30010FD68 /* MAWeakDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B4142672F30010FD68 /* MAWeakDictionary.h */; };
+		080975BB142672F30010FD68 /* MAWeakDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B4142672F30010FD68 /* MAWeakDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		080975BD142672F30010FD68 /* MAWeakDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 080975B5142672F30010FD68 /* MAWeakDictionary.m */; };
 		081F4C5813FE06AF001BDEBF /* AMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 081F4C5313FDF343001BDEBF /* AMViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		081F4C5B13FE09EC001BDEBF /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F4C5413FDF343001BDEBF /* AMViewController.m */; };
@@ -1427,7 +1427,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = "-lbcrypt";
 				PRODUCT_NAME = Vyana;
-				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-Info.plist";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1532,7 +1531,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = "-lbcrypt";
 				PRODUCT_NAME = Vyana;
-				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-Info.plist";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
@@ -1566,7 +1564,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = "-lbcrypt";
 				PRODUCT_NAME = Vyana;
-				PUBLIC_HEADERS_FOLDER_PATH = "Vyana-Info.plist";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;

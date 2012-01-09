@@ -13,7 +13,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08EFE3B21341A4FB00231C8A"
+               BlueprintIdentifier = "08AD678213DB3A8200687B3D"
                BuildableName = "Vyana.framework"
                BlueprintName = "Vyana"
                ReferencedContainer = "container:Vyana.xcodeproj">
@@ -38,6 +38,15 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "08AD678213DB3A8200687B3D"
+            BuildableName = "Vyana.framework"
+            BlueprintName = "Vyana"
+            ReferencedContainer = "container:Vyana.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
@@ -49,6 +58,15 @@
       buildConfiguration = "Debug"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "08AD678213DB3A8200687B3D"
+            BuildableName = "Vyana.framework"
+            BlueprintName = "Vyana"
+            ReferencedContainer = "container:Vyana.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
