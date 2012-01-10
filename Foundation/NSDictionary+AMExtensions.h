@@ -10,12 +10,20 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDictionary(AMExtensions)
-///If any item conforms to NSMutableCopying, -mutableCopy is called.
-/// else, if conforms to NSCopying, -copy is called.
-/// otherwise, same item is placed in new dict
+/**	Uses NSPropertyListSerialization to read the dictionary from the plist data. 
+ 	all objects are immutable */
++(id)dictionaryWithPropertyListData:(NSData*)data;
+/**	Uses NSPropertyListSerialization to read the dictionary from the plist data. 
+	all containers are mutable */
++(id)mutableDictionaryWithPropertyListData:(NSData*)data;
+/** If any item conforms to NSMutableCopying, -mutableCopy is called.
+	else, if conforms to NSCopying, -copy is called.
+	otherwise, same item is placed in new dict */
 -(NSDictionary*)deepCopy;
 /** If the dictionary does not contain a value for the requested key, it returns the default value */
 -(id)objectForKey:(NSString*)key replacingNilWith:(id)defaultValue;
+/** Convience method for serializing to an XML property list. Asserts on an error. */
+-(NSData*)xmlPropertyListData;
 @end
 
 @interface NSMutableDictionary(AMExtensions)
