@@ -12,8 +12,15 @@
 -(id)unarchiveObjectForKey:(NSString*)key
 {
 	NSData *d = [self objectForKey:key];
-	if (d)
-		return [NSUnarchiver unarchiveObjectWithData:d];
+	if (d) {
+		@try {
+			return [NSKeyedUnarchiver unarchiveObjectWithData:d];
+		} @catch (NSException *e) {
+			if ([e.name isEqualToString:NSInvalidArchiveOperationException])
+				return [NSUnarchiver unarchiveObjectWithData:d];
+			@throw e;
+		}
+	}
 	return nil;
 }
 
@@ -22,6 +29,6 @@
 	if (nil == object)
 		[self removeObjectForKey:key];
 	else
-		[self setObject:[NSArchiver archivedDataWithRootObject:object] forKey:key];
+		[self setObject:[NSKeyedArchiver archivedDataWithRootObject:object] forKey:key];
 }
 @end

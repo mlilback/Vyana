@@ -42,6 +42,7 @@
 #import <Vyana/NSColor+AMExtensions.h>
 #import <Vyana/NSFont+AMExtensions.h>
 #import <Vyana/NSImage+AMExtensions.h>
+#import <Vyana/NSOutlineView+AMExtensions.h>
 #import <Vyana/NSTableView+AMExtensions.h>
 #import <Vyana/NSUserDefaults+AMExtensions.h>
 #import <Vyana/NSView+AMExtension.h>
