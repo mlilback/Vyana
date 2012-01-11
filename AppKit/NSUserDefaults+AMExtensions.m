@@ -16,7 +16,7 @@
 		@try {
 			return [NSKeyedUnarchiver unarchiveObjectWithData:d];
 		} @catch (NSException *e) {
-			if ([e.name isEqualToString:NSInvalidArchiveOperationException])
+			if ([e.name isEqualToString:NSInvalidArgumentException]) //thrown when it is a non-keyed archive
 				return [NSUnarchiver unarchiveObjectWithData:d];
 			@throw e;
 		}
