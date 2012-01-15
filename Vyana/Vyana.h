@@ -55,10 +55,12 @@
 #import <Vyana/AMBaseTreeNode.h>
 #import <Vyana/AMCenteredBox.h>
 #import <Vyana/AMControlledView.h>
+#import <Vyana/AMCustomDrawImageRep.h>
 #import <Vyana/AMFileSelectionView.h>
 #import <Vyana/AMKeychainItem.h>
 #import <Vyana/AMKeychainManager.h>
 #import <Vyana/AMMacNavController.h>
+#import <Vyana/AMMacToolbarItem.h>
 #import <Vyana/AMPreferenceModule.h>
 #import <Vyana/AMPreferencesController.h>
 #import <Vyana/AMProcessInfo.h>
