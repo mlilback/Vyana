@@ -35,6 +35,7 @@
 
 #import <Vyana/NSAlert+AMExtensions.h>
 #import <Vyana/NSAnimation+AMExtensions.h>
+#import <Vyana/NSAppleEventDescriptor+AMExtensions.h>
 #import <Vyana/NSAppleScript+AMExtensions.h>
 #import <Vyana/NSApplication+AMExtensions.h>
 #import <Vyana/NSAttributedString+AMExtensions.h>

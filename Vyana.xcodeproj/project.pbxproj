@@ -68,6 +68,8 @@
 		0884DFF914C364D70003F29C /* AMMacToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0884DFF714C364D70003F29C /* AMMacToolbarItem.m */; };
 		0884DFFD14C36B670003F29C /* AMCustomDrawImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 0884DFFB14C36B670003F29C /* AMCustomDrawImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0884DFFE14C36B670003F29C /* AMCustomDrawImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 0884DFFC14C36B670003F29C /* AMCustomDrawImageRep.m */; };
+		0884E00114C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0884DFFF14C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0884E00214C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0884E00014C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.m */; };
 		088A76D11406A90C003D6A3F /* AMTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 088A76CF1406A90C003D6A3F /* AMTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		088A76D21406A90C003D6A3F /* AMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 088A76D01406A90C003D6A3F /* AMTableView.m */; };
 		088AC24E14AFE01E0094D134 /* UIImage+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 088AC24C14AFE01E0094D134 /* UIImage+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -342,6 +344,8 @@
 		0884DFF714C364D70003F29C /* AMMacToolbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMacToolbarItem.m; sourceTree = "<group>"; };
 		0884DFFB14C36B670003F29C /* AMCustomDrawImageRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCustomDrawImageRep.h; sourceTree = "<group>"; };
 		0884DFFC14C36B670003F29C /* AMCustomDrawImageRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCustomDrawImageRep.m; sourceTree = "<group>"; };
+		0884DFFF14C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleEventDescriptor+AMExtensions.h"; sourceTree = "<group>"; };
+		0884E00014C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleEventDescriptor+AMExtensions.m"; sourceTree = "<group>"; };
 		088A76CF1406A90C003D6A3F /* AMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTableView.h; sourceTree = "<group>"; };
 		088A76D01406A90C003D6A3F /* AMTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTableView.m; sourceTree = "<group>"; };
 		088AC24C14AFE01E0094D134 /* UIImage+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AMExtensions.h"; sourceTree = "<group>"; };
@@ -745,6 +749,8 @@
 		08EFE3E31341A87300231C8A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				0884DFFF14C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.h */,
+				0884E00014C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.m */,
 				08EFE3EB1341AA0A00231C8A /* NSArray+AMExtensions.h */,
 				08EFE3EC1341AA0A00231C8A /* NSArray+AMExtensions.m */,
 				08EFE47C1341D86300231C8A /* NSAttributedString+AMExtensions.h */,
@@ -1017,6 +1023,7 @@
 				0809BF2C14BDEB15009CEC57 /* NSOutlineView+AMExtensions.h in Headers */,
 				0884DFF814C364D70003F29C /* AMMacToolbarItem.h in Headers */,
 				0884DFFD14C36B670003F29C /* AMCustomDrawImageRep.h in Headers */,
+				0884E00114C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1315,6 +1322,7 @@
 				0809BF2D14BDEB15009CEC57 /* NSOutlineView+AMExtensions.m in Sources */,
 				0884DFF914C364D70003F29C /* AMMacToolbarItem.m in Sources */,
 				0884DFFE14C36B670003F29C /* AMCustomDrawImageRep.m in Sources */,
+				0884E00214C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
