@@ -62,6 +62,7 @@
 #import <Vyana/AMKeychainManager.h>
 #import <Vyana/AMMacNavController.h>
 #import <Vyana/AMMacToolbarItem.h>
+#import <Vyana/AMODBEditor.h>
 #import <Vyana/AMPreferenceModule.h>
 #import <Vyana/AMPreferencesController.h>
 #import <Vyana/AMProcessInfo.h>

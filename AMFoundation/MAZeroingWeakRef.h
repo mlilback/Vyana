@@ -11,6 +11,7 @@
 @interface MAZeroingWeakRef : NSObject
 {
     id _target;
+    BOOL _nativeZWR;
 #if NS_BLOCKS_AVAILABLE
     void (^_cleanupBlock)(id target);
 #endif
@@ -46,3 +47,27 @@
 - (id)target;
 
 @end
+
+#ifndef __has_feature
+#define __has_feature(feature) 0
+#endif
+
+#define MAWeakVar(var)            __weak_ ## var
+
+#if __has_feature(objc_arc_weak)
+
+#define MAWeakDeclare(var)        __weak __typeof__((var)) MAWeakVar(var) = var
+#define MAWeakImport(var)         __typeof__((MAWeakVar(var))) var = MAWeakVar(var)
+#define MAWeakImportReturn(var)   MAWeakImport(var); do { if(var == nil) return; } while(NO)
+
+#else
+
+#define MAWeakDeclare(var)        __typeof__((var)) MAWeakVar(var) = (id)[MAZeroingWeakRef refWithTarget:var]
+#define MAWeakImport(var)         __typeof__((MAWeakVar(var))) var = [(MAZeroingWeakRef *)MAWeakVar(var) target]
+#define MAWeakImportReturn(var)   MAWeakImport(var); do { if(var == nil) return; } while(NO)
+
+#endif
+
+#define MAWeakSelfDeclare()       MAWeakDeclare(self)
+#define MAWeakSelfImport()        MAWeakImport(self)
+#define MAWeakSelfImportReturn()  MAWeakImportReturn(self)

@@ -70,6 +70,8 @@
 		0884DFFE14C36B670003F29C /* AMCustomDrawImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 0884DFFC14C36B670003F29C /* AMCustomDrawImageRep.m */; };
 		0884E00114C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0884DFFF14C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0884E00214C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0884E00014C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.m */; };
+		0884E00514C38FBB0003F29C /* AMODBEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0884E00314C38FBB0003F29C /* AMODBEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0884E00614C38FBB0003F29C /* AMODBEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0884E00414C38FBB0003F29C /* AMODBEditor.m */; };
 		088A76D11406A90C003D6A3F /* AMTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 088A76CF1406A90C003D6A3F /* AMTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		088A76D21406A90C003D6A3F /* AMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 088A76D01406A90C003D6A3F /* AMTableView.m */; };
 		088AC24E14AFE01E0094D134 /* UIImage+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 088AC24C14AFE01E0094D134 /* UIImage+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -346,6 +348,8 @@
 		0884DFFC14C36B670003F29C /* AMCustomDrawImageRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCustomDrawImageRep.m; sourceTree = "<group>"; };
 		0884DFFF14C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleEventDescriptor+AMExtensions.h"; sourceTree = "<group>"; };
 		0884E00014C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleEventDescriptor+AMExtensions.m"; sourceTree = "<group>"; };
+		0884E00314C38FBB0003F29C /* AMODBEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMODBEditor.h; sourceTree = "<group>"; };
+		0884E00414C38FBB0003F29C /* AMODBEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMODBEditor.m; sourceTree = "<group>"; };
 		088A76CF1406A90C003D6A3F /* AMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTableView.h; sourceTree = "<group>"; };
 		088A76D01406A90C003D6A3F /* AMTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTableView.m; sourceTree = "<group>"; };
 		088AC24C14AFE01E0094D134 /* UIImage+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AMExtensions.h"; sourceTree = "<group>"; };
@@ -878,6 +882,8 @@
 				08BD996414744A6E004EF624 /* AMMacNavController.m */,
 				0884DFF614C364D70003F29C /* AMMacToolbarItem.h */,
 				0884DFF714C364D70003F29C /* AMMacToolbarItem.m */,
+				0884E00314C38FBB0003F29C /* AMODBEditor.h */,
+				0884E00414C38FBB0003F29C /* AMODBEditor.m */,
 				086F88BE135FE40B00F0FF9F /* AMPreferenceModule.h */,
 				086F88BF135FE40B00F0FF9F /* AMPreferenceModule.m */,
 				086F88C0135FE40B00F0FF9F /* AMPreferencesController.h */,
@@ -1024,6 +1030,7 @@
 				0884DFF814C364D70003F29C /* AMMacToolbarItem.h in Headers */,
 				0884DFFD14C36B670003F29C /* AMCustomDrawImageRep.h in Headers */,
 				0884E00114C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.h in Headers */,
+				0884E00514C38FBB0003F29C /* AMODBEditor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1323,6 +1330,7 @@
 				0884DFF914C364D70003F29C /* AMMacToolbarItem.m in Sources */,
 				0884DFFE14C36B670003F29C /* AMCustomDrawImageRep.m in Sources */,
 				0884E00214C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.m in Sources */,
+				0884E00614C38FBB0003F29C /* AMODBEditor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

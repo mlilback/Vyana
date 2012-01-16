@@ -7,6 +7,10 @@
 
 #import "MAZeroingWeakRef.h"
 
+#import "MAZeroingWeakRefNativeZWRNotAllowedTable.h"
+
+#import <CommonCrypto/CommonDigest.h>
+
 #import <dlfcn.h>
 #import <libkern/OSAtomic.h>
 #import <objc/runtime.h>
@@ -53,6 +57,19 @@
  */
 #ifndef KVO_HACK_LEVEL
 #define KVO_HACK_LEVEL 1
+#endif
+
+/*
+ The USE_BLOCKS_BASED_LOCKING macro allows control on the code structure used
+ during lock checking. You want to disable blocks if you want your app to work
+ on iOS 3.x devices. iOS 4.x and above can use blocks.
+
+ 1 - Use blocks for lock checks.
+
+ 0 - Don't use blocks for lock checks.
+ */
+#ifndef USE_BLOCKS_BASED_LOCKING
+#define USE_BLOCKS_BASED_LOCKING 1
 #endif
 
 #if KVO_HACK_LEVEL >= 1
@@ -199,7 +216,6 @@ static NSOperationQueue *gCFDelayedDestructionQueue;
     }
 }
 
-#define USE_BLOCKS_BASED_LOCKING 1
 #if USE_BLOCKS_BASED_LOCKING
 #define BLOCK_QUALIFIER __block
 static void WhileLocked(void (^block)(void))
@@ -290,6 +306,21 @@ static Class CustomSubclassClassForCoder(id self, SEL _cmd)
     if(classForCoder == class)
         classForCoder = superclass;
     return classForCoder;
+}
+
+static void KVOSubclassRelease(id self, SEL _cmd)
+{
+    IMP originalRelease = class_getMethodImplementation(object_getClass(self), @selector(MAZeroingWeakRef_KVO_original_release));
+    WhileLocked({
+        ((void (*)(id, SEL))originalRelease)(self, _cmd);
+    });
+}
+
+static void KVOSubclassDealloc(id self, SEL _cmd)
+{
+    ClearWeakRefsForObject(self);
+    IMP originalDealloc = class_getMethodImplementation(object_getClass(self), @selector(MAZeroingWeakRef_KVO_original_dealloc));
+    ((void (*)(id, SEL))originalDealloc)(self, _cmd);
 }
 
 #if COREFOUNDATION_HACK_LEVEL >= 3
@@ -457,6 +488,64 @@ static BOOL IsKVOSubclass(id obj)
 #endif
 }
 
+// The native ZWR capability table is conceptually a set of SHA1 hashes.
+// Hashes are used instead of class names because the table is large and
+// contains a lot of private classes. Embedding private class names in
+// the binary is likely to cause problems with app review. Manually
+// removing all private classes from the table is a lot of work. Using
+// hashes allows for reasonably quick checks and no private API names.
+// It's implemented as a tree of tables, where each individual table
+// maps to a single byte. The top level of the tree is a 256-entry table.
+// Table entries are a NULL pointer for leading bytes which aren't present
+// at all. Other table entries can either contain a pointer to another
+// table (in which case the process continues recursively), or they can
+// contain a pointer to a single hash. In this second case, this indicates
+// that this hash is the only one present in the table with that prefix
+// and so a simple comparison can be used to check for membership at
+// that point.
+static BOOL HashPresentInTable(unsigned char *hash, int length, struct _NativeZWRTableEntry *table)
+{
+    while(length)
+    {
+        struct _NativeZWRTableEntry entry = table[hash[0]];
+        if(entry.ptr == NULL)
+        {
+            return NO;
+        }
+        else if(!entry.isTable)
+        {
+            return memcmp(entry.ptr, hash + 1, length - 1) == 0;
+        }
+        else
+        {
+            hash++;
+            length--;
+            table = entry.ptr;
+        }
+    }
+    return NO;
+}
+
+static BOOL CanNativeZWRClass(Class c)
+{
+    if(!c)
+        return YES;
+    
+    const char *name = class_getName(c);
+    unsigned char hash[CC_SHA1_DIGEST_LENGTH];
+    CC_SHA1(name, (CC_LONG)strlen(name), hash);
+    
+    if(HashPresentInTable(hash, CC_SHA1_DIGEST_LENGTH, _MAZeroingWeakRefClassNativeWeakReferenceNotAllowedTable))
+        return NO;
+    else
+        return CanNativeZWRClass(class_getSuperclass(c));
+}
+
+static BOOL CanNativeZWR(id obj)
+{
+    return CanNativeZWRClass(object_getClass(obj));
+}
+
 static Class CreatePlainCustomSubclass(Class class)
 {
     NSString *newName = [NSString stringWithFormat: @"%s_MAZeroingWeakRefSubclass", class_getName(class)];
@@ -476,17 +565,18 @@ static Class CreatePlainCustomSubclass(Class class)
     return subclass;
 }
 
-#ifdef __clang__
-#pragma clang diagnostic push
-#endif
-#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-static void SetSuperclass(Class class, Class newSuper)
+static void PatchKVOSubclass(Class class)
 {
-    class_setSuperclass(class, newSuper);
+    NSLog(@"Patching KVO class %s", class_getName(class));
+    Method release = class_getInstanceMethod(class, @selector(release));
+    Method dealloc = class_getInstanceMethod(class, @selector(dealloc));
+    
+    class_addMethod(class, @selector(MAZeroingWeakRef_KVO_original_release), method_getImplementation(release), method_getTypeEncoding(release));
+    class_addMethod(class, @selector(MAZeroingWeakRef_KVO_original_dealloc), method_getImplementation(dealloc), method_getTypeEncoding(dealloc));
+    
+    class_replaceMethod(class, @selector(release), (IMP)KVOSubclassRelease, method_getTypeEncoding(release));
+    class_replaceMethod(class, @selector(dealloc), (IMP)KVOSubclassDealloc, method_getTypeEncoding(dealloc));
 }
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
 
 static void RegisterCustomSubclass(Class subclass, Class superclass)
 {
@@ -516,37 +606,14 @@ static Class CreateCustomSubclass(Class class, id obj)
 #endif
         return class;
     }
+    else if(IsKVOSubclass(obj))
+    {
+        PatchKVOSubclass(class);
+        return class;
+    }
     else
     {
-        Class classToSubclass = class;
-        Class newClass = nil;
-        BOOL isKVO = IsKVOSubclass(obj);
-        if(isKVO)
-        {
-            classToSubclass = class_getSuperclass(class);
-            newClass = [gCustomSubclassMap objectForKey: classToSubclass];
-        }
-        
-        if(!newClass)
-        {
-            newClass = CreatePlainCustomSubclass(classToSubclass);
-            if(isKVO)
-            {
-                SetSuperclass(class, newClass); // EVIL EVIL EVIL
-                
-                // if you thought setting the superclass was evil, wait until you get a load of this
-                // for some reason, KVO stores the superclass of the KVO class in the class's indexed ivars
-                // I don't know why they don't just use class_getSuperclass, but there we are
-                // this has to be set as well, otherwise KVO can skip over our dealloc, causing
-                // weak references not to get zeroed, doh!
-                id *kvoSuperclass = object_getIndexedIvars(class);
-                *kvoSuperclass = newClass;
-                
-                RegisterCustomSubclass(newClass, classToSubclass);
-            }
-        }
-        
-        return newClass;
+        return CreatePlainCustomSubclass(class);
     }
 }
 
@@ -606,9 +673,10 @@ static void UnregisterRef(MAZeroingWeakRef *ref)
 {
     if((self = [self init]))
     {
-        if(objc_storeWeak_fptr)
+        if(objc_storeWeak_fptr && CanNativeZWR(target))
         {
             objc_storeWeak_fptr(&_target, target);
+            _nativeZWR = YES;
         }
         else
         {
@@ -621,7 +689,7 @@ static void UnregisterRef(MAZeroingWeakRef *ref)
 
 - (void)dealloc
 {
-    if(objc_storeWeak_fptr)
+    if(objc_storeWeak_fptr && _nativeZWR)
         objc_storeWeak_fptr(&_target, nil);
     else
         UnregisterRef(self);
@@ -644,19 +712,26 @@ static void UnregisterRef(MAZeroingWeakRef *ref)
     [_cleanupBlock release];
     _cleanupBlock = block;
     
-    if(objc_loadWeak_fptr)
+    if(objc_loadWeak_fptr && _nativeZWR)
     {
         // wrap a pool around this code, otherwise it artificially extends
         // the lifetime of the target object
         NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
         
         id target = [self target];
-        if(target)
+        if(target != nil) @synchronized(target)
         {
-            _MAZeroingWeakRefCleanupHelper *helper = [[_MAZeroingWeakRefCleanupHelper alloc] initWithRef: self target: target];
-            
             static void *associatedKey = &associatedKey;
-            objc_setAssociatedObject(target, associatedKey, helper, OBJC_ASSOCIATION_RETAIN);
+            NSMutableSet *cleanupHelpers = objc_getAssociatedObject(target, associatedKey);
+            
+            if(cleanupHelpers == nil)
+            {
+                cleanupHelpers = [NSMutableSet set];
+                objc_setAssociatedObject(target, associatedKey, cleanupHelpers, OBJC_ASSOCIATION_RETAIN);
+            }
+            
+            _MAZeroingWeakRefCleanupHelper *helper = [[_MAZeroingWeakRefCleanupHelper alloc] initWithRef: self target: target];
+            [cleanupHelpers addObject:helper];
             
             [helper release];
         }
@@ -668,7 +743,7 @@ static void UnregisterRef(MAZeroingWeakRef *ref)
 
 - (id)target
 {
-    if(objc_loadWeak_fptr)
+    if(objc_loadWeak_fptr && _nativeZWR)
     {
         return objc_loadWeak_fptr(&_target);
     }
