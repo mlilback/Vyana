@@ -25,7 +25,7 @@
 
 		NSAffineTransform *fontTransform = [NSAffineTransform transform];           
 
-		[fontTransform scaleBy:[NSFont systemFontSizeForControlSize:NSMiniControlSize]];
+		[fontTransform scaleBy:[NSFont systemFontSizeForControlSize:NSSmallControlSize]];
 
 		NSAffineTransformStruct italicTransformData;
 

@@ -7,6 +7,7 @@
 //
 
 #import "AMBlockUtils.h"
+#import "NSFont+AMExtensions.h"
 #import "AMStringPromptWindowController.h"
 
 @interface AMStringPromptWindowController()
@@ -25,6 +26,7 @@
 
 -(void)windowDidLoad
 {
+	[self.validationMessageLabel setFont:[self.validationMessageLabel.font italicVersion]];
 }
 
 - (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo;
@@ -51,15 +53,30 @@
 
 -(IBAction)cancel:(id)sender
 {
-	NSRect r = self.window.frame;
-	r.size.height += 20;
-	[self.window setFrame:r display:YES animate:YES];
-//	[NSApp endSheet:self.window returnCode:NSCancelButton];
+	[NSApp endSheet:self.window returnCode:NSCancelButton];
+}
+
+-(void)setupValidationLabel
+{
 }
 
 -(BOOL)stringAcceptable
 {
-	if (self.validationBlock && !self.validationBlock(self.stringValue))
+	BOOL validated = YES;
+	if (self.validationBlock) {
+		if (self.stringValue.length > 0)
+			validated = self.validationBlock(self);
+		//now we need to show/hide the validation message
+		if (validated) {
+			[self.validationMessageLabel setHidden:YES];
+		} else {
+			if (nil == self.validationMessageLabel)
+				[self setupValidationLabel];
+			self.validationMessageLabel.stringValue = self.validationErrorMessage;
+			[self.validationMessageLabel setHidden:NO];
+		}
+	}
+	if (!validated)
 		return NO;
 	return self.stringValue.length > 0;
 }
@@ -75,4 +92,7 @@
 @synthesize okButtonTitle;
 @synthesize handler;
 @synthesize validationBlock;
+@synthesize validationErrorMessage;
+@synthesize validationMessageLabel;
+@synthesize stringField;
 @end
