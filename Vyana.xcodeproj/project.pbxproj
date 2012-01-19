@@ -92,6 +92,8 @@
 		089C0B35145B39F900DF9984 /* AMCharacterSetFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B33145B39F900DF9984 /* AMCharacterSetFormatter.m */; };
 		08A0C719148AE766000FAA00 /* AMRoundedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A0C717148AE766000FAA00 /* AMRoundedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A0C71A148AE766000FAA00 /* AMRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A0C718148AE766000FAA00 /* AMRoundedButton.m */; };
+		08A2324914C7A1C200EB1041 /* NSTabView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A2324714C7A1C200EB1041 /* NSTabView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A2324A14C7A1C200EB1041 /* NSTabView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A2324814C7A1C200EB1041 /* NSTabView+AMExtensions.m */; };
 		08A6000F1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A600111432AF5500E8AB4B /* NSView+AMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */; };
 		08A8B19D13FCC99C003BE670 /* AMProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -368,6 +370,8 @@
 		089C0B33145B39F900DF9984 /* AMCharacterSetFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCharacterSetFormatter.m; sourceTree = "<group>"; };
 		08A0C717148AE766000FAA00 /* AMRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMRoundedButton.h; sourceTree = "<group>"; };
 		08A0C718148AE766000FAA00 /* AMRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMRoundedButton.m; sourceTree = "<group>"; };
+		08A2324714C7A1C200EB1041 /* NSTabView+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTabView+AMExtensions.h"; sourceTree = "<group>"; };
+		08A2324814C7A1C200EB1041 /* NSTabView+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTabView+AMExtensions.m"; sourceTree = "<group>"; };
 		08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+AMExtension.h"; sourceTree = "<group>"; };
 		08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+AMExtension.m"; sourceTree = "<group>"; };
 		08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProcessInfo.h; sourceTree = "<group>"; };
@@ -845,6 +849,8 @@
 				088DF15A143CBAA800CF4844 /* NSMenu+AMExtensions.m */,
 				0809BF2A14BDEB15009CEC57 /* NSOutlineView+AMExtensions.h */,
 				0809BF2B14BDEB15009CEC57 /* NSOutlineView+AMExtensions.m */,
+				08A2324714C7A1C200EB1041 /* NSTabView+AMExtensions.h */,
+				08A2324814C7A1C200EB1041 /* NSTabView+AMExtensions.m */,
 				088DF167143CDF3F00CF4844 /* NSTableView+AMExtensions.h */,
 				088DF168143CDF3F00CF4844 /* NSTableView+AMExtensions.m */,
 				0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */,
@@ -1031,6 +1037,7 @@
 				0884DFFD14C36B670003F29C /* AMCustomDrawImageRep.h in Headers */,
 				0884E00114C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.h in Headers */,
 				0884E00514C38FBB0003F29C /* AMODBEditor.h in Headers */,
+				08A2324914C7A1C200EB1041 /* NSTabView+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1331,6 +1338,7 @@
 				0884DFFE14C36B670003F29C /* AMCustomDrawImageRep.m in Sources */,
 				0884E00214C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.m in Sources */,
 				0884E00614C38FBB0003F29C /* AMODBEditor.m in Sources */,
+				08A2324A14C7A1C200EB1041 /* NSTabView+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
