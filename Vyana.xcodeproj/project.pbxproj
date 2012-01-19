@@ -94,6 +94,9 @@
 		08A0C71A148AE766000FAA00 /* AMRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A0C718148AE766000FAA00 /* AMRoundedButton.m */; };
 		08A2324914C7A1C200EB1041 /* NSTabView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A2324714C7A1C200EB1041 /* NSTabView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A2324A14C7A1C200EB1041 /* NSTabView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A2324814C7A1C200EB1041 /* NSTabView+AMExtensions.m */; };
+		08A2324F14C865D000EB1041 /* AMStringPromptWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A2324C14C865D000EB1041 /* AMStringPromptWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A2325014C865D000EB1041 /* AMStringPromptWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A2324D14C865D000EB1041 /* AMStringPromptWindowController.m */; };
+		08A2325114C865D000EB1041 /* AMStringPromptWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A2324E14C865D000EB1041 /* AMStringPromptWindowController.xib */; };
 		08A6000F1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A600111432AF5500E8AB4B /* NSView+AMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */; };
 		08A8B19D13FCC99C003BE670 /* AMProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -372,6 +375,9 @@
 		08A0C718148AE766000FAA00 /* AMRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMRoundedButton.m; sourceTree = "<group>"; };
 		08A2324714C7A1C200EB1041 /* NSTabView+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTabView+AMExtensions.h"; sourceTree = "<group>"; };
 		08A2324814C7A1C200EB1041 /* NSTabView+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTabView+AMExtensions.m"; sourceTree = "<group>"; };
+		08A2324C14C865D000EB1041 /* AMStringPromptWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStringPromptWindowController.h; sourceTree = "<group>"; };
+		08A2324D14C865D000EB1041 /* AMStringPromptWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMStringPromptWindowController.m; sourceTree = "<group>"; };
+		08A2324E14C865D000EB1041 /* AMStringPromptWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMStringPromptWindowController.xib; sourceTree = "<group>"; };
 		08A6000C1432AF5500E8AB4B /* NSView+AMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+AMExtension.h"; sourceTree = "<group>"; };
 		08A6000D1432AF5500E8AB4B /* NSView+AMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+AMExtension.m"; sourceTree = "<group>"; };
 		08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProcessInfo.h; sourceTree = "<group>"; };
@@ -901,6 +907,9 @@
 				08EFE4861341DAA300231C8A /* AMSourceListView */,
 				08BF6B00139974E800BC8066 /* AMSplashScreen.h */,
 				08BF6B01139974E800BC8066 /* AMSplashScreen.m */,
+				08A2324C14C865D000EB1041 /* AMStringPromptWindowController.h */,
+				08A2324D14C865D000EB1041 /* AMStringPromptWindowController.m */,
+				08A2324E14C865D000EB1041 /* AMStringPromptWindowController.xib */,
 				08EFE4FA1342B34E00231C8A /* AMAppDefaultsWindowController.h */,
 				08EFE4FB1342B35100231C8A /* AMAppDefaultsWindowController.m */,
 				08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */,
@@ -1038,6 +1047,7 @@
 				0884E00114C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.h in Headers */,
 				0884E00514C38FBB0003F29C /* AMODBEditor.h in Headers */,
 				08A2324914C7A1C200EB1041 /* NSTabView+AMExtensions.h in Headers */,
+				08A2324F14C865D000EB1041 /* AMStringPromptWindowController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1209,6 +1219,7 @@
 				08AD67ED13DB3A8200687B3D /* VyanaConfig.plist in Resources */,
 				08AD67EE13DB3A8200687B3D /* AMAppDefaultsWindowController.xib in Resources */,
 				08AD67EF13DB3A8200687B3D /* VyanaDelete.icns in Resources */,
+				08A2325114C865D000EB1041 /* AMStringPromptWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1339,6 +1350,7 @@
 				0884E00214C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.m in Sources */,
 				0884E00614C38FBB0003F29C /* AMODBEditor.m in Sources */,
 				08A2324A14C7A1C200EB1041 /* NSTabView+AMExtensions.m in Sources */,
+				08A2325014C865D000EB1041 /* AMStringPromptWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
