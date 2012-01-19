@@ -71,7 +71,7 @@
 		0884E00114C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0884DFFF14C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0884E00214C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0884E00014C37F280003F29C /* NSAppleEventDescriptor+AMExtensions.m */; };
 		0884E00514C38FBB0003F29C /* AMODBEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0884E00314C38FBB0003F29C /* AMODBEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0884E00614C38FBB0003F29C /* AMODBEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0884E00414C38FBB0003F29C /* AMODBEditor.m */; };
+		0884E00614C38FBB0003F29C /* AMODBEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0884E00414C38FBB0003F29C /* AMODBEditor.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		088A76D11406A90C003D6A3F /* AMTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 088A76CF1406A90C003D6A3F /* AMTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		088A76D21406A90C003D6A3F /* AMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 088A76D01406A90C003D6A3F /* AMTableView.m */; };
 		088AC24E14AFE01E0094D134 /* UIImage+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 088AC24C14AFE01E0094D134 /* UIImage+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -95,7 +95,7 @@
 		08A2324914C7A1C200EB1041 /* NSTabView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A2324714C7A1C200EB1041 /* NSTabView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A2324A14C7A1C200EB1041 /* NSTabView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A2324814C7A1C200EB1041 /* NSTabView+AMExtensions.m */; };
 		08A2324F14C865D000EB1041 /* AMStringPromptWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A2324C14C865D000EB1041 /* AMStringPromptWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08A2325014C865D000EB1041 /* AMStringPromptWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A2324D14C865D000EB1041 /* AMStringPromptWindowController.m */; };
+		08A2325014C865D000EB1041 /* AMStringPromptWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A2324D14C865D000EB1041 /* AMStringPromptWindowController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		08A2325114C865D000EB1041 /* AMStringPromptWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A2324E14C865D000EB1041 /* AMStringPromptWindowController.xib */; };
 		08A2325414C886AE00EB1041 /* NSTextField+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A2325214C886AE00EB1041 /* NSTextField+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A2325514C886AE00EB1041 /* NSTextField+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A2325314C886AE00EB1041 /* NSTextField+AMExtensions.m */; };

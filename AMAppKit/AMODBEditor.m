@@ -208,7 +208,7 @@
 	AESendMessage([ae aeDesc], &reply, kAEWaitReply, kAEDefaultTimeout);
 	
 	if (status == noErr) {
-		replyDescriptor = [[[NSAppleEventDescriptor alloc] initWithAEDescNoCopy: &reply] autorelease];
+		replyDescriptor = [[NSAppleEventDescriptor alloc] initWithAEDescNoCopy: &reply];
 		errorDescriptor = [replyDescriptor paramDescriptorForKeyword: keyErrorNumber];
 		
 		if (errorDescriptor != nil) {
@@ -240,10 +240,10 @@
 - (void)handleModifiedFileEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent
 {
 	NSAppleEventDescriptor *fpDescriptor = [[event paramDescriptorForKeyword: keyDirectObject] coerceToDescriptorType: typeFileURL];
-	NSString *urlString = [[[NSString alloc] initWithData: [fpDescriptor data] encoding: NSUTF8StringEncoding] autorelease];
+	NSString *urlString = [[NSString alloc] initWithData: [fpDescriptor data] encoding: NSUTF8StringEncoding];
 	NSString *path = [[[NSURL URLWithString: urlString] path] stringByResolvingSymlinksInPath];
 	NSAppleEventDescriptor	*nfpDescription = [[event paramDescriptorForKeyword: keyNewLocation] coerceToDescriptorType: typeFileURL];
-	NSString *newUrlString = [[[NSString alloc] initWithData: [nfpDescription data] encoding: NSUTF8StringEncoding] autorelease];
+	NSString *newUrlString = [[NSString alloc] initWithData: [nfpDescription data] encoding: NSUTF8StringEncoding];
 	NSString *newPath = [[NSURL URLWithString: newUrlString] path];
 	NSDictionary *dictionary = nil;
 	NSError *error = nil;
@@ -277,9 +277,9 @@
 - (void)handleClosedFileEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent
 {
 	NSAppleEventDescriptor  *descriptor = [[event paramDescriptorForKeyword: keyDirectObject] coerceToDescriptorType: typeFileURL];
-	NSString				*urlString = [[[NSString alloc] initWithData: [descriptor data] encoding: NSUTF8StringEncoding] autorelease];
-	NSString				*fileName = [[[NSURL URLWithString: urlString] path] stringByResolvingSymlinksInPath];
-	NSDictionary			*dictionary = nil;
+	NSString *urlString = [[NSString alloc] initWithData: [descriptor data] encoding: NSUTF8StringEncoding];
+	NSString *fileName = [[[NSURL URLWithString: urlString] path] stringByResolvingSymlinksInPath];
+	NSDictionary *dictionary = nil;
 	NSError *error = nil;
 	
 	dictionary = [self.filesBeingEdited objectForKey:fileName];
