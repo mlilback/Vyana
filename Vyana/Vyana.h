@@ -46,6 +46,7 @@
 #import <Vyana/NSOutlineView+AMExtensions.h>
 #import <Vyana/NSTabView+AMExtensions.h>
 #import <Vyana/NSTableView+AMExtensions.h>
+#import <Vyana/NSTextField+AMExtensions.h>
 #import <Vyana/NSUserDefaults+AMExtensions.h>
 #import <Vyana/NSView+AMExtension.h>
 #import <Vyana/NSWindow+AMExtensions.h>

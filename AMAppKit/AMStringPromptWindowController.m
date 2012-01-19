@@ -9,6 +9,7 @@
 #import "AMBlockUtils.h"
 #import "NSFont+AMExtensions.h"
 #import "AMStringPromptWindowController.h"
+#import "NSTextField+AMExtensions.h"
 
 @interface AMStringPromptWindowController()
 @property (nonatomic, copy) BasicBlock1IntArg handler;
@@ -74,6 +75,7 @@
 				[self setupValidationLabel];
 			self.validationMessageLabel.stringValue = self.validationErrorMessage;
 			[self.validationMessageLabel setHidden:NO];
+			[self.validationMessageLabel resizeFontToFitText:7.0 maxSize:13.0];
 		}
 	}
 	if (!validated)
