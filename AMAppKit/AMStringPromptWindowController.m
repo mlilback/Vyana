@@ -22,6 +22,7 @@
 	self.promptString = @"Name:";
 	self.okButtonTitle = @"OK";
 	self.stringValue = @"";
+	self.validationErrorMessage = @"";
 	return self;
 }
 

@@ -35,6 +35,9 @@
 //returns string with prefix of "A ", "An", or "The" removed
 -(NSString*)stringByRemovingLeadingAritcle;
 
+//removes all characters except 0-9 A-Z a-z - _ 
+-(NSString*)stringByRemovingNonSafeFileNameCharacters;
+
 -(NSUInteger)countOfSubstring:(NSString*)str;
 
 -(NSString*)stringByTrimmingWhitespace;
