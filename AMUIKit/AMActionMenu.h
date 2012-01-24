@@ -11,12 +11,11 @@
  */
 
 
-@interface AMActionMenu : UIViewController {
-	@private
-	NSArray *__items;
-}
+@interface AMActionMenu : UIViewController<UIActionSheetDelegate>
 
 +(AMActionMenu*)actionMenuWithItems:(NSArray*)items;
+
+-(void)showFromBarButtonItem:(UIBarButtonItem*)barItem;
 
 @property (nonatomic, copy) NSArray *menuItems;
 
