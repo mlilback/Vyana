@@ -20,6 +20,10 @@
 //returns a CGImageRef that must be released. Uses the TIFF data
 -(CGImageRef)createImageRef;
 
+-(NSImage*)imageScaledToSize:(NSSize)size;
+-(NSImage*)imageScaledToWidth:(CGFloat)width;
+-(NSImage*)imageScaledToHeight:(CGFloat)height;
+
 -(NSData*)bitmapDataOfType:(NSBitmapImageFileType)bitmapType properties:(NSDictionary*)props;
 -(NSData*)jpegDataWithCompressionPercent:(CGFloat)percent;
 -(NSData*)pngData;

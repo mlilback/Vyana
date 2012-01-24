@@ -29,6 +29,38 @@
 	return [img autorelease];
 }
 
+-(NSImage*)imageScaledToWidth:(CGFloat)width
+{
+	NSRect destRect = NSMakeRect(0, 0, width, floor(self.size.height * width / self.size.width));
+	return [self imageScaledToSize:destRect.size];
+}
+
+-(NSImage*)imageScaledToHeight:(CGFloat)height
+{
+	NSSize sz = NSMakeSize(floor(self.size.width * height / self.size.height), height);
+	return [self imageScaledToSize:sz];
+}
+
+-(NSImage*)imageScaledToSize:(NSSize)size
+{
+	NSImage *destImg = [[[NSImage alloc] initWithSize:size] autorelease];
+	NSAffineTransform *at = [NSAffineTransform transform];
+	CGFloat heightFactor = size.height / self.size.height;
+	CGFloat widthFactor = size.width / self.size.width;
+	CGFloat scale = heightFactor > widthFactor ? widthFactor : heightFactor;
+	[at scaleBy:scale];
+	[destImg lockFocus];
+	[[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationMedium];
+	NSRect r = NSZeroRect;
+	r.size = size;
+	[self drawInRect:r 
+			fromRect:NSMakeRect(0, 0, self.size.width, self.size.height) 
+		   operation:NSCompositeSourceOver 
+			fraction:1.0];
+	[destImg unlockFocus];
+	return destImg;
+}
+
 -(NSImage *)tintedImageWithColor:(NSColor *)tint
 {
 	NSSize size = [self size];
