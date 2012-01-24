@@ -43,7 +43,7 @@
 		0854F71F13C614C900CEF018 /* AMActionItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0854F71C13C614C900CEF018 /* AMActionItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0854F72113C614C900CEF018 /* AMActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854F71D13C614C900CEF018 /* AMActionItem.m */; };
 		0854F72513C615B800CEF018 /* AMActionMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 0854F72313C615B800CEF018 /* AMActionMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0854F72613C615B800CEF018 /* AMActionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854F72413C615B800CEF018 /* AMActionMenu.m */; };
+		0854F72613C615B800CEF018 /* AMActionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854F72413C615B800CEF018 /* AMActionMenu.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		08587CF113ABC56C00CBAC32 /* AMPromptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587CEF13ABC56C00CBAC32 /* AMPromptView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08587CF213ABC56C00CBAC32 /* AMPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587CF013ABC56C00CBAC32 /* AMPromptView.m */; };
 		08587CF813ABC68200CBAC32 /* iAMTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587CF413ABC68100CBAC32 /* iAMTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -144,7 +144,7 @@
 		08AD67AB13DB3A8200687B3D /* AMPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F88C1135FE40B00F0FF9F /* AMPreferencesController.m */; };
 		08AD67AC13DB3A8200687B3D /* AMAboutBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF6AF213996E3E00BC8066 /* AMAboutBoxController.m */; };
 		08AD67AD13DB3A8200687B3D /* AMSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF6B01139974E800BC8066 /* AMSplashScreen.m */; };
-		08AD67AE13DB3A8200687B3D /* AMActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854F71D13C614C900CEF018 /* AMActionItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		08AD67AE13DB3A8200687B3D /* AMActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854F71D13C614C900CEF018 /* AMActionItem.m */; };
 		08AD67AF13DB3A8200687B3D /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */; };
 		08AD67B113DB3A8200687B3D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BF6AF613996EA100BC8066 /* WebKit.framework */; };
 		08AD67B213DB3A8200687B3D /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08435A621347EC6F0044089C /* QTKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
