@@ -10,6 +10,7 @@
 #import <Vyana-ios/NSArray+AMExtensions.h>
 #import <Vyana-ios/NSDictionary+AMExtensions.h>
 #import <Vyana-ios/NSFileHandle+AMExtensions.h>
+#import <Vyana-ios/NSFileManager+AMExtensions.h>
 #import <Vyana-ios/NSFileWrapper+AMExtensions.h>
 #import <Vyana-ios/NSIndexPath+AMExtensions.h>
 #import <Vyana-ios/NSNumber+AMExtensions.h>

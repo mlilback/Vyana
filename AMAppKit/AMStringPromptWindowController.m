@@ -35,6 +35,7 @@
 {
 	[self.window orderOut:self];
 	self.handler(returnCode);
+	self.handler=nil;
 }
 
 -(void)displayModelForWindow:(NSWindow*)parentWindow completionHandler:(BasicBlock1IntArg)block
