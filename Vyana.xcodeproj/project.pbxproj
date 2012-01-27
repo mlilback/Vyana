@@ -84,6 +84,8 @@
 		088DF15E143CBAA800CF4844 /* NSMenu+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 088DF15A143CBAA800CF4844 /* NSMenu+AMExtensions.m */; };
 		088DF16A143CDF3F00CF4844 /* NSTableView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 088DF167143CDF3F00CF4844 /* NSTableView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		088DF16C143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 088DF168143CDF3F00CF4844 /* NSTableView+AMExtensions.m */; };
+		08921F4F14D1B9170014746F /* NSFileManager+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D93113FF365E0089DB86 /* NSFileManager+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08921F5114D1B91D0014746F /* NSFileManager+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D93213FF365E0089DB86 /* NSFileManager+AMExtensions.m */; };
 		089C0B24145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B21145A2B3D00DF9984 /* NSWindow+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		089C0B26145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */; };
 		089C0B2F145B36EF00DF9984 /* AMRegExpFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B2D145B36EF00DF9984 /* AMRegExpFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1107,6 +1109,7 @@
 				08A0C719148AE766000FAA00 /* AMRoundedButton.h in Headers */,
 				088AC24E14AFE01E0094D134 /* UIImage+AMExtensions.h in Headers */,
 				088AC35114BCF97C0094D134 /* NSFileWrapper+AMExtensions.h in Headers */,
+				08921F4F14D1B9170014746F /* NSFileManager+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1407,6 +1410,7 @@
 				08A0C71A148AE766000FAA00 /* AMRoundedButton.m in Sources */,
 				088AC24F14AFE01E0094D134 /* UIImage+AMExtensions.m in Sources */,
 				088AC35314BCF97C0094D134 /* NSFileWrapper+AMExtensions.m in Sources */,
+				08921F5114D1B91D0014746F /* NSFileManager+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
