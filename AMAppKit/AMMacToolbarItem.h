@@ -11,4 +11,6 @@
 //This subclass resizes the images to be 16x16 in a 24x24 space.
 
 @interface AMMacToolbarItem : NSToolbarItem
+//will be called with the toolbar item as argument to adjust/validate custom view
+@property (nonatomic, copy) BasicBlock1Arg validationBlock;
 @end

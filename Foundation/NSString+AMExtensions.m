@@ -95,6 +95,17 @@
 	return NSNotFound; //not found
 }
 
+-(NSString*)stringByRemovingCharactersInCharacterSet:(NSCharacterSet*)cset
+{
+	NSMutableString *mstr = [self mutableCopy];
+	NSRange rng = [mstr rangeOfCharacterFromSet:cset];
+	while (rng.location != NSNotFound) {
+		[mstr deleteCharactersInRange:rng];
+		rng = [mstr rangeOfCharacterFromSet:cset];
+	}
+	return [mstr copy];
+}
+
 //removes all characters except 0-9 A-Z a-z - _
 -(NSString*)stringByRemovingNonSafeFileNameCharacters
 {
@@ -103,13 +114,7 @@
 	dispatch_once(&onceToken, ^{
 		invalidCharSet = [[[NSCharacterSet characterSetWithCharactersInString:@"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_"] invertedSet] retain];
 	});
-	NSMutableString *mstr = [self mutableCopy];
-	NSRange rng = [mstr rangeOfCharacterFromSet:invalidCharSet];
-	while (rng.location != NSNotFound) {
-		[mstr deleteCharactersInRange:rng];
-		rng = [mstr rangeOfCharacterFromSet:invalidCharSet];
-	}
-	return [mstr copy];
+	return [self stringByRemovingCharactersInCharacterSet:invalidCharSet];
 }
 
 //returns autoreleased string (might be self) with any CR, LF, or CFLF removed

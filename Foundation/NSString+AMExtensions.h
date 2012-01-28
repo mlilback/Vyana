@@ -34,6 +34,8 @@
 -(NSComparisonResult)compareNumerically:(NSString*)str;
 //returns string with prefix of "A ", "An", or "The" removed
 -(NSString*)stringByRemovingLeadingAritcle;
+//removes any characters in cset
+-(NSString*)stringByRemovingCharactersInCharacterSet:(NSCharacterSet*)cset;
 
 //removes all characters except 0-9 A-Z a-z - _ 
 -(NSString*)stringByRemovingNonSafeFileNameCharacters;

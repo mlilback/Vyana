@@ -48,4 +48,12 @@
 		[self imageSetup];
 }
 
+-(void)validate
+{
+	[super validate];
+	if (self.validationBlock)
+		self.validationBlock(self);
+}
+
+@synthesize validationBlock;
 @end
