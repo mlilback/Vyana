@@ -86,6 +86,10 @@
 		088DF16C143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 088DF168143CDF3F00CF4844 /* NSTableView+AMExtensions.m */; };
 		08921F4F14D1B9170014746F /* NSFileManager+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D93113FF365E0089DB86 /* NSFileManager+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08921F5114D1B91D0014746F /* NSFileManager+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D93213FF365E0089DB86 /* NSFileManager+AMExtensions.m */; };
+		0892201514D584C20014746F /* AMTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0892201314D584C20014746F /* AMTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0892201614D584C20014746F /* AMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0892201414D584C20014746F /* AMTableView.m */; };
+		0892201A14D586D10014746F /* AMOutlineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0892201814D586D10014746F /* AMOutlineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0892201B14D586D10014746F /* AMOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0892201914D586D10014746F /* AMOutlineView.m */; };
 		089C0B24145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B21145A2B3D00DF9984 /* NSWindow+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		089C0B26145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */; };
 		089C0B2F145B36EF00DF9984 /* AMRegExpFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B2D145B36EF00DF9984 /* AMRegExpFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -369,6 +373,10 @@
 		088DF15A143CBAA800CF4844 /* NSMenu+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMenu+AMExtensions.m"; sourceTree = "<group>"; };
 		088DF167143CDF3F00CF4844 /* NSTableView+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTableView+AMExtensions.h"; sourceTree = "<group>"; };
 		088DF168143CDF3F00CF4844 /* NSTableView+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTableView+AMExtensions.m"; sourceTree = "<group>"; };
+		0892201314D584C20014746F /* AMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTableView.h; sourceTree = "<group>"; };
+		0892201414D584C20014746F /* AMTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTableView.m; sourceTree = "<group>"; };
+		0892201814D586D10014746F /* AMOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMOutlineView.h; sourceTree = "<group>"; };
+		0892201914D586D10014746F /* AMOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMOutlineView.m; sourceTree = "<group>"; };
 		089C0B21145A2B3D00DF9984 /* NSWindow+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+AMExtensions.h"; sourceTree = "<group>"; };
 		089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+AMExtensions.m"; sourceTree = "<group>"; };
 		089C0B2D145B36EF00DF9984 /* AMRegExpFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMRegExpFormatter.h; sourceTree = "<group>"; };
@@ -904,6 +912,8 @@
 				0884DFF714C364D70003F29C /* AMMacToolbarItem.m */,
 				0884E00314C38FBB0003F29C /* AMODBEditor.h */,
 				0884E00414C38FBB0003F29C /* AMODBEditor.m */,
+				0892201814D586D10014746F /* AMOutlineView.h */,
+				0892201914D586D10014746F /* AMOutlineView.m */,
 				086F88BE135FE40B00F0FF9F /* AMPreferenceModule.h */,
 				086F88BF135FE40B00F0FF9F /* AMPreferenceModule.m */,
 				086F88C0135FE40B00F0FF9F /* AMPreferencesController.h */,
@@ -918,6 +928,8 @@
 				08A2324C14C865D000EB1041 /* AMStringPromptWindowController.h */,
 				08A2324D14C865D000EB1041 /* AMStringPromptWindowController.m */,
 				08A2324E14C865D000EB1041 /* AMStringPromptWindowController.xib */,
+				0892201314D584C20014746F /* AMTableView.h */,
+				0892201414D584C20014746F /* AMTableView.m */,
 				08EFE4FA1342B34E00231C8A /* AMAppDefaultsWindowController.h */,
 				08EFE4FB1342B35100231C8A /* AMAppDefaultsWindowController.m */,
 				08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */,
@@ -1057,6 +1069,8 @@
 				08A2324914C7A1C200EB1041 /* NSTabView+AMExtensions.h in Headers */,
 				08A2324F14C865D000EB1041 /* AMStringPromptWindowController.h in Headers */,
 				08A2325414C886AE00EB1041 /* NSTextField+AMExtensions.h in Headers */,
+				0892201514D584C20014746F /* AMTableView.h in Headers */,
+				0892201A14D586D10014746F /* AMOutlineView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1362,6 +1376,8 @@
 				08A2324A14C7A1C200EB1041 /* NSTabView+AMExtensions.m in Sources */,
 				08A2325014C865D000EB1041 /* AMStringPromptWindowController.m in Sources */,
 				08A2325514C886AE00EB1041 /* NSTextField+AMExtensions.m in Sources */,
+				0892201614D584C20014746F /* AMTableView.m in Sources */,
+				0892201B14D586D10014746F /* AMOutlineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

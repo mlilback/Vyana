@@ -65,6 +65,7 @@
 #import <Vyana/AMMacNavController.h>
 #import <Vyana/AMMacToolbarItem.h>
 #import <Vyana/AMODBEditor.h>
+#import <Vyana/AMOutlineView.h>
 #import <Vyana/AMPreferenceModule.h>
 #import <Vyana/AMPreferencesController.h>
 #import <Vyana/AMProcessInfo.h>
@@ -72,6 +73,7 @@
 #import <Vyana/AMSoundView.h>
 #import <Vyana/AMSplashScreen.h>
 #import <Vyana/AMStringPromptWindowController.h>
+#import <Vyana/AMTableView.h>
 #import <Vyana/AMViewController.h>
 
 #import <Vyana/AMSourceListCell.h>
