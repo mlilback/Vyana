@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Agile Monks. All rights reserved.
 //
 
+#import "AMBlockUtils.h"
 #import "AMNavigationTreeController.h"
 #import "AMNavigationTreeListController.h"
 
@@ -16,10 +17,6 @@
 
 @implementation AMNavigationTreeController
 @synthesize delegate=_delegate;
-@synthesize delegateCreatesCells;
-@synthesize keyForCellText;
-@synthesize keyForCellImage;
-@synthesize listController;
 
 #pragma mark - View lifecycle
 
@@ -39,8 +36,6 @@
 - (void)viewDidUnload
 {
 	[super viewDidUnload];
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -64,4 +59,13 @@
 	_delegate = del;
 	self.delegateCreatesCells = [del respondsToSelector:@selector(navTree:cellForItem:)];
 }
+
+@synthesize delegateCreatesCells;
+@synthesize keyForCellText;
+@synthesize keyForCellImage;
+@synthesize listController;
+@synthesize tracksSelectedItem;
+@synthesize selectedItem;
+@synthesize contentItems;
+@synthesize tableSetupBlock;
 @end
