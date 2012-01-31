@@ -13,9 +13,14 @@
 -(UITableViewCell*)cellForItem:(id)item;
 @end
 
+@interface AMNavigationTreeListController()
+@property (nonatomic, strong) UITableView *listTableView;
+@end
+
 @implementation AMNavigationTreeListController
 @synthesize treeController;
 @synthesize rootItem;
+@synthesize listTableView;
 
 #pragma mark - View lifecycle
 
@@ -24,6 +29,7 @@
 {
 	UITableView *tv = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 300, 500)];
 	self.view = tv;
+	self.listTableView = tv;
 	tv.delegate = self;
 	tv.dataSource = self;
 	tv.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight|
@@ -33,6 +39,8 @@
 	self.navigationItem.leftBarButtonItems = self.treeController.navigationItem.leftBarButtonItems;
 	self.navigationItem.rightBarButtonItems = self.treeController.navigationItem.rightBarButtonItems;
 	self.toolbarItems = self.treeController.toolbarItems;
+	if (self.treeController.tableSetupBlock)
+		self.treeController.tableSetupBlock(tv);
 }
 
 - (void)viewDidUnload
@@ -51,16 +59,25 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+	if (self.treeController.contentItems)
+		return self.treeController.contentItems.count;
 	return [self.treeController.delegate navTree:self.treeController 
 						  numberOfChildrenOfItem:self.rootItem];
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	id item = [self.treeController.delegate navTree:self.treeController 
-										childOfItem:self.rootItem 
-											atIndex:indexPath.row];
-	UITableViewCell *cell = [self.treeController cellForItem:item];
+	id item=nil;
+	UITableViewCell *cell=nil;
+	BOOL haveContent = nil != self.treeController.contentItems;
+	if (haveContent)
+		item = [self.treeController.contentItems objectAtIndex:indexPath.row];
+	else {
+		item = [self.treeController.delegate navTree:self.treeController 
+										 childOfItem:self.rootItem 
+											 atIndex:indexPath.row];
+	}
+	cell = [self.treeController cellForItem:item];
 	if (cell)
 		return cell;
 
@@ -69,25 +86,41 @@
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
 									  reuseIdentifier:@"NavTreeLeafCell"];
 	}
-	if (![self.treeController.delegate navTree:self.treeController isLeafItem:item])
-		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-	else
-		cell.accessoryType = UITableViewCellAccessoryNone;
-	if (self.treeController.keyForCellText)
-		cell.textLabel.text = [item valueForKeyPath:self.treeController.keyForCellText];
+	if (haveContent) {
+		if (nil == self.treeController.keyForCellText)
+			cell.textLabel.text = [item description];
+		else
+			cell.textLabel.text = [item valueForKeyPath:self.treeController.keyForCellText];
+	} else {
+		if (![self.treeController.delegate navTree:self.treeController isLeafItem:item])
+			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+		else
+			cell.accessoryType = UITableViewCellAccessoryNone;
+		if (self.treeController.keyForCellText)
+			cell.textLabel.text = [item valueForKeyPath:self.treeController.keyForCellText];
+	}
 	if (self.treeController.keyForCellImage)
 		cell.imageView.image = [item valueForKeyPath:self.treeController.keyForCellImage];
-	
+	cell.accessoryType = UITableViewCellAccessoryNone;
+	if (self.treeController.tracksSelectedItem && self.treeController.selectedItem == item)
+		cell.accessoryType = UITableViewCellAccessoryCheckmark;
 	return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	id item = [self.treeController.delegate navTree:self.treeController 
-										childOfItem:self.rootItem 
-											atIndex:indexPath.row];
+	BOOL haveContent = nil != self.treeController.contentItems;
+	id item=nil;
+	if (haveContent)
+		item = [self.treeController.contentItems objectAtIndex:indexPath.row];
+	else {
+		item = [self.treeController.delegate navTree:self.treeController 
+										 childOfItem:self.rootItem 
+											 atIndex:indexPath.row];
+	}
+	self.treeController.selectedItem = item;
 	[self.treeController.delegate navTree:self.treeController leafItemTouched:item];
-	if (![self.treeController.delegate navTree:self.treeController isLeafItem:item]) {
+	if (!haveContent && ![self.treeController.delegate navTree:self.treeController isLeafItem:item]) {
 		//need to load a new instance on nav stack
 		AMNavigationTreeListController *childList = [[AMNavigationTreeListController alloc] init];
 		childList.treeController = self.treeController;
