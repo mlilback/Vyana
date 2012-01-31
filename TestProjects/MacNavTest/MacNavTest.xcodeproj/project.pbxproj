@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08BD997D147456E1004EF624 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BD997C147456E1004EF624 /* Cocoa.framework */; };
+		08BD9987147456E1004EF624 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08BD9985147456E1004EF624 /* InfoPlist.strings */; };
+		08BD9989147456E1004EF624 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD9988147456E1004EF624 /* main.m */; };
+		08BD998D147456E1004EF624 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 08BD998B147456E1004EF624 /* Credits.rtf */; };
+		08BD9990147456E1004EF624 /* MNTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD998F147456E1004EF624 /* MNTAppDelegate.m */; };
+		08BD9993147456E1004EF624 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08BD9991147456E1004EF624 /* MainMenu.xib */; };
+		08BD999A147456F5004EF624 /* Vyana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BD9999147456F5004EF624 /* Vyana.framework */; };
+		08BD999C14745778004EF624 /* Vyana.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 08BD9999147456F5004EF624 /* Vyana.framework */; };
+		08BD99AD14747133004EF624 /* MNTPdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD99AB14747133004EF624 /* MNTPdfViewController.m */; };
+		08BD99AE14747133004EF624 /* MNTPdfViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08BD99AC14747133004EF624 /* MNTPdfViewController.xib */; };
+		08BD99B01474723E004EF624 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BD99AF1474723E004EF624 /* Quartz.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08BD999B1474576C004EF624 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				08BD999C14745778004EF624 /* Vyana.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08BD9978147456E1004EF624 /* MacNavTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacNavTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08BD997C147456E1004EF624 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		08BD997F147456E1004EF624 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		08BD9980147456E1004EF624 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		08BD9981147456E1004EF624 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		08BD9984147456E1004EF624 /* MacNavTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacNavTest-Info.plist"; sourceTree = "<group>"; };
+		08BD9986147456E1004EF624 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08BD9988147456E1004EF624 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08BD998A147456E1004EF624 /* MacNavTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacNavTest-Prefix.pch"; sourceTree = "<group>"; };
+		08BD998C147456E1004EF624 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		08BD998E147456E1004EF624 /* MNTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNTAppDelegate.h; sourceTree = "<group>"; };
+		08BD998F147456E1004EF624 /* MNTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNTAppDelegate.m; sourceTree = "<group>"; };
+		08BD9992147456E1004EF624 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		08BD9999147456F5004EF624 /* Vyana.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Vyana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08BD99AA14747133004EF624 /* MNTPdfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNTPdfViewController.h; sourceTree = "<group>"; };
+		08BD99AB14747133004EF624 /* MNTPdfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNTPdfViewController.m; sourceTree = "<group>"; };
+		08BD99AC14747133004EF624 /* MNTPdfViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MNTPdfViewController.xib; sourceTree = "<group>"; };
+		08BD99AF1474723E004EF624 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08BD9975147456E1004EF624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BD99B01474723E004EF624 /* Quartz.framework in Frameworks */,
+				08BD999A147456F5004EF624 /* Vyana.framework in Frameworks */,
+				08BD997D147456E1004EF624 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08BD996D147456E1004EF624 = {
+			isa = PBXGroup;
+			children = (
+				08BD9982147456E1004EF624 /* MacNavTest */,
+				08BD997B147456E1004EF624 /* Frameworks */,
+				08BD9979147456E1004EF624 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08BD9979147456E1004EF624 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08BD9978147456E1004EF624 /* MacNavTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08BD997B147456E1004EF624 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08BD99AF1474723E004EF624 /* Quartz.framework */,
+				08BD9999147456F5004EF624 /* Vyana.framework */,
+				08BD997C147456E1004EF624 /* Cocoa.framework */,
+				08BD997E147456E1004EF624 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08BD997E147456E1004EF624 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08BD997F147456E1004EF624 /* AppKit.framework */,
+				08BD9980147456E1004EF624 /* CoreData.framework */,
+				08BD9981147456E1004EF624 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		08BD9982147456E1004EF624 /* MacNavTest */ = {
+			isa = PBXGroup;
+			children = (
+				08BD998E147456E1004EF624 /* MNTAppDelegate.h */,
+				08BD998F147456E1004EF624 /* MNTAppDelegate.m */,
+				08BD99AA14747133004EF624 /* MNTPdfViewController.h */,
+				08BD99AB14747133004EF624 /* MNTPdfViewController.m */,
+				08BD99AC14747133004EF624 /* MNTPdfViewController.xib */,
+				08BD9991147456E1004EF624 /* MainMenu.xib */,
+				08BD9983147456E1004EF624 /* Supporting Files */,
+			);
+			path = MacNavTest;
+			sourceTree = "<group>";
+		};
+		08BD9983147456E1004EF624 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08BD9984147456E1004EF624 /* MacNavTest-Info.plist */,
+				08BD9985147456E1004EF624 /* InfoPlist.strings */,
+				08BD9988147456E1004EF624 /* main.m */,
+				08BD998A147456E1004EF624 /* MacNavTest-Prefix.pch */,
+				08BD998B147456E1004EF624 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08BD9977147456E1004EF624 /* MacNavTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08BD9996147456E1004EF624 /* Build configuration list for PBXNativeTarget "MacNavTest" */;
+			buildPhases = (
+				08BD9974147456E1004EF624 /* Sources */,
+				08BD9975147456E1004EF624 /* Frameworks */,
+				08BD9976147456E1004EF624 /* Resources */,
+				08BD999B1474576C004EF624 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacNavTest;
+			productName = MacNavTest;
+			productReference = 08BD9978147456E1004EF624 /* MacNavTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08BD996F147456E1004EF624 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Agile Monks";
+			};
+			buildConfigurationList = 08BD9972147456E1004EF624 /* Build configuration list for PBXProject "MacNavTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08BD996D147456E1004EF624;
+			productRefGroup = 08BD9979147456E1004EF624 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08BD9977147456E1004EF624 /* MacNavTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08BD9976147456E1004EF624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BD9987147456E1004EF624 /* InfoPlist.strings in Resources */,
+				08BD998D147456E1004EF624 /* Credits.rtf in Resources */,
+				08BD9993147456E1004EF624 /* MainMenu.xib in Resources */,
+				08BD99AE14747133004EF624 /* MNTPdfViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08BD9974147456E1004EF624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BD9989147456E1004EF624 /* main.m in Sources */,
+				08BD9990147456E1004EF624 /* MNTAppDelegate.m in Sources */,
+				08BD99AD14747133004EF624 /* MNTPdfViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		08BD9985147456E1004EF624 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08BD9986147456E1004EF624 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		08BD998B147456E1004EF624 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08BD998C147456E1004EF624 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		08BD9991147456E1004EF624 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08BD9992147456E1004EF624 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08BD9994147456E1004EF624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		08BD9995147456E1004EF624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		08BD9997147456E1004EF624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacNavTest/MacNavTest-Prefix.pch";
+				INFOPLIST_FILE = "MacNavTest/MacNavTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		08BD9998147456E1004EF624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacNavTest/MacNavTest-Prefix.pch";
+				INFOPLIST_FILE = "MacNavTest/MacNavTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08BD9972147456E1004EF624 /* Build configuration list for PBXProject "MacNavTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08BD9994147456E1004EF624 /* Debug */,
+				08BD9995147456E1004EF624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08BD9996147456E1004EF624 /* Build configuration list for PBXNativeTarget "MacNavTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08BD9997147456E1004EF624 /* Debug */,
+				08BD9998147456E1004EF624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08BD996F147456E1004EF624 /* Project object */;
+}

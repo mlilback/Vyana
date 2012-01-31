@@ -1,0 +1,1350 @@
+<tagfile>
+<compound kind="class">
+	<name>NSAtomicStore</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/NSAtomicStore_class/Reference/NSAtomicStore.html</filename>
+	<member kind="function">
+		<name>addCacheNodes:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/addCacheNodes:</anchor>
+	</member>
+	<member kind="function">
+		<name>cacheNodeForObjectID:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/cacheNodeForObjectID:</anchor>
+	</member>
+	<member kind="function">
+		<name>cacheNodes</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/cacheNodes</anchor>
+	</member>
+	<member kind="function">
+		<name>initWithPersistentStoreCoordinator:configurationName:URL:options:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/initWithPersistentStoreCoordinator:configurationName:URL:options:</anchor>
+	</member>
+	<member kind="function">
+		<name>load:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/load:</anchor>
+	</member>
+	<member kind="function">
+		<name>metadata</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/metadata</anchor>
+	</member>
+	<member kind="function">
+		<name>newCacheNodeForManagedObject:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/newCacheNodeForManagedObject:</anchor>
+	</member>
+	<member kind="function">
+		<name>newReferenceObjectForManagedObject:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/newReferenceObjectForManagedObject:</anchor>
+	</member>
+	<member kind="function">
+		<name>objectIDForEntity:referenceObject:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/objectIDForEntity:referenceObject:</anchor>
+	</member>
+	<member kind="function">
+		<name>referenceObjectForObjectID:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/referenceObjectForObjectID:</anchor>
+	</member>
+	<member kind="function">
+		<name>save:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/save:</anchor>
+	</member>
+	<member kind="function">
+		<name>setMetadata:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/setMetadata:</anchor>
+	</member>
+	<member kind="function">
+		<name>updateCacheNode:fromManagedObject:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/updateCacheNode:fromManagedObject:</anchor>
+	</member>
+	<member kind="function">
+		<name>willRemoveCacheNodes:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStore/willRemoveCacheNodes:</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSAtomicStoreCacheNode</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/NSAtomicStoreCacheNode_class/Reference/NSAtomicStoreCacheNode.html</filename>
+	<member kind="function">
+		<name>initWithObjectID:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStoreCacheNode/initWithObjectID:</anchor>
+	</member>
+	<member kind="function">
+		<name>objectID</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStoreCacheNode/objectID</anchor>
+	</member>
+	<member kind="function">
+		<name>propertyCache</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStoreCacheNode/propertyCache</anchor>
+	</member>
+	<member kind="function">
+		<name>setPropertyCache:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStoreCacheNode/setPropertyCache:</anchor>
+	</member>
+	<member kind="function">
+		<name>setValue:forKey:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStoreCacheNode/setValue:forKey:</anchor>
+	</member>
+	<member kind="function">
+		<name>valueForKey:</name>
+		<anchor>//apple_ref/occ/instm/NSAtomicStoreCacheNode/valueForKey:</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSAttributeDescription</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/CoreDataFramework/Classes/NSAttributeDescription_Class/reference.html</filename>
+	<member kind="function">
+		<name>attributeType</name>
+		<anchor>//apple_ref/occ/instm/NSAttributeDescription/attributeType</anchor>
+	</member>
+	<member kind="function">
+		<name>attributeValueClassName</name>
+		<anchor>//apple_ref/occ/instm/NSAttributeDescription/attributeValueClassName</anchor>
+	</member>
+	<member kind="function">
+		<name>defaultValue</name>
+		<anchor>//apple_ref/occ/instm/NSAttributeDescription/defaultValue</anchor>
+	</member>
+	<member kind="function">
+		<name>setAttributeType:</name>
+		<anchor>//apple_ref/occ/instm/NSAttributeDescription/setAttributeType:</anchor>
+	</member>
+	<member kind="function">
+		<name>setAttributeValueClassName:</name>
+		<anchor>//apple_ref/occ/instm/NSAttributeDescription/setAttributeValueClassName:</anchor>
+	</member>
+	<member kind="function">
+		<name>setDefaultValue:</name>
+		<anchor>//apple_ref/occ/instm/NSAttributeDescription/setDefaultValue:</anchor>
+	</member>
+	<member kind="function">
+		<name>setValueTransformerName:</name>
+		<anchor>//apple_ref/occ/instm/NSAttributeDescription/setValueTransformerName:</anchor>
+	</member>
+	<member kind="function">
+		<name>valueTransformerName</name>
+		<anchor>//apple_ref/occ/instm/NSAttributeDescription/valueTransformerName</anchor>
+	</member>
+	<member kind="function">
+		<name>versionHash</name>
+		<anchor>//apple_ref/occ/instm/NSAttributeDescription/versionHash</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSEntityDescription</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/CoreDataFramework/Classes/NSEntityDescription_Class/NSEntityDescription.html</filename>
+	<member kind="function">
+		<name>attributesByName</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/attributesByName</anchor>
+	</member>
+	<member kind="function">
+		<name>copy</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/copy</anchor>
+	</member>
+	<member kind="function">
+		<name>isAbstract</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/isAbstract</anchor>
+	</member>
+	<member kind="function">
+		<name>isKindOfEntity:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/isKindOfEntity:</anchor>
+	</member>
+	<member kind="function">
+		<name>managedObjectClassName</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/managedObjectClassName</anchor>
+	</member>
+	<member kind="function">
+		<name>managedObjectModel</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/managedObjectModel</anchor>
+	</member>
+	<member kind="function">
+		<name>name</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/name</anchor>
+	</member>
+	<member kind="function">
+		<name>properties</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/properties</anchor>
+	</member>
+	<member kind="function">
+		<name>propertiesByName</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/propertiesByName</anchor>
+	</member>
+	<member kind="function">
+		<name>relationshipsByName</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/relationshipsByName</anchor>
+	</member>
+	<member kind="function">
+		<name>relationshipsWithDestinationEntity:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/relationshipsWithDestinationEntity:</anchor>
+	</member>
+	<member kind="function">
+		<name>renamingIdentifier</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/renamingIdentifier</anchor>
+	</member>
+	<member kind="function">
+		<name>setAbstract:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/setAbstract:</anchor>
+	</member>
+	<member kind="function">
+		<name>setManagedObjectClassName:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/setManagedObjectClassName:</anchor>
+	</member>
+	<member kind="function">
+		<name>setName:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/setName:</anchor>
+	</member>
+	<member kind="function">
+		<name>setProperties:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/setProperties:</anchor>
+	</member>
+	<member kind="function">
+		<name>setRenamingIdentifier:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/setRenamingIdentifier:</anchor>
+	</member>
+	<member kind="function">
+		<name>setSubentities:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/setSubentities:</anchor>
+	</member>
+	<member kind="function">
+		<name>setUserInfo:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/setUserInfo:</anchor>
+	</member>
+	<member kind="function">
+		<name>setVersionHashModifier:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/setVersionHashModifier:</anchor>
+	</member>
+	<member kind="function">
+		<name>subentities</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/subentities</anchor>
+	</member>
+	<member kind="function">
+		<name>subentitiesByName</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/subentitiesByName</anchor>
+	</member>
+	<member kind="function">
+		<name>superentity</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/superentity</anchor>
+	</member>
+	<member kind="function">
+		<name>userInfo</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/userInfo</anchor>
+	</member>
+	<member kind="function">
+		<name>versionHash</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/versionHash</anchor>
+	</member>
+	<member kind="function">
+		<name>versionHashModifier</name>
+		<anchor>//apple_ref/occ/instm/NSEntityDescription/versionHashModifier</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSEntityMapping</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/NSEntityMapping_class/Reference/NSEntityMapping.html</filename>
+	<member kind="function">
+		<name>attributeMappings</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/attributeMappings</anchor>
+	</member>
+	<member kind="function">
+		<name>destinationEntityName</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/destinationEntityName</anchor>
+	</member>
+	<member kind="function">
+		<name>destinationEntityVersionHash</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/destinationEntityVersionHash</anchor>
+	</member>
+	<member kind="function">
+		<name>entityMigrationPolicyClassName</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/entityMigrationPolicyClassName</anchor>
+	</member>
+	<member kind="function">
+		<name>mappingType</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/mappingType</anchor>
+	</member>
+	<member kind="function">
+		<name>name</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/name</anchor>
+	</member>
+	<member kind="function">
+		<name>relationshipMappings</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/relationshipMappings</anchor>
+	</member>
+	<member kind="function">
+		<name>setAttributeMappings:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/setAttributeMappings:</anchor>
+	</member>
+	<member kind="function">
+		<name>setDestinationEntityName:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/setDestinationEntityName:</anchor>
+	</member>
+	<member kind="function">
+		<name>setDestinationEntityVersionHash:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/setDestinationEntityVersionHash:</anchor>
+	</member>
+	<member kind="function">
+		<name>setEntityMigrationPolicyClassName:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/setEntityMigrationPolicyClassName:</anchor>
+	</member>
+	<member kind="function">
+		<name>setMappingType:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/setMappingType:</anchor>
+	</member>
+	<member kind="function">
+		<name>setName:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/setName:</anchor>
+	</member>
+	<member kind="function">
+		<name>setRelationshipMappings:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/setRelationshipMappings:</anchor>
+	</member>
+	<member kind="function">
+		<name>setSourceEntityName:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/setSourceEntityName:</anchor>
+	</member>
+	<member kind="function">
+		<name>setSourceEntityVersionHash:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/setSourceEntityVersionHash:</anchor>
+	</member>
+	<member kind="function">
+		<name>setSourceExpression:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/setSourceExpression:</anchor>
+	</member>
+	<member kind="function">
+		<name>setUserInfo:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/setUserInfo:</anchor>
+	</member>
+	<member kind="function">
+		<name>sourceEntityName</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/sourceEntityName</anchor>
+	</member>
+	<member kind="function">
+		<name>sourceEntityVersionHash</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/sourceEntityVersionHash</anchor>
+	</member>
+	<member kind="function">
+		<name>sourceExpression</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/sourceExpression</anchor>
+	</member>
+	<member kind="function">
+		<name>userInfo</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMapping/userInfo</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSEntityMigrationPolicy</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/NSEntityMigrationPolicy_class/NSEntityMigrationPolicy.html</filename>
+	<member kind="function">
+		<name>beginEntityMapping:manager:error:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMigrationPolicy/beginEntityMapping:manager:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>createDestinationInstancesForSourceInstance:entityMapping:manager:error:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMigrationPolicy/createDestinationInstancesForSourceInstance:entityMapping:manager:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>createRelationshipsForDestinationInstance:entityMapping:manager:error:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMigrationPolicy/createRelationshipsForDestinationInstance:entityMapping:manager:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>endEntityMapping:manager:error:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMigrationPolicy/endEntityMapping:manager:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>endInstanceCreationForEntityMapping:manager:error:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMigrationPolicy/endInstanceCreationForEntityMapping:manager:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>endRelationshipCreationForEntityMapping:manager:error:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMigrationPolicy/endRelationshipCreationForEntityMapping:manager:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>performCustomValidationForEntityMapping:manager:error:</name>
+		<anchor>//apple_ref/occ/instm/NSEntityMigrationPolicy/performCustomValidationForEntityMapping:manager:error:</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSExpressionDescription</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/NSExpressionDescription_Class/NSExpressionDescription.html</filename>
+	<member kind="function">
+		<name>expression</name>
+		<anchor>//apple_ref/occ/instm/NSExpressionDescription/expression</anchor>
+	</member>
+	<member kind="function">
+		<name>expressionResultType</name>
+		<anchor>//apple_ref/occ/instm/NSExpressionDescription/expressionResultType</anchor>
+	</member>
+	<member kind="function">
+		<name>setExpression:</name>
+		<anchor>//apple_ref/occ/instm/NSExpressionDescription/setExpression:</anchor>
+	</member>
+	<member kind="function">
+		<name>setExpressionResultType:</name>
+		<anchor>//apple_ref/occ/instm/NSExpressionDescription/setExpressionResultType:</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSFetchedPropertyDescription</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/CoreDataFramework/Classes/NSFetchedPropertyDescription_Class/Reference/Reference.html</filename>
+	<member kind="function">
+		<name>fetchRequest</name>
+		<anchor>//apple_ref/occ/instm/NSFetchedPropertyDescription/fetchRequest</anchor>
+	</member>
+	<member kind="function">
+		<name>setFetchRequest:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchedPropertyDescription/setFetchRequest:</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSFetchRequest</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/CoreDataFramework/Classes/NSFetchRequest_Class/NSFetchRequest.html</filename>
+	<member kind="function">
+		<name>affectedStores</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/affectedStores</anchor>
+	</member>
+	<member kind="function">
+		<name>entity</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/entity</anchor>
+	</member>
+	<member kind="function">
+		<name>fetchBatchSize</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/fetchBatchSize</anchor>
+	</member>
+	<member kind="function">
+		<name>fetchLimit</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/fetchLimit</anchor>
+	</member>
+	<member kind="function">
+		<name>fetchOffset</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/fetchOffset</anchor>
+	</member>
+	<member kind="function">
+		<name>includesPendingChanges</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/includesPendingChanges</anchor>
+	</member>
+	<member kind="function">
+		<name>includesPropertyValues</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/includesPropertyValues</anchor>
+	</member>
+	<member kind="function">
+		<name>includesSubentities</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/includesSubentities</anchor>
+	</member>
+	<member kind="function">
+		<name>predicate</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/predicate</anchor>
+	</member>
+	<member kind="function">
+		<name>propertiesToFetch</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/propertiesToFetch</anchor>
+	</member>
+	<member kind="function">
+		<name>relationshipKeyPathsForPrefetching</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/relationshipKeyPathsForPrefetching</anchor>
+	</member>
+	<member kind="function">
+		<name>resultType</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/resultType</anchor>
+	</member>
+	<member kind="function">
+		<name>returnsDistinctResults</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/returnsDistinctResults</anchor>
+	</member>
+	<member kind="function">
+		<name>returnsObjectsAsFaults</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/returnsObjectsAsFaults</anchor>
+	</member>
+	<member kind="function">
+		<name>setAffectedStores:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setAffectedStores:</anchor>
+	</member>
+	<member kind="function">
+		<name>setEntity:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setEntity:</anchor>
+	</member>
+	<member kind="function">
+		<name>setFetchBatchSize:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setFetchBatchSize:</anchor>
+	</member>
+	<member kind="function">
+		<name>setFetchLimit:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setFetchLimit:</anchor>
+	</member>
+	<member kind="function">
+		<name>setFetchOffset:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setFetchOffset:</anchor>
+	</member>
+	<member kind="function">
+		<name>setIncludesPendingChanges:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setIncludesPendingChanges:</anchor>
+	</member>
+	<member kind="function">
+		<name>setIncludesPropertyValues:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setIncludesPropertyValues:</anchor>
+	</member>
+	<member kind="function">
+		<name>setIncludesSubentities:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setIncludesSubentities:</anchor>
+	</member>
+	<member kind="function">
+		<name>setPredicate:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setPredicate:</anchor>
+	</member>
+	<member kind="function">
+		<name>setPropertiesToFetch:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setPropertiesToFetch:</anchor>
+	</member>
+	<member kind="function">
+		<name>setRelationshipKeyPathsForPrefetching:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setRelationshipKeyPathsForPrefetching:</anchor>
+	</member>
+	<member kind="function">
+		<name>setResultType:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setResultType:</anchor>
+	</member>
+	<member kind="function">
+		<name>setReturnsDistinctResults:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setReturnsDistinctResults:</anchor>
+	</member>
+	<member kind="function">
+		<name>setReturnsObjectsAsFaults:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setReturnsObjectsAsFaults:</anchor>
+	</member>
+	<member kind="function">
+		<name>setSortDescriptors:</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/setSortDescriptors:</anchor>
+	</member>
+	<member kind="function">
+		<name>sortDescriptors</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequest/sortDescriptors</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSFetchRequestExpression</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/NSFetchRequestExpression_class/Reference/NSFetchRequestExpression.html</filename>
+	<member kind="function">
+		<name>contextExpression</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequestExpression/contextExpression</anchor>
+	</member>
+	<member kind="function">
+		<name>isCountOnlyRequest</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequestExpression/isCountOnlyRequest</anchor>
+	</member>
+	<member kind="function">
+		<name>requestExpression</name>
+		<anchor>//apple_ref/occ/instm/NSFetchRequestExpression/requestExpression</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSManagedObject</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/CoreDataFramework/Classes/NSManagedObject_Class/Reference/NSManagedObject.html</filename>
+	<member kind="function">
+		<name>awakeFromFetch</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/awakeFromFetch</anchor>
+	</member>
+	<member kind="function">
+		<name>awakeFromInsert</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/awakeFromInsert</anchor>
+	</member>
+	<member kind="function">
+		<name>awakeFromSnapshotEvents:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/awakeFromSnapshotEvents:</anchor>
+	</member>
+	<member kind="function">
+		<name>changedValues</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/changedValues</anchor>
+	</member>
+	<member kind="function">
+		<name>committedValuesForKeys:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/committedValuesForKeys:</anchor>
+	</member>
+	<member kind="function">
+		<name>dealloc</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/dealloc</anchor>
+	</member>
+	<member kind="function">
+		<name>didAccessValueForKey:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/didAccessValueForKey:</anchor>
+	</member>
+	<member kind="function">
+		<name>didChangeValueForKey:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/didChangeValueForKey:</anchor>
+	</member>
+	<member kind="function">
+		<name>didChangeValueForKey:withSetMutation:usingObjects:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/didChangeValueForKey:withSetMutation:usingObjects:</anchor>
+	</member>
+	<member kind="function">
+		<name>didSave</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/didSave</anchor>
+	</member>
+	<member kind="function">
+		<name>didTurnIntoFault</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/didTurnIntoFault</anchor>
+	</member>
+	<member kind="function">
+		<name>entity</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/entity</anchor>
+	</member>
+	<member kind="function">
+		<name>faultingState</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/faultingState</anchor>
+	</member>
+	<member kind="function">
+		<name>hasFaultForRelationshipNamed:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/hasFaultForRelationshipNamed:</anchor>
+	</member>
+	<member kind="function">
+		<name>initWithEntity:insertIntoManagedObjectContext:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/initWithEntity:insertIntoManagedObjectContext:</anchor>
+	</member>
+	<member kind="function">
+		<name>isDeleted</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/isDeleted</anchor>
+	</member>
+	<member kind="function">
+		<name>isFault</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/isFault</anchor>
+	</member>
+	<member kind="function">
+		<name>isInserted</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/isInserted</anchor>
+	</member>
+	<member kind="function">
+		<name>isUpdated</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/isUpdated</anchor>
+	</member>
+	<member kind="function">
+		<name>managedObjectContext</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/managedObjectContext</anchor>
+	</member>
+	<member kind="function">
+		<name>mutableSetValueForKey:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/mutableSetValueForKey:</anchor>
+	</member>
+	<member kind="function">
+		<name>objectID</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/objectID</anchor>
+	</member>
+	<member kind="function">
+		<name>observationInfo</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/observationInfo</anchor>
+	</member>
+	<member kind="function">
+		<name>prepareForDeletion</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/prepareForDeletion</anchor>
+	</member>
+	<member kind="function">
+		<name>primitiveValueForKey:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/primitiveValueForKey:</anchor>
+	</member>
+	<member kind="function">
+		<name>self</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/self</anchor>
+	</member>
+	<member kind="function">
+		<name>setObservationInfo:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/setObservationInfo:</anchor>
+	</member>
+	<member kind="function">
+		<name>setPrimitiveValue:forKey:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/setPrimitiveValue:forKey:</anchor>
+	</member>
+	<member kind="function">
+		<name>setValue:forKey:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/setValue:forKey:</anchor>
+	</member>
+	<member kind="function">
+		<name>validateForDelete:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/validateForDelete:</anchor>
+	</member>
+	<member kind="function">
+		<name>validateForInsert:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/validateForInsert:</anchor>
+	</member>
+	<member kind="function">
+		<name>validateForUpdate:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/validateForUpdate:</anchor>
+	</member>
+	<member kind="function">
+		<name>validateValue:forKey:error:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/validateValue:forKey:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>valueForKey:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/valueForKey:</anchor>
+	</member>
+	<member kind="function">
+		<name>willAccessValueForKey:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/willAccessValueForKey:</anchor>
+	</member>
+	<member kind="function">
+		<name>willChangeValueForKey:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/willChangeValueForKey:</anchor>
+	</member>
+	<member kind="function">
+		<name>willChangeValueForKey:withSetMutation:usingObjects:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/willChangeValueForKey:withSetMutation:usingObjects:</anchor>
+	</member>
+	<member kind="function">
+		<name>willSave</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/willSave</anchor>
+	</member>
+	<member kind="function">
+		<name>willTurnIntoFault</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObject/willTurnIntoFault</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSManagedObjectContext</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/CoreDataFramework/Classes/NSManagedObjectContext_Class/NSManagedObjectContext.html</filename>
+	<member kind="function">
+		<name>assignObject:toPersistentStore:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/assignObject:toPersistentStore:</anchor>
+	</member>
+	<member kind="function">
+		<name>countForFetchRequest:error:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/countForFetchRequest:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>deletedObjects</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/deletedObjects</anchor>
+	</member>
+	<member kind="function">
+		<name>deleteObject:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/deleteObject:</anchor>
+	</member>
+	<member kind="function">
+		<name>detectConflictsForObject:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/detectConflictsForObject:</anchor>
+	</member>
+	<member kind="function">
+		<name>executeFetchRequest:error:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/executeFetchRequest:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>existingObjectWithID:error:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/existingObjectWithID:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>hasChanges</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/hasChanges</anchor>
+	</member>
+	<member kind="function">
+		<name>insertedObjects</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/insertedObjects</anchor>
+	</member>
+	<member kind="function">
+		<name>insertObject:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/insertObject:</anchor>
+	</member>
+	<member kind="function">
+		<name>lock</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/lock</anchor>
+	</member>
+	<member kind="function">
+		<name>mergeChangesFromContextDidSaveNotification:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/mergeChangesFromContextDidSaveNotification:</anchor>
+	</member>
+	<member kind="function">
+		<name>mergePolicy</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/mergePolicy</anchor>
+	</member>
+	<member kind="function">
+		<name>objectRegisteredForID:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/objectRegisteredForID:</anchor>
+	</member>
+	<member kind="function">
+		<name>objectWithID:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/objectWithID:</anchor>
+	</member>
+	<member kind="function">
+		<name>obtainPermanentIDsForObjects:error:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/obtainPermanentIDsForObjects:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>persistentStoreCoordinator</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/persistentStoreCoordinator</anchor>
+	</member>
+	<member kind="function">
+		<name>processPendingChanges</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/processPendingChanges</anchor>
+	</member>
+	<member kind="function">
+		<name>propagatesDeletesAtEndOfEvent</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/propagatesDeletesAtEndOfEvent</anchor>
+	</member>
+	<member kind="function">
+		<name>redo</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/redo</anchor>
+	</member>
+	<member kind="function">
+		<name>refreshObject:mergeChanges:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/refreshObject:mergeChanges:</anchor>
+	</member>
+	<member kind="function">
+		<name>registeredObjects</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/registeredObjects</anchor>
+	</member>
+	<member kind="function">
+		<name>reset</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/reset</anchor>
+	</member>
+	<member kind="function">
+		<name>retainsRegisteredObjects</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/retainsRegisteredObjects</anchor>
+	</member>
+	<member kind="function">
+		<name>rollback</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/rollback</anchor>
+	</member>
+	<member kind="function">
+		<name>save:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/save:</anchor>
+	</member>
+	<member kind="function">
+		<name>setMergePolicy:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/setMergePolicy:</anchor>
+	</member>
+	<member kind="function">
+		<name>setPersistentStoreCoordinator:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/setPersistentStoreCoordinator:</anchor>
+	</member>
+	<member kind="function">
+		<name>setPropagatesDeletesAtEndOfEvent:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/setPropagatesDeletesAtEndOfEvent:</anchor>
+	</member>
+	<member kind="function">
+		<name>setRetainsRegisteredObjects:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/setRetainsRegisteredObjects:</anchor>
+	</member>
+	<member kind="function">
+		<name>setStalenessInterval:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/setStalenessInterval:</anchor>
+	</member>
+	<member kind="function">
+		<name>setUndoManager:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/setUndoManager:</anchor>
+	</member>
+	<member kind="function">
+		<name>stalenessInterval</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/stalenessInterval</anchor>
+	</member>
+	<member kind="function">
+		<name>tryLock</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/tryLock</anchor>
+	</member>
+	<member kind="function">
+		<name>undo</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/undo</anchor>
+	</member>
+	<member kind="function">
+		<name>undoManager</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/undoManager</anchor>
+	</member>
+	<member kind="function">
+		<name>unlock</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/unlock</anchor>
+	</member>
+	<member kind="function">
+		<name>updatedObjects</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectContext/updatedObjects</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSManagedObjectID</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/CoreDataFramework/Classes/NSManagedObjectID_Class/Reference/NSManagedObjectID.html</filename>
+	<member kind="function">
+		<name>entity</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectID/entity</anchor>
+	</member>
+	<member kind="function">
+		<name>isTemporaryID</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectID/isTemporaryID</anchor>
+	</member>
+	<member kind="function">
+		<name>persistentStore</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectID/persistentStore</anchor>
+	</member>
+	<member kind="function">
+		<name>URIRepresentation</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectID/URIRepresentation</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSManagedObjectModel</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/CoreDataFramework/Classes/NSManagedObjectModel_Class/Reference/Reference.html</filename>
+	<member kind="function">
+		<name>configurations</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/configurations</anchor>
+	</member>
+	<member kind="function">
+		<name>entities</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/entities</anchor>
+	</member>
+	<member kind="function">
+		<name>entitiesByName</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/entitiesByName</anchor>
+	</member>
+	<member kind="function">
+		<name>entitiesForConfiguration:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/entitiesForConfiguration:</anchor>
+	</member>
+	<member kind="function">
+		<name>entityVersionHashesByName</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/entityVersionHashesByName</anchor>
+	</member>
+	<member kind="function">
+		<name>fetchRequestFromTemplateWithName:substitutionVariables:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/fetchRequestFromTemplateWithName:substitutionVariables:</anchor>
+	</member>
+	<member kind="function">
+		<name>fetchRequestTemplateForName:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/fetchRequestTemplateForName:</anchor>
+	</member>
+	<member kind="function">
+		<name>fetchRequestTemplatesByName</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/fetchRequestTemplatesByName</anchor>
+	</member>
+	<member kind="function">
+		<name>initWithContentsOfURL:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/initWithContentsOfURL:</anchor>
+	</member>
+	<member kind="function">
+		<name>isConfiguration:compatibleWithStoreMetadata:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/isConfiguration:compatibleWithStoreMetadata:</anchor>
+	</member>
+	<member kind="function">
+		<name>localizationDictionary</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/localizationDictionary</anchor>
+	</member>
+	<member kind="function">
+		<name>setEntities:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/setEntities:</anchor>
+	</member>
+	<member kind="function">
+		<name>setEntities:forConfiguration:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/setEntities:forConfiguration:</anchor>
+	</member>
+	<member kind="function">
+		<name>setFetchRequestTemplate:forName:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/setFetchRequestTemplate:forName:</anchor>
+	</member>
+	<member kind="function">
+		<name>setLocalizationDictionary:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/setLocalizationDictionary:</anchor>
+	</member>
+	<member kind="function">
+		<name>setVersionIdentifiers:</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/setVersionIdentifiers:</anchor>
+	</member>
+	<member kind="function">
+		<name>versionIdentifiers</name>
+		<anchor>//apple_ref/occ/instm/NSManagedObjectModel/versionIdentifiers</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSMappingModel</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/NSMappingModel_class/NSMappingModel.html</filename>
+	<member kind="function">
+		<name>entityMappings</name>
+		<anchor>//apple_ref/occ/instm/NSMappingModel/entityMappings</anchor>
+	</member>
+	<member kind="function">
+		<name>entityMappingsByName</name>
+		<anchor>//apple_ref/occ/instm/NSMappingModel/entityMappingsByName</anchor>
+	</member>
+	<member kind="function">
+		<name>initWithContentsOfURL:</name>
+		<anchor>//apple_ref/occ/instm/NSMappingModel/initWithContentsOfURL:</anchor>
+	</member>
+	<member kind="function">
+		<name>setEntityMappings:</name>
+		<anchor>//apple_ref/occ/instm/NSMappingModel/setEntityMappings:</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSMigrationManager</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/NSMigrationManager_class/Reference/NSMigrationManager.html</filename>
+	<member kind="function">
+		<name>associateSourceInstance:withDestinationInstance:forEntityMapping:</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/associateSourceInstance:withDestinationInstance:forEntityMapping:</anchor>
+	</member>
+	<member kind="function">
+		<name>cancelMigrationWithError:</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/cancelMigrationWithError:</anchor>
+	</member>
+	<member kind="function">
+		<name>currentEntityMapping</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/currentEntityMapping</anchor>
+	</member>
+	<member kind="function">
+		<name>destinationContext</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/destinationContext</anchor>
+	</member>
+	<member kind="function">
+		<name>destinationEntityForEntityMapping:</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/destinationEntityForEntityMapping:</anchor>
+	</member>
+	<member kind="function">
+		<name>destinationInstancesForEntityMappingNamed:sourceInstances:</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/destinationInstancesForEntityMappingNamed:sourceInstances:</anchor>
+	</member>
+	<member kind="function">
+		<name>destinationModel</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/destinationModel</anchor>
+	</member>
+	<member kind="function">
+		<name>initWithSourceModel:destinationModel:</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/initWithSourceModel:destinationModel:</anchor>
+	</member>
+	<member kind="function">
+		<name>mappingModel</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/mappingModel</anchor>
+	</member>
+	<member kind="function">
+		<name>migrateStoreFromURL:type:options:withMappingModel:toDestinationURL:destinationType:destinationOptions:error:</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/migrateStoreFromURL:type:options:withMappingModel:toDestinationURL:destinationType:destinationOptions:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>migrationProgress</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/migrationProgress</anchor>
+	</member>
+	<member kind="function">
+		<name>reset</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/reset</anchor>
+	</member>
+	<member kind="function">
+		<name>setUserInfo:</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/setUserInfo:</anchor>
+	</member>
+	<member kind="function">
+		<name>sourceContext</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/sourceContext</anchor>
+	</member>
+	<member kind="function">
+		<name>sourceEntityForEntityMapping:</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/sourceEntityForEntityMapping:</anchor>
+	</member>
+	<member kind="function">
+		<name>sourceInstancesForEntityMappingNamed:destinationInstances:</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/sourceInstancesForEntityMappingNamed:destinationInstances:</anchor>
+	</member>
+	<member kind="function">
+		<name>sourceModel</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/sourceModel</anchor>
+	</member>
+	<member kind="function">
+		<name>userInfo</name>
+		<anchor>//apple_ref/occ/instm/NSMigrationManager/userInfo</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSPersistentStore</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/NSPersistentStore_Class/NSPersistentStore.html</filename>
+	<member kind="function">
+		<name>configurationName</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/configurationName</anchor>
+	</member>
+	<member kind="function">
+		<name>didAddToPersistentStoreCoordinator:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/didAddToPersistentStoreCoordinator:</anchor>
+	</member>
+	<member kind="function">
+		<name>identifier</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/identifier</anchor>
+	</member>
+	<member kind="function">
+		<name>initWithPersistentStoreCoordinator:configurationName:URL:options:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/initWithPersistentStoreCoordinator:configurationName:URL:options:</anchor>
+	</member>
+	<member kind="function">
+		<name>isReadOnly</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/isReadOnly</anchor>
+	</member>
+	<member kind="function">
+		<name>loadMetadata:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/loadMetadata:</anchor>
+	</member>
+	<member kind="function">
+		<name>metadata</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/metadata</anchor>
+	</member>
+	<member kind="function">
+		<name>options</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/options</anchor>
+	</member>
+	<member kind="function">
+		<name>persistentStoreCoordinator</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/persistentStoreCoordinator</anchor>
+	</member>
+	<member kind="function">
+		<name>setIdentifier:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/setIdentifier:</anchor>
+	</member>
+	<member kind="function">
+		<name>setMetadata:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/setMetadata:</anchor>
+	</member>
+	<member kind="function">
+		<name>setReadOnly:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/setReadOnly:</anchor>
+	</member>
+	<member kind="function">
+		<name>setURL:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/setURL:</anchor>
+	</member>
+	<member kind="function">
+		<name>type</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/type</anchor>
+	</member>
+	<member kind="function">
+		<name>URL</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/URL</anchor>
+	</member>
+	<member kind="function">
+		<name>willRemoveFromPersistentStoreCoordinator:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStore/willRemoveFromPersistentStoreCoordinator:</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSPersistentStoreCoordinator</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/CoreDataFramework/Classes/NSPersistentStoreCoordinator_Class/NSPersistentStoreCoordinator.html</filename>
+	<member kind="function">
+		<name>addPersistentStoreWithType:configuration:URL:options:error:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/addPersistentStoreWithType:configuration:URL:options:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>importStoreWithIdentifier:fromExternalRecordsDirectory:toURL:options:withType:error:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/importStoreWithIdentifier:fromExternalRecordsDirectory:toURL:options:withType:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>initWithManagedObjectModel:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/initWithManagedObjectModel:</anchor>
+	</member>
+	<member kind="function">
+		<name>lock</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/lock</anchor>
+	</member>
+	<member kind="function">
+		<name>managedObjectIDForURIRepresentation:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/managedObjectIDForURIRepresentation:</anchor>
+	</member>
+	<member kind="function">
+		<name>managedObjectModel</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/managedObjectModel</anchor>
+	</member>
+	<member kind="function">
+		<name>metadataForPersistentStore:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/metadataForPersistentStore:</anchor>
+	</member>
+	<member kind="function">
+		<name>migratePersistentStore:toURL:options:withType:error:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/migratePersistentStore:toURL:options:withType:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>persistentStoreForURL:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/persistentStoreForURL:</anchor>
+	</member>
+	<member kind="function">
+		<name>persistentStores</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/persistentStores</anchor>
+	</member>
+	<member kind="function">
+		<name>removePersistentStore:error:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/removePersistentStore:error:</anchor>
+	</member>
+	<member kind="function">
+		<name>setMetadata:forPersistentStore:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/setMetadata:forPersistentStore:</anchor>
+	</member>
+	<member kind="function">
+		<name>setURL:forPersistentStore:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/setURL:forPersistentStore:</anchor>
+	</member>
+	<member kind="function">
+		<name>tryLock</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/tryLock</anchor>
+	</member>
+	<member kind="function">
+		<name>unlock</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/unlock</anchor>
+	</member>
+	<member kind="function">
+		<name>URLForPersistentStore:</name>
+		<anchor>//apple_ref/occ/instm/NSPersistentStoreCoordinator/URLForPersistentStore:</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSPropertyDescription</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/CoreDataFramework/Classes/NSPropertyDescription_Class/NSPropertyDescription.html</filename>
+	<member kind="function">
+		<name>entity</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/entity</anchor>
+	</member>
+	<member kind="function">
+		<name>isIndexed</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/isIndexed</anchor>
+	</member>
+	<member kind="function">
+		<name>isIndexedBySpotlight</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/isIndexedBySpotlight</anchor>
+	</member>
+	<member kind="function">
+		<name>isOptional</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/isOptional</anchor>
+	</member>
+	<member kind="function">
+		<name>isStoredInExternalRecord</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/isStoredInExternalRecord</anchor>
+	</member>
+	<member kind="function">
+		<name>isTransient</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/isTransient</anchor>
+	</member>
+	<member kind="function">
+		<name>name</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/name</anchor>
+	</member>
+	<member kind="function">
+		<name>renamingIdentifier</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/renamingIdentifier</anchor>
+	</member>
+	<member kind="function">
+		<name>setIndexed:</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/setIndexed:</anchor>
+	</member>
+	<member kind="function">
+		<name>setIndexedBySpotlight:</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/setIndexedBySpotlight:</anchor>
+	</member>
+	<member kind="function">
+		<name>setName:</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/setName:</anchor>
+	</member>
+	<member kind="function">
+		<name>setOptional:</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/setOptional:</anchor>
+	</member>
+	<member kind="function">
+		<name>setRenamingIdentifier:</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/setRenamingIdentifier:</anchor>
+	</member>
+	<member kind="function">
+		<name>setStoredInExternalRecord:</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/setStoredInExternalRecord:</anchor>
+	</member>
+	<member kind="function">
+		<name>setTransient:</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/setTransient:</anchor>
+	</member>
+	<member kind="function">
+		<name>setUserInfo:</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/setUserInfo:</anchor>
+	</member>
+	<member kind="function">
+		<name>setValidationPredicates:withValidationWarnings:</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/setValidationPredicates:withValidationWarnings:</anchor>
+	</member>
+	<member kind="function">
+		<name>setVersionHashModifier:</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/setVersionHashModifier:</anchor>
+	</member>
+	<member kind="function">
+		<name>userInfo</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/userInfo</anchor>
+	</member>
+	<member kind="function">
+		<name>validationPredicates</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/validationPredicates</anchor>
+	</member>
+	<member kind="function">
+		<name>validationWarnings</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/validationWarnings</anchor>
+	</member>
+	<member kind="function">
+		<name>versionHash</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/versionHash</anchor>
+	</member>
+	<member kind="function">
+		<name>versionHashModifier</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyDescription/versionHashModifier</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSPropertyMapping</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/NSPropertyMapping_class/Reference/NSPropertyMapping.html</filename>
+	<member kind="function">
+		<name>name</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyMapping/name</anchor>
+	</member>
+	<member kind="function">
+		<name>setName:</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyMapping/setName:</anchor>
+	</member>
+	<member kind="function">
+		<name>setUserInfo:</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyMapping/setUserInfo:</anchor>
+	</member>
+	<member kind="function">
+		<name>setValueExpression:</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyMapping/setValueExpression:</anchor>
+	</member>
+	<member kind="function">
+		<name>userInfo</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyMapping/userInfo</anchor>
+	</member>
+	<member kind="function">
+		<name>valueExpression</name>
+		<anchor>//apple_ref/occ/instm/NSPropertyMapping/valueExpression</anchor>
+	</member>
+</compound>
+<compound kind="class">
+	<name>NSRelationshipDescription</name>
+	<filename>http://developer.apple.com/mac/library/documentation/Cocoa/Reference/CoreDataFramework/Classes/NSRelationshipDescription_Class/Reference/Reference.html</filename>
+	<member kind="function">
+		<name>deleteRule</name>
+		<anchor>//apple_ref/occ/instm/NSRelationshipDescription/deleteRule</anchor>
+	</member>
+	<member kind="function">
+		<name>destinationEntity</name>
+		<anchor>//apple_ref/occ/instm/NSRelationshipDescription/destinationEntity</anchor>
+	</member>
+	<member kind="function">
+		<name>inverseRelationship</name>
+		<anchor>//apple_ref/occ/instm/NSRelationshipDescription/inverseRelationship</anchor>
+	</member>
+	<member kind="function">
+		<name>isToMany</name>
+		<anchor>//apple_ref/occ/instm/NSRelationshipDescription/isToMany</anchor>
+	</member>
+	<member kind="function">
+		<name>maxCount</name>
+		<anchor>//apple_ref/occ/instm/NSRelationshipDescription/maxCount</anchor>
+	</member>
+	<member kind="function">
+		<name>minCount</name>
+		<anchor>//apple_ref/occ/instm/NSRelationshipDescription/minCount</anchor>
+	</member>
+	<member kind="function">
+		<name>setDeleteRule:</name>
+		<anchor>//apple_ref/occ/instm/NSRelationshipDescription/setDeleteRule:</anchor>
+	</member>
+	<member kind="function">
+		<name>setDestinationEntity:</name>
+		<anchor>//apple_ref/occ/instm/NSRelationshipDescription/setDestinationEntity:</anchor>
+	</member>
+	<member kind="function">
+		<name>setInverseRelationship:</name>
+		<anchor>//apple_ref/occ/instm/NSRelationshipDescription/setInverseRelationship:</anchor>
+	</member>
+	<member kind="function">
+		<name>setMaxCount:</name>
+		<anchor>//apple_ref/occ/instm/NSRelationshipDescription/setMaxCount:</anchor>
+	</member>
+	<member kind="function">
+		<name>setMinCount:</name>
+		<anchor>//apple_ref/occ/instm/NSRelationshipDescription/setMinCount:</anchor>
+	</member>
+	<member kind="function">
+		<name>versionHash</name>
+		<anchor>//apple_ref/occ/instm/NSRelationshipDescription/versionHash</anchor>
+	</member>
+</compound>
+</tagfile>

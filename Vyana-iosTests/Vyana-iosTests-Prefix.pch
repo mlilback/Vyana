@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Vyana-iosTests' target in the 'Vyana-iosTests' project
+//
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+#endif

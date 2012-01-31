@@ -1,0 +1,100 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf350
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Verdana;
+}
+{\colortbl;\red255\green255\blue255;\red201\green179\blue207;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\f0\b\fs48 \cf0 Vyana Coding Conventions\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b0\fs28 \cf0 \
+Note: most of the code being imported will not follow all these conventions. However, all new code should. Also, a lot of these conventions are a result of Xcode 4. These are:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
+
+\fs24 \cf0 {{\NeXTGraphic XcodeScreenSnapz001.png \width10540 \height7200
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
+
+\fs28 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+\
+As much as certain practices annoy me, I'm giving in to some that Apple is largely forcing via Xcode. However, until the day I die, I will never relent on using tabs instead of spaces.\
+\
+File Headers\
+\
+All files should include a header similar to the following:\
+\pard\tx3200\tx6420\tx8020\pardeftab720\li360\ql\qnatural
+
+\f1\fs24 \cf0 \cb2 //\
+//  NSArray+AMExtensions.h\
+//\
+//  Created by Mark Lilback on Tue Oct 28 2003.\
+//  Copyright (c) 2003-2011 Agile Monks, LLC. All rights reserved.\
+//\
+// Compatibility: Mac OS X: 10.6, iPhone: NA\
+//\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\fs28 \cf0 \cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b\fs36 \cf0 General\
+\pard\tx720\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li580\fi-260\slleading20\ql\qnatural\pardirnatural
+
+\b0\fs28 \cf0 \'95 Try to encapsulate as much as possible. \
+\'95 Instead of a lot of instance variables, use an NSMutableDictionary named __pdata. That makes releasing a lot easier.\
+\'95 Try to always declare methods, using the class extension if not public\
+\'95 Use the 
+\f1\fs24 NS_AVAILABLE(10_6, 4_0)
+\f2\fs26 , 
+\f1\fs24 NS_CLASS_AVAILABLE(10_6,2_2)
+\f2\fs26 , 
+\f1\fs24 NS_AVAILABLE_MAC(10_6)
+\f2\fs26 , 
+\f1\fs24 NS_AVAILABLE_IPHONE(4_0)
+\f2\fs26 , 
+\f1\fs24 __MAC_OS_X_VERSION_MIN_REQUIRED
+\f2\fs26 , and 
+\f1\fs24 __IPHONE_OS_VERSION_MIN_REQUIRED
+\f2\fs26  macros
+\f0\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b\fs36 \cf0 Naming\
+\pard\tx720\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li580\fi-260\slleading20\ql\qnatural\pardirnatural
+
+\b0\fs28 \cf0 \'95 All classes should start with AM\
+\'95 All categories should start with AM and for cocoa classes, be named AMExtensions\
+\'95 All instance variables should be prefixed with __\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b\fs36 \cf0 Braces\
+\pard\tx720\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li580\fi-260\slleading20\ql\qnatural\pardirnatural
+
+\b0\fs28 \cf0 \'95 If a line wraps, there should not be a brace at the end of it. The brace should be on the next line\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b\fs36 \cf0 Initialization\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b0\fs28 \cf0 \
+-init methods should always use something similar to\
+\pard\tx3200\tx6420\tx8020\pardeftab720\li360\ql\qnatural
+
+\f1\fs24 \cf0 \cb2 if ((thistle = [super init])) \{\
+\}\
+return self\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\fs28 \cf0 \cb1 \
+\
+}
