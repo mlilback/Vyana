@@ -89,19 +89,15 @@
 	[self.treeController.delegate navTree:self.treeController leafItemTouched:item];
 	if (![self.treeController.delegate navTree:self.treeController isLeafItem:item]) {
 		//need to load a new instance on nav stack
-		NSLog(@"step 1");
 		AMNavigationTreeListController *childList = [[AMNavigationTreeListController alloc] init];
 		childList.treeController = self.treeController;
 		childList.rootItem = item;
 		childList.contentSizeForViewInPopover = self.treeController.contentSizeForViewInPopover;
-		NSLog(@"step 2");
 		UINavigationController *navController = self.navigationController;
 		if (nil == navController)
 			navController = self.treeController.navigationController;
-		NSLog(@"step 3");
 		ZAssert(navController, @"wtf??");
 		[navController pushViewController:childList animated:YES];
-		NSLog(@"step 4");
 	}
 }
 
