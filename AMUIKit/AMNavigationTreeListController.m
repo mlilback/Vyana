@@ -104,6 +104,9 @@
 	cell.accessoryType = UITableViewCellAccessoryNone;
 	if (self.treeController.tracksSelectedItem && self.treeController.selectedItem == item)
 		cell.accessoryType = UITableViewCellAccessoryCheckmark;
+	
+	if ([self.treeController.delegate respondsToSelector:@selector(navTree:willDisplayCell:forItem:)])
+		[self.treeController.delegate navTree:self.treeController willDisplayCell:cell forItem:item];
 	return cell;
 }
 
@@ -119,7 +122,8 @@
 											 atIndex:indexPath.row];
 	}
 	self.treeController.selectedItem = item;
-	[self.treeController.delegate navTree:self.treeController leafItemTouched:item];
+	if ([self.treeController.delegate respondsToSelector:@selector(navTree:leafItemTouched:)])
+		[self.treeController.delegate navTree:self.treeController leafItemTouched:item];
 	if (!haveContent && ![self.treeController.delegate navTree:self.treeController isLeafItem:item]) {
 		//need to load a new instance on nav stack
 		AMNavigationTreeListController *childList = [[AMNavigationTreeListController alloc] init];

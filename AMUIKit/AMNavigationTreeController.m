@@ -31,6 +31,8 @@
 	self.listController.view.frame = self.view.bounds;
 	[self.view addSubview:self.listController.view];
 	self.listController.treeController = self;
+	if (self.tableSetupBlock)
+		self.tableSetupBlock(self.listController.view);
 }
 
 - (void)viewDidUnload
