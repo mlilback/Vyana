@@ -35,9 +35,13 @@
 
 -(BOOL)navTree:(AMNavigationTreeController*)navTree isLeafItem:(id)item;
 
--(void)navTree:(AMNavigationTreeController*)navTree leafItemTouched:(id)item;
 
 @optional
+/** optionally provide a custom cell for a specfic item. */
 -(UITableViewCell*)navTree:(AMNavigationTreeController*)navTree cellForItem:(id)item;
+/** optionally customizes a cell before display */
+-(void)navTree:(AMNavigationTreeController*)navTree willDisplayCell:(UITableViewCell*)cell forItem:(id)item;
+/** called when the user taps a leaf item */
+-(void)navTree:(AMNavigationTreeController*)navTree leafItemTouched:(id)item;
 
 @end
