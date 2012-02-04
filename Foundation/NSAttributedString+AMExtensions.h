@@ -19,4 +19,5 @@
 @interface NSMutableAttributedString (AMExtensions)
 -(void)deleteAllCharacters;
 -(void)appendString:(NSString*)string;
+-(void)appendString:(NSString*)string withAttributes:(NSDictionary*)attrs;
 @end

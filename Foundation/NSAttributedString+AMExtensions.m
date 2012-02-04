@@ -50,4 +50,9 @@
 	if (string)
 		[[self mutableString] appendString:string];
 }
+-(void)appendString:(NSString*)string withAttributes:(NSDictionary*)attrs
+{
+	NSAttributedString *astr = [[NSAttributedString alloc] initWithString:string attributes:attrs];
+	[self appendAttributedString:astr];
+}
 @end
