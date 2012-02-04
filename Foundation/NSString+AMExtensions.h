@@ -13,6 +13,8 @@
 +(NSString*)stringWithUTF8Data:(NSData*)data;
 ///generates a UUID and returns it as a string
 +(NSString*)stringWithUUID;
+//generates a crypto hash of the string
+-(NSString*)md5Hash;
 ///find the first index matching the specified character, or NSNotFound if not found
 -(NSUInteger)indexOfChar:(unichar)aChar;
 ///find the first index matching the specified string, or NSNotFound if not found
