@@ -52,7 +52,7 @@
 }
 -(void)appendString:(NSString*)string withAttributes:(NSDictionary*)attrs
 {
-	NSAttributedString *astr = [[NSAttributedString alloc] initWithString:string attributes:attrs];
+	NSAttributedString *astr = [[[NSAttributedString alloc] initWithString:string attributes:attrs] autorelease];
 	[self appendAttributedString:astr];
 }
 @end
