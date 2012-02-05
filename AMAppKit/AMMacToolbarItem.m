@@ -22,12 +22,12 @@
 	NSImage *timg = self.image;
 	__didImgResize = YES;
 	if (timg) {
-		NSImage *img = [[NSImage alloc] initWithSize:NSMakeSize(24, 24)];
-		AMCustomDrawImageRep *imgRep = [[AMCustomDrawImageRep alloc] initWithDrawBlock:^(AMCustomDrawImageRep *rep) {
+		NSImage *img = [[[NSImage alloc] initWithSize:NSMakeSize(24, 24)] autorelease];
+		AMCustomDrawImageRep *imgRep = [[[AMCustomDrawImageRep alloc] initWithDrawBlock:^(AMCustomDrawImageRep *rep) {
 			NSSize sz = rep.size;
 			NSRect r = NSMakeRect(3, 3, sz.width-10, sz.height-10);
 			[timg drawInRect:r fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
-		}];
+		}] autorelease];
 		imgRep.size = img.size;
 		[img addRepresentation:imgRep];
 		[self setImage:img];

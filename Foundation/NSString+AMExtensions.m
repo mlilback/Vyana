@@ -117,13 +117,13 @@
 
 -(NSString*)stringByRemovingCharactersInCharacterSet:(NSCharacterSet*)cset
 {
-	NSMutableString *mstr = [self mutableCopy];
+	NSMutableString *mstr = [[self mutableCopy] autorelease];
 	NSRange rng = [mstr rangeOfCharacterFromSet:cset];
 	while (rng.location != NSNotFound) {
 		[mstr deleteCharactersInRange:rng];
 		rng = [mstr rangeOfCharacterFromSet:cset];
 	}
-	return [mstr copy];
+	return [[mstr copy] autorelease];
 }
 
 //removes all characters except 0-9 A-Z a-z - _
