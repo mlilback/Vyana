@@ -29,7 +29,7 @@
 		self.myViewControllers = [NSMutableArray array];
 		[self.myViewControllers addObject:viewController];
 		NSView *parentView = viewController.view;
-		AMControlledView *view = [[AMControlledView alloc] initWithFrame:parentView.frame];
+		AMControlledView *view = [[[AMControlledView alloc] initWithFrame:parentView.frame] autorelease];
 		parentView.frame = view.bounds;
 		view.wantsLayer=YES;
 		view.autoresizingMask = parentView.autoresizingMask;
@@ -202,7 +202,7 @@
 
 -(NSArray*)viewControllers
 {
-	return [self.myViewControllers copy];
+	return [[self.myViewControllers copy] autorelease];
 }
 
 @synthesize rootViewController;
