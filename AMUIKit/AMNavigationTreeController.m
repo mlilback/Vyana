@@ -45,6 +45,14 @@
 	return YES;
 }
 
+-(void)reloadData
+{
+	AMNavigationTreeListController *listController = self.listController;
+	if ([self.navigationController.topViewController isKindOfClass:[AMNavigationTreeListController class]])
+		listController = (id)self.navigationController.topViewController;
+	[listController reloadData];
+}
+
 #pragma mark - private methods for list class
 
 -(UITableViewCell*)cellForItem:(id)item

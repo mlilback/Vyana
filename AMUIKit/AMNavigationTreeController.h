@@ -26,6 +26,8 @@
 @property (nonatomic, strong) NSArray *contentItems;
 /** A block that is passed each table view so you can set colors, boders, etc. */
 @property (nonatomic, copy) BasicBlock1Arg tableSetupBlock;
+
+-(void)reloadData;
 @end
 
 @protocol AMNavigationTreeDelegate <NSObject>

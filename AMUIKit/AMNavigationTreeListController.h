@@ -13,4 +13,5 @@
 @interface AMNavigationTreeListController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, weak) AMNavigationTreeController *treeController;
 @property (nonatomic, strong) id rootItem;
+-(void)reloadData;
 @end
