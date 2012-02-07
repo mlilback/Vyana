@@ -8,6 +8,7 @@
 
 #import "NSFileManager+AMExtensions.h"
 #import <CommonCrypto/CommonDigest.h>
+#include <sys/xattr.h>
 
 @implementation NSFileManager (AMExtensions)
 
@@ -27,5 +28,15 @@
 	
 	//return an immutable string
 	return [[hash copy] autorelease];
+}
+
+-(void)setDoNotBackupFlag:(BOOL)flag forURL:(NSURL*)url
+{
+	const char* filePath = [[url path] fileSystemRepresentation];
+	
+	const char* attrName = "com.apple.MobileBackup";
+	u_int8_t attrValue = flag;
+	
+	setxattr(filePath, attrName, &attrValue, sizeof(attrValue), 0, 0);
 }
 @end

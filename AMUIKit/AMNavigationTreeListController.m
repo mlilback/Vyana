@@ -55,6 +55,11 @@
 	return YES;
 }
 
+-(void)reloadData
+{
+	[self.listTableView reloadData];
+}
+
 #pragma mark - table view
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
