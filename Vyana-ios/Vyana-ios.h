@@ -16,6 +16,7 @@
 #import <Vyana-ios/NSNumber+AMExtensions.h>
 #import <Vyana-ios/NSString+AMExtensions.h>
 #import <Vyana-ios/NSObject+BlockObservation.h>
+#import <Vyana-ios/NSTimer+AMExtensions.h>
 #import <Vyana-ios/NSURLConnection+CompletionHandler.h>
 #import <Vyana-ios/AMFileSizeTransformer.h>
 #import <Vyana-ios/AMBlockUtils.h>
