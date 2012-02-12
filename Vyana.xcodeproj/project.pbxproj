@@ -272,6 +272,10 @@
 		08D9D9621401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */; };
 		08D9D9661401D34D0089DB86 /* AMBackgroundTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D9631401D34D0089DB86 /* AMBackgroundTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08D9D9681401D34D0089DB86 /* AMBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D9641401D34D0089DB86 /* AMBackgroundTask.m */; };
+		08E337E214E7E6A90004979E /* NSTimer+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E337E014E7E6A90004979E /* NSTimer+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08E337E314E7E6A90004979E /* NSTimer+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E337E014E7E6A90004979E /* NSTimer+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08E337E414E7E6A90004979E /* NSTimer+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E337E114E7E6A90004979E /* NSTimer+AMExtensions.m */; };
+		08E337E514E7E6A90004979E /* NSTimer+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E337E114E7E6A90004979E /* NSTimer+AMExtensions.m */; };
 		08EC7FF0140DE0CE00902B99 /* AMBCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EC7FED140DE0CE00902B99 /* AMBCrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08EC7FF2140DE0CE00902B99 /* AMBCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EC7FEE140DE0CE00902B99 /* AMBCrypt.m */; };
 		08ECD46F135A54960027E15E /* NSManagedObjectContext+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -443,6 +447,8 @@
 		08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+CompletionHandler.m"; sourceTree = "<group>"; };
 		08D9D9631401D34D0089DB86 /* AMBackgroundTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBackgroundTask.h; sourceTree = "<group>"; };
 		08D9D9641401D34D0089DB86 /* AMBackgroundTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBackgroundTask.m; sourceTree = "<group>"; };
+		08E337E014E7E6A90004979E /* NSTimer+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+AMExtensions.h"; sourceTree = "<group>"; };
+		08E337E114E7E6A90004979E /* NSTimer+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+AMExtensions.m"; sourceTree = "<group>"; };
 		08EC7FED140DE0CE00902B99 /* AMBCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBCrypt.h; sourceTree = "<group>"; };
 		08EC7FEE140DE0CE00902B99 /* AMBCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBCrypt.m; sourceTree = "<group>"; };
 		08ECD46C135A54960027E15E /* NSManagedObjectContext+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+AMExtensions.h"; sourceTree = "<group>"; };
@@ -813,6 +819,8 @@
 				08375D5613D26ECC0056925A /* NSObject+BlockObservation.m */,
 				08EFE3E41341A87300231C8A /* NSString+AMExtensions.h */,
 				08EFE3E51341A87300231C8A /* NSString+AMExtensions.m */,
+				08E337E014E7E6A90004979E /* NSTimer+AMExtensions.h */,
+				08E337E114E7E6A90004979E /* NSTimer+AMExtensions.m */,
 				08D9D95B1401CC930089DB86 /* NSURLConnection+CompletionHandler.h */,
 				08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */,
 			);
@@ -1083,6 +1091,7 @@
 				08A2325414C886AE00EB1041 /* NSTextField+AMExtensions.h in Headers */,
 				0892201514D584C20014746F /* AMTableView.h in Headers */,
 				0892201A14D586D10014746F /* AMOutlineView.h in Headers */,
+				08E337E214E7E6A90004979E /* NSTimer+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1138,6 +1147,7 @@
 				08921F4F14D1B9170014746F /* NSFileManager+AMExtensions.h in Headers */,
 				0892205214D802E00014746F /* AMNavigationTreeController.h in Headers */,
 				0892205714D806C90014746F /* AMNavigationTreeListController.h in Headers */,
+				08E337E314E7E6A90004979E /* NSTimer+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1392,6 +1402,7 @@
 				08A2325514C886AE00EB1041 /* NSTextField+AMExtensions.m in Sources */,
 				0892201614D584C20014746F /* AMTableView.m in Sources */,
 				0892201B14D586D10014746F /* AMOutlineView.m in Sources */,
+				08E337E414E7E6A90004979E /* NSTimer+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1443,6 +1454,7 @@
 				08921F5114D1B91D0014746F /* NSFileManager+AMExtensions.m in Sources */,
 				0892205314D802E00014746F /* AMNavigationTreeController.m in Sources */,
 				0892205814D806C90014746F /* AMNavigationTreeListController.m in Sources */,
+				08E337E514E7E6A90004979E /* NSTimer+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
