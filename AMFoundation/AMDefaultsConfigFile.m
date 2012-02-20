@@ -14,11 +14,11 @@
 
 @implementation AMDefaultsConfigFile
 
--(id)initWithDictionary:(NSDictionary*)dict bundle:(NSBundle*)bundle
+-(id)initWithDictionary:(NSDictionary*)dict bundle:(NSBundle*)aBundle
 {
 	if ((self = [super init])) {
 		__dict = [dict copy];
-		self.bundle = bundle;
+		self.bundle = aBundle;
 	}
 	return self;
 }

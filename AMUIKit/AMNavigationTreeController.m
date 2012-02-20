@@ -47,10 +47,10 @@
 
 -(void)reloadData
 {
-	AMNavigationTreeListController *listController = self.listController;
+	AMNavigationTreeListController *aListController = self.listController;
 	if ([self.navigationController.topViewController isKindOfClass:[AMNavigationTreeListController class]])
-		listController = (id)self.navigationController.topViewController;
-	[listController reloadData];
+		aListController = (id)self.navigationController.topViewController;
+	[aListController reloadData];
 }
 
 #pragma mark - private methods for list class
