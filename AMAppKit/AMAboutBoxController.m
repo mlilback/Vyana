@@ -125,7 +125,7 @@
 	return nil; // disable contextual menu for the webView
 }
 
--(void)webView:(WebView *)webView 
+-(void)webView:(WebView *)aWebView 
 decidePolicyForNavigationAction:(NSDictionary *)actionInformation 
 	   request:(NSURLRequest *)request frame:(WebFrame *)frame 
 decisionListener:(id < WebPolicyDecisionListener >)listener
@@ -137,7 +137,7 @@ decisionListener:(id < WebPolicyDecisionListener >)listener
 	} else if (WebNavigationTypeLinkClicked == navType) {
 		//it is a url. if it for a fragment on the loaded url, use it
 		if ([[request URL] fragment] &&
-			[[[request URL] absoluteString] hasPrefix: [webView mainFrameURL]])
+			[[[request URL] absoluteString] hasPrefix: [aWebView mainFrameURL]])
 		{
 			[listener use];
 			return;

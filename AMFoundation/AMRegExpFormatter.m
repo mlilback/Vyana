@@ -9,10 +9,10 @@
 #import "AMRegExpFormatter.h"
 
 @implementation AMRegExpFormatter
--(id)initWithRegularExpression:(NSRegularExpression*)regex
+-(id)initWithRegularExpression:(NSRegularExpression*)aRegex
 {
 	self = [super init];
-	self.regex = regex;
+	self.regex = aRegex;
 	return self;
 }
 

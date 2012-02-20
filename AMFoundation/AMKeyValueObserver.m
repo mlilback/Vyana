@@ -31,12 +31,12 @@
 -(id)initWithObject:(id)anObject 
 			keyPath:(NSString*)aPath 
 		withOptions:(NSKeyValueObservingOptions)theOptions
-	  observerBlock:(AMKVOBlock)block
+	  observerBlock:(AMKVOBlock)aBlock
 {
 	if ((self = [super init])) {
 		self.keyPath = aPath;
 		self.objectRef = [MAZeroingWeakRef refWithTarget:anObject];
-		self.block = block;
+		self.block = aBlock;
 		[anObject addObserver:self forKeyPath:aPath options:theOptions context:nil];
 	}
 	return self;
