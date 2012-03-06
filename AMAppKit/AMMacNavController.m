@@ -119,6 +119,11 @@
 */	NSEnableScreenUpdates();
 }
 
+-(void)notifyDidChangeView
+{
+	if ([self.delegate respondsToSelector:@selector(macNavController:didShowViewController:animated:)])
+		[self.delegate macNavController:self didShowViewController:self.topViewController animated:YES];
+}
 #pragma mark - stack management
 
 -(void)pushViewController:(NSViewController*)viewController animated:(BOOL)animated
@@ -138,6 +143,7 @@
 	[self.myViewControllers addObject:viewController];
 	[self didChangeValueForKey:@"topViewController"];
 	self.canPopViewController=YES;
+	[self notifyDidChangeView];
 }
 
 -(void)popViewControllerAnimated:(BOOL)animated
@@ -151,6 +157,7 @@
 	[self.myViewControllers removeLastObject];
 	[self didChangeValueForKey:@"topViewController"];
 	self.canPopViewController = self.myViewControllers.count > 1;
+	[self notifyDidChangeView];
 }
 
 -(void)popToRootViewControllerAnimated:(BOOL)animated
@@ -164,6 +171,7 @@
 	[self.myViewControllers removeObjectsInRange:NSMakeRange(1, self.myViewControllers.count-1)];
 	[self didChangeValueForKey:@"topViewController"];
 	self.canPopViewController = NO;
+	[self notifyDidChangeView];
 }
 
 -(void)popToViewController:(NSViewController*)viewController animated:(BOOL)animated
@@ -177,6 +185,7 @@
 		[self.myViewControllers removeLastObject];
 	[self didChangeValueForKey:@"topViewController"];
 	self.canPopViewController = self.myViewControllers.count > 1;
+	[self notifyDidChangeView];
 }
 
 -(void)popFromViewController:(NSViewController*)fromController toController:(NSViewController*)toController animated:(BOOL)animated
@@ -191,6 +200,7 @@
 	} else {
 		[self.view replaceSubview:fromController.view with:toController.view];
 	}
+	[self notifyDidChangeView];
 }
 
 #pragma mark - accessors/synthesizers
