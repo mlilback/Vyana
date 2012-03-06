@@ -20,7 +20,7 @@
 
 @protocol AMMacNavControllerDelegate;
 
-@interface AMMacNavController : NSViewController
+@interface AMMacNavController : AMViewController
 /** initializes with the specified root view controller */
 -(id)initWithRootViewController:(NSViewController*)viewController;
 
