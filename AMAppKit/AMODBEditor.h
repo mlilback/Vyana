@@ -27,7 +27,7 @@
 -(void)abortAllEditingSessionsForClient:(id)client;
 
 -(BOOL)editFile:(NSString*)path 
-   displayTtile:(NSString*)displayTitle
+   displayTitle:(NSString*)displayTitle
 	  forClient:(id<AMODBEditorClient>)client 
 		context:(NSDictionary*)context;
 
