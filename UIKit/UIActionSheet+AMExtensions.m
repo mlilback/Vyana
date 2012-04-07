@@ -42,7 +42,7 @@
 		return;
 	AMActionItem *action = [self.actionItems objectAtIndex:buttonIndex];
 	dispatch_async(dispatch_get_main_queue(), ^{
-		[action.target performSelector:action.action withObject:actionSheet];
+		[action.target performSelector:action.action withObject:action];
 	});
 	actionSheet.delegate=nil;
 	//autorelease wasn't being properly called for some reason. this does work.
