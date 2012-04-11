@@ -20,6 +20,26 @@
 	return nil;
 }
 
+-(void)enumerateSubviewsOfClass:(Class)aClass block:(void (^)(id aView, BOOL *stop))handler
+{
+	__block BOOL shouldStop=NO;
+	[self enumerateSubviewsOfClass:aClass block:handler stop:&shouldStop];
+}
+
+-(void)enumerateSubviewsOfClass:(Class)aClass block:(void (^)(id aView, BOOL *stop))handler stop:(BOOL*)stopPtr
+{
+	for (NSView *aView in self.subviews) {
+		if ([aView isKindOfClass:aClass]) {
+			handler(aView, stopPtr);
+			if (*stopPtr)
+				return;
+		}
+		[aView enumerateSubviewsOfClass:aClass block:handler stop:stopPtr];
+		if (*stopPtr)
+			return;		
+	}
+}
+
 - (NSImage *)imageWithSubviews
 {
 	NSSize mySize = self.bounds.size;
