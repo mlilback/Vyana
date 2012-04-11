@@ -18,6 +18,11 @@
 
 -(NSView*)firstAncestorOfClass:(Class)aClass;
 
+/** Does a deep inspection of all subviews and calls handler on any that are of aClass.
+*/
+
+-(void)enumerateSubviewsOfClass:(Class)aClass block:(void (^)(id aView, BOOL *stop))handler;
+
 /** Returns an NSImage of the view that includes all subviews and any area offscreen
 */
 -(NSImage *)imageWithSubviews;

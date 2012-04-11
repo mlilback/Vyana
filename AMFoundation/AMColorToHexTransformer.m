@@ -23,11 +23,15 @@
 
 -(id)transformedValue:(id)value 
 {
+	if ([value isKindOfClass:[NSString class]])
+		return [NSColor colorWithHexString:value];
 	return [value hexString];
 }
 
 -(id)reverseTransformedValue:(id)value
 {
+	if ([value isKindOfClass:[NSColor class]])
+		return [value hexString];
 	return [NSColor colorWithHexString:value];
 }
 
