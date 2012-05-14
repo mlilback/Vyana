@@ -17,6 +17,12 @@
 
 @implementation AMPickerPopover
 
+-(void)awakeFromNib
+{
+	[super awakeFromNib];
+	self.enabled = YES;
+}
+
 -(void)loadView
 {
 	UIPickerView *picker = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
