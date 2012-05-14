@@ -18,4 +18,5 @@
 @property (nonatomic, copy) NSString *itemKey; //nil if the item is a string
 @property (nonatomic, retain) id selectedItem;
 @property (nonatomic, copy) BasicBlock1Arg changeHandler; //argument is the pickerpopover
+@property (nonatomic, assign) BOOL enabled;
 @end

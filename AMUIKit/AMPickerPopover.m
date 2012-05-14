@@ -37,20 +37,22 @@
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
-	//show the popup
-	if (nil == self.popover) {
-		self.popover = [[UIPopoverController alloc] initWithContentViewController:self];
-		self.popover.delegate = self;
-		self.popover.popoverContentSize = self.view.frame.size;
-	}
-	if ([self.popover isPopoverVisible]) {
-		[self.popover dismissPopoverAnimated:YES];
-	} else {
-		NSInteger idx = [self.items indexOfObject:self.selectedItem];
-		if (idx < 0)
-			idx = 1;
-		[self.picker selectRow:idx inComponent:0 animated:YES];
-		[self.popover presentPopoverFromRect:self.textField.bounds inView:self.textField permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+	if (self.enabled && self.items.count > 1) {
+		//show the popup
+		if (nil == self.popover) {
+			self.popover = [[UIPopoverController alloc] initWithContentViewController:self];
+			self.popover.delegate = self;
+			self.popover.popoverContentSize = self.view.frame.size;
+		}
+		if ([self.popover isPopoverVisible]) {
+			[self.popover dismissPopoverAnimated:YES];
+		} else {
+			NSInteger idx = [self.items indexOfObject:self.selectedItem];
+			if (idx < 0)
+				idx = 1;
+			[self.picker selectRow:idx inComponent:0 animated:YES];
+			[self.popover presentPopoverFromRect:self.textField.bounds inView:self.textField permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+		}
 	}
 	return NO;
 }
@@ -107,4 +109,5 @@
 @synthesize textField=_textField;
 @synthesize popover=_popover;
 @synthesize picker=_picker;
+@synthesize enabled=_enabled;
 @end
