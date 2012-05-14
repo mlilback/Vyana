@@ -15,11 +15,12 @@
 
 typedef void (^AMPromptViewCompletionBlock)(AMPromptView*, NSString*);
 
+__attribute__((deprecated))
 @interface AMPromptView : UIAlertView {
 	UITextField *textField;
 }
 -(id)initWithPrompt:(NSString*)prompt acceptTitle:(NSString*)acceptTitle
-	cancelTitle:(NSString*)cancelTitle delegate:(id)delegate;
+	cancelTitle:(NSString*)cancelTitle delegate:(id)delegate ;
 
 @property (nonatomic, readonly) NSString *enteredText;
 @property (nonatomic, copy) AMPromptViewCompletionBlock completionHandler;
