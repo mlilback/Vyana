@@ -19,6 +19,8 @@
 		0809BF2D14BDEB15009CEC57 /* NSOutlineView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809BF2B14BDEB15009CEC57 /* NSOutlineView+AMExtensions.m */; };
 		08124BBA15338021009F961F /* AMColorToHexTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08124BB815338021009F961F /* AMColorToHexTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08124BBB15338021009F961F /* AMColorToHexTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08124BB915338021009F961F /* AMColorToHexTransformer.m */; };
+		0818EE8F15617CDC00159291 /* AMPickerPopover.h in Headers */ = {isa = PBXBuildFile; fileRef = 0818EE8D15617CDC00159291 /* AMPickerPopover.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0818EE9015617CDC00159291 /* AMPickerPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 0818EE8E15617CDC00159291 /* AMPickerPopover.m */; };
 		081F4C5813FE06AF001BDEBF /* AMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 081F4C5313FDF343001BDEBF /* AMViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		081F4C5B13FE09EC001BDEBF /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F4C5413FDF343001BDEBF /* AMViewController.m */; };
 		082DDE5013A0683A004F46CD /* AMLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 082DDE4E13A0683A004F46CD /* AMLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -313,6 +315,8 @@
 		0809BF2B14BDEB15009CEC57 /* NSOutlineView+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOutlineView+AMExtensions.m"; sourceTree = "<group>"; };
 		08124BB815338021009F961F /* AMColorToHexTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMColorToHexTransformer.h; sourceTree = "<group>"; };
 		08124BB915338021009F961F /* AMColorToHexTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMColorToHexTransformer.m; sourceTree = "<group>"; };
+		0818EE8D15617CDC00159291 /* AMPickerPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPickerPopover.h; sourceTree = "<group>"; };
+		0818EE8E15617CDC00159291 /* AMPickerPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPickerPopover.m; sourceTree = "<group>"; };
 		081F4C5313FDF343001BDEBF /* AMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMViewController.h; sourceTree = "<group>"; };
 		081F4C5413FDF343001BDEBF /* AMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViewController.m; sourceTree = "<group>"; };
 		082DDE4E13A0683A004F46CD /* AMLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMLabel.h; sourceTree = "<group>"; };
@@ -685,6 +689,8 @@
 				0892205114D802E00014746F /* AMNavigationTreeController.m */,
 				0892205514D806C90014746F /* AMNavigationTreeListController.h */,
 				0892205614D806C90014746F /* AMNavigationTreeListController.m */,
+				0818EE8D15617CDC00159291 /* AMPickerPopover.h */,
+				0818EE8E15617CDC00159291 /* AMPickerPopover.m */,
 			);
 			path = AMUIKit;
 			sourceTree = SOURCE_ROOT;
@@ -1155,6 +1161,7 @@
 				0892205214D802E00014746F /* AMNavigationTreeController.h in Headers */,
 				0892205714D806C90014746F /* AMNavigationTreeListController.h in Headers */,
 				08E337E314E7E6A90004979E /* NSTimer+AMExtensions.h in Headers */,
+				0818EE8F15617CDC00159291 /* AMPickerPopover.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1463,6 +1470,7 @@
 				0892205314D802E00014746F /* AMNavigationTreeController.m in Sources */,
 				0892205814D806C90014746F /* AMNavigationTreeListController.m in Sources */,
 				08E337E514E7E6A90004979E /* NSTimer+AMExtensions.m in Sources */,
+				0818EE9015617CDC00159291 /* AMPickerPopover.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
