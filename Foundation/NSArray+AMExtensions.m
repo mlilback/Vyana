@@ -125,7 +125,7 @@
 // If any item conforms to NSMutableCopying, -mutableCopy is called.
 // else, if conforms to NSCopying, -copy is called.
 // otherwise, same item is placed in new array
--(NSArray*)deepCopy
+-(id)deepCopy
 {
 	id newArray = [[[NSMutableArray alloc] init] autorelease];
 	NSEnumerator *en = [self objectEnumerator];
@@ -138,8 +138,9 @@
 		else
 			[newArray addObject: anItem];
 	}
-	
-	return newArray;
+	if ([self conformsToProtocol:@protocol(NSMutableCopying)])
+		return newArray;
+	return [NSArray arrayWithArray:newArray];
 }
 
 //returns count of items matching item

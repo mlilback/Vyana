@@ -49,7 +49,8 @@
 ///If any item conforms to NSMutableCopying, -mutableCopy is called.
 /// else, if conforms to NSCopying, -copy is called.
 /// otherwise, same item is placed in new array
--(NSArray*)deepCopy;
+///Returns mutable array if instance is mutable, immutable otherwise
+-(id)deepCopy;
 
 ///@returns array of objects returned by performing aSelector on each object in the array
 -(NSArray *)arrayByPerformingSelector:(SEL)aSelector;
