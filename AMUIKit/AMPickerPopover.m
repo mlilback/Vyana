@@ -83,7 +83,7 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-	self.selectedItem = [self.items objectAtIndex:row];
+	self.selectedItem = [self.items objectAtIndexNoExceptions:row];
 	if (self.changeHandler)
 		self.changeHandler(self);
 }
