@@ -9,6 +9,7 @@
 #import <Vyana-ios/AMStandardMacros.h>
 #import <Vyana-ios/AMBlockUtils.h>
 #import <Vyana-ios/NSArray+AMExtensions.h>
+#import <Vyana-ios/NSData+AMExtensions.h>
 #import <Vyana-ios/NSDictionary+AMExtensions.h>
 #import <Vyana-ios/NSFileHandle+AMExtensions.h>
 #import <Vyana-ios/NSFileManager+AMExtensions.h>
