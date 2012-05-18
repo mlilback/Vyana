@@ -14,6 +14,7 @@
 
 #import <Vyana/NSObject+BlockObservation.h>
 #import <Vyana/NSArray+AMExtensions.h>
+#import <Vyana/NSData+AMExtensions.h>
 #import <Vyana/NSDictionary+AMExtensions.h>
 #import <Vyana/NSFileHandle+AMExtensions.h>
 #import <Vyana/NSFileManager+AMExtensions.h>

@@ -98,6 +98,10 @@
 		0892205314D802E00014746F /* AMNavigationTreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0892205114D802E00014746F /* AMNavigationTreeController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0892205714D806C90014746F /* AMNavigationTreeListController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0892205514D806C90014746F /* AMNavigationTreeListController.h */; };
 		0892205814D806C90014746F /* AMNavigationTreeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0892205614D806C90014746F /* AMNavigationTreeListController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0895376115657345006A3D6A /* NSData+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0895375F15657345006A3D6A /* NSData+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0895376215657345006A3D6A /* NSData+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0895375F15657345006A3D6A /* NSData+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0895376315657345006A3D6A /* NSData+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0895376015657345006A3D6A /* NSData+AMExtensions.m */; };
+		0895376415657345006A3D6A /* NSData+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0895376015657345006A3D6A /* NSData+AMExtensions.m */; };
 		089C0B24145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B21145A2B3D00DF9984 /* NSWindow+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		089C0B26145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */; };
 		089C0B2F145B36EF00DF9984 /* AMRegExpFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C0B2D145B36EF00DF9984 /* AMRegExpFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -397,6 +401,8 @@
 		0892205114D802E00014746F /* AMNavigationTreeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMNavigationTreeController.m; sourceTree = "<group>"; };
 		0892205514D806C90014746F /* AMNavigationTreeListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMNavigationTreeListController.h; sourceTree = "<group>"; };
 		0892205614D806C90014746F /* AMNavigationTreeListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMNavigationTreeListController.m; sourceTree = "<group>"; };
+		0895375F15657345006A3D6A /* NSData+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AMExtensions.h"; sourceTree = "<group>"; };
+		0895376015657345006A3D6A /* NSData+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AMExtensions.m"; sourceTree = "<group>"; };
 		089C0B21145A2B3D00DF9984 /* NSWindow+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+AMExtensions.h"; sourceTree = "<group>"; };
 		089C0B22145A2B3D00DF9984 /* NSWindow+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+AMExtensions.m"; sourceTree = "<group>"; };
 		089C0B2D145B36EF00DF9984 /* AMRegExpFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMRegExpFormatter.h; sourceTree = "<group>"; };
@@ -811,6 +817,8 @@
 				08EFE3EC1341AA0A00231C8A /* NSArray+AMExtensions.m */,
 				08EFE47C1341D86300231C8A /* NSAttributedString+AMExtensions.h */,
 				08EFE47D1341D86400231C8A /* NSAttributedString+AMExtensions.m */,
+				0895375F15657345006A3D6A /* NSData+AMExtensions.h */,
+				0895376015657345006A3D6A /* NSData+AMExtensions.m */,
 				08EFE4371341CAA000231C8A /* NSDictionary+AMExtensions.h */,
 				08EFE4381341CAA000231C8A /* NSDictionary+AMExtensions.m */,
 				08EFE4801341D86C00231C8A /* NSFileHandle+AMExtensions.h */,
@@ -1105,6 +1113,7 @@
 				0892201A14D586D10014746F /* AMOutlineView.h in Headers */,
 				08E337E214E7E6A90004979E /* NSTimer+AMExtensions.h in Headers */,
 				08124BBA15338021009F961F /* AMColorToHexTransformer.h in Headers */,
+				0895376115657345006A3D6A /* NSData+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1162,6 +1171,7 @@
 				0892205714D806C90014746F /* AMNavigationTreeListController.h in Headers */,
 				08E337E314E7E6A90004979E /* NSTimer+AMExtensions.h in Headers */,
 				0818EE8F15617CDC00159291 /* AMPickerPopover.h in Headers */,
+				0895376215657345006A3D6A /* NSData+AMExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1418,6 +1428,7 @@
 				0892201B14D586D10014746F /* AMOutlineView.m in Sources */,
 				08E337E414E7E6A90004979E /* NSTimer+AMExtensions.m in Sources */,
 				08124BBB15338021009F961F /* AMColorToHexTransformer.m in Sources */,
+				0895376315657345006A3D6A /* NSData+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1471,6 +1482,7 @@
 				0892205814D806C90014746F /* AMNavigationTreeListController.m in Sources */,
 				08E337E514E7E6A90004979E /* NSTimer+AMExtensions.m in Sources */,
 				0818EE9015617CDC00159291 /* AMPickerPopover.m in Sources */,
+				0895376415657345006A3D6A /* NSData+AMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
