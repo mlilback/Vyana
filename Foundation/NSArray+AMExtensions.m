@@ -277,14 +277,12 @@
 
 -(void)shuffleArray
 {
-	NSUInteger count = [self count], i;
-	if (count < 2)
-//AMH:	It should shuffle anyway, even if nil.
-//		[NSException raise:NSInvalidArgumentException format:@"Not possible to shuffle a 1 element array"];
-		return;
-	for (i=0; i < count; i++) {
-		NSUInteger n = (arc4random() % (count-1)) + 1;
-		[self exchangeObjectAtIndex:i withObjectAtIndex:n];
+	NSUInteger count = [self count], it, jt, n;
+	if (count < 2) return;
+	for (it=0; it<count; it++) {
+		n = (arc4random()%(count-1)) + 1;
+		for (jt=0; n==it || jt<10; jt++) n = arc4random()%count;
+		[self exchangeObjectAtIndex:it withObjectAtIndex:n];
 	}
 }
 
