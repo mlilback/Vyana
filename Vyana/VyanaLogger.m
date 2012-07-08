@@ -11,8 +11,15 @@
 #import "DDASLLogger.h"
 #import "DDTTYLogger.h"
 
+@interface VyanaLogFormatter: NSObject<DDLogFormatter>
+@end
+
+@interface VyanaASLLogFormatter : NSObject<DDLogFormatter>
+@end
+
 @interface VyanaLogger()
 @property (nonatomic, retain) NSMutableDictionary *logLevels;
+@property (nonatomic, retain) NSMutableDictionary *logKeys;
 @end
 
 @implementation VyanaLogger
@@ -30,6 +37,7 @@
 {
 	self = [super init];
 	self.logLevels = [NSMutableDictionary dictionary];
+	self.logKeys = [NSMutableDictionary dictionary];
 	self.logLevel = LOG_LEVEL_WARN;
 	id obj = [[NSUserDefaults standardUserDefaults] objectForKey:@"VyanaLogLevel"];
 	if (obj && [obj integerValue] >= 0)
@@ -43,9 +51,23 @@
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
 		[DDLog removeAllLoggers];
-		[DDLog addLogger:[DDASLLogger sharedInstance]];
-		[DDLog addLogger:[DDTTYLogger sharedInstance]];
+		DDASLLogger *asl = [DDASLLogger sharedInstance];
+		[asl setLogFormatter:[[[VyanaASLLogFormatter alloc] init] autorelease]];
+		[DDLog addLogger:asl];
+		DDTTYLogger *ttyLogger = [DDTTYLogger sharedInstance];
+		[ttyLogger setLogFormatter:[[[VyanaLogFormatter alloc] init] autorelease]];
+		[DDLog addLogger:ttyLogger];
 	});
+}
+
+-(NSString*)logKeyForContext:(int)ctx
+{
+	return [self.logKeys objectForKey:[NSNumber numberWithInt:ctx]];
+}
+
+-(void)setLogKey:(NSString*)key forContext:(int)ctx
+{
+	[self.logKeys setObject:[NSNumber numberWithInt:ctx] forKey:key];
 }
 
 -(int)logLevelForKey:(NSString*)key
@@ -60,4 +82,39 @@
 
 @synthesize logLevel;
 @synthesize logLevels;
+@synthesize logKeys;
+@end
+
+@implementation VyanaLogFormatter
+-(NSString*)formatLogMessage:(DDLogMessage*)logMessage
+{
+	NSString *level = @"-----";
+	switch (logMessage->logFlag) {
+		case LOG_FLAG_ERROR: level = @"ERROR"; break;
+		case LOG_FLAG_WARN: level = @"WARN "; break;
+		case LOG_FLAG_INFO: level = @"INFO "; break;
+	}
+	NSString *context=nil;
+	if (VYANA_LOG_CONTEXT == logMessage->logContext) {
+		context = @"Vyana";
+	} else {
+		context = [[VyanaLogger sharedInstance] logKeyForContext:logMessage->logContext];
+		if (nil == context) {
+			char ctx[5];
+			bcopy(&logMessage->logContext, &ctx[0], sizeof(int));
+			ctx[4] = 0;
+			context = [NSString stringWithUTF8String:ctx];
+		}
+	}
+	return [NSString stringWithFormat:@"%@ | %@ | %@", level, context, logMessage->logMsg];
+}
+@end
+
+@implementation VyanaASLLogFormatter
+-(NSString*)formatLogMessage:(DDLogMessage *)logMessage
+{
+	if (logMessage->logLevel <= LOG_LEVEL_WARN)
+		return logMessage->logMsg;
+	return nil;
+}
 @end
