@@ -24,6 +24,8 @@
 //allows other frameworks or objects define their own contexts
 -(int)logLevelForKey:(NSString*)key;
 -(void)setLogLevel:(int)level forKey:(NSString*)key;
+-(NSString*)logKeyForContext:(int)ctx;
+-(void)setLogKey:(NSString*)key forContext:(int)ctx;
 @end
 
 //never read all the options for lumberjack. A custom context works much better
