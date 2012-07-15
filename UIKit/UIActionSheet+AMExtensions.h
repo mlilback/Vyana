@@ -11,6 +11,6 @@
 @interface UIActionSheet (AMExtensions)
 //actionItems should be an array of AMActionItem objects. 
 // a delegate is created that will call the appropriate selector for the selected action item
-// or do nothing on a button index < 0
+// or do nothing on a button index < 0 or on the actionsheet's cancelButtonIndex
 -(id)initWithTitle:(NSString*)inTitle actionItems:(NSArray*)actionItems;
 @end

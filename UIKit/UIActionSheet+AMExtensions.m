@@ -40,6 +40,8 @@
 {
 	if (buttonIndex < 0)
 		return;
+	if (buttonIndex == actionSheet.cancelButtonIndex)
+		return;
 	AMActionItem *action = [self.actionItems objectAtIndex:buttonIndex];
 	dispatch_async(dispatch_get_main_queue(), ^{
 		[action.target performSelector:action.action withObject:action];
