@@ -20,7 +20,7 @@
 	NSMutableString     *hexString  = [NSMutableString stringWithCapacity:(dataLength * 2)];
 	
 	for (int i = 0; i < dataLength; ++i)
-		[hexString appendFormat:@"%02x", (unsigned long)dataBuffer[i]];
+		[hexString appendFormat:@"%02x", (unsigned int)dataBuffer[i]];
 	
 	return [NSString stringWithString:hexString];
 }

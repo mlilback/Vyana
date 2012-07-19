@@ -57,7 +57,7 @@
 -(NSString*)rgbaString
 {
 	NSColor *rgbColor = [self colorUsingColorSpaceName:NSCalibratedRGBColorSpace];
-	NSInteger r, g, b, a;
+	int r, g, b, a;
 	r = round(255*[rgbColor redComponent]);  g = round(255*[rgbColor greenComponent]);
 	b = round(255*[rgbColor blueComponent]); a = round(255*[rgbColor alphaComponent]);
 	return [NSString stringWithFormat:@"%d,%d,%d,%d", r, g, b, a];
