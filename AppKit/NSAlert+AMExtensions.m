@@ -34,6 +34,8 @@
 @end
 
 @implementation NSAlert(AMExtensions)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wformat-security"
 +(void)displayAlertWithTitle:(NSString*)title details:(NSString*)details
 {
 	NSAlert *alert = [NSAlert alertWithMessageText:title defaultButton:nil alternateButton:nil otherButton:nil informativeTextWithFormat:details];
@@ -43,6 +45,7 @@
 		[alert runModal];
 	[self autorelease];
 }
+#pragma clang diagnostic pop
 
 -(void)beginSheetModalForWindow:(NSWindow*)window completionHandler:(AMAlertCompletionBlock)cblock
 {
