@@ -192,14 +192,18 @@
 }
 
 //returns string with prefix of "A ", "An", or "The" removed
--(NSString*)stringByRemovingLeadingAritcle
+-(NSString*)stringByRemovingLeadingArticle
 {
-	if ([[self lowercaseString] hasPrefix:@"a "])
-		return [self substringFromIndex:2];
-	if ([[self lowercaseString] hasPrefix:@"an "])
-		return [self substringFromIndex:3];
-	if ([[self lowercaseString] hasPrefix:@"the "])
-		return [self substringFromIndex:4];
+	//only supports English
+	NSString *langCode = [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode];
+	if ([langCode isEqualToString:@"en"]) {
+		if ([[self lowercaseString] hasPrefix:@"a "])
+			return [self substringFromIndex:2];
+		if ([[self lowercaseString] hasPrefix:@"an "])
+			return [self substringFromIndex:3];
+		if ([[self lowercaseString] hasPrefix:@"the "])
+			return [self substringFromIndex:4];
+	}
 	return self;
 }
 

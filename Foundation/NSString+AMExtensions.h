@@ -35,7 +35,7 @@
 ///performs numeric comparison of entire string
 -(NSComparisonResult)compareNumerically:(NSString*)str;
 //returns string with prefix of "A ", "An", or "The" removed
--(NSString*)stringByRemovingLeadingAritcle;
+-(NSString*)stringByRemovingLeadingArticle;
 //removes any characters in cset
 -(NSString*)stringByRemovingCharactersInCharacterSet:(NSCharacterSet*)cset;
 
