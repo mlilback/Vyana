@@ -11,13 +11,19 @@
 #import "NSColor+AMExtensions.h"
 #import "AMControlledView.h"
 
+@interface AMMacNavTopView : AMControlledView {
+}
+@property BOOL constraintsSetup;
+@end
+
 @interface AMMacNavController() {
 	BOOL __swipeAnimationCancelled;
 }
 @property (nonatomic, strong, readwrite) NSViewController *rootViewController;
 @property (nonatomic, strong) NSMutableArray *myViewControllers;
 @property (nonatomic, assign, readwrite) BOOL canPopViewController;
--(void)popFromViewController:(NSViewController*)fromController toController:(NSViewController*)toController animated:(BOOL)animated;
+@property (nonatomic, copy) NSArray *childConstraints;
+@property (nonatomic, strong) NSView *viewBeingReplaced;
 @end
 
 @implementation AMMacNavController
@@ -29,11 +35,12 @@
 		self.myViewControllers = [NSMutableArray array];
 		[self.myViewControllers addObject:viewController];
 		NSView *parentView = viewController.view;
-		AMControlledView *view = [[[AMControlledView alloc] initWithFrame:parentView.frame] autorelease];
+		AMMacNavTopView *view = [[[AMMacNavTopView alloc] initWithFrame:parentView.frame] autorelease];
 		parentView.frame = view.bounds;
 		view.wantsLayer=YES;
 		view.autoresizingMask = parentView.autoresizingMask;
 		view.autoresizesSubviews = parentView.autoresizesSubviews;
+		view.translatesAutoresizingMaskIntoConstraints = YES;
 		[parentView.superview addSubview:view];
 		[view addSubview:parentView];
 		self.view = view;
@@ -124,6 +131,7 @@
 	if ([self.delegate respondsToSelector:@selector(macNavController:didShowViewController:animated:)])
 		[self.delegate macNavController:self didShowViewController:self.topViewController animated:YES];
 }
+
 #pragma mark - stack management
 
 -(void)pushViewController:(NSViewController*)viewController animated:(BOOL)animated
@@ -131,11 +139,14 @@
 	ZAssert(viewController, @"nil controller passed to pushViewController:animated:");
 	viewController.view.frame = self.topViewController.view.frame;
 	if (animated) {
-		CATransition *anim = [CATransition animation];
-		anim.type = kCATransitionMoveIn;
-		anim.subtype = kCATransitionFromRight;
-		self.view.animations = [NSDictionary dictionaryWithObject:anim forKey:@"subviews"];
-		[self.view.animator replaceSubview:self.topViewController.view with:viewController.view];
+		self.viewBeingReplaced = self.topViewController.view;
+		CGFloat width = self.topViewController.view.bounds.size.width;
+		NSArray *constraints = [self layoutConstraintsForView:viewController.view offsetBy:NSMakePoint(width, 0)];
+		viewController.view.translatesAutoresizingMaskIntoConstraints = NO;
+		[self.view addSubview:viewController.view];
+		[self.view addConstraints:constraints];
+		[[[self.view.constraints objectAtIndex:0] animator] setConstant:-width];
+		[[[constraints objectAtIndex:0] animator] setConstant:0.0];
 	} else {
 		[self.view replaceSubview:self.topViewController.view with:viewController.view];
 	}
@@ -192,15 +203,65 @@
 {
 	toController.view.frame = self.view.bounds;
 	if (animated) {
-		CATransition *anim = [CATransition animation];
-		anim.type = kCATransitionMoveIn;
-		anim.subtype = kCATransitionFromLeft;
-		self.view.animations = [NSDictionary dictionaryWithObject:anim forKey:@"subviews"];
-		[self.view.animator replaceSubview:fromController.view with:toController.view];
+		self.viewBeingReplaced = self.topViewController.view;
+		CGFloat width = fromController.view.bounds.size.width;
+		NSArray *constraints = [self layoutConstraintsForView:toController.view offsetBy:NSMakePoint(-width, 0)];
+		toController.view.translatesAutoresizingMaskIntoConstraints = NO;
+		[self.view addSubview:toController.view];
+		[self.view addConstraints:constraints];
+		[[[self.view.constraints objectAtIndex:0] animator] setConstant:width];
+		[[[constraints objectAtIndex:0] animator] setConstant:0.0];
 	} else {
 		[self.view replaceSubview:fromController.view with:toController.view];
 	}
 	[self notifyDidChangeView];
+}
+
+#pragma mark - layout
+
+-(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+	if (flag)
+		[self.viewBeingReplaced removeFromSuperview];
+	self.viewBeingReplaced=nil;
+}
+
+-(NSArray*)layoutConstraintsForView:(NSView*)view offsetBy:(NSPoint)offset
+{
+	NSMutableArray *constraints = [NSMutableArray arrayWithCapacity:4];
+	[constraints addObject:[NSLayoutConstraint constraintWithItem:view
+														attribute:NSLayoutAttributeLeft
+														relatedBy:NSLayoutRelationEqual
+														   toItem:self.view
+														attribute:NSLayoutAttributeLeft
+													   multiplier:1.0
+														 constant:offset.x]];
+	[constraints addObject:[NSLayoutConstraint constraintWithItem:view
+														attribute:NSLayoutAttributeWidth
+														relatedBy:NSLayoutRelationEqual
+														   toItem:self.view
+														attribute:NSLayoutAttributeWidth
+													   multiplier:1.0
+														 constant:0]];
+	[constraints addObject:[NSLayoutConstraint constraintWithItem:view
+														attribute:NSLayoutAttributeTop
+														relatedBy:NSLayoutRelationEqual
+														   toItem:self.view
+														attribute:NSLayoutAttributeTop
+													   multiplier:1.0
+														 constant:offset.y]];
+	[constraints addObject:[NSLayoutConstraint constraintWithItem:view
+														attribute:NSLayoutAttributeHeight
+														relatedBy:NSLayoutRelationEqual
+														   toItem:self.view
+														attribute:NSLayoutAttributeHeight
+													   multiplier:1.0
+														 constant:0]];
+	CABasicAnimation *animation = [CABasicAnimation animation];
+	animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+	animation.delegate = self;
+	[[constraints objectAtIndex:0] setAnimations:@{@"constant" : animation}];
+	return constraints;
 }
 
 #pragma mark - accessors/synthesizers
@@ -219,4 +280,7 @@
 @synthesize myViewControllers;
 @synthesize delegate;
 @synthesize canPopViewController;
+@end
+
+@implementation AMMacNavTopView
 @end
