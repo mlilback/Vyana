@@ -6,10 +6,10 @@
 //
 
 #import "AMControlledView.h"
+#import "MAZeroingWeakRef.h"
 
-@interface AMControlledView() {
-	NSViewController *__vc;
-}
+@interface AMControlledView()
+@property (nonatomic, strong) MAZeroingWeakRef *vcWeakRef;
 @end
 
 @implementation AMControlledView
@@ -49,25 +49,32 @@
 		[(id)self.viewController resizeSubviewsWithOldSize:oldBoundsSize];
 }
 
+-(NSViewController*)viewController
+{
+	return self.vcWeakRef.target;
+}
+
 - (void)setViewController:(NSViewController *)newController
 {
-	if (__vc) {
-		NSResponder *controllerNextResponder = [__vc nextResponder];
+	id curController = self.vcWeakRef.target;
+	if (curController) {
+		NSResponder *controllerNextResponder = [curController nextResponder];
 		[super setNextResponder:controllerNextResponder];
-		[__vc setNextResponder:nil];
+		[curController setNextResponder:nil];
 	}
-	__vc = newController;
+	self.vcWeakRef = [[MAZeroingWeakRef alloc] initWithTarget:newController];
 	if (newController) {
 		NSResponder *ownNextResponder = [self nextResponder];
-		[super setNextResponder: __vc];
-		[__vc setNextResponder:ownNextResponder];
+		[super setNextResponder: newController];
+		[newController setNextResponder:ownNextResponder];
 	}
 }
 
 - (void)setNextResponder:(NSResponder *)newNextResponder
 {
-	if (__vc) {
-		[__vc setNextResponder:newNextResponder];
+	id curController = self.vcWeakRef.target;
+	if (curController) {
+		[curController setNextResponder:newNextResponder];
 		return;
 	}
 	[super setNextResponder:newNextResponder];
@@ -91,5 +98,4 @@
 }
 
 
-@synthesize viewController=__vc;
 @end

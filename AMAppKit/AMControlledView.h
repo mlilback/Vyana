@@ -19,9 +19,10 @@
 @interface AMControlledView : NSView
 /** @brief 
 	Ideally when compiled with Lion as the minimum target, the property would be weak. However,
-	you can't make weak references to a subclass of NSViewController. So if you aren't careful,
-	uoi can get BAD_ACCESS exceptions. To avoid this, make sure your view controller subclasses
-	AMViewController, which will make sure this does not happen.
+	you can't make weak references to a subclass of NSViewController until Mountain Lion. 
+ 	So if you aren't careful, you can get BAD_ACCESS exceptions. To avoid this, make sure your 
+ 	view controller subclasses AMViewController, which will make sure this does not happen.
+ 	This shouldn't be an issue now that we're using a MAZeroingWeakRef to hold the ref, but...
 */
 @property (nonatomic, assign) IBOutlet NSViewController *viewController;
 @end
