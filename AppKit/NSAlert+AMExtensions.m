@@ -11,25 +11,29 @@
 @interface AMAlertDelegate :NSObject<NSAlertDelegate> {
 	AMAlertCompletionBlock __cblock;
 }
+@property (nonatomic, strong) NSAlert *alert;
 @end
 
 
 @implementation AMAlertDelegate
--(id)initWithBlock:(AMAlertCompletionBlock)ablock
+-(id)initWithBlock:(AMAlertCompletionBlock)ablock alert:(NSAlert*)inAlert
 {
 	self = [super init];
 	__cblock = [ablock copy];
+	self.alert = inAlert;
 	return self;
 }
 -(void)dealloc
 {
 	[__cblock release];
+	self.alert=nil;
 	[super dealloc];
 }
 - (void)alertDidEnd:(NSAlert *)alert returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo
 {
 	__cblock(alert, returnCode);
-	[self autorelease];
+	//the following is to match the hidden call to retain in beginSheetModalForWindow
+	[self performSelector:@selector(autorelease)];
 }
 @end
 
@@ -50,10 +54,13 @@
 
 -(void)beginSheetModalForWindow:(NSWindow*)window completionHandler:(AMAlertCompletionBlock)cblock
 {
-	AMAlertDelegate *del = [[AMAlertDelegate alloc] initWithBlock:cblock];
+	AMAlertDelegate *del = [[AMAlertDelegate alloc] initWithBlock:cblock alert:self];
+	//this "hidden" from clang call is countered by autorelease in  alertDidEnd
+	[del performSelector:@selector(retain)];
 	[self beginSheetModalForWindow:window 
 					 modalDelegate:del 
 					didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:)
 					   contextInfo:nil];
+	[del release];
 }
 @end

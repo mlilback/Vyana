@@ -62,7 +62,7 @@
 		[super setNextResponder:controllerNextResponder];
 		[curController setNextResponder:nil];
 	}
-	self.vcWeakRef = [[MAZeroingWeakRef alloc] initWithTarget:newController];
+	self.vcWeakRef = [[[MAZeroingWeakRef alloc] initWithTarget:newController] autorelease];
 	if (newController) {
 		NSResponder *ownNextResponder = [self nextResponder];
 		[super setNextResponder: newController];

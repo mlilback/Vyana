@@ -51,6 +51,9 @@
 		modalDelegate:tramp 
 	   didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) 
 		  contextInfo:nil];
+	//This is to prevent clang from bitching about memory leak
+	[tramp performSelector:@selector(retain)];
+	[tramp release];
 }
 @end
 
@@ -60,5 +63,7 @@
 -(void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo
 {
 	self.handler(returnCode);
+	//this is to counter the hidden retain in beginSheet:
+	[self performSelector:@selector(autorelease)];
 }
 @end
