@@ -268,6 +268,8 @@
 		08BD1DB0142BC0D1008BFD89 /* VyanaLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD1DAD142BC0D1008BFD89 /* VyanaLogger.m */; };
 		08BD996614744A6E004EF624 /* AMMacNavController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BD996314744A6E004EF624 /* AMMacNavController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08BD996814744A6E004EF624 /* AMMacNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD996414744A6E004EF624 /* AMMacNavController.m */; };
+		08D8C32C16963566000DDA04 /* AMActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D8C32A16963566000DDA04 /* AMActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D8C32D16963566000DDA04 /* AMActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D8C32B16963566000DDA04 /* AMActivity.m */; };
 		08D9D93413FF365E0089DB86 /* NSFileManager+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D93113FF365E0089DB86 /* NSFileManager+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08D9D93613FF365E0089DB86 /* NSFileManager+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D93213FF365E0089DB86 /* NSFileManager+AMExtensions.m */; };
 		08D9D95213FF42BC0089DB86 /* NSAlert+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D94E13FF3FD20089DB86 /* NSAlert+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -451,6 +453,8 @@
 		08BF6AF613996EA100BC8066 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		08BF6B00139974E800BC8066 /* AMSplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSplashScreen.h; sourceTree = "<group>"; };
 		08BF6B01139974E800BC8066 /* AMSplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSplashScreen.m; sourceTree = "<group>"; };
+		08D8C32A16963566000DDA04 /* AMActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMActivity.h; sourceTree = "<group>"; };
+		08D8C32B16963566000DDA04 /* AMActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMActivity.m; sourceTree = "<group>"; };
 		08D9D93113FF365E0089DB86 /* NSFileManager+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+AMExtensions.h"; sourceTree = "<group>"; };
 		08D9D93213FF365E0089DB86 /* NSFileManager+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+AMExtensions.m"; sourceTree = "<group>"; };
 		08D9D94E13FF3FD20089DB86 /* NSAlert+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+AMExtensions.h"; sourceTree = "<group>"; };
@@ -666,6 +670,8 @@
 		08B6528F134BF1F2001C6159 /* AMUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				08D8C32A16963566000DDA04 /* AMActivity.h */,
+				08D8C32B16963566000DDA04 /* AMActivity.m */,
 				0854F72313C615B800CEF018 /* AMActionMenu.h */,
 				0854F72413C615B800CEF018 /* AMActionMenu.m */,
 				08587CFC13ABC7F100CBAC32 /* AMGearMenuController.h */,
@@ -1172,6 +1178,7 @@
 				08E337E314E7E6A90004979E /* NSTimer+AMExtensions.h in Headers */,
 				0818EE8F15617CDC00159291 /* AMPickerPopover.h in Headers */,
 				0895376215657345006A3D6A /* NSData+AMExtensions.h in Headers */,
+				08D8C32C16963566000DDA04 /* AMActivity.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1483,6 +1490,7 @@
 				08E337E514E7E6A90004979E /* NSTimer+AMExtensions.m in Sources */,
 				0818EE9015617CDC00159291 /* AMPickerPopover.m in Sources */,
 				0895376415657345006A3D6A /* NSData+AMExtensions.m in Sources */,
+				08D8C32D16963566000DDA04 /* AMActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
