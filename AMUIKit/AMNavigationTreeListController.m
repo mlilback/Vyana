@@ -144,6 +144,7 @@
 			navController = self.treeController.navigationController;
 		ZAssert(navController != nil, @"wtf??");
 		[navController pushViewController:childList animated:YES];
+		[childList reloadData];
 	}
 }
 
