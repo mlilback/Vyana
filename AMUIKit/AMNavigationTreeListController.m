@@ -18,9 +18,6 @@
 @end
 
 @implementation AMNavigationTreeListController
-@synthesize treeController;
-@synthesize rootItem;
-@synthesize listTableView;
 
 #pragma mark - View lifecycle
 
@@ -112,9 +109,10 @@
 	}
 	if (self.treeController.keyForCellImage)
 		cell.imageView.image = [item valueForKeyPath:self.treeController.keyForCellImage];
-	cell.accessoryType = UITableViewCellAccessoryNone;
 	if (self.treeController.tracksSelectedItem && self.treeController.selectedItem == item)
 		cell.accessoryType = UITableViewCellAccessoryCheckmark;
+	else if (cell.accessoryType == UITableViewCellAccessoryCheckmark) //clear out any old checkmark
+		cell.accessoryType = UITableViewCellAccessoryNone;
 	
 	if ([self.treeController.delegate respondsToSelector:@selector(navTree:willDisplayCell:forItem:)])
 		[self.treeController.delegate navTree:self.treeController willDisplayCell:cell forItem:item];
@@ -135,7 +133,7 @@
 	self.treeController.selectedItem = item;
 	if ([self.treeController.delegate respondsToSelector:@selector(navTree:leafItemTouched:)])
 		[self.treeController.delegate navTree:self.treeController leafItemTouched:item];
-	if (!haveContent && ![self.treeController.delegate navTree:self.treeController isLeafItem:item]) {
+	if (!haveContent && ![self.treeController.delegate navTree:self.treeController isLeafItem:item] && self.treeController.manageNavigationStack) {
 		//need to load a new instance on nav stack
 		AMNavigationTreeListController *childList = [[AMNavigationTreeListController alloc] init];
 		childList.treeController = self.treeController;
@@ -144,7 +142,7 @@
 		UINavigationController *navController = self.navigationController;
 		if (nil == navController)
 			navController = self.treeController.navigationController;
-		ZAssert(navController, @"wtf??");
+		ZAssert(navController != nil, @"wtf??");
 		[navController pushViewController:childList animated:YES];
 	}
 }

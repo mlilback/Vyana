@@ -13,6 +13,8 @@
 
 @interface AMNavigationTreeController : UIViewController
 @property (nonatomic, weak) id<AMNavigationTreeDelegate> delegate;
+/** If YES (default), then a child treelistcontroller will be pushed on the containing navigation controller */
+@property (nonatomic) BOOL manageNavigationStack;
 /** Uses KVO. If nil, uses the -description method. */
 @property (nonatomic, copy) NSString *keyForCellText;
 /** If nil, no image displayed */

@@ -16,9 +16,16 @@
 @end
 
 @implementation AMNavigationTreeController
-@synthesize delegate=_delegate;
 
 #pragma mark - View lifecycle
+
+-(id)init
+{
+	if ((self = [super init])) {
+		self.manageNavigationStack = YES;
+	}
+	return self;
+}
 
 - (void)loadView
 {
@@ -69,13 +76,4 @@
 	_delegate = del;
 	self.delegateCreatesCells = [del respondsToSelector:@selector(navTree:cellForItem:)];
 }
-
-@synthesize delegateCreatesCells;
-@synthesize keyForCellText;
-@synthesize keyForCellImage;
-@synthesize listController;
-@synthesize tracksSelectedItem;
-@synthesize selectedItem;
-@synthesize contentItems;
-@synthesize tableSetupBlock;
 @end
