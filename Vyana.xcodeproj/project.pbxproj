@@ -296,6 +296,10 @@
 		08EFE3D21341A4FB00231C8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3D01341A4FB00231C8A /* InfoPlist.strings */; };
 		08EFE3D51341A4FB00231C8A /* VyanaTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3D41341A4FB00231C8A /* VyanaTests.h */; };
 		08EFE3D71341A4FB00231C8A /* VyanaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3D61341A4FB00231C8A /* VyanaTests.m */; };
+		08FF3D0A16EE6EF700F3E09E /* AMColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FF3D0816EE6EF700F3E09E /* AMColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08FF3D0B16EE6EF700F3E09E /* AMColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FF3D0816EE6EF700F3E09E /* AMColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08FF3D0C16EE6EF700F3E09E /* AMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FF3D0916EE6EF700F3E09E /* AMColor.m */; };
+		08FF3D0D16EE6EF700F3E09E /* AMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FF3D0916EE6EF700F3E09E /* AMColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -563,6 +567,8 @@
 		08EFE4FA1342B34E00231C8A /* AMAppDefaultsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAppDefaultsWindowController.h; sourceTree = "<group>"; };
 		08EFE4FB1342B35100231C8A /* AMAppDefaultsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAppDefaultsWindowController.m; sourceTree = "<group>"; };
 		08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMAppDefaultsWindowController.xib; sourceTree = "<group>"; };
+		08FF3D0816EE6EF700F3E09E /* AMColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMColor.h; sourceTree = "<group>"; };
+		08FF3D0916EE6EF700F3E09E /* AMColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMColor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -888,6 +894,8 @@
 				089C0B33145B39F900DF9984 /* AMCharacterSetFormatter.m */,
 				08124BB815338021009F961F /* AMColorToHexTransformer.h */,
 				08124BB915338021009F961F /* AMColorToHexTransformer.m */,
+				08FF3D0816EE6EF700F3E09E /* AMColor.h */,
+				08FF3D0916EE6EF700F3E09E /* AMColor.m */,
 			);
 			path = AMFoundation;
 			sourceTree = SOURCE_ROOT;
@@ -1120,6 +1128,7 @@
 				08E337E214E7E6A90004979E /* NSTimer+AMExtensions.h in Headers */,
 				08124BBA15338021009F961F /* AMColorToHexTransformer.h in Headers */,
 				0895376115657345006A3D6A /* NSData+AMExtensions.h in Headers */,
+				08FF3D0A16EE6EF700F3E09E /* AMColor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1179,6 +1188,7 @@
 				0818EE8F15617CDC00159291 /* AMPickerPopover.h in Headers */,
 				0895376215657345006A3D6A /* NSData+AMExtensions.h in Headers */,
 				08D8C32C16963566000DDA04 /* AMActivity.h in Headers */,
+				08FF3D0B16EE6EF700F3E09E /* AMColor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1436,6 +1446,7 @@
 				08E337E414E7E6A90004979E /* NSTimer+AMExtensions.m in Sources */,
 				08124BBB15338021009F961F /* AMColorToHexTransformer.m in Sources */,
 				0895376315657345006A3D6A /* NSData+AMExtensions.m in Sources */,
+				08FF3D0C16EE6EF700F3E09E /* AMColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1491,6 +1502,7 @@
 				0818EE9015617CDC00159291 /* AMPickerPopover.m in Sources */,
 				0895376415657345006A3D6A /* NSData+AMExtensions.m in Sources */,
 				08D8C32D16963566000DDA04 /* AMActivity.m in Sources */,
+				08FF3D0D16EE6EF700F3E09E /* AMColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
