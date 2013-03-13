@@ -12,6 +12,8 @@
 //works with and withour the #
 +(UIColor*)colorWithHexString:(NSString*)hexString;
 
+-(NSString*)hexString;
+
 + (id)aliceBlue;
 + (id)alizarin;
 + (id)amaranth;

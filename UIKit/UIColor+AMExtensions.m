@@ -29,6 +29,17 @@
 		green:(CGFloat)greenByte/(CGFloat)255.0 blue:(CGFloat)blueByte/(CGFloat)255.0 alpha:(CGFloat)1.0];
 }
 
+-(NSString*)hexString
+{
+	CGFloat red, green, blue, alpha;
+	[self getRed:&red green:&green blue:&blue alpha:&alpha];
+	return [NSString stringWithFormat:@"%02x%02x%02x",
+			(unsigned)(red *255.99999f),
+			(unsigned)(green*255.99999f),
+			(unsigned)(blue *255.99999f)];
+}
+
+
 + (id)aliceBlue                                         {vendColor(240, 248, 255);}
 + (id)alizarin                                          {vendColor(227, 38, 54);}
 + (id)amaranth                                          {vendColor(229, 43, 80);}
