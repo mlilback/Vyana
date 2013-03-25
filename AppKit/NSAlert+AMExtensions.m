@@ -50,6 +50,13 @@
 		[alert runModal];
 	[self autorelease];
 }
+
++(void)displayAlertWithTitle:(NSString*)title details:(NSString*)details window:(NSWindow*)window
+{
+	NSAlert *alert = [NSAlert alertWithMessageText:title defaultButton:nil alternateButton:nil otherButton:nil informativeTextWithFormat:details];
+	[alert beginSheetModalForWindow:window modalDelegate:nil didEndSelector:nil contextInfo:nil];
+	[self autorelease];
+}
 #pragma clang diagnostic pop
 
 -(void)beginSheetModalForWindow:(NSWindow*)window completionHandler:(AMAlertCompletionBlock)cblock
