@@ -22,5 +22,6 @@
 @end
 
 @interface AMTableView : NSTableView
-
+/** If set to YES, menuForEvent will select the cell that was clicked before returning the menu */
+@property (assign) BOOL amSelectOnMenuEvent;
 @end

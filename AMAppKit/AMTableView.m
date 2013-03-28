@@ -27,6 +27,17 @@
 
 @implementation AMTableView
 
+-(NSMenu*)menuForEvent:(NSEvent *)event
+{
+	if (_amSelectOnMenuEvent) {
+		NSPoint pt = [self convertPoint:[event locationInWindow] fromView:nil];
+		NSInteger row = [self rowAtPoint:pt];
+		if (row >=0)
+			[self selectRowIndexes:[NSIndexSet indexSetWithIndex:row] byExtendingSelection:NO];
+	}
+	return [super menuForEvent:event];
+}
+
 -(BOOL)validateMenuItem:(NSMenuItem *)menuItem
 {
 	SEL action = [menuItem action];
