@@ -276,10 +276,6 @@
 		08D9D95413FF4B220089DB86 /* NSAlert+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D94F13FF3FD20089DB86 /* NSAlert+AMExtensions.m */; };
 		08D9D95913FF5ABB0089DB86 /* AMBlockUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95613FF5A750089DB86 /* AMBlockUtils.m */; };
 		08D9D95A13FF5AC10089DB86 /* AMBlockUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95513FF5A750089DB86 /* AMBlockUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08D9D95E1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95B1401CC930089DB86 /* NSURLConnection+CompletionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08D9D95F1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D95B1401CC930089DB86 /* NSURLConnection+CompletionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08D9D9611401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */; };
-		08D9D9621401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */; };
 		08D9D9661401D34D0089DB86 /* AMBackgroundTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D9D9631401D34D0089DB86 /* AMBackgroundTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08D9D9681401D34D0089DB86 /* AMBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D9D9641401D34D0089DB86 /* AMBackgroundTask.m */; };
 		08E337E214E7E6A90004979E /* NSTimer+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E337E014E7E6A90004979E /* NSTimer+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -465,8 +461,6 @@
 		08D9D94F13FF3FD20089DB86 /* NSAlert+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+AMExtensions.m"; sourceTree = "<group>"; };
 		08D9D95513FF5A750089DB86 /* AMBlockUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBlockUtils.h; sourceTree = "<group>"; };
 		08D9D95613FF5A750089DB86 /* AMBlockUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBlockUtils.m; sourceTree = "<group>"; };
-		08D9D95B1401CC930089DB86 /* NSURLConnection+CompletionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+CompletionHandler.h"; sourceTree = "<group>"; };
-		08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+CompletionHandler.m"; sourceTree = "<group>"; };
 		08D9D9631401D34D0089DB86 /* AMBackgroundTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBackgroundTask.h; sourceTree = "<group>"; };
 		08D9D9641401D34D0089DB86 /* AMBackgroundTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBackgroundTask.m; sourceTree = "<group>"; };
 		08E337E014E7E6A90004979E /* NSTimer+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+AMExtensions.h"; sourceTree = "<group>"; };
@@ -851,8 +845,6 @@
 				08EFE3E51341A87300231C8A /* NSString+AMExtensions.m */,
 				08E337E014E7E6A90004979E /* NSTimer+AMExtensions.h */,
 				08E337E114E7E6A90004979E /* NSTimer+AMExtensions.m */,
-				08D9D95B1401CC930089DB86 /* NSURLConnection+CompletionHandler.h */,
-				08D9D95C1401CC930089DB86 /* NSURLConnection+CompletionHandler.m */,
 			);
 			path = Foundation;
 			sourceTree = SOURCE_ROOT;
@@ -1097,7 +1089,6 @@
 				08D9D93413FF365E0089DB86 /* NSFileManager+AMExtensions.h in Headers */,
 				08D9D95213FF42BC0089DB86 /* NSAlert+AMExtensions.h in Headers */,
 				08D9D95A13FF5AC10089DB86 /* AMBlockUtils.h in Headers */,
-				08D9D95E1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */,
 				08D9D9661401D34D0089DB86 /* AMBackgroundTask.h in Headers */,
 				08EC7FF0140DE0CE00902B99 /* AMBCrypt.h in Headers */,
 				085B945A1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
@@ -1168,7 +1159,6 @@
 				0854F71F13C614C900CEF018 /* AMActionItem.h in Headers */,
 				0854F72513C615B800CEF018 /* AMActionMenu.h in Headers */,
 				08375D5813D26ECC0056925A /* NSObject+BlockObservation.h in Headers */,
-				08D9D95F1401CC940089DB86 /* NSURLConnection+CompletionHandler.h in Headers */,
 				08349ED51404386100B629B4 /* AMBlockUtils.h in Headers */,
 				088A76D11406A90C003D6A3F /* AMTableView.h in Headers */,
 				0838B36414166291003264A8 /* UIImage+Tint.h in Headers */,
@@ -1414,7 +1404,6 @@
 				08D9D93613FF365E0089DB86 /* NSFileManager+AMExtensions.m in Sources */,
 				08D9D95413FF4B220089DB86 /* NSAlert+AMExtensions.m in Sources */,
 				08D9D95913FF5ABB0089DB86 /* AMBlockUtils.m in Sources */,
-				08D9D9611401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */,
 				08D9D9681401D34D0089DB86 /* AMBackgroundTask.m in Sources */,
 				08EC7FF2140DE0CE00902B99 /* AMBCrypt.m in Sources */,
 				085B945D1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */,
@@ -1481,7 +1470,6 @@
 				0854F72113C614C900CEF018 /* AMActionItem.m in Sources */,
 				0854F72613C615B800CEF018 /* AMActionMenu.m in Sources */,
 				08375D5A13D26ECC0056925A /* NSObject+BlockObservation.m in Sources */,
-				08D9D9621401CC940089DB86 /* NSURLConnection+CompletionHandler.m in Sources */,
 				08349ED71404386700B629B4 /* AMBlockUtils.m in Sources */,
 				088A76D21406A90C003D6A3F /* AMTableView.m in Sources */,
 				0838B36514166291003264A8 /* UIImage+Tint.m in Sources */,
