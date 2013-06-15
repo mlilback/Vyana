@@ -8,6 +8,11 @@
 
 #import "AMGearMenuController.h"
 
+@interface AMGearMenuController () {
+	BOOL _delegateCustomizes;
+	BOOL _delegateSupportsSelectMethod;
+}
+@end
 
 @implementation AMGearMenuController
 @synthesize menuObjects=_objects;
@@ -47,6 +52,13 @@
 	[_selectedMenuObject release];
 	_selectedMenuObject = [selectedMenuObject retain];
 	[self.tableView reloadData];
+}
+
+-(void)setDelegate:(id<AMGearMenuDelegate>)delegate
+{
+	_delegate = delegate;
+	_delegateCustomizes = [delegate respondsToSelector:@selector(gearMenu:customizeCell:)];
+	_delegateSupportsSelectMethod = [delegate respondsToSelector:@selector(gearMenuSelected:)];
 }
 
 #pragma mark -
@@ -94,13 +106,19 @@
 #pragma mark -
 #pragma mark Table view delegate
 
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	if (_delegateCustomizes)
+		[self.delegate gearMenu:self customizeCell:cell];
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	id obj = [self.menuObjects objectAtIndex:indexPath.row];
 	self.selectedMenuObject = obj;
 	if ([obj isKindOfClass:[AMGearMenuItem class]])
 		[[obj target] performSelector:[obj action] withObject:obj];
-	else if (self.delegate)
+	else if (self.delegate && _delegateSupportsSelectMethod)
 		[self.delegate gearMenuSelected:obj];
 	[tableView deselectRowAtIndexPath:indexPath animated:NO];
 	[tableView reloadData];

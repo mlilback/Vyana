@@ -14,8 +14,12 @@
 		even if a delegate is set.  The argument to the action will be the menu item.
 */
 
-@protocol AMGearMenuDelegate
+@class AMGearMenuController;
+
+@protocol AMGearMenuDelegate <NSObject>
+@optional
 -(void)gearMenuSelected:(id)selectedObject;
+-(void)gearMenu:(AMGearMenuController*)gearController customizeCell:(UITableViewCell*)cell;
 @end
 
 @interface AMGearMenuItem : NSObject
