@@ -22,6 +22,8 @@
 -(NSDictionary*)deepCopy;
 /** If the dictionary does not contain a value for the requested key, it returns the default value */
 -(id)objectForKey:(NSString*)key replacingNilWith:(id)defaultValue;
+/** same as objectForKey except returns nil if the object is NSNull */
+-(id)objectForKeyWithNullAsNil:(NSString*)key;
 /** Convience method for serializing to an XML property list. Asserts on an error. */
 -(NSData*)xmlPropertyListData;
 @end

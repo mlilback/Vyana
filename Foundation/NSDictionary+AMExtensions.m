@@ -55,6 +55,14 @@
 	return val;
 }
 
+-(id)objectForKeyWithNullAsNil:(NSString*)key
+{
+	id val = [self objectForKey:key];
+	if ([val isKindOfClass:[NSNull class]])
+		val = nil;
+	return val;
+}
+
 /** Convience method for serializing to an XML property list. Asserts on an error. */
 -(NSData*)xmlPropertyListData
 {
