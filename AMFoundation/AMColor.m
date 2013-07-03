@@ -22,11 +22,11 @@
 
 +(id)colorWithHexString:(NSString*)hexStr
 {
-	return [[AMColor alloc] initWithHexString:hexStr];
+	return [[[AMColor alloc] initWithHexString:hexStr] autorelease];
 }
 +(id)colorWithColor:(id)sysColor
 {
-	return [[AMColor alloc] initWithColor:sysColor];
+	return [[[AMColor alloc] initWithColor:sysColor] autorelease];
 }
 
 
