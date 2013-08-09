@@ -59,7 +59,7 @@
 }
 #pragma clang diagnostic pop
 
--(void)beginSheetModalForWindow:(NSWindow*)window completionHandler:(AMAlertCompletionBlock)cblock
+-(void)am_beginSheetModalForWindow:(NSWindow*)window completionHandler:(AMAlertCompletionBlock)cblock
 {
 	AMAlertDelegate *del = [[AMAlertDelegate alloc] initWithBlock:cblock alert:self];
 	//this "hidden" from clang call is countered by autorelease in  alertDidEnd

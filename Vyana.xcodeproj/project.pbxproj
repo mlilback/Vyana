@@ -70,15 +70,15 @@
 		086F88B5135FDB6300F0FF9F /* VyanaLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4BF1342287D00231C8A /* VyanaLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		087DB8B317B56B4100724811 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 087DB8B117B56B4100724811 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		087DB8B417B56B4100724811 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 087DB8B117B56B4100724811 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		087DB8B517B56B4100724811 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8B217B56B4100724811 /* DDAbstractDatabaseLogger.m */; };
+		087DB8B517B56B4100724811 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8B217B56B4100724811 /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		087DB8B617B56B4100724811 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8B217B56B4100724811 /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		087DB8BB17B56BD600724811 /* ContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 087DB8B717B56BD600724811 /* ContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		087DB8BC17B56BD600724811 /* ContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 087DB8B717B56BD600724811 /* ContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		087DB8BD17B56BD600724811 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8B817B56BD600724811 /* ContextFilterLogFormatter.m */; };
+		087DB8BD17B56BD600724811 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8B817B56BD600724811 /* ContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		087DB8BE17B56BD600724811 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8B817B56BD600724811 /* ContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		087DB8BF17B56BD600724811 /* DispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 087DB8B917B56BD600724811 /* DispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		087DB8C017B56BD600724811 /* DispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 087DB8B917B56BD600724811 /* DispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		087DB8C117B56BD600724811 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8BA17B56BD600724811 /* DispatchQueueLogFormatter.m */; };
+		087DB8C117B56BD600724811 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8BA17B56BD600724811 /* DispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		087DB8C217B56BD600724811 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8BA17B56BD600724811 /* DispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0884DFF814C364D70003F29C /* AMMacToolbarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0884DFF614C364D70003F29C /* AMMacToolbarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0884DFF914C364D70003F29C /* AMMacToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0884DFF714C364D70003F29C /* AMMacToolbarItem.m */; };
