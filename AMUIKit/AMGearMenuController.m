@@ -117,7 +117,7 @@
 	id obj = [self.menuObjects objectAtIndex:indexPath.row];
 	self.selectedMenuObject = obj;
 	if ([obj isKindOfClass:[AMGearMenuItem class]])
-		[[obj target] performSelector:[obj action] withObject:obj];
+		[[obj target] performSelector:[(AMGearMenuItem*)obj action] withObject:obj];
 	else if (self.delegate && _delegateSupportsSelectMethod)
 		[self.delegate gearMenuSelected:obj];
 	[tableView deselectRowAtIndexPath:indexPath animated:NO];

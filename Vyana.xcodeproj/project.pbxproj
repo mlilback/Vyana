@@ -68,6 +68,18 @@
 		085F98FC135D084200CB4101 /* AMStateTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 085F98FA135D084200CB4101 /* AMStateTransition.m */; };
 		085F9912135DE8E400CB4101 /* AMStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 085F9911135DE8E400CB4101 /* AMStateMachine.h */; };
 		086F88B5135FDB6300F0FF9F /* VyanaLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4BF1342287D00231C8A /* VyanaLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		087DB8B317B56B4100724811 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 087DB8B117B56B4100724811 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		087DB8B417B56B4100724811 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 087DB8B117B56B4100724811 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		087DB8B517B56B4100724811 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8B217B56B4100724811 /* DDAbstractDatabaseLogger.m */; };
+		087DB8B617B56B4100724811 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8B217B56B4100724811 /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		087DB8BB17B56BD600724811 /* ContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 087DB8B717B56BD600724811 /* ContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		087DB8BC17B56BD600724811 /* ContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 087DB8B717B56BD600724811 /* ContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		087DB8BD17B56BD600724811 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8B817B56BD600724811 /* ContextFilterLogFormatter.m */; };
+		087DB8BE17B56BD600724811 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8B817B56BD600724811 /* ContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		087DB8BF17B56BD600724811 /* DispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 087DB8B917B56BD600724811 /* DispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		087DB8C017B56BD600724811 /* DispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 087DB8B917B56BD600724811 /* DispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		087DB8C117B56BD600724811 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8BA17B56BD600724811 /* DispatchQueueLogFormatter.m */; };
+		087DB8C217B56BD600724811 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 087DB8BA17B56BD600724811 /* DispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0884DFF814C364D70003F29C /* AMMacToolbarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0884DFF614C364D70003F29C /* AMMacToolbarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0884DFF914C364D70003F29C /* AMMacToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0884DFF714C364D70003F29C /* AMMacToolbarItem.m */; };
 		0884DFFD14C36B670003F29C /* AMCustomDrawImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 0884DFFB14C36B670003F29C /* AMCustomDrawImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -377,6 +389,12 @@
 		086F88BF135FE40B00F0FF9F /* AMPreferenceModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPreferenceModule.m; sourceTree = "<group>"; };
 		086F88C0135FE40B00F0FF9F /* AMPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPreferencesController.h; sourceTree = "<group>"; };
 		086F88C1135FE40B00F0FF9F /* AMPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPreferencesController.m; sourceTree = "<group>"; };
+		087DB8B117B56B4100724811 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		087DB8B217B56B4100724811 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		087DB8B717B56BD600724811 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContextFilterLogFormatter.h; path = Extensions/ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		087DB8B817B56BD600724811 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContextFilterLogFormatter.m; path = Extensions/ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		087DB8B917B56BD600724811 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DispatchQueueLogFormatter.h; path = Extensions/DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		087DB8BA17B56BD600724811 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DispatchQueueLogFormatter.m; path = Extensions/DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		0884DFF614C364D70003F29C /* AMMacToolbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMacToolbarItem.h; sourceTree = "<group>"; };
 		0884DFF714C364D70003F29C /* AMMacToolbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMacToolbarItem.m; sourceTree = "<group>"; };
 		0884DFFB14C36B670003F29C /* AMCustomDrawImageRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCustomDrawImageRep.h; sourceTree = "<group>"; };
@@ -1007,6 +1025,8 @@
 		08EFE4AC13421CDE00231C8A /* Lumberjack */ = {
 			isa = PBXGroup;
 			children = (
+				087DB8B117B56B4100724811 /* DDAbstractDatabaseLogger.h */,
+				087DB8B217B56B4100724811 /* DDAbstractDatabaseLogger.m */,
 				08EFE4AD13421CE100231C8A /* DDASLLogger.h */,
 				08EFE4AE13421CE100231C8A /* DDASLLogger.m */,
 				08EFE4AF13421CE100231C8A /* DDFileLogger.h */,
@@ -1015,9 +1035,13 @@
 				08EFE4B213421CE100231C8A /* DDLog.m */,
 				08EFE4B313421CE100231C8A /* DDTTYLogger.h */,
 				08EFE4B413421CE100231C8A /* DDTTYLogger.m */,
+				087DB8B717B56BD600724811 /* ContextFilterLogFormatter.h */,
+				087DB8B817B56BD600724811 /* ContextFilterLogFormatter.m */,
+				087DB8B917B56BD600724811 /* DispatchQueueLogFormatter.h */,
+				087DB8BA17B56BD600724811 /* DispatchQueueLogFormatter.m */,
 			);
 			name = Lumberjack;
-			path = 3rdParty/cocoalumberjack/Lumberjack;
+			path = Dependencies/CocoaLumberjack/Lumberjack;
 			sourceTree = SOURCE_ROOT;
 		};
 		08EFE4DF1342924D00231C8A /* Documentation */ = {
@@ -1070,6 +1094,7 @@
 				08AD67D613DB3A8200687B3D /* NSString+AMExtensions.h in Headers */,
 				08AD67D713DB3A8200687B3D /* AMAppDefaults.h in Headers */,
 				08AD67D813DB3A8200687B3D /* AMDefaultsSet.h in Headers */,
+				087DB8BB17B56BD600724811 /* ContextFilterLogFormatter.h in Headers */,
 				08AD67D913DB3A8200687B3D /* AMControlledView.h in Headers */,
 				08AD67DB13DB3A8200687B3D /* AMAppDefaultsWindowController.h in Headers */,
 				08AD67DC13DB3A8200687B3D /* AMDefaultsConfigFile.h in Headers */,
@@ -1086,6 +1111,7 @@
 				08AD67E713DB3A8200687B3D /* NSObject+BlockObservation.h in Headers */,
 				08A8B19D13FCC99C003BE670 /* AMProcessInfo.h in Headers */,
 				081F4C5813FE06AF001BDEBF /* AMViewController.h in Headers */,
+				087DB8B317B56B4100724811 /* DDAbstractDatabaseLogger.h in Headers */,
 				08D9D93413FF365E0089DB86 /* NSFileManager+AMExtensions.h in Headers */,
 				08D9D95213FF42BC0089DB86 /* NSAlert+AMExtensions.h in Headers */,
 				08D9D95A13FF5AC10089DB86 /* AMBlockUtils.h in Headers */,
@@ -1119,6 +1145,7 @@
 				08E337E214E7E6A90004979E /* NSTimer+AMExtensions.h in Headers */,
 				08124BBA15338021009F961F /* AMColorToHexTransformer.h in Headers */,
 				0895376115657345006A3D6A /* NSData+AMExtensions.h in Headers */,
+				087DB8BF17B56BD600724811 /* DispatchQueueLogFormatter.h in Headers */,
 				08FF3D0A16EE6EF700F3E09E /* AMColor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1153,6 +1180,7 @@
 				082DDE5013A0683A004F46CD /* AMLabel.h in Headers */,
 				08587CF113ABC56C00CBAC32 /* AMPromptView.h in Headers */,
 				08587CF813ABC68200CBAC32 /* iAMTableViewCell.h in Headers */,
+				087DB8BC17B56BD600724811 /* ContextFilterLogFormatter.h in Headers */,
 				08587CFA13ABC68200CBAC32 /* SFHFKeychainUtils.h in Headers */,
 				08587CFE13ABC7F100CBAC32 /* AMGearMenuController.h in Headers */,
 				08587D0213ABC7FF00CBAC32 /* UIScreen+AMExtensions.h in Headers */,
@@ -1161,6 +1189,7 @@
 				08375D5813D26ECC0056925A /* NSObject+BlockObservation.h in Headers */,
 				08349ED51404386100B629B4 /* AMBlockUtils.h in Headers */,
 				088A76D11406A90C003D6A3F /* AMTableView.h in Headers */,
+				087DB8B417B56B4100724811 /* DDAbstractDatabaseLogger.h in Headers */,
 				0838B36414166291003264A8 /* UIImage+Tint.h in Headers */,
 				08447F9B1417404B00A8DDF8 /* AMTextFieldFloater.h in Headers */,
 				085B945B1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
@@ -1170,6 +1199,7 @@
 				08056DF91444D56C0002766D /* UIApplication+AMExtensions.h in Headers */,
 				08A0C719148AE766000FAA00 /* AMRoundedButton.h in Headers */,
 				088AC24E14AFE01E0094D134 /* UIImage+AMExtensions.h in Headers */,
+				087DB8C017B56BD600724811 /* DispatchQueueLogFormatter.h in Headers */,
 				088AC35114BCF97C0094D134 /* NSFileWrapper+AMExtensions.h in Headers */,
 				08921F4F14D1B9170014746F /* NSFileManager+AMExtensions.h in Headers */,
 				0892205214D802E00014746F /* AMNavigationTreeController.h in Headers */,
@@ -1365,6 +1395,7 @@
 				08AD678A13DB3A8200687B3D /* NSColor+AMExtensions.m in Sources */,
 				08AD678B13DB3A8200687B3D /* AMBaseTreeNode.m in Sources */,
 				08AD678C13DB3A8200687B3D /* NSFont+AMExtensions.m in Sources */,
+				087DB8BD17B56BD600724811 /* ContextFilterLogFormatter.m in Sources */,
 				08AD678D13DB3A8200687B3D /* NSImage+AMExtensions.m in Sources */,
 				08AD678E13DB3A8200687B3D /* AMApplication.m in Sources */,
 				08AD678F13DB3A8200687B3D /* AMKeychainItem.m in Sources */,
@@ -1412,9 +1443,11 @@
 				0809757C14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */,
 				080975B9142672F30010FD68 /* MAWeakArray.m in Sources */,
 				080975BD142672F30010FD68 /* MAWeakDictionary.m in Sources */,
+				087DB8C117B56BD600724811 /* DispatchQueueLogFormatter.m in Sources */,
 				08BD1DAF142BC0D1008BFD89 /* VyanaLogger.m in Sources */,
 				08A600111432AF5500E8AB4B /* NSView+AMExtension.m in Sources */,
 				088DF15E143CBAA800CF4844 /* NSMenu+AMExtensions.m in Sources */,
+				087DB8B517B56B4100724811 /* DDAbstractDatabaseLogger.m in Sources */,
 				088DF16C143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */,
 				08ADF5B8144B9AF000F787E6 /* AMWindow.m in Sources */,
 				089C0B26145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */,
@@ -1454,6 +1487,7 @@
 				08B65268134BF12C001C6159 /* DDFileLogger.m in Sources */,
 				08B6526A134BF139001C6159 /* DDLog.m in Sources */,
 				08B6526C134BF14A001C6159 /* DDTTYLogger.m in Sources */,
+				087DB8B617B56B4100724811 /* DDAbstractDatabaseLogger.m in Sources */,
 				08B6528E134BF1D0001C6159 /* UIColor+AMExtensions.m in Sources */,
 				08B65293134BF1F2001C6159 /* iAMApplication.m in Sources */,
 				08B65299134BF8EF001C6159 /* UIAlertView+AMExtensions.m in Sources */,
@@ -1475,6 +1509,7 @@
 				0838B36514166291003264A8 /* UIImage+Tint.m in Sources */,
 				08447F9C1417404B00A8DDF8 /* AMTextFieldFloater.m in Sources */,
 				085B945E1417C6F700042E91 /* CALayer+LayerDebugging.m in Sources */,
+				087DB8BE17B56BD600724811 /* ContextFilterLogFormatter.m in Sources */,
 				0838B398141EAA41003264A8 /* AMKeyValueObserver.m in Sources */,
 				0838B3A1141EB256003264A8 /* MAZeroingWeakRef.m in Sources */,
 				083179BE1423D46C009701C6 /* UIActionSheet+AMExtensions.m in Sources */,
@@ -1490,6 +1525,7 @@
 				0818EE9015617CDC00159291 /* AMPickerPopover.m in Sources */,
 				0895376415657345006A3D6A /* NSData+AMExtensions.m in Sources */,
 				08D8C32D16963566000DDA04 /* AMActivity.m in Sources */,
+				087DB8C217B56BD600724811 /* DispatchQueueLogFormatter.m in Sources */,
 				08FF3D0D16EE6EF700F3E09E /* AMColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

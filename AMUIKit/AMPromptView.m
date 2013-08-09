@@ -23,7 +23,7 @@
 		[textField setAutocapitalizationType:UITextAutocapitalizationTypeWords];
 		[textField setBorderStyle:UITextBorderStyleRoundedRect];
 		[textField setBackgroundColor:[UIColor clearColor]];
-		[textField setTextAlignment:UITextAlignmentCenter];
+		[textField setTextAlignment:NSTextAlignmentCenter];
 		textField.delegate = (id)self;
 		[self addSubview:textField];
 	}
