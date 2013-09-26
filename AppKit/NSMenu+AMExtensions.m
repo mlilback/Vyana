@@ -24,4 +24,25 @@ NSString * const  kAMMenuRepObjKey = @"com.agilemonks.Vyana.NSMenuRepObject";
 	objc_setAssociatedObject(self, kAMMenuRepObjKey, wkRef, OBJC_ASSOCIATION_RETAIN);
 	[wkRef release];
 }
+
+-(NSMenuItem*)deepItemWithTag:(NSInteger)tag
+{
+	NSMenuItem* result = [self itemWithTag:tag];
+	
+	// if not found, search in submenus
+	if (nil == result) {
+		NSArray* itemArray = [self itemArray];
+		for (NSMenuItem *item in itemArray){
+			NSMenu *submenu = [item submenu];
+			if (submenu && (submenu != [NSApp servicesMenu]))
+				result = [submenu deepItemWithTag:tag];
+			
+			if (result)
+				break;
+		}
+	}
+	
+	return result;
+}
+
 @end

@@ -12,4 +12,6 @@
 @interface NSMenu (AMExtensions)
 /** Stores a representedObject ala NSMenuItem. Useful for contextual menus. */
 @property (nonatomic, weak) id representedObject AVAILABLE_MAC_OS_X_VERSION_10_7_AND_LATER;
+/** Recursively finds the first item with the specified tag in a width-first traversal */
+-(NSMenuItem*)deepItemWithTag:(NSInteger)tag;
 @end
