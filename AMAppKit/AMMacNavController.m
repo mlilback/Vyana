@@ -151,7 +151,8 @@
 		[self.view replaceSubview:self.topViewController.view with:viewController.view];
 	}
 	[self willChangeValueForKey:@"topViewController"];
-	[self.myViewControllers addObject:viewController];
+	if (viewController) //we assert it is not nil, but clang gives a warning so we have this useless if statement
+		[self.myViewControllers addObject:viewController];
 	[self didChangeValueForKey:@"topViewController"];
 	self.canPopViewController=YES;
 	[self notifyDidChangeView];
