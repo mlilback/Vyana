@@ -14,7 +14,8 @@
 {
 	unsigned ccode = 0;
 	unsigned char redByte, greenByte, blueByte;
-	
+	if (![hexString isKindOfClass:[NSString class]])
+		[NSException raise:NSInvalidArgumentException format:@"colorWithHexString: only accepts a strign"];
 	if ([hexString characterAtIndex:0] == '#')
 		hexString = [hexString substringFromIndex:1];
 	if ([hexString length] != 6)
