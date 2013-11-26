@@ -10,7 +10,7 @@
 #import "AMApplication.h"
 
 @interface AMApplication() {
-	BOOL _isTerm;
+	BOOL _isTerm, _iDelWantsLoopStart, _iDelWantsLoopEnd;
 }
 @end
 
@@ -45,5 +45,21 @@
 			[[NSApp mainMenu] addItem:mitem];
 		[mitem release];
 	}	
+}
+
+- (void)sendEvent:(NSEvent *)event
+{
+	if (_iDelWantsLoopStart)
+		[(id<AMApplicationDelegate>)self.delegate  eventLoopStarting:event];
+	[super sendEvent:event];
+	if (_iDelWantsLoopEnd)
+		[(id<AMApplicationDelegate>)self.delegate  eventLoopComplete:event];
+}
+
+-(void)setDelegate:(id<NSApplicationDelegate>)anObject
+{
+	[super setDelegate:anObject];
+	_iDelWantsLoopStart = [self.delegate respondsToSelector:@selector(eventLoopStarting:)];
+	_iDelWantsLoopEnd = [self.delegate respondsToSelector:@selector(eventLoopComplete:)];
 }
 @end

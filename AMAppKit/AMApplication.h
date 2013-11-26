@@ -29,3 +29,9 @@
 /** set to YES when the termination process starts */
 @property (nonatomic, readonly) BOOL isTerminating;
 @end
+
+@protocol AMApplicationDelegate<NSApplicationDelegate>
+@optional
+-(void)eventLoopStarting:(NSEvent*)event;
+-(void)eventLoopComplete:(NSEvent*)event;
+@end
