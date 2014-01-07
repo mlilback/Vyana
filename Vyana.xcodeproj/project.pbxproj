@@ -304,6 +304,8 @@
 		08EFE3D21341A4FB00231C8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3D01341A4FB00231C8A /* InfoPlist.strings */; };
 		08EFE3D51341A4FB00231C8A /* VyanaTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3D41341A4FB00231C8A /* VyanaTests.h */; };
 		08EFE3D71341A4FB00231C8A /* VyanaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE3D61341A4FB00231C8A /* VyanaTests.m */; };
+		08F65CF3187C97570039F74B /* AMVerticallyCenteredTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 08F65CF1187C97570039F74B /* AMVerticallyCenteredTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08F65CF4187C97570039F74B /* AMVerticallyCenteredTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F65CF2187C97570039F74B /* AMVerticallyCenteredTextFieldCell.m */; };
 		08FF3D0A16EE6EF700F3E09E /* AMColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FF3D0816EE6EF700F3E09E /* AMColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08FF3D0B16EE6EF700F3E09E /* AMColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FF3D0816EE6EF700F3E09E /* AMColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08FF3D0C16EE6EF700F3E09E /* AMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FF3D0916EE6EF700F3E09E /* AMColor.m */; };
@@ -579,6 +581,8 @@
 		08EFE4FA1342B34E00231C8A /* AMAppDefaultsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAppDefaultsWindowController.h; sourceTree = "<group>"; };
 		08EFE4FB1342B35100231C8A /* AMAppDefaultsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAppDefaultsWindowController.m; sourceTree = "<group>"; };
 		08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMAppDefaultsWindowController.xib; sourceTree = "<group>"; };
+		08F65CF1187C97570039F74B /* AMVerticallyCenteredTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMVerticallyCenteredTextFieldCell.h; sourceTree = "<group>"; };
+		08F65CF2187C97570039F74B /* AMVerticallyCenteredTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMVerticallyCenteredTextFieldCell.m; sourceTree = "<group>"; };
 		08FF3D0816EE6EF700F3E09E /* AMColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMColor.h; sourceTree = "<group>"; };
 		08FF3D0916EE6EF700F3E09E /* AMColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMColor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -954,6 +958,9 @@
 			children = (
 				08BF6AF113996E3E00BC8066 /* AMAboutBoxController.h */,
 				08BF6AF213996E3E00BC8066 /* AMAboutBoxController.m */,
+				08EFE4FA1342B34E00231C8A /* AMAppDefaultsWindowController.h */,
+				08EFE4FB1342B35100231C8A /* AMAppDefaultsWindowController.m */,
+				08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */,
 				08EFE45E1341D4BA00231C8A /* AMApplication.h */,
 				08EFE45F1341D4BA00231C8A /* AMApplication.m */,
 				08EFE4521341D02C00231C8A /* AMBaseTreeNode.h */,
@@ -994,9 +1001,8 @@
 				08A2324E14C865D000EB1041 /* AMStringPromptWindowController.xib */,
 				0892201314D584C20014746F /* AMTableView.h */,
 				0892201414D584C20014746F /* AMTableView.m */,
-				08EFE4FA1342B34E00231C8A /* AMAppDefaultsWindowController.h */,
-				08EFE4FB1342B35100231C8A /* AMAppDefaultsWindowController.m */,
-				08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */,
+				08F65CF1187C97570039F74B /* AMVerticallyCenteredTextFieldCell.h */,
+				08F65CF2187C97570039F74B /* AMVerticallyCenteredTextFieldCell.m */,
 				081F4C5313FDF343001BDEBF /* AMViewController.h */,
 				081F4C5413FDF343001BDEBF /* AMViewController.m */,
 				08ADF5B3144B9AF000F787E6 /* AMWindow.h */,
@@ -1107,6 +1113,7 @@
 				08AD67E313DB3A8200687B3D /* AMPreferencesController.h in Headers */,
 				08AD67E413DB3A8200687B3D /* AMAboutBoxController.h in Headers */,
 				08AD67E513DB3A8200687B3D /* AMSplashScreen.h in Headers */,
+				08F65CF3187C97570039F74B /* AMVerticallyCenteredTextFieldCell.h in Headers */,
 				08AD67E613DB3A8200687B3D /* AMActionItem.h in Headers */,
 				08AD67E713DB3A8200687B3D /* NSObject+BlockObservation.h in Headers */,
 				08A8B19D13FCC99C003BE670 /* AMProcessInfo.h in Headers */,
@@ -1408,6 +1415,7 @@
 				08AD679613DB3A8200687B3D /* NSFileHandle+AMExtensions.m in Sources */,
 				08AD679713DB3A8200687B3D /* AMSourceListCell.m in Sources */,
 				08AD679813DB3A8200687B3D /* AMSourceListColumn.m in Sources */,
+				08F65CF4187C97570039F74B /* AMVerticallyCenteredTextFieldCell.m in Sources */,
 				08AD679913DB3A8200687B3D /* AMSourceListSourceGroupCell.m in Sources */,
 				08AD679A13DB3A8200687B3D /* AMSourceListView.m in Sources */,
 				08AD679B13DB3A8200687B3D /* DDASLLogger.m in Sources */,

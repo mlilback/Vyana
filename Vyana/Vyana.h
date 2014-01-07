@@ -78,6 +78,7 @@
 #import <Vyana/AMStringPromptWindowController.h>
 #import <Vyana/AMTableView.h>
 #import <Vyana/AMViewController.h>
+#import <Vyana/AMVerticallyCenteredTextFieldCell.h>
 
 #import <Vyana/AMSourceListCell.h>
 #import <Vyana/AMSourceListColumn.h>
