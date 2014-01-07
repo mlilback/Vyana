@@ -9,5 +9,6 @@
 #import <AppKit/AppKit.h>
 
 @interface NSTextField (AMExtensions)
++(instancetype)labelTextFieldWithFrame:(NSRect)frame;
 -(void)resizeFontToFitText:(CGFloat)minFontSize maxSize:(CGFloat)maxFontSize;
 @end

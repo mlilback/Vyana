@@ -9,6 +9,16 @@
 #import "NSTextField+AMExtensions.h"
 
 @implementation NSTextField (AMExtensions)
++(instancetype)labelTextFieldWithFrame:(NSRect)frame
+{
+	NSTextField *label = [[NSTextField alloc] initWithFrame:frame];
+	[label setBezeled:NO];
+	[label setDrawsBackground:NO];
+	[label setEditable:NO];
+	[label setSelectable:NO];
+	return label;
+}
+
 -(void)resizeFontToFitText:(CGFloat)minFontSize maxSize:(CGFloat)maxFontSize
 {
 	NSRect r = NSInsetRect(self.frame, 1, 1);
