@@ -17,6 +17,8 @@
 		080975BD142672F30010FD68 /* MAWeakDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 080975B5142672F30010FD68 /* MAWeakDictionary.m */; };
 		0809BF2C14BDEB15009CEC57 /* NSOutlineView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809BF2A14BDEB15009CEC57 /* NSOutlineView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0809BF2D14BDEB15009CEC57 /* NSOutlineView+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809BF2B14BDEB15009CEC57 /* NSOutlineView+AMExtensions.m */; };
+		080F50F418906ABE00CF39FB /* AMGenericTableViewHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 080F50F218906ABE00CF39FB /* AMGenericTableViewHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		080F50F518906ABE00CF39FB /* AMGenericTableViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 080F50F318906ABE00CF39FB /* AMGenericTableViewHandler.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		08124BBA15338021009F961F /* AMColorToHexTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08124BB815338021009F961F /* AMColorToHexTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08124BBB15338021009F961F /* AMColorToHexTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08124BB915338021009F961F /* AMColorToHexTransformer.m */; };
 		0818EE8F15617CDC00159291 /* AMPickerPopover.h in Headers */ = {isa = PBXBuildFile; fileRef = 0818EE8D15617CDC00159291 /* AMPickerPopover.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -333,6 +335,8 @@
 		080975B5142672F30010FD68 /* MAWeakDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWeakDictionary.m; sourceTree = "<group>"; };
 		0809BF2A14BDEB15009CEC57 /* NSOutlineView+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOutlineView+AMExtensions.h"; sourceTree = "<group>"; };
 		0809BF2B14BDEB15009CEC57 /* NSOutlineView+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOutlineView+AMExtensions.m"; sourceTree = "<group>"; };
+		080F50F218906ABE00CF39FB /* AMGenericTableViewHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGenericTableViewHandler.h; sourceTree = "<group>"; };
+		080F50F318906ABE00CF39FB /* AMGenericTableViewHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGenericTableViewHandler.m; sourceTree = "<group>"; };
 		08124BB815338021009F961F /* AMColorToHexTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMColorToHexTransformer.h; sourceTree = "<group>"; };
 		08124BB915338021009F961F /* AMColorToHexTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMColorToHexTransformer.m; sourceTree = "<group>"; };
 		0818EE8D15617CDC00159291 /* AMPickerPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPickerPopover.h; sourceTree = "<group>"; };
@@ -698,6 +702,8 @@
 				0854F72413C615B800CEF018 /* AMActionMenu.m */,
 				08587CFC13ABC7F100CBAC32 /* AMGearMenuController.h */,
 				08587CFD13ABC7F100CBAC32 /* AMGearMenuController.m */,
+				080F50F218906ABE00CF39FB /* AMGenericTableViewHandler.h */,
+				080F50F318906ABE00CF39FB /* AMGenericTableViewHandler.m */,
 				08587CF413ABC68100CBAC32 /* iAMTableViewCell.h */,
 				08587CF513ABC68100CBAC32 /* iAMTableViewCell.m */,
 				08587CF613ABC68100CBAC32 /* SFHFKeychainUtils.h */,
@@ -1198,6 +1204,7 @@
 				088A76D11406A90C003D6A3F /* AMTableView.h in Headers */,
 				087DB8B417B56B4100724811 /* DDAbstractDatabaseLogger.h in Headers */,
 				0838B36414166291003264A8 /* UIImage+Tint.h in Headers */,
+				080F50F418906ABE00CF39FB /* AMGenericTableViewHandler.h in Headers */,
 				08447F9B1417404B00A8DDF8 /* AMTextFieldFloater.h in Headers */,
 				085B945B1417C6F700042E91 /* CALayer+LayerDebugging.h in Headers */,
 				0838B395141EAA41003264A8 /* AMKeyValueObserver.h in Headers */,
@@ -1534,6 +1541,7 @@
 				0895376415657345006A3D6A /* NSData+AMExtensions.m in Sources */,
 				08D8C32D16963566000DDA04 /* AMActivity.m in Sources */,
 				087DB8C217B56BD600724811 /* DispatchQueueLogFormatter.m in Sources */,
+				080F50F518906ABE00CF39FB /* AMGenericTableViewHandler.m in Sources */,
 				08FF3D0D16EE6EF700F3E09E /* AMColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

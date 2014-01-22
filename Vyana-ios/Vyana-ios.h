@@ -30,6 +30,7 @@
 #import <Vyana-ios/AMActionItem.h>
 #import <Vyana-ios/AMActionMenu.h>
 #import <Vyana-ios/AMGearMenuController.h>
+#import <Vyana-ios/AMGenericTableViewHandler.h>
 #import <Vyana-ios/AMLabel.h>
 #import <Vyana-ios/AMPromptView.h>
 #import <Vyana-ios/AMTableView.h>
