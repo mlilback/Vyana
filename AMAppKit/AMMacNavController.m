@@ -222,8 +222,7 @@
 
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
-	if (flag)
-		[self.viewBeingReplaced removeFromSuperview];
+	[self.viewBeingReplaced removeFromSuperview];
 	self.viewBeingReplaced=nil;
 }
 
