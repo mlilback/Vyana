@@ -54,8 +54,6 @@
 		08587CF213ABC56C00CBAC32 /* AMPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587CF013ABC56C00CBAC32 /* AMPromptView.m */; };
 		08587CF813ABC68200CBAC32 /* iAMTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587CF413ABC68100CBAC32 /* iAMTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08587CF913ABC68200CBAC32 /* iAMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587CF513ABC68100CBAC32 /* iAMTableViewCell.m */; };
-		08587CFA13ABC68200CBAC32 /* SFHFKeychainUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587CF613ABC68100CBAC32 /* SFHFKeychainUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08587CFB13ABC68200CBAC32 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587CF713ABC68200CBAC32 /* SFHFKeychainUtils.m */; };
 		08587CFE13ABC7F100CBAC32 /* AMGearMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587CFC13ABC7F100CBAC32 /* AMGearMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08587CFF13ABC7F100CBAC32 /* AMGearMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587CFD13ABC7F100CBAC32 /* AMGearMenuController.m */; };
 		08587D0213ABC7FF00CBAC32 /* UIScreen+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08587D0013ABC7FF00CBAC32 /* UIScreen+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -376,8 +374,6 @@
 		08587CF013ABC56C00CBAC32 /* AMPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPromptView.m; sourceTree = "<group>"; };
 		08587CF413ABC68100CBAC32 /* iAMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAMTableViewCell.h; sourceTree = "<group>"; };
 		08587CF513ABC68100CBAC32 /* iAMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iAMTableViewCell.m; sourceTree = "<group>"; };
-		08587CF613ABC68100CBAC32 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
-		08587CF713ABC68200CBAC32 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
 		08587CFC13ABC7F100CBAC32 /* AMGearMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGearMenuController.h; sourceTree = "<group>"; };
 		08587CFD13ABC7F100CBAC32 /* AMGearMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGearMenuController.m; sourceTree = "<group>"; };
 		08587D0013ABC7FF00CBAC32 /* UIScreen+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "UIScreen+AMExtensions.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -706,8 +702,6 @@
 				080F50F318906ABE00CF39FB /* AMGenericTableViewHandler.m */,
 				08587CF413ABC68100CBAC32 /* iAMTableViewCell.h */,
 				08587CF513ABC68100CBAC32 /* iAMTableViewCell.m */,
-				08587CF613ABC68100CBAC32 /* SFHFKeychainUtils.h */,
-				08587CF713ABC68200CBAC32 /* SFHFKeychainUtils.m */,
 				082DDE4E13A0683A004F46CD /* AMLabel.h */,
 				082DDE4F13A0683A004F46CD /* AMLabel.m */,
 				08587CEF13ABC56C00CBAC32 /* AMPromptView.h */,
@@ -1194,7 +1188,6 @@
 				08587CF113ABC56C00CBAC32 /* AMPromptView.h in Headers */,
 				08587CF813ABC68200CBAC32 /* iAMTableViewCell.h in Headers */,
 				087DB8BC17B56BD600724811 /* ContextFilterLogFormatter.h in Headers */,
-				08587CFA13ABC68200CBAC32 /* SFHFKeychainUtils.h in Headers */,
 				08587CFE13ABC7F100CBAC32 /* AMGearMenuController.h in Headers */,
 				08587D0213ABC7FF00CBAC32 /* UIScreen+AMExtensions.h in Headers */,
 				0854F71F13C614C900CEF018 /* AMActionItem.h in Headers */,
@@ -1513,7 +1506,6 @@
 				082DDE5113A0683A004F46CD /* AMLabel.m in Sources */,
 				08587CF213ABC56C00CBAC32 /* AMPromptView.m in Sources */,
 				08587CF913ABC68200CBAC32 /* iAMTableViewCell.m in Sources */,
-				08587CFB13ABC68200CBAC32 /* SFHFKeychainUtils.m in Sources */,
 				08587CFF13ABC7F100CBAC32 /* AMGearMenuController.m in Sources */,
 				08587D0313ABC7FF00CBAC32 /* UIScreen+AMExtensions.m in Sources */,
 				0854F72113C614C900CEF018 /* AMActionItem.m in Sources */,
@@ -1650,7 +1642,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/3rdParty\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = "-lbcrypt";
 				PRODUCT_NAME = Vyana;
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -1761,7 +1753,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/3rdParty\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = "-lbcrypt";
 				PRODUCT_NAME = Vyana;
 				SDKROOT = macosx;
@@ -1796,7 +1788,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/3rdParty\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = "-lbcrypt";
 				PRODUCT_NAME = Vyana;
 				RUN_CLANG_STATIC_ANALYZER = YES;

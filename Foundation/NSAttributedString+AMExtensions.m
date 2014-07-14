@@ -31,7 +31,7 @@
 
 	// next make the text appear with an underline
 	[attrString addAttribute:
-			NSUnderlineStyleAttributeName value:[NSNumber numberWithInt:NSSingleUnderlineStyle] range:range];
+			NSUnderlineStyleAttributeName value:@(1) range:range];
 
 	[attrString endEditing];
 	return [attrString autorelease];

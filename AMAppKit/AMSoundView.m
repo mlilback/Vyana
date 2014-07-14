@@ -11,7 +11,7 @@
 #import "NSArray+AMExtensions.h"
 #import "NSFileHandle+AMExtensions.h"
 #import "NSString+AMExtensions.h"
-#import <QTKit/QTKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 #define ENABLED_BINDNAME @"enabled"
 #define DRAG_FILE_TYPES [NSArray arrayWithObjects:NSFilenamesPboardType,NSURLPboardType,nil]
@@ -19,10 +19,10 @@
 @interface AMSoundView()
 -(void)setupSubviews;
 -(void)adjustFileImage;
+@property SystemSoundID soundID;
 @property (nonatomic, retain) NSImage *noSoundImage;
 @property (nonatomic, assign) id observedObjectForEnabled;
 @property (nonatomic, copy) NSString *observedKeyPathForEnabled;
-@property (nonatomic, retain) QTMovie *movie;
 @property (assign) BOOL shouldDrawFocusRing;
 @end
 
@@ -54,7 +54,6 @@
 		self.observedKeyPathForEnabled=nil;
 	}
 	self.noSoundImage = nil;
-	self.movie=nil;
 	[__bevelButton release];
 	[__setButton release];
 	[__deleteButton release];
@@ -263,19 +262,11 @@ withKeyPath:(NSString *)keyPath
 
 -(IBAction)playSound:(id)sender
 {
-	if (nil == self.movie) {
-		if (self.fileURL) {
-			self.movie = [QTMovie movieWithURL:self.fileURL error:nil];
-		} else if (self.soundData) {
-			NSError *err=nil;
-			QTDataReference *dataRef = [QTDataReference dataReferenceWithReferenceToData:self.soundData name:@"foo.caf" MIMEType:@"audio/caf"];
-			self.movie = [QTMovie movieWithDataReference:dataRef error:&err];
-			if (err) {
-				NSLog(@"error initing sound movie:%@", err);
-			}
-		}
+	if (self.soundID == 0) {
+		if (_fileURL)
+		AudioServicesCreateSystemSoundID((__bridge CFURLRef)_fileURL, &_soundID);
 	}
-	[self.movie play];
+	AudioServicesPlaySystemSound(self.soundID);
 }
 
 -(IBAction)deleteSound:(id)sender
@@ -365,36 +356,32 @@ withKeyPath:(NSString *)keyPath
 	[[self superview] setNeedsDisplayInRect:NSInsetRect([self frame], -4, -4)];
 }
 
--(NSData*)soundData { return __data; }
-
 -(void)setSoundData:(NSData *)soundData
 {
-	if ([__data isEqualToData:soundData])
-		return;
-	[__data release];
-	__data = [soundData copy];
-	[self willChangeValueForKey:@"fileURL"];
-	[__fileUrl release];
-	__fileUrl = nil;
-	[self didChangeValueForKey:@"fileURL"];
-	[self adjustFileImage];
-	self.movie=nil;
-}
+	NSString *tmpPath=nil;
+	NSFileHandle *tmpFH = [NSFileHandle fileHandleForWritingTemporaryFileWithPrefix:@"amsnd"
+																		   filePath:&tmpPath];
+	[tmpFH writeData:self.soundData];
+	[tmpFH closeFile];
 
--(NSURL*)fileURL { return __fileUrl; }
+	self.fileURL = [NSURL fileURLWithPath:tmpPath];
+}
 
 -(void)setFileURL:(NSURL *)fileURL
 {
-	if ([__fileUrl isEqual:fileURL])
+	if ([_fileURL isEqual:fileURL])
 		return;
-	[__fileUrl release];
-	__fileUrl = [fileURL retain];
+	[_fileURL release];
+	if (self.soundID != 0) {
+		AudioServicesDisposeSystemSoundID(self.soundID);
+		self.soundID = 0;
+	}
+	_fileURL = [fileURL retain];
 	[self willChangeValueForKey:@"soundData"];
-	[__data release];
-	__data = [[NSData alloc] initWithContentsOfURL:fileURL];
+	[_soundData release];
+	_soundData = [[NSData alloc] initWithContentsOfURL:fileURL];
 	[self didChangeValueForKey:@"soundData"];
 	[self adjustFileImage];
-	self.movie=nil;
 }
 
 -(BOOL)isEnabled
@@ -408,13 +395,5 @@ withKeyPath:(NSString *)keyPath
 	[__deleteButton setEnabled:[__bevelButton isEnabled]];
 }
 
-@synthesize canChangeSound;
-@synthesize acceptableUTIs;
-@synthesize panelDelegate;
-@synthesize delegate;
-@synthesize noSoundImage;
-@synthesize observedObjectForEnabled;
-@synthesize observedKeyPathForEnabled;
-@synthesize movie;
 @synthesize shouldDrawFocusRing=__drawFocusRing;
 @end

@@ -40,6 +40,7 @@
 	UIAlertView *av = [[UIAlertView alloc] initWithTitle:title message:message delegate:del cancelButtonTitle:NSLocalizedString(@"Ok", @"") otherButtonTitles:nil, nil];
 	av.delegate = del;
 	[av show];
+	[av autorelease];
 }
 
 //the second parameter is the button index that was clicked.

@@ -16,7 +16,7 @@
 	[label setDrawsBackground:NO];
 	[label setEditable:NO];
 	[label setSelectable:NO];
-	return label;
+	return [label autorelease];
 }
 
 -(void)resizeFontToFitText:(CGFloat)minFontSize maxSize:(CGFloat)maxFontSize

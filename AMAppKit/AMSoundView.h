@@ -20,8 +20,6 @@
 	NSButton *__bevelButton;
 	NSButton *__setButton;
 	NSButton *__deleteButton;
-	NSData *__data;
-	NSURL *__fileUrl;
 	BOOL __drawFocusRing;
 }
 @property (nonatomic, retain) NSURL *fileURL;
