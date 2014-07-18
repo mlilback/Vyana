@@ -22,10 +22,6 @@
 /// for string out of the strings in self
 -(NSInteger)indexOfBestStringMatch:(NSString*)string;
 
-///returns the first object in the array. if there are no objects, returns nil.
-/// this lets you avoid the exception when callling objectAtIndex: 0 on an empty array.
--(id)firstObject;
-
 //finds the first object whose valueForKey: returns value
 -(id)firstObjectWithValue:(id)value forKey:(NSString*)key;
 //returns NSNotFound if not found

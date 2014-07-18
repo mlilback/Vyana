@@ -4,7 +4,7 @@
 //  Created by Mark Lilback on Tue Oct 28 2003.
 //  Copyright (c) 2003-2011 Agile Monks, LLC. All rights reserved.
 //
-//	Compatibility: Mac OS X: 10.6, iPhone: 4.1
+//	Compatibility: Mac OS X: 10.9, iPhone: 8.0
 //
 
 #import "NSArray+AMExtensions.h"
@@ -14,12 +14,12 @@
 //adds object count times
 +(id)arrayWithObject:(id)object count:(NSInteger)count
 {
-	id *o = calloc(sizeof(id), count);
+	id *oarray = calloc(sizeof(id), count);
 	NSInteger i;
 	for (i=0; i < count; i++)
-		o[i] = object;
-	id array = [[self class] arrayWithObjects: o count: count];
-	free(o);
+		oarray[i] = object;
+	id array = [[self class] arrayWithObjects: oarray count: count];
+	free(oarray);
 	return array;
 }
 
@@ -28,7 +28,7 @@
 {
 	if ([self count] <= 0 || index >= [self count])
 		return nil;
-	return [self objectAtIndex:index];
+	return self[index];
 }
 
 -(BOOL)containsObject:(id)object withKeyPath:(NSString*)key
@@ -59,20 +59,12 @@
 	return nil;
 }
 
-//returns the first object in the array. if there are no objects, returns nil.
--(id)firstObject
-{
-	if ([self count] < 1)
-		return nil;
-	return [self objectAtIndex:0];
-}
-
 //returns a random object using arc4random.
 -(id)randomObject
 {
 	if ([self count] < 1)
 		return [self lastObject];
-	return [self objectAtIndex:arc4random()%([self count])];
+	return self[arc4random()%([self count])];
 }
 
 //finds an index based on comparing value with value returned by sel 
@@ -81,7 +73,7 @@
 {
 	NSInteger i;
 	for (i=0; i < [self count]; i++) {
-		if ([value isEqual: [[self objectAtIndex: i] performSelector: sel]])
+		if ([value isEqual: [self[i] performSelector: sel]])
 			return i;
 	}
 	return -1;
@@ -92,7 +84,7 @@
 {
 	NSUInteger i;
 	for (i=0; i < [self count]; i++) {
-		if ([value isEqual: [[self objectAtIndex: i] valueForKey:key]])
+		if ([value isEqual: [self[i] valueForKey:key]])
 			return i;
 	}
 	return NSNotFound;
@@ -111,7 +103,7 @@
 	for (i=[string length]; i >= 0; i--) {
 		NSString *match = [string substringToIndex: i];
 		for (j=0; j < cnt; j++) {
-			NSString *s = [self objectAtIndex: j];
+			NSString *s = self[j];
 			if (NSNotFound != [s rangeOfString: match 
 						options: NSAnchoredSearch | NSCaseInsensitiveSearch].location)
 			{
@@ -148,7 +140,7 @@
 {
 	NSInteger i,c,tot=0;
 	for (i=0,c=[self count]; i < c; i++) {
-		if ([item isEqual: [self objectAtIndex: i]])
+		if ([item isEqual: self[i]])
 			tot++;
 	}
 	return tot;
@@ -158,7 +150,7 @@
 {
 	NSInteger i,c;
 	for (i=0,c=[self count]; i < c; i++) {
-		if (![[self objectAtIndex: i] respondsToSelector: sel])
+		if (![self[i] respondsToSelector: sel])
 			return NO;
 	}
 	return YES;
@@ -170,7 +162,7 @@
 {
 	NSInteger i,c;
 	for (i=0,c=[self count]; i < c; i++) {
-		if (0 == [[self objectAtIndex: i] performSelector: sel])
+		if (0 == [self[i] performSelector: sel])
 			return NO;
 	}
 	return YES;
@@ -198,7 +190,7 @@
 		id singleObject;
 		id selectorResult;
 
-		singleObject = [self objectAtIndex:index];
+		singleObject = self[index];
 		selectorResult = [singleObject performSelector:aSelector withObject:anObject];
 
 		if (selectorResult)
@@ -254,7 +246,7 @@
 -(NSArray*)sortedArrayUsingKey:(NSString*)key ascending:(BOOL)asc
 {
 	NSSortDescriptor *sortDesc = [NSSortDescriptor sortDescriptorWithKey:key ascending:asc];
-	NSArray *sortDescArray = [NSArray arrayWithObject:sortDesc];
+	NSArray *sortDescArray = @[sortDesc];
 	return [self sortedArrayUsingDescriptors:sortDescArray];
 }
 
@@ -306,8 +298,7 @@
 		return NO;	// don't add nil objects
 	if ([self containsObject:anObject])
 		return NO;	// don't add objects already there
-	else
-		[self addObject:anObject];
+	[self addObject:anObject];
 	return YES;
 }
 
@@ -318,8 +309,7 @@
 		return NO;	// don't add nil objects
 	if (NSNotFound != [self indexOfObjectIdenticalTo:anObject])
 		return NO;	// don't add objects already there
-	else
-		[self addObject:anObject];
+	[self addObject:anObject];
 	return YES;
 }
 

@@ -31,7 +31,7 @@
 {
 	id newDict = [[[NSMutableDictionary alloc] init] autorelease];
 	for (id aKey in [self allKeys]) {
-		id anItem = [self objectForKey:aKey];
+		id anItem = self[aKey];
 		if ([anItem conformsToProtocol:@protocol(NSMutableCopying)]) {
 			anItem = [anItem mutableCopy];
 			[newDict setObject:anItem forKey:aKey];
@@ -49,7 +49,7 @@
 
 -(id)objectForKey:(NSString*)key replacingNilWith:(id)defaultValue
 {
-	id val = [self objectForKey:key];
+	id val = self[key];
 	if (nil == val)
 		val = defaultValue;
 	return val;
@@ -57,7 +57,7 @@
 
 -(id)objectForKeyWithNullAsNil:(NSString*)key
 {
-	id val = [self objectForKey:key];
+	id val = self[key];
 	if ([val isKindOfClass:[NSNull class]])
 		val = nil;
 	return val;
@@ -77,11 +77,11 @@
 //inits self by adding each item in items keyed by valueForKey:keyName
 -(id)initWithItems:(NSArray*)items usingKeyName:(NSString*)keyName
 {
-	if ((self = [self initWithCapacity: [items count]])) {
+	if (self = [self initWithCapacity: [items count]]) {
 		for (id obj in items) {
 			id key = [obj valueForKey:keyName];
 			if (key)
-				[self setObject:obj forKey:key];
+				self[key] = obj;
 		}
 	}
 	return self;
@@ -90,6 +90,6 @@
 -(void)setObjectIgnoringNil:(id)object forKey:(id)key
 {
 	if (object)
-		[self setObject:object forKey:key];
+		self[key] = object;
 }
 @end
