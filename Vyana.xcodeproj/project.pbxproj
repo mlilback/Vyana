@@ -1274,7 +1274,7 @@
 			name = "Vyana-iosTests";
 			productName = "Vyana-iosTests";
 			productReference = 08B65235134BE1BD001C6159 /* Vyana-iosTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		08EFE3C71341A4FB00231C8A /* VyanaTests */ = {
 			isa = PBXNativeTarget;
@@ -1292,7 +1292,7 @@
 			name = VyanaTests;
 			productName = VyanaTests;
 			productReference = 08EFE3C81341A4FB00231C8A /* VyanaTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -1300,7 +1300,7 @@
 		08EFE3A91341A4FB00231C8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Agile Monks";
 			};
 			buildConfigurationList = 08EFE3AC1341A4FB00231C8A /* Build configuration list for PBXProject "Vyana" */;
@@ -1682,9 +1682,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = (
-					"$(ARCHS_STANDARD_32_BIT)",
+					armv7,
 					i386,
 					arm64,
+					armv7s,
 				);
 				DSTROOT = "$(BUILT_PRODUCTS_DIR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1804,9 +1805,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = (
-					"$(ARCHS_STANDARD_32_BIT)",
+					armv7,
 					i386,
 					arm64,
+					armv7s,
 				);
 				DSTROOT = "$(BUILT_PRODUCTS_DIR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1829,9 +1831,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = (
-					"$(ARCHS_STANDARD_32_BIT)",
+					armv7,
 					i386,
 					arm64,
+					armv7s,
 				);
 				DSTROOT = "$(BUILT_PRODUCTS_DIR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
