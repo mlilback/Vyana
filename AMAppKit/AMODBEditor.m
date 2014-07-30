@@ -172,7 +172,7 @@
 		path = nil;
 	}
 	
-	return [NSURL fileURLWithPath:path];
+	return path;
 }
 
 - (BOOL)editFile:(NSString*)path 

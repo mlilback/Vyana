@@ -16,7 +16,9 @@
 
 +(NSColor*)colorFromDefaultsWithKey:(NSString*)key;
 
-//returns a color based on a RRGGBB value as used in HTML
++(NSColor*)colorWithRGBAValue:(uint32_t)rgba;
+
+//returns a color based on a RRGGBB or RRGGBBAA value as used in HTML
 +(NSColor*)colorWithHexString:(NSString*)hexString;
 //return the color as a RRGGBB string
 -(NSString*)hexString;

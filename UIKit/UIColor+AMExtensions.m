@@ -12,22 +12,42 @@
 @implementation UIColor(amextensions)
 +(UIColor*)colorWithHexString:(NSString*)hexString
 {
-	unsigned ccode = 0;
-	unsigned char redByte, greenByte, blueByte;
-	if (![hexString isKindOfClass:[NSString class]])
-		[NSException raise:NSInvalidArgumentException format:@"colorWithHexString: only accepts a strign"];
-	if ([hexString characterAtIndex:0] == '#')
-		hexString = [hexString substringFromIndex:1];
-	if ([hexString length] != 6)
+	NSString *string = [hexString lowercaseString];
+	if (![string isKindOfClass:[NSString class]])
+		[NSException raise:NSInvalidArgumentException format:@"colorWithHexString: only accepts a string"];
+	if ([string characterAtIndex:0] == '#')
+		string = [hexString substringFromIndex:1];
+	if ([string hasPrefix:@"0x"])
+		string = [string substringFromIndex:2];
+	if (string.length == 6)
+		string = [string stringByAppendingString:@"ff"];
+	if (string.length != 8)
 		return nil;
 
-	NSScanner *scanner = [NSScanner scannerWithString:hexString];
-	[scanner scanHexInt:&ccode];
-	redByte = (unsigned char) (ccode >> 16);
-	greenByte = (unsigned char) (ccode >> 8);
-	blueByte = (unsigned char) (ccode);	//don't want the high bits
-	return [UIColor colorWithRed:(CGFloat)redByte/(CGFloat)255.0
-		green:(CGFloat)greenByte/(CGFloat)255.0 blue:(CGFloat)blueByte/(CGFloat)255.0 alpha:(CGFloat)1.0];
+	uint32_t rgba;
+	NSScanner *scanner = [NSScanner scannerWithString:string];
+	[scanner scanHexInt:&rgba];
+	return [[UIColor alloc] initWithRGBAValue:rgba];
+}
+
+-(instancetype)initWithRGBAValue:(uint32_t)rgba
+{
+	CGFloat red = ((rgba & 0xFF000000) >> 24) / 255.0;
+	CGFloat green = ((rgba & 0x00FF0000) >> 16) / 255.0;
+	CGFloat blue = ((rgba & 0x0000FF00) >> 8) / 255.0;
+	CGFloat alpha = (rgba & 0x000000FF) / 255.0;
+	return [self initWithRed:red green:green blue:blue alpha:alpha];
+}
+
+-(NSString*)hexStringWithAlpha
+{
+	CGFloat red, green, blue, alpha;
+	[self getRed:&red green:&green blue:&blue alpha:&alpha];
+	return [NSString stringWithFormat:@"%02x%02x%02x%02x",
+			(unsigned)(red *255.99999f),
+			(unsigned)(green*255.99999f),
+			(unsigned)(blue *255.99999f),
+			(unsigned)(alpha * 255.99999f)];
 }
 
 -(NSString*)hexString

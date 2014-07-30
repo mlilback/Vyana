@@ -9,10 +9,13 @@
 
 
 @interface UIColor (AMExtensions)
-//works with and withour the #
+//works with and without a # or 0x prefix
 +(UIColor*)colorWithHexString:(NSString*)hexString;
 
+-(instancetype)initWithRGBAValue:(uint32_t)rgba;
+
 -(NSString*)hexString;
+-(NSString*)hexStringWithAlpha;
 
 + (id)aliceBlue;
 + (id)alizarin;

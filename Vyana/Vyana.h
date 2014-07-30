@@ -9,7 +9,6 @@
 #import <Vyana/AMStandardMacros.h>
 #import <Vyana/AMBlockUtils.h>
 #import <Vyana/MAZeroingWeakRef.h>
-#import <Vyana/MAWeakArray.h>
 #import <Vyana/MAWeakDictionary.h>
 
 #import <Vyana/NSObject+BlockObservation.h>
@@ -79,8 +78,3 @@
 #import <Vyana/AMTableView.h>
 #import <Vyana/AMViewController.h>
 #import <Vyana/AMVerticallyCenteredTextFieldCell.h>
-
-#import <Vyana/AMSourceListCell.h>
-#import <Vyana/AMSourceListColumn.h>
-#import <Vyana/AMSourceListView.h>
-

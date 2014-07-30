@@ -20,28 +20,41 @@
 	b = ((CGFloat)rgbColor->blue) / maxv;
 	return [NSColor colorWithDeviceRed: r green: g blue: b alpha: (CGFloat)1.0];
 }
-//returns a color based on a RRGGBB value as used in HTML
+
 +(NSColor*)colorWithHexString:(NSString*)hexString
 {
-	unsigned ccode = 0;
-	unsigned char redByte, greenByte, blueByte;
-	
-	if ([hexString length] != 6)
+	NSString *string = [hexString lowercaseString];
+	if (![string isKindOfClass:[NSString class]])
+		[NSException raise:NSInvalidArgumentException format:@"colorWithHexString: only accepts a string"];
+	if ([string characterAtIndex:0] == '#')
+		string = [hexString substringFromIndex:1];
+	if ([string hasPrefix:@"0x"])
+		string = [string substringFromIndex:2];
+	if (string.length == 6)
+		string = [string stringByAppendingString:@"ff"];
+	if (string.length != 8)
 		return nil;
-
-	NSScanner *scanner = [NSScanner scannerWithString:hexString];
-	[scanner scanHexInt:&ccode];
-	redByte = (unsigned char) (ccode >> 16);
-	greenByte = (unsigned char) (ccode >> 8);
-	blueByte = (unsigned char) (ccode);	//don't want the high bits
-	return [NSColor colorWithCalibratedRed:(float)redByte/255.0
-		green:(float)greenByte/255.0 blue:(float)blueByte/255.0 alpha:1.0];
+	
+	uint32_t rgba;
+	NSScanner *scanner = [NSScanner scannerWithString:string];
+	[scanner scanHexInt:&rgba];
+	return [NSColor colorWithRGBAValue:rgba];
 }
+
 +(NSColor*)colorFromDefaultsWithKey:(NSString*)key
 {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSData *data = [defaults objectForKey:key];
 	return [NSUnarchiver unarchiveObjectWithData:data];
+}
+
++(NSColor*)colorWithRGBAValue:(uint32_t)rgba
+{
+	CGFloat red = ((rgba & 0xFF000000) >> 24) / 255.0;
+	CGFloat green = ((rgba & 0x00FF0000) >> 16) / 255.0;
+	CGFloat blue = ((rgba & 0x0000FF00) >> 8) / 255.0;
+	CGFloat alpha = (rgba & 0x000000FF) / 255.0;
+	return [NSColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
 
 //return the color as a RRGGBB string
@@ -53,6 +66,18 @@
 		(unsigned)([rgbColor greenComponent]*255.99999f),
 		(unsigned)([rgbColor blueComponent] *255.99999f)];
 }
+
+-(NSString*)hexStringWithAlpha
+{
+	CGFloat red, green, blue, alpha;
+	[self getRed:&red green:&green blue:&blue alpha:&alpha];
+	return [NSString stringWithFormat:@"%02x%02x%02x%02x",
+			(unsigned)(red *255.99999f),
+			(unsigned)(green*255.99999f),
+			(unsigned)(blue *255.99999f),
+			(unsigned)(alpha * 255.99999f)];
+}
+
 //return the color as a r,g,b,a string where each is in [0 255]
 -(NSString*)rgbaString
 {

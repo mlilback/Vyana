@@ -11,8 +11,6 @@
 		08056DFA1444D56C0002766D /* UIApplication+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08056DF81444D56C0002766D /* UIApplication+AMExtensions.m */; };
 		0809757A14255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0809757C14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */; };
-		080975B7142672F30010FD68 /* MAWeakArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B2142672F30010FD68 /* MAWeakArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		080975B9142672F30010FD68 /* MAWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 080975B3142672F30010FD68 /* MAWeakArray.m */; };
 		080975BB142672F30010FD68 /* MAWeakDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 080975B4142672F30010FD68 /* MAWeakDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		080975BD142672F30010FD68 /* MAWeakDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 080975B5142672F30010FD68 /* MAWeakDictionary.m */; };
 		0809BF2C14BDEB15009CEC57 /* NSOutlineView+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809BF2A14BDEB15009CEC57 /* NSOutlineView+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -152,10 +150,6 @@
 		08AD679413DB3A8200687B3D /* NSApplication+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4751341D6F100231C8A /* NSApplication+AMExtensions.m */; };
 		08AD679513DB3A8200687B3D /* NSAttributedString+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE47D1341D86400231C8A /* NSAttributedString+AMExtensions.m */; };
 		08AD679613DB3A8200687B3D /* NSFileHandle+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4811341D86C00231C8A /* NSFileHandle+AMExtensions.m */; };
-		08AD679713DB3A8200687B3D /* AMSourceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4881341DAA300231C8A /* AMSourceListCell.m */; };
-		08AD679813DB3A8200687B3D /* AMSourceListColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE48A1341DAA300231C8A /* AMSourceListColumn.m */; };
-		08AD679913DB3A8200687B3D /* AMSourceListSourceGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE48C1341DAA300231C8A /* AMSourceListSourceGroupCell.m */; };
-		08AD679A13DB3A8200687B3D /* AMSourceListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE48E1341DAA300231C8A /* AMSourceListView.m */; };
 		08AD679B13DB3A8200687B3D /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4AE13421CE100231C8A /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		08AD679C13DB3A8200687B3D /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4B013421CE100231C8A /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		08AD679D13DB3A8200687B3D /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4B213421CE100231C8A /* DDLog.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -198,13 +192,9 @@
 		08AD67C513DB3A8200687B3D /* AMApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE45E1341D4BA00231C8A /* AMApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08AD67C613DB3A8200687B3D /* NSAnimation+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4701341D6EE00231C8A /* NSAnimation+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08AD67C713DB3A8200687B3D /* AMSoundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4641341D4BB00231C8A /* AMSoundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08AD67C813DB3A8200687B3D /* AMSourceListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE48D1341DAA300231C8A /* AMSourceListView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08AD67C913DB3A8200687B3D /* NSFileHandle+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4801341D86C00231C8A /* NSFileHandle+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08AD67CA13DB3A8200687B3D /* NSAttributedString+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE47C1341D86300231C8A /* NSAttributedString+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08AD67CB13DB3A8200687B3D /* AMBaseTreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4521341D02C00231C8A /* AMBaseTreeNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08AD67CC13DB3A8200687B3D /* AMSourceListSourceGroupCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE48B1341DAA300231C8A /* AMSourceListSourceGroupCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08AD67CD13DB3A8200687B3D /* AMSourceListColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4891341DAA300231C8A /* AMSourceListColumn.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08AD67CE13DB3A8200687B3D /* AMSourceListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4871341DAA300231C8A /* AMSourceListCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08AD67CF13DB3A8200687B3D /* NSFont+AMExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4561341D14600231C8A /* NSFont+AMExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08AD67D013DB3A8200687B3D /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4AF13421CE100231C8A /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08AD67D113DB3A8200687B3D /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EFE4AD13421CE100231C8A /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -230,8 +220,6 @@
 		08AD67E613DB3A8200687B3D /* AMActionItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0854F71C13C614C900CEF018 /* AMActionItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08AD67E713DB3A8200687B3D /* NSObject+BlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08375D5513D26ECC0056925A /* NSObject+BlockObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08AD67E913DB3A8200687B3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE3BF1341A4FB00231C8A /* InfoPlist.strings */; };
-		08AD67EA13DB3A8200687B3D /* highlight_blue.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE48F1341DAA300231C8A /* highlight_blue.tiff */; };
-		08AD67EB13DB3A8200687B3D /* highlight_grey.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4901341DAA300231C8A /* highlight_grey.tiff */; };
 		08AD67EC13DB3A8200687B3D /* nosound.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4DC1342637600231C8A /* nosound.icns */; };
 		08AD67ED13DB3A8200687B3D /* VyanaConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4F01342B03900231C8A /* VyanaConfig.plist */; };
 		08AD67EE13DB3A8200687B3D /* AMAppDefaultsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */; };
@@ -327,8 +315,6 @@
 		08056DF81444D56C0002766D /* UIApplication+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+AMExtensions.m"; sourceTree = "<group>"; };
 		0809757714255C6D0010FD68 /* NSUserDefaults+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+AMExtensions.h"; sourceTree = "<group>"; };
 		0809757814255C6D0010FD68 /* NSUserDefaults+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+AMExtensions.m"; sourceTree = "<group>"; };
-		080975B2142672F30010FD68 /* MAWeakArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWeakArray.h; sourceTree = "<group>"; };
-		080975B3142672F30010FD68 /* MAWeakArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWeakArray.m; sourceTree = "<group>"; };
 		080975B4142672F30010FD68 /* MAWeakDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWeakDictionary.h; sourceTree = "<group>"; };
 		080975B5142672F30010FD68 /* MAWeakDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWeakDictionary.m; sourceTree = "<group>"; };
 		0809BF2A14BDEB15009CEC57 /* NSOutlineView+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOutlineView+AMExtensions.h"; sourceTree = "<group>"; };
@@ -549,16 +535,6 @@
 		08EFE4801341D86C00231C8A /* NSFileHandle+AMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileHandle+AMExtensions.h"; sourceTree = "<group>"; };
 		08EFE4811341D86C00231C8A /* NSFileHandle+AMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileHandle+AMExtensions.m"; sourceTree = "<group>"; };
 		08EFE4841341D9F500231C8A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		08EFE4871341DAA300231C8A /* AMSourceListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSourceListCell.h; sourceTree = "<group>"; };
-		08EFE4881341DAA300231C8A /* AMSourceListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSourceListCell.m; sourceTree = "<group>"; };
-		08EFE4891341DAA300231C8A /* AMSourceListColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSourceListColumn.h; sourceTree = "<group>"; };
-		08EFE48A1341DAA300231C8A /* AMSourceListColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSourceListColumn.m; sourceTree = "<group>"; };
-		08EFE48B1341DAA300231C8A /* AMSourceListSourceGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSourceListSourceGroupCell.h; sourceTree = "<group>"; };
-		08EFE48C1341DAA300231C8A /* AMSourceListSourceGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSourceListSourceGroupCell.m; sourceTree = "<group>"; };
-		08EFE48D1341DAA300231C8A /* AMSourceListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSourceListView.h; sourceTree = "<group>"; };
-		08EFE48E1341DAA300231C8A /* AMSourceListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSourceListView.m; sourceTree = "<group>"; };
-		08EFE48F1341DAA300231C8A /* highlight_blue.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = highlight_blue.tiff; sourceTree = "<group>"; };
-		08EFE4901341DAA300231C8A /* highlight_grey.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = highlight_grey.tiff; sourceTree = "<group>"; };
 		08EFE4AD13421CE100231C8A /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
 		08EFE4AE13421CE100231C8A /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
 		08EFE4AF13421CE100231C8A /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
@@ -894,8 +870,6 @@
 				08507A87134E382B00705079 /* AMFileSizeTransformer.m */,
 				0838B39A141EB255003264A8 /* MAZeroingWeakRef.h */,
 				0838B39B141EB255003264A8 /* MAZeroingWeakRef.m */,
-				080975B2142672F30010FD68 /* MAWeakArray.h */,
-				080975B3142672F30010FD68 /* MAWeakArray.m */,
 				080975B4142672F30010FD68 /* MAWeakDictionary.h */,
 				080975B5142672F30010FD68 /* MAWeakDictionary.m */,
 				08A8B19A13FCC99C003BE670 /* AMProcessInfo.h */,
@@ -993,7 +967,6 @@
 				08435A3A1347614C0044089C /* AMProgressWindowController.m */,
 				08EFE4641341D4BB00231C8A /* AMSoundView.h */,
 				08EFE4651341D4BB00231C8A /* AMSoundView.m */,
-				08EFE4861341DAA300231C8A /* AMSourceListView */,
 				08BF6B00139974E800BC8066 /* AMSplashScreen.h */,
 				08BF6B01139974E800BC8066 /* AMSplashScreen.m */,
 				08A2324C14C865D000EB1041 /* AMStringPromptWindowController.h */,
@@ -1010,23 +983,6 @@
 			);
 			path = AMAppKit;
 			sourceTree = SOURCE_ROOT;
-		};
-		08EFE4861341DAA300231C8A /* AMSourceListView */ = {
-			isa = PBXGroup;
-			children = (
-				08EFE4871341DAA300231C8A /* AMSourceListCell.h */,
-				08EFE4881341DAA300231C8A /* AMSourceListCell.m */,
-				08EFE4891341DAA300231C8A /* AMSourceListColumn.h */,
-				08EFE48A1341DAA300231C8A /* AMSourceListColumn.m */,
-				08EFE48B1341DAA300231C8A /* AMSourceListSourceGroupCell.h */,
-				08EFE48C1341DAA300231C8A /* AMSourceListSourceGroupCell.m */,
-				08EFE48D1341DAA300231C8A /* AMSourceListView.h */,
-				08EFE48E1341DAA300231C8A /* AMSourceListView.m */,
-				08EFE48F1341DAA300231C8A /* highlight_blue.tiff */,
-				08EFE4901341DAA300231C8A /* highlight_grey.tiff */,
-			);
-			path = AMSourceListView;
-			sourceTree = "<group>";
 		};
 		08EFE4AC13421CDE00231C8A /* Lumberjack */ = {
 			isa = PBXGroup;
@@ -1083,13 +1039,9 @@
 				08AD67C513DB3A8200687B3D /* AMApplication.h in Headers */,
 				08AD67C613DB3A8200687B3D /* NSAnimation+AMExtensions.h in Headers */,
 				08AD67C713DB3A8200687B3D /* AMSoundView.h in Headers */,
-				08AD67C813DB3A8200687B3D /* AMSourceListView.h in Headers */,
 				08AD67C913DB3A8200687B3D /* NSFileHandle+AMExtensions.h in Headers */,
 				08AD67CA13DB3A8200687B3D /* NSAttributedString+AMExtensions.h in Headers */,
 				08AD67CB13DB3A8200687B3D /* AMBaseTreeNode.h in Headers */,
-				08AD67CC13DB3A8200687B3D /* AMSourceListSourceGroupCell.h in Headers */,
-				08AD67CD13DB3A8200687B3D /* AMSourceListColumn.h in Headers */,
-				08AD67CE13DB3A8200687B3D /* AMSourceListCell.h in Headers */,
 				08AD67CF13DB3A8200687B3D /* NSFont+AMExtensions.h in Headers */,
 				08AD67D013DB3A8200687B3D /* DDFileLogger.h in Headers */,
 				08AD67D113DB3A8200687B3D /* DDASLLogger.h in Headers */,
@@ -1128,7 +1080,6 @@
 				0838B394141EAA41003264A8 /* AMKeyValueObserver.h in Headers */,
 				0838B39D141EB256003264A8 /* MAZeroingWeakRef.h in Headers */,
 				0809757A14255C6D0010FD68 /* NSUserDefaults+AMExtensions.h in Headers */,
-				080975B7142672F30010FD68 /* MAWeakArray.h in Headers */,
 				080975BB142672F30010FD68 /* MAWeakDictionary.h in Headers */,
 				08A6000F1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */,
 				088DF15C143CBAA800CF4844 /* NSMenu+AMExtensions.h in Headers */,
@@ -1329,8 +1280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				08AD67E913DB3A8200687B3D /* InfoPlist.strings in Resources */,
-				08AD67EA13DB3A8200687B3D /* highlight_blue.tiff in Resources */,
-				08AD67EB13DB3A8200687B3D /* highlight_grey.tiff in Resources */,
 				08AD67EC13DB3A8200687B3D /* nosound.icns in Resources */,
 				08AD67ED13DB3A8200687B3D /* VyanaConfig.plist in Resources */,
 				08AD67EE13DB3A8200687B3D /* AMAppDefaultsWindowController.xib in Resources */,
@@ -1413,11 +1362,7 @@
 				08AD679413DB3A8200687B3D /* NSApplication+AMExtensions.m in Sources */,
 				08AD679513DB3A8200687B3D /* NSAttributedString+AMExtensions.m in Sources */,
 				08AD679613DB3A8200687B3D /* NSFileHandle+AMExtensions.m in Sources */,
-				08AD679713DB3A8200687B3D /* AMSourceListCell.m in Sources */,
-				08AD679813DB3A8200687B3D /* AMSourceListColumn.m in Sources */,
 				08F65CF4187C97570039F74B /* AMVerticallyCenteredTextFieldCell.m in Sources */,
-				08AD679913DB3A8200687B3D /* AMSourceListSourceGroupCell.m in Sources */,
-				08AD679A13DB3A8200687B3D /* AMSourceListView.m in Sources */,
 				08AD679B13DB3A8200687B3D /* DDASLLogger.m in Sources */,
 				08AD679C13DB3A8200687B3D /* DDFileLogger.m in Sources */,
 				08AD679D13DB3A8200687B3D /* DDLog.m in Sources */,
@@ -1449,7 +1394,6 @@
 				0838B397141EAA41003264A8 /* AMKeyValueObserver.m in Sources */,
 				0838B3A0141EB256003264A8 /* MAZeroingWeakRef.m in Sources */,
 				0809757C14255C6D0010FD68 /* NSUserDefaults+AMExtensions.m in Sources */,
-				080975B9142672F30010FD68 /* MAWeakArray.m in Sources */,
 				080975BD142672F30010FD68 /* MAWeakDictionary.m in Sources */,
 				087DB8C117B56BD600724811 /* DispatchQueueLogFormatter.m in Sources */,
 				08BD1DAF142BC0D1008BFD89 /* VyanaLogger.m in Sources */,
