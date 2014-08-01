@@ -9,7 +9,6 @@
 #import "MAZeroingWeakRef.h"
 
 @interface AMControlledView()
-@property (nonatomic, strong) MAZeroingWeakRef *vcWeakRef;
 @end
 
 @implementation AMControlledView
@@ -49,34 +48,40 @@
 		[(id)self.viewController resizeSubviewsWithOldSize:oldBoundsSize];
 }
 
--(NSViewController*)viewController
-{
-	return self.vcWeakRef.target;
-}
-
 - (void)setViewController:(NSViewController *)newController
 {
-	id curController = self.vcWeakRef.target;
-	if (curController) {
-		NSResponder *controllerNextResponder = [curController nextResponder];
-		[super setNextResponder:controllerNextResponder];
-		[curController setNextResponder:nil];
-	}
-	self.vcWeakRef = [[[MAZeroingWeakRef alloc] initWithTarget:newController] autorelease];
-	if (newController) {
-		NSResponder *ownNextResponder = [self nextResponder];
-		[super setNextResponder: newController];
-		[newController setNextResponder:ownNextResponder];
+	if (floor(NSAppKitVersionNumber) <= NSAppKitVersionNumber10_9) {
+		if (newController == (NSViewController*)self)
+			newController = nil;
+		id curController = _viewController;
+		if (curController) {
+			NSResponder *controllerNextResponder = [curController nextResponder];
+			[super setNextResponder:controllerNextResponder];
+			[curController setNextResponder:nil];
+		}
+		_viewController = newController;
+		if (newController) {
+			NSResponder *ownNextResponder = [self nextResponder];
+			if (ownNextResponder != newController) {
+				[super setNextResponder: newController];
+				[newController setNextResponder:ownNextResponder];
+			}
+		}
+	} else {
+		_viewController = newController;
 	}
 }
 
 - (void)setNextResponder:(NSResponder *)newNextResponder
 {
-	id curController = self.vcWeakRef.target;
-	if (curController) {
-		[curController setNextResponder:newNextResponder];
-		return;
+	if (floor(NSAppKitVersionNumber) <= NSAppKitVersionNumber10_9) {
+		id curController = self.viewController;
+		if (curController) {
+			[curController setNextResponder:newNextResponder];
+			return;
+		}
 	}
+	if (![newNextResponder isEqual:self])
 	[super setNextResponder:newNextResponder];
 }
 

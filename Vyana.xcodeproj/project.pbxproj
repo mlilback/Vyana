@@ -159,7 +159,7 @@
 		08AD67A113DB3A8200687B3D /* AMDefaultsSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4E9134297ED00231C8A /* AMDefaultsSet.m */; };
 		08AD67A213DB3A8200687B3D /* AMAppDefaultsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFE4FB1342B35100231C8A /* AMAppDefaultsWindowController.m */; };
 		08AD67A413DB3A8200687B3D /* AMProgressWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3A1347614C0044089C /* AMProgressWindowController.m */; };
-		08AD67A513DB3A8200687B3D /* AMControlledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3E134768C40044089C /* AMControlledView.m */; };
+		08AD67A513DB3A8200687B3D /* AMControlledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435A3E134768C40044089C /* AMControlledView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		08AD67A613DB3A8200687B3D /* AMFileSizeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A87134E382B00705079 /* AMFileSizeTransformer.m */; };
 		08AD67A713DB3A8200687B3D /* AMFileSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507A8D134E38E400705079 /* AMFileSelectionView.m */; };
 		08AD67A813DB3A8200687B3D /* NSManagedObjectContext+AMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ECD46D135A54960027E15E /* NSManagedObjectContext+AMExtensions.m */; };

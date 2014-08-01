@@ -24,7 +24,7 @@
  	view controller subclasses AMViewController, which will make sure this does not happen.
  	This shouldn't be an issue now that we're using a MAZeroingWeakRef to hold the ref, but...
 */
-@property (nonatomic, assign) IBOutlet NSViewController *viewController;
+@property (nonatomic, weak) IBOutlet NSViewController *viewController;
 @end
 
 /** @brief
