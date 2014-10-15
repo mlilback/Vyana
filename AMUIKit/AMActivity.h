@@ -15,4 +15,5 @@
 
 -(id)initWithActivityType:(NSString*)actType title:(NSString*)actTitle image:(NSString*)imageName;
 
++(instancetype)activityOfType:(NSString*)acctType title:(NSString*)title image:(NSString*)imageName canPerformBlock:(BOOL (^)(NSArray*))canBlock prepareBlock:(void (^)(NSArray*))performBlock;
 @end
