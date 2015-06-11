@@ -29,7 +29,7 @@
 #import <Vyana/AMCharacterSetFormatter.h>
 #import <Vyana/AMRegExpFormatter.h>
 #import <Vyana/NSMenu+AMExtensions.h>
-#import <Vyana/AMWindow.h>
+//#import <Vyana/AMWindow.h>
 #import <Vyana/AMColor.h>
 
 #import <Vyana/NSManagedObjectContext+AMExtensions.h>

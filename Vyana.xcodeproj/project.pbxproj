@@ -224,8 +224,6 @@
 		08AD67ED13DB3A8200687B3D /* VyanaConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4F01342B03900231C8A /* VyanaConfig.plist */; };
 		08AD67EE13DB3A8200687B3D /* AMAppDefaultsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EFE4FC1342B35300231C8A /* AMAppDefaultsWindowController.xib */; };
 		08AD67EF13DB3A8200687B3D /* VyanaDelete.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08507A90134E451500705079 /* VyanaDelete.icns */; };
-		08ADF5B6144B9AF000F787E6 /* AMWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ADF5B3144B9AF000F787E6 /* AMWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08ADF5B8144B9AF000F787E6 /* AMWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ADF5B4144B9AF000F787E6 /* AMWindow.m */; };
 		08B6522C134BE1BC001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
 		08B65238134BE1BD001C6159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B6522B134BE1BC001C6159 /* Foundation.framework */; };
 		08B6523A134BE1BD001C6159 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B65239134BE1BD001C6159 /* CoreGraphics.framework */; };
@@ -1084,7 +1082,6 @@
 				08A6000F1432AF5500E8AB4B /* NSView+AMExtension.h in Headers */,
 				088DF15C143CBAA800CF4844 /* NSMenu+AMExtensions.h in Headers */,
 				088DF16A143CDF3F00CF4844 /* NSTableView+AMExtensions.h in Headers */,
-				08ADF5B6144B9AF000F787E6 /* AMWindow.h in Headers */,
 				089C0B24145A2B3D00DF9984 /* NSWindow+AMExtensions.h in Headers */,
 				089C0B2F145B36EF00DF9984 /* AMRegExpFormatter.h in Headers */,
 				089C0B34145B39F900DF9984 /* AMCharacterSetFormatter.h in Headers */,
@@ -1401,7 +1398,6 @@
 				088DF15E143CBAA800CF4844 /* NSMenu+AMExtensions.m in Sources */,
 				087DB8B517B56B4100724811 /* DDAbstractDatabaseLogger.m in Sources */,
 				088DF16C143CDF3F00CF4844 /* NSTableView+AMExtensions.m in Sources */,
-				08ADF5B8144B9AF000F787E6 /* AMWindow.m in Sources */,
 				089C0B26145A2B3D00DF9984 /* NSWindow+AMExtensions.m in Sources */,
 				089C0B30145B36EF00DF9984 /* AMRegExpFormatter.m in Sources */,
 				089C0B35145B39F900DF9984 /* AMCharacterSetFormatter.m in Sources */,
