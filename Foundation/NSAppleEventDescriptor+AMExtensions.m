@@ -17,7 +17,6 @@
 	return [self descriptorWithDescriptorType:typeFileURL 
 										 data:[fileUrl.absoluteString dataUsingEncoding:NSUTF8StringEncoding]];
 }
-#endif
 
 +(NSAppleEventDescriptor*)descriptorWithNumber:(NSNumber*)number
 {
