@@ -197,7 +197,7 @@
 	
 	[self launchExternalEditor];
 	
-	[ae setParamDescriptor:[NSAppleEventDescriptor descriptorWithFileURL: [NSURL fileURLWithPath:path]] 
+	[ae setParamDescriptor:[NSAppleEventDescriptor am_descriptorWithFileURL: [NSURL fileURLWithPath:path]]
 				forKeyword:keyDirectObject];
 	[ae setParamDescriptor:[NSAppleEventDescriptor descriptorWithTypeCode: _signature] 
 				forKeyword:keyFileSender];

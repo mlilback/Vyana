@@ -12,10 +12,7 @@
 /**	Examines the number to use the best form possible (float, long, int, boolean, etc.) */
 +(NSAppleEventDescriptor*)descriptorWithNumber:(NSNumber*)number;
 
-#if __MAC_OS_X_VERSION_MAX_ALLOWED < 101100
-/** Returns a descriptor of typeFileURL */
-+(NSAppleEventDescriptor*)descriptorWithFileURL:(NSURL*)fileUrl;
-#endif
++(NSAppleEventDescriptor*)am_descriptorWithFileURL:(NSURL*)fileUrl;
 
 /**	returns a record descriptor. Only converts objects of NSString, NSNumber, and NSAppleEventDescriptor. 
  Silently skips any other values. Keys must be strings or the value of description is used as the key. */

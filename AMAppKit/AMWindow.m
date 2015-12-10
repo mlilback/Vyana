@@ -9,5 +9,6 @@
 #import "AMWindow.h"
 
 @implementation AMWindow
+//created when there wasn't a windowController property
 @synthesize windowController;
 @end

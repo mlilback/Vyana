@@ -9,8 +9,9 @@
 #import <Cocoa/Cocoa.h>
 
 /** @class AMWindow
+	created when there wasn't a windowController property
  */
 
 @interface AMWindow : NSWindow
-@property (nonatomic, unsafe_unretained) IBOutlet NSWindowController *windowController;
+//@property (nonatomic, unsafe_unretained) IBOutlet NSWindowController *windowController;
 @end

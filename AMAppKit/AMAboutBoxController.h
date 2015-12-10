@@ -32,7 +32,7 @@
  	\endcode
  */
 
-@interface AMAboutBoxController : NSWindowController<NSWindowDelegate>
+@interface AMAboutBoxController : NSWindowController<NSWindowDelegate, WebFrameLoadDelegate, WebPolicyDelegate>
 @property (nonatomic, assign, readonly) WebView *webView;
 @property (nonatomic, assign) BOOL allowScrolling; ///<defaults to NO
 /// do not release the controller unless this is true or your app will likely crash

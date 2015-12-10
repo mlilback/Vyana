@@ -12,9 +12,7 @@
 #define keyASUserRecordFields (FourCharCode)'usrf'
 
 @implementation NSAppleEventDescriptor (AMExtensions)
-
-#if __MAC_OS_X_VERSION_MAX_ALLOWED < 101100
-+(NSAppleEventDescriptor*)descriptorWithFileURL:(NSURL*)fileUrl
++(NSAppleEventDescriptor*)am_descriptorWithFileURL:(NSURL*)fileUrl
 {
 	return [self descriptorWithDescriptorType:typeFileURL 
 										 data:[fileUrl.absoluteString dataUsingEncoding:NSUTF8StringEncoding]];
