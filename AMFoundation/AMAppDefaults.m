@@ -11,8 +11,6 @@
 #import "AMDefaultsSet.h"
 #import "VyanaPrivate.h"
 
-static int ddLogLevel = LOG_LEVEL_WARN;
-
 @interface AMAppDefaults()
 -(id)initPrivate;
 -(void)loadDefaults;
@@ -23,16 +21,6 @@ static int ddLogLevel = LOG_LEVEL_WARN;
 @end
 
 @implementation AMAppDefaults
-+ (int)ddLogLevel
-{
-	return ddLogLevel;
-}
-
-+ (void)ddSetLogLevel:(int)logLevel
-{
-	ddLogLevel = logLevel;
-}
-
 + (id)sharedInstance
 {
 	static dispatch_once_t pred;
@@ -72,20 +60,17 @@ static int ddLogLevel = LOG_LEVEL_WARN;
 			if (nil == aSet) {
 				aSet = [[[AMDefaultsSet alloc] init] autorelease];
 				[sets setObject:aSet forKey:setName];
-				DDLogInfo(@"creating set %@", setName);
 			}
 			id valObj = [aDict objectForKey:@"Values"];
 			if ([valObj isKindOfClass:[NSDictionary class]]) {
-				DDLogInfo(@"loading dict values for set %@ from %@", setName, [cfile.bundle bundleIdentifier]);
 				[aSet takePropertiesFromDict:valObj];
 			} else if ([valObj isKindOfClass:[NSString class]]) {
-				DDLogInfo(@"loading plist values for set %@ from %@", setName, [cfile.bundle bundleIdentifier]);
-				NSURL *url = [cfile.bundle URLForResource:[valObj stringByDeletingPathExtension] 
+				NSURL *url = [cfile.bundle URLForResource:[valObj stringByDeletingPathExtension]
 											withExtension:[valObj pathExtension]];
 				NSDictionary *d = [NSDictionary dictionaryWithContentsOfURL:url];
 				[aSet takePropertiesFromDict:d];
 			} else {
-				DDLogError(@"invalid values for property set %@ in bundle %@", setName, [cfile.bundle bundleIdentifier]);
+				NSLog(@"invalid values for property set %@ in bundle %@", setName, [cfile.bundle bundleIdentifier]);
 			}
 		}
 	}
@@ -104,7 +89,6 @@ static int ddLogLevel = LOG_LEVEL_WARN;
 	NSDictionary *dict = [NSDictionary dictionaryWithContentsOfURL:url];
 	if (nil == dict)
 		return;
-	DDLogInfo(@"loading config file %@", [bundle bundleIdentifier]);
 	AMDefaultsConfigFile *cfg = [[AMDefaultsConfigFile alloc] initWithDictionary:dict bundle:bundle];
 	[self.configFiles addObject:cfg];
 	[cfg release];
